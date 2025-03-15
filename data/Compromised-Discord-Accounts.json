@@ -6095,6 +6095,27 @@
     },
     "ACCOUNT_NUMBER_278": {
         "CASE_NUMBER": "278",
+        "FOUND_ON": "2024-04-14",
+        "DISCORD_ID": "291629997909868555",
+        "USERNAME": ".b1ack.",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://cutt.ly/Rw7QZaWK",
+        "SURFACE_URL_DOMAIN": "cutt.ly",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_279": {
+        "CASE_NUMBER": "279",
         "FOUND_ON": "2024-04-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1133879101355208836",
@@ -6115,8 +6136,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_279": {
-        "CASE_NUMBER": "279",
+    "ACCOUNT_NUMBER_280": {
+        "CASE_NUMBER": "280",
         "FOUND_ON": "2024-04-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1191085289783951360",
@@ -6137,8 +6158,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_280": {
-        "CASE_NUMBER": "280",
+    "ACCOUNT_NUMBER_281": {
+        "CASE_NUMBER": "281",
         "FOUND_ON": "2024-04-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "773373981537075262",
@@ -6159,8 +6180,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:44:25.345350"
     },
-    "ACCOUNT_NUMBER_281": {
-        "CASE_NUMBER": "281",
+    "ACCOUNT_NUMBER_282": {
+        "CASE_NUMBER": "282",
         "FOUND_ON": "2024-04-15",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "348269107151503360",
@@ -6181,8 +6202,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_282": {
-        "CASE_NUMBER": "282",
+    "ACCOUNT_NUMBER_283": {
+        "CASE_NUMBER": "283",
         "FOUND_ON": "2024-04-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1171775210521886740",
@@ -6203,8 +6224,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:45:21.317034"
     },
-    "ACCOUNT_NUMBER_283": {
-        "CASE_NUMBER": "283",
+    "ACCOUNT_NUMBER_284": {
+        "CASE_NUMBER": "284",
         "FOUND_ON": "2024-04-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "977171356791762944",
@@ -6225,8 +6246,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:45:22.917840"
     },
-    "ACCOUNT_NUMBER_284": {
-        "CASE_NUMBER": "284",
+    "ACCOUNT_NUMBER_285": {
+        "CASE_NUMBER": "285",
         "FOUND_ON": "2024-04-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "234294849723957248",
@@ -6247,8 +6268,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_285": {
-        "CASE_NUMBER": "285",
+    "ACCOUNT_NUMBER_286": {
+        "CASE_NUMBER": "286",
         "FOUND_ON": "2024-04-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "985219466524774420",
@@ -6269,8 +6290,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_286": {
-        "CASE_NUMBER": "286",
+    "ACCOUNT_NUMBER_287": {
+        "CASE_NUMBER": "287",
         "FOUND_ON": "2024-04-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "631359143361642496",
@@ -6291,8 +6312,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:46:21.294942"
     },
-    "ACCOUNT_NUMBER_287": {
-        "CASE_NUMBER": "287",
+    "ACCOUNT_NUMBER_288": {
+        "CASE_NUMBER": "288",
         "FOUND_ON": "2024-04-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "545314088599814164",
@@ -6313,8 +6334,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:46:23.191676"
     },
-    "ACCOUNT_NUMBER_288": {
-        "CASE_NUMBER": "288",
+    "ACCOUNT_NUMBER_289": {
+        "CASE_NUMBER": "289",
         "FOUND_ON": "2024-04-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "703073121485324358",
@@ -6335,8 +6356,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:47:21.335493"
     },
-    "ACCOUNT_NUMBER_289": {
-        "CASE_NUMBER": "289",
+    "ACCOUNT_NUMBER_290": {
+        "CASE_NUMBER": "290",
         "FOUND_ON": "2024-04-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "317265573098684417",
@@ -6357,8 +6378,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:47:22.706821"
     },
-    "ACCOUNT_NUMBER_290": {
-        "CASE_NUMBER": "290",
+    "ACCOUNT_NUMBER_291": {
+        "CASE_NUMBER": "291",
         "FOUND_ON": "2024-04-19",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "850205239302946866",
@@ -6379,8 +6400,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_291": {
-        "CASE_NUMBER": "291",
+    "ACCOUNT_NUMBER_292": {
+        "CASE_NUMBER": "292",
         "FOUND_ON": "2024-04-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "603271680328204299",
@@ -6401,8 +6422,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_292": {
-        "CASE_NUMBER": "292",
+    "ACCOUNT_NUMBER_293": {
+        "CASE_NUMBER": "293",
         "FOUND_ON": "2024-04-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "358798212355719200",
@@ -6423,8 +6444,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_293": {
-        "CASE_NUMBER": "293",
+    "ACCOUNT_NUMBER_294": {
+        "CASE_NUMBER": "294",
         "FOUND_ON": "2024-04-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1118473778951901186",
@@ -6445,8 +6466,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_294": {
-        "CASE_NUMBER": "294",
+    "ACCOUNT_NUMBER_295": {
+        "CASE_NUMBER": "295",
         "FOUND_ON": "2024-04-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "617301932838748162",
@@ -6467,8 +6488,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:48:21.388190"
     },
-    "ACCOUNT_NUMBER_295": {
-        "CASE_NUMBER": "295",
+    "ACCOUNT_NUMBER_296": {
+        "CASE_NUMBER": "296",
         "FOUND_ON": "2024-04-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "701862091929288795",
@@ -6489,8 +6510,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:48:22.841116"
     },
-    "ACCOUNT_NUMBER_296": {
-        "CASE_NUMBER": "296",
+    "ACCOUNT_NUMBER_297": {
+        "CASE_NUMBER": "297",
         "FOUND_ON": "2024-04-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "898460482581721150",
@@ -6511,8 +6532,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_297": {
-        "CASE_NUMBER": "297",
+    "ACCOUNT_NUMBER_298": {
+        "CASE_NUMBER": "298",
         "FOUND_ON": "2024-04-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1042049021679775774",
@@ -6533,8 +6554,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:49:21.533569"
     },
-    "ACCOUNT_NUMBER_298": {
-        "CASE_NUMBER": "298",
+    "ACCOUNT_NUMBER_299": {
+        "CASE_NUMBER": "299",
         "FOUND_ON": "2024-04-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "782559954791170048",
@@ -6555,8 +6576,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:49:23.694606"
     },
-    "ACCOUNT_NUMBER_299": {
-        "CASE_NUMBER": "299",
+    "ACCOUNT_NUMBER_300": {
+        "CASE_NUMBER": "300",
         "FOUND_ON": "2024-04-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "218707979166416896",
@@ -6577,8 +6598,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:50:21.503328"
     },
-    "ACCOUNT_NUMBER_300": {
-        "CASE_NUMBER": "300",
+    "ACCOUNT_NUMBER_301": {
+        "CASE_NUMBER": "301",
         "FOUND_ON": "2024-04-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "830259092949303296",
@@ -6599,8 +6620,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:50:23.520840"
     },
-    "ACCOUNT_NUMBER_301": {
-        "CASE_NUMBER": "301",
+    "ACCOUNT_NUMBER_302": {
+        "CASE_NUMBER": "302",
         "FOUND_ON": "2024-04-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "860860758937829377",
@@ -6621,8 +6642,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:51:21.689397"
     },
-    "ACCOUNT_NUMBER_302": {
-        "CASE_NUMBER": "302",
+    "ACCOUNT_NUMBER_303": {
+        "CASE_NUMBER": "303",
         "FOUND_ON": "2024-04-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "846380952132386826",
@@ -6643,8 +6664,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:51:23.275213"
     },
-    "ACCOUNT_NUMBER_303": {
-        "CASE_NUMBER": "303",
+    "ACCOUNT_NUMBER_304": {
+        "CASE_NUMBER": "304",
         "FOUND_ON": "2024-04-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "366212510090657792",
@@ -6665,8 +6686,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:52:21.643949"
     },
-    "ACCOUNT_NUMBER_304": {
-        "CASE_NUMBER": "304",
+    "ACCOUNT_NUMBER_305": {
+        "CASE_NUMBER": "305",
         "FOUND_ON": "2024-04-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "900660364184805386",
@@ -6687,8 +6708,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:52:23.525247"
     },
-    "ACCOUNT_NUMBER_305": {
-        "CASE_NUMBER": "305",
+    "ACCOUNT_NUMBER_306": {
+        "CASE_NUMBER": "306",
         "FOUND_ON": "2024-04-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "356525119322980354",
@@ -6709,8 +6730,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_306": {
-        "CASE_NUMBER": "306",
+    "ACCOUNT_NUMBER_307": {
+        "CASE_NUMBER": "307",
         "FOUND_ON": "2024-04-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "283705622447390722",
@@ -6731,8 +6752,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:53:21.636075"
     },
-    "ACCOUNT_NUMBER_307": {
-        "CASE_NUMBER": "307",
+    "ACCOUNT_NUMBER_308": {
+        "CASE_NUMBER": "308",
         "FOUND_ON": "2024-04-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "755835134728470548",
@@ -6753,8 +6774,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:53:23.202893"
     },
-    "ACCOUNT_NUMBER_308": {
-        "CASE_NUMBER": "308",
+    "ACCOUNT_NUMBER_309": {
+        "CASE_NUMBER": "309",
         "FOUND_ON": "2024-04-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "696809683326861362",
@@ -6775,8 +6796,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:54:21.589682"
     },
-    "ACCOUNT_NUMBER_309": {
-        "CASE_NUMBER": "309",
+    "ACCOUNT_NUMBER_310": {
+        "CASE_NUMBER": "310",
         "FOUND_ON": "2024-04-23",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "790040571250606092",
@@ -6797,8 +6818,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_310": {
-        "CASE_NUMBER": "310",
+    "ACCOUNT_NUMBER_311": {
+        "CASE_NUMBER": "311",
         "FOUND_ON": "2024-04-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "265447626286039040",
@@ -6819,8 +6840,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_311": {
-        "CASE_NUMBER": "311",
+    "ACCOUNT_NUMBER_312": {
+        "CASE_NUMBER": "312",
         "FOUND_ON": "2024-04-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "875194608638885938",
@@ -6841,8 +6862,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_312": {
-        "CASE_NUMBER": "312",
+    "ACCOUNT_NUMBER_313": {
+        "CASE_NUMBER": "313",
         "FOUND_ON": "2024-04-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "832349520992927764",
@@ -6863,8 +6884,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:54:24.699439"
     },
-    "ACCOUNT_NUMBER_313": {
-        "CASE_NUMBER": "313",
+    "ACCOUNT_NUMBER_314": {
+        "CASE_NUMBER": "314",
         "FOUND_ON": "2024-04-25",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "283116752924049408",
@@ -6885,8 +6906,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:55:21.767714"
     },
-    "ACCOUNT_NUMBER_314": {
-        "CASE_NUMBER": "314",
+    "ACCOUNT_NUMBER_315": {
+        "CASE_NUMBER": "315",
         "FOUND_ON": "2024-04-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "385153521500291072",
@@ -6907,8 +6928,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_315": {
-        "CASE_NUMBER": "315",
+    "ACCOUNT_NUMBER_316": {
+        "CASE_NUMBER": "316",
         "FOUND_ON": "2024-04-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "399709755670659084",
@@ -6929,8 +6950,8 @@
         "LAST_CHECK": "2025-03-12T20:56:21.637071",
         "NON_ASCII_USERNAME": false
     },
-    "ACCOUNT_NUMBER_316": {
-        "CASE_NUMBER": "316",
+    "ACCOUNT_NUMBER_317": {
+        "CASE_NUMBER": "317",
         "FOUND_ON": "2024-04-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "456449017610764302",
@@ -6951,8 +6972,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:56:23.862373"
     },
-    "ACCOUNT_NUMBER_317": {
-        "CASE_NUMBER": "317",
+    "ACCOUNT_NUMBER_318": {
+        "CASE_NUMBER": "318",
         "FOUND_ON": "2024-04-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "301023404620906497",
@@ -6973,8 +6994,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-14T14:33:52.636559"
     },
-    "ACCOUNT_NUMBER_318": {
-        "CASE_NUMBER": "318",
+    "ACCOUNT_NUMBER_319": {
+        "CASE_NUMBER": "319",
         "FOUND_ON": "2024-04-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1107606020911538207",
@@ -6995,8 +7016,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:56:25.021709"
     },
-    "ACCOUNT_NUMBER_319": {
-        "CASE_NUMBER": "319",
+    "ACCOUNT_NUMBER_320": {
+        "CASE_NUMBER": "320",
         "FOUND_ON": "2024-04-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "892260845365653504",
@@ -7017,8 +7038,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-14T04:30:13.518608"
     },
-    "ACCOUNT_NUMBER_320": {
-        "CASE_NUMBER": "320",
+    "ACCOUNT_NUMBER_321": {
+        "CASE_NUMBER": "321",
         "FOUND_ON": "2024-04-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1045262704543281242",
@@ -7039,8 +7060,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:57:23.341255"
     },
-    "ACCOUNT_NUMBER_321": {
-        "CASE_NUMBER": "321",
+    "ACCOUNT_NUMBER_322": {
+        "CASE_NUMBER": "322",
         "FOUND_ON": "2024-04-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1208711388172656661",
@@ -7061,8 +7082,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_322": {
-        "CASE_NUMBER": "322",
+    "ACCOUNT_NUMBER_323": {
+        "CASE_NUMBER": "323",
         "FOUND_ON": "2024-04-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1225259376131182672",
@@ -7082,28 +7103,6 @@
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
-    },
-    "ACCOUNT_NUMBER_323": {
-        "CASE_NUMBER": "323",
-        "FOUND_ON": "2024-04-30",
-        "FOUND_ON_SERVER": "PROJECT_CW",
-        "DISCORD_ID": "252067835898101770",
-        "USERNAME": "papamisza",
-        "ACCOUNT_STATUS": "COMPROMISED",
-        "BEHAVIOUR": "Markdown URL Obfuscation",
-        "ATTACK_METHOD": "Phishing Website",
-        "ATTACK_VECTOR": "Cloned Steam Pages",
-        "ATTACK_GOAL": "Steam Accounts",
-        "ATTACK_SURFACE": "Steam",
-        "SUSPECTED_REGION_OF_ORIGIN": "RU",
-        "SURFACE_URL": "https://qptr.ru/S4Ax",
-        "SURFACE_URL_DOMAIN": "qptr.ru",
-        "SURFACE_URL_STATUS": "INACTIVE",
-        "FINAL_URL": "https://qptr.ru/S4Ax",
-        "FINAL_URL_DOMAIN": "qptr.ru",
-        "FINAL_URL_STATUS": "INACTIVE",
-        "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": "2025-03-12T20:58:21.743468"
     },
     "ACCOUNT_NUMBER_324": {
         "CASE_NUMBER": "324",
@@ -7125,10 +7124,32 @@
         "FINAL_URL_DOMAIN": "qptr.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": "2025-03-12T20:58:23.568756"
+        "LAST_CHECK": "2025-03-12T20:58:21.743468"
     },
     "ACCOUNT_NUMBER_325": {
         "CASE_NUMBER": "325",
+        "FOUND_ON": "2024-04-30",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "252067835898101770",
+        "USERNAME": "papamisza",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "RU",
+        "SURFACE_URL": "https://qptr.ru/S4Ax",
+        "SURFACE_URL_DOMAIN": "qptr.ru",
+        "SURFACE_URL_STATUS": "INACTIVE",
+        "FINAL_URL": "https://qptr.ru/S4Ax",
+        "FINAL_URL_DOMAIN": "qptr.ru",
+        "FINAL_URL_STATUS": "INACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-12T20:58:23.568756"
+    },
+    "ACCOUNT_NUMBER_326": {
+        "CASE_NUMBER": "326",
         "FOUND_ON": "2024-04-30",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "829955290446692352",
@@ -7149,8 +7170,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_326": {
-        "CASE_NUMBER": "326",
+    "ACCOUNT_NUMBER_327": {
+        "CASE_NUMBER": "327",
         "FOUND_ON": "2024-04-30",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "829955290446692352",
@@ -7171,8 +7192,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:59:21.946753"
     },
-    "ACCOUNT_NUMBER_327": {
-        "CASE_NUMBER": "327",
+    "ACCOUNT_NUMBER_328": {
+        "CASE_NUMBER": "328",
         "FOUND_ON": "2024-04-30",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "994010326146236546",
@@ -7193,8 +7214,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_328": {
-        "CASE_NUMBER": "328",
+    "ACCOUNT_NUMBER_329": {
+        "CASE_NUMBER": "329",
         "FOUND_ON": "2024-05-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "140319810096594944",
@@ -7215,8 +7236,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_329": {
-        "CASE_NUMBER": "329",
+    "ACCOUNT_NUMBER_330": {
+        "CASE_NUMBER": "330",
         "FOUND_ON": "2024-05-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "395965755545616386",
@@ -7237,8 +7258,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T20:59:24.038737"
     },
-    "ACCOUNT_NUMBER_330": {
-        "CASE_NUMBER": "330",
+    "ACCOUNT_NUMBER_331": {
+        "CASE_NUMBER": "331",
         "FOUND_ON": "2024-05-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "395965755545616386",
@@ -7259,8 +7280,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:00:21.891166"
     },
-    "ACCOUNT_NUMBER_331": {
-        "CASE_NUMBER": "331",
+    "ACCOUNT_NUMBER_332": {
+        "CASE_NUMBER": "332",
         "FOUND_ON": "2024-05-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "256139158190424065",
@@ -7281,8 +7302,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:00:23.474979"
     },
-    "ACCOUNT_NUMBER_332": {
-        "CASE_NUMBER": "332",
+    "ACCOUNT_NUMBER_333": {
+        "CASE_NUMBER": "333",
         "FOUND_ON": "2024-05-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1196843178943328306",
@@ -7303,8 +7324,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_333": {
-        "CASE_NUMBER": "333",
+    "ACCOUNT_NUMBER_334": {
+        "CASE_NUMBER": "334",
         "FOUND_ON": "2024-05-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1017157065610899588",
@@ -7325,8 +7346,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_334": {
-        "CASE_NUMBER": "334",
+    "ACCOUNT_NUMBER_335": {
+        "CASE_NUMBER": "335",
         "FOUND_ON": "2024-05-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "305663970679848961",
@@ -7347,8 +7368,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:01:21.845156"
     },
-    "ACCOUNT_NUMBER_335": {
-        "CASE_NUMBER": "335",
+    "ACCOUNT_NUMBER_336": {
+        "CASE_NUMBER": "336",
         "FOUND_ON": "2024-05-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1016282535879245896",
@@ -7369,8 +7390,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:01:23.411941"
     },
-    "ACCOUNT_NUMBER_336": {
-        "CASE_NUMBER": "336",
+    "ACCOUNT_NUMBER_337": {
+        "CASE_NUMBER": "337",
         "FOUND_ON": "2024-05-05",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "846348263603044372",
@@ -7391,8 +7412,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_337": {
-        "CASE_NUMBER": "337",
+    "ACCOUNT_NUMBER_338": {
+        "CASE_NUMBER": "338",
         "FOUND_ON": "2024-05-05",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1007610418530877492",
@@ -7413,8 +7434,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:02:22.031738"
     },
-    "ACCOUNT_NUMBER_338": {
-        "CASE_NUMBER": "338",
+    "ACCOUNT_NUMBER_339": {
+        "CASE_NUMBER": "339",
         "FOUND_ON": "2024-05-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "568780903510179842",
@@ -7435,8 +7456,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:02:23.456966"
     },
-    "ACCOUNT_NUMBER_339": {
-        "CASE_NUMBER": "339",
+    "ACCOUNT_NUMBER_340": {
+        "CASE_NUMBER": "340",
         "FOUND_ON": "2024-05-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "418862287340961792",
@@ -7457,8 +7478,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:03:21.975655"
     },
-    "ACCOUNT_NUMBER_340": {
-        "CASE_NUMBER": "340",
+    "ACCOUNT_NUMBER_341": {
+        "CASE_NUMBER": "341",
         "FOUND_ON": "2024-05-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "356957135151562752",
@@ -7479,8 +7500,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:03:23.393064"
     },
-    "ACCOUNT_NUMBER_341": {
-        "CASE_NUMBER": "341",
+    "ACCOUNT_NUMBER_342": {
+        "CASE_NUMBER": "342",
         "FOUND_ON": "2024-05-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "832018242200535061",
@@ -7501,8 +7522,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:04:22.221408"
     },
-    "ACCOUNT_NUMBER_342": {
-        "CASE_NUMBER": "342",
+    "ACCOUNT_NUMBER_343": {
+        "CASE_NUMBER": "343",
         "FOUND_ON": "2024-05-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1170393147428311053",
@@ -7523,8 +7544,8 @@
         "LAST_CHECK": "2025-03-12T21:04:24.213331",
         "NON_ASCII_USERNAME": false
     },
-    "ACCOUNT_NUMBER_343": {
-        "CASE_NUMBER": "343",
+    "ACCOUNT_NUMBER_344": {
+        "CASE_NUMBER": "344",
         "FOUND_ON": "2024-05-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "775153850902249515",
@@ -7545,8 +7566,8 @@
         "LAST_CHECK": "2025-03-12T21:05:22.141717",
         "NON_ASCII_USERNAME": false
     },
-    "ACCOUNT_NUMBER_344": {
-        "CASE_NUMBER": "344",
+    "ACCOUNT_NUMBER_345": {
+        "CASE_NUMBER": "345",
         "FOUND_ON": "2024-05-08",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "480744971574706176",
@@ -7567,8 +7588,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_345": {
-        "CASE_NUMBER": "345",
+    "ACCOUNT_NUMBER_346": {
+        "CASE_NUMBER": "346",
+        "FOUND_ON": "2024-05-08",
+        "DISCORD_ID": "664583890698108929",
+        "USERNAME": "downbezimni",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Malware Injectors",
+        "ATTACK_GOAL": "Various Accounts",
+        "ATTACK_SURFACE": "Computers",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://t.me/chatroomver2",
+        "SURFACE_URL_DOMAIN": "t.me",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_347": {
+        "CASE_NUMBER": "347",
         "FOUND_ON": "2024-05-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1102027469038559323",
@@ -7589,8 +7631,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_346": {
-        "CASE_NUMBER": "346",
+    "ACCOUNT_NUMBER_348": {
+        "CASE_NUMBER": "348",
         "FOUND_ON": "2024-05-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "356473488661282816",
@@ -7611,8 +7653,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_347": {
-        "CASE_NUMBER": "347",
+    "ACCOUNT_NUMBER_349": {
+        "CASE_NUMBER": "349",
         "FOUND_ON": "2024-05-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "642442442326540297",
@@ -7633,8 +7675,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-14T04:30:13.518608"
     },
-    "ACCOUNT_NUMBER_348": {
-        "CASE_NUMBER": "348",
+    "ACCOUNT_NUMBER_350": {
+        "CASE_NUMBER": "350",
         "FOUND_ON": "2024-05-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "542716188548136960",
@@ -7655,8 +7697,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-14T04:30:13.518608"
     },
-    "ACCOUNT_NUMBER_349": {
-        "CASE_NUMBER": "349",
+    "ACCOUNT_NUMBER_351": {
+        "CASE_NUMBER": "351",
         "FOUND_ON": "2024-05-10",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "360704478909038593",
@@ -7677,8 +7719,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:05:24.667440"
     },
-    "ACCOUNT_NUMBER_350": {
-        "CASE_NUMBER": "350",
+    "ACCOUNT_NUMBER_352": {
+        "CASE_NUMBER": "352",
+        "FOUND_ON": "2024-05-10",
+        "DISCORD_ID": "367702470564249602",
+        "USERNAME": "wolff0383",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Malware Injectors",
+        "ATTACK_GOAL": "Various Accounts",
+        "ATTACK_SURFACE": "Computers",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://t.me/chatroomver2",
+        "SURFACE_URL_DOMAIN": "t.me",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_353": {
+        "CASE_NUMBER": "353",
         "FOUND_ON": "2024-05-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1070682364881145887",
@@ -7699,8 +7762,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_351": {
-        "CASE_NUMBER": "351",
+    "ACCOUNT_NUMBER_354": {
+        "CASE_NUMBER": "354",
         "FOUND_ON": "2024-05-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "896635451950112781",
@@ -7721,8 +7784,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_352": {
-        "CASE_NUMBER": "352",
+    "ACCOUNT_NUMBER_355": {
+        "CASE_NUMBER": "355",
         "FOUND_ON": "2024-05-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "960155698384228434",
@@ -7743,8 +7806,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:06:21.927128"
     },
-    "ACCOUNT_NUMBER_353": {
-        "CASE_NUMBER": "353",
+    "ACCOUNT_NUMBER_356": {
+        "CASE_NUMBER": "356",
         "FOUND_ON": "2024-05-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "889916048407691275",
@@ -7765,8 +7828,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_354": {
-        "CASE_NUMBER": "354",
+    "ACCOUNT_NUMBER_357": {
+        "CASE_NUMBER": "357",
         "FOUND_ON": "2024-05-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "123042426641317889",
@@ -7787,8 +7850,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:06:24.002855"
     },
-    "ACCOUNT_NUMBER_355": {
-        "CASE_NUMBER": "355",
+    "ACCOUNT_NUMBER_358": {
+        "CASE_NUMBER": "358",
         "FOUND_ON": "2024-05-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "519211416629149718",
@@ -7809,8 +7872,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_356": {
-        "CASE_NUMBER": "356",
+    "ACCOUNT_NUMBER_359": {
+        "CASE_NUMBER": "359",
         "FOUND_ON": "2024-05-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "938139060680138854",
@@ -7831,8 +7894,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:07:22.063967"
     },
-    "ACCOUNT_NUMBER_357": {
-        "CASE_NUMBER": "357",
+    "ACCOUNT_NUMBER_360": {
+        "CASE_NUMBER": "360",
         "FOUND_ON": "2024-05-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1002127268941926461",
@@ -7853,8 +7916,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:07:24.013847"
     },
-    "ACCOUNT_NUMBER_358": {
-        "CASE_NUMBER": "358",
+    "ACCOUNT_NUMBER_361": {
+        "CASE_NUMBER": "361",
         "FOUND_ON": "2024-05-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "660816070562545674",
@@ -7875,8 +7938,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:08:22.216955"
     },
-    "ACCOUNT_NUMBER_359": {
-        "CASE_NUMBER": "359",
+    "ACCOUNT_NUMBER_362": {
+        "CASE_NUMBER": "362",
         "FOUND_ON": "2024-05-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "759678332576202762",
@@ -7897,8 +7960,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:08:23.809000"
     },
-    "ACCOUNT_NUMBER_360": {
-        "CASE_NUMBER": "360",
+    "ACCOUNT_NUMBER_363": {
+        "CASE_NUMBER": "363",
         "FOUND_ON": "2024-05-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "360163598879948822",
@@ -7919,8 +7982,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_361": {
-        "CASE_NUMBER": "361",
+    "ACCOUNT_NUMBER_364": {
+        "CASE_NUMBER": "364",
         "FOUND_ON": "2024-05-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "511912577098579973",
@@ -7941,8 +8004,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:09:22.019835"
     },
-    "ACCOUNT_NUMBER_362": {
-        "CASE_NUMBER": "362",
+    "ACCOUNT_NUMBER_365": {
+        "CASE_NUMBER": "365",
         "FOUND_ON": "2024-05-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "385767292862070794",
@@ -7963,8 +8026,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:09:23.470493"
     },
-    "ACCOUNT_NUMBER_363": {
-        "CASE_NUMBER": "363",
+    "ACCOUNT_NUMBER_366": {
+        "CASE_NUMBER": "366",
         "FOUND_ON": "2024-05-13",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "458204051881066506",
@@ -7985,8 +8048,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:10:22.322567"
     },
-    "ACCOUNT_NUMBER_364": {
-        "CASE_NUMBER": "364",
+    "ACCOUNT_NUMBER_367": {
+        "CASE_NUMBER": "367",
         "FOUND_ON": "2024-05-13",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "253848829260988416",
@@ -8007,8 +8070,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:10:23.731465"
     },
-    "ACCOUNT_NUMBER_365": {
-        "CASE_NUMBER": "365",
+    "ACCOUNT_NUMBER_368": {
+        "CASE_NUMBER": "368",
         "FOUND_ON": "2024-05-14",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "476115736956502018",
@@ -8029,8 +8092,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:11:22.175731"
     },
-    "ACCOUNT_NUMBER_366": {
-        "CASE_NUMBER": "366",
+    "ACCOUNT_NUMBER_369": {
+        "CASE_NUMBER": "369",
         "FOUND_ON": "2024-05-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "452421490692980736",
@@ -8051,8 +8114,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:11:23.858427"
     },
-    "ACCOUNT_NUMBER_367": {
-        "CASE_NUMBER": "367",
+    "ACCOUNT_NUMBER_370": {
+        "CASE_NUMBER": "370",
         "FOUND_ON": "2024-05-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "347860434411323404",
@@ -8073,8 +8136,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:12:22.196070"
     },
-    "ACCOUNT_NUMBER_368": {
-        "CASE_NUMBER": "368",
+    "ACCOUNT_NUMBER_371": {
+        "CASE_NUMBER": "371",
         "FOUND_ON": "2024-05-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1111231962888282113",
@@ -8095,8 +8158,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:12:23.970989"
     },
-    "ACCOUNT_NUMBER_369": {
-        "CASE_NUMBER": "369",
+    "ACCOUNT_NUMBER_372": {
+        "CASE_NUMBER": "372",
         "FOUND_ON": "2024-05-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "452421490692980736",
@@ -8117,8 +8180,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:13:22.299957"
     },
-    "ACCOUNT_NUMBER_370": {
-        "CASE_NUMBER": "370",
+    "ACCOUNT_NUMBER_373": {
+        "CASE_NUMBER": "373",
         "FOUND_ON": "2024-05-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1111231962888282113",
@@ -8139,8 +8202,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:13:23.883435"
     },
-    "ACCOUNT_NUMBER_371": {
-        "CASE_NUMBER": "371",
+    "ACCOUNT_NUMBER_374": {
+        "CASE_NUMBER": "374",
         "FOUND_ON": "2024-05-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "347860434411323404",
@@ -8161,8 +8224,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:14:22.569729"
     },
-    "ACCOUNT_NUMBER_372": {
-        "CASE_NUMBER": "372",
+    "ACCOUNT_NUMBER_375": {
+        "CASE_NUMBER": "375",
         "FOUND_ON": "2024-05-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "888121624631578764",
@@ -8183,8 +8246,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:14:24.186743"
     },
-    "ACCOUNT_NUMBER_373": {
-        "CASE_NUMBER": "373",
+    "ACCOUNT_NUMBER_376": {
+        "CASE_NUMBER": "376",
         "FOUND_ON": "2024-05-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "988805652031893505",
@@ -8205,8 +8268,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:15:22.839492"
     },
-    "ACCOUNT_NUMBER_374": {
-        "CASE_NUMBER": "374",
+    "ACCOUNT_NUMBER_377": {
+        "CASE_NUMBER": "377",
         "FOUND_ON": "2024-05-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "448164619316625409",
@@ -8227,8 +8290,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:15:24.682540"
     },
-    "ACCOUNT_NUMBER_375": {
-        "CASE_NUMBER": "375",
+    "ACCOUNT_NUMBER_378": {
+        "CASE_NUMBER": "378",
         "FOUND_ON": "2024-05-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "790235586246082560",
@@ -8249,8 +8312,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_376": {
-        "CASE_NUMBER": "376",
+    "ACCOUNT_NUMBER_379": {
+        "CASE_NUMBER": "379",
         "FOUND_ON": "2024-05-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "274968874569695232",
@@ -8271,8 +8334,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:16:22.476354"
     },
-    "ACCOUNT_NUMBER_377": {
-        "CASE_NUMBER": "377",
+    "ACCOUNT_NUMBER_380": {
+        "CASE_NUMBER": "380",
         "FOUND_ON": "2024-05-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "389144531544702986",
@@ -8293,8 +8356,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_378": {
-        "CASE_NUMBER": "378",
+    "ACCOUNT_NUMBER_381": {
+        "CASE_NUMBER": "381",
         "FOUND_ON": "2024-05-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "411603310722809867",
@@ -8315,8 +8378,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:16:24.569255"
     },
-    "ACCOUNT_NUMBER_379": {
-        "CASE_NUMBER": "379",
+    "ACCOUNT_NUMBER_382": {
+        "CASE_NUMBER": "382",
         "FOUND_ON": "2024-05-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "900945131644002334",
@@ -8337,8 +8400,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:17:22.455062"
     },
-    "ACCOUNT_NUMBER_380": {
-        "CASE_NUMBER": "380",
+    "ACCOUNT_NUMBER_383": {
+        "CASE_NUMBER": "383",
         "FOUND_ON": "2024-05-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "294760387172368384",
@@ -8359,8 +8422,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:17:24.231352"
     },
-    "ACCOUNT_NUMBER_381": {
-        "CASE_NUMBER": "381",
+    "ACCOUNT_NUMBER_384": {
+        "CASE_NUMBER": "384",
         "FOUND_ON": "2024-05-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "414384434394169354",
@@ -8381,8 +8444,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:18:22.551521"
     },
-    "ACCOUNT_NUMBER_382": {
-        "CASE_NUMBER": "382",
+    "ACCOUNT_NUMBER_385": {
+        "CASE_NUMBER": "385",
         "FOUND_ON": "2024-05-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "486468622059962369",
@@ -8403,8 +8466,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:18:24.210183"
     },
-    "ACCOUNT_NUMBER_383": {
-        "CASE_NUMBER": "383",
+    "ACCOUNT_NUMBER_386": {
+        "CASE_NUMBER": "386",
         "FOUND_ON": "2024-05-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1099711205314146326",
@@ -8425,8 +8488,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:19:22.438979"
     },
-    "ACCOUNT_NUMBER_384": {
-        "CASE_NUMBER": "384",
+    "ACCOUNT_NUMBER_387": {
+        "CASE_NUMBER": "387",
         "FOUND_ON": "2024-05-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "639856562403541012",
@@ -8447,8 +8510,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:19:24.321830"
     },
-    "ACCOUNT_NUMBER_385": {
-        "CASE_NUMBER": "385",
+    "ACCOUNT_NUMBER_388": {
+        "CASE_NUMBER": "388",
         "FOUND_ON": "2024-05-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "586270085845352474",
@@ -8469,8 +8532,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:20:22.510465"
     },
-    "ACCOUNT_NUMBER_386": {
-        "CASE_NUMBER": "386",
+    "ACCOUNT_NUMBER_389": {
+        "CASE_NUMBER": "389",
         "FOUND_ON": "2024-05-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "522107951536930817",
@@ -8491,8 +8554,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_387": {
-        "CASE_NUMBER": "387",
+    "ACCOUNT_NUMBER_390": {
+        "CASE_NUMBER": "390",
         "FOUND_ON": "2024-05-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "634691517126148096",
@@ -8513,8 +8576,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_388": {
-        "CASE_NUMBER": "388",
+    "ACCOUNT_NUMBER_391": {
+        "CASE_NUMBER": "391",
         "FOUND_ON": "2024-05-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "734106066031476790",
@@ -8535,8 +8598,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_389": {
-        "CASE_NUMBER": "389",
+    "ACCOUNT_NUMBER_392": {
+        "CASE_NUMBER": "392",
         "FOUND_ON": "2024-05-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "734106066031476790",
@@ -8557,8 +8620,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_390": {
-        "CASE_NUMBER": "390",
+    "ACCOUNT_NUMBER_393": {
+        "CASE_NUMBER": "393",
         "FOUND_ON": "2024-05-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "734106066031476790",
@@ -8579,8 +8642,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:20:26.167999"
     },
-    "ACCOUNT_NUMBER_391": {
-        "CASE_NUMBER": "391",
+    "ACCOUNT_NUMBER_394": {
+        "CASE_NUMBER": "394",
         "FOUND_ON": "2024-05-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "734106066031476790",
@@ -8601,8 +8664,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_392": {
-        "CASE_NUMBER": "392",
+    "ACCOUNT_NUMBER_395": {
+        "CASE_NUMBER": "395",
         "FOUND_ON": "2024-05-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "657663080481947648",
@@ -8623,8 +8686,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_393": {
-        "CASE_NUMBER": "393",
+    "ACCOUNT_NUMBER_396": {
+        "CASE_NUMBER": "396",
         "FOUND_ON": "2024-05-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "359097526235824138",
@@ -8645,8 +8708,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_394": {
-        "CASE_NUMBER": "394",
+    "ACCOUNT_NUMBER_397": {
+        "CASE_NUMBER": "397",
         "FOUND_ON": "2024-05-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "639856562403541012",
@@ -8667,8 +8730,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:21:22.561759"
     },
-    "ACCOUNT_NUMBER_395": {
-        "CASE_NUMBER": "395",
+    "ACCOUNT_NUMBER_398": {
+        "CASE_NUMBER": "398",
         "FOUND_ON": "2024-05-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "956868131849134092",
@@ -8689,8 +8752,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_396": {
-        "CASE_NUMBER": "396",
+    "ACCOUNT_NUMBER_399": {
+        "CASE_NUMBER": "399",
         "FOUND_ON": "2024-05-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "823608825063407657",
@@ -8711,8 +8774,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_397": {
-        "CASE_NUMBER": "397",
+    "ACCOUNT_NUMBER_400": {
+        "CASE_NUMBER": "400",
         "FOUND_ON": "2024-05-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "942026460988846101",
@@ -8733,8 +8796,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:21:26.030425"
     },
-    "ACCOUNT_NUMBER_398": {
-        "CASE_NUMBER": "398",
+    "ACCOUNT_NUMBER_401": {
+        "CASE_NUMBER": "401",
         "FOUND_ON": "2024-05-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1237671235131936811",
@@ -8755,8 +8818,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:22:22.556416"
     },
-    "ACCOUNT_NUMBER_399": {
-        "CASE_NUMBER": "399",
+    "ACCOUNT_NUMBER_402": {
+        "CASE_NUMBER": "402",
         "FOUND_ON": "2024-05-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "927220433646944267",
@@ -8777,8 +8840,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:22:23.907519"
     },
-    "ACCOUNT_NUMBER_400": {
-        "CASE_NUMBER": "400",
+    "ACCOUNT_NUMBER_403": {
+        "CASE_NUMBER": "403",
         "FOUND_ON": "2024-05-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "398137036017762304",
@@ -8799,8 +8862,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:23:23.126174"
     },
-    "ACCOUNT_NUMBER_401": {
-        "CASE_NUMBER": "401",
+    "ACCOUNT_NUMBER_404": {
+        "CASE_NUMBER": "404",
         "FOUND_ON": "2024-05-25",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "655293104013836298",
@@ -8821,8 +8884,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:23:25.893749"
     },
-    "ACCOUNT_NUMBER_402": {
-        "CASE_NUMBER": "402",
+    "ACCOUNT_NUMBER_405": {
+        "CASE_NUMBER": "405",
         "FOUND_ON": "2024-05-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "933430500310274150",
@@ -8843,8 +8906,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:24:23.329342"
     },
-    "ACCOUNT_NUMBER_403": {
-        "CASE_NUMBER": "403",
+    "ACCOUNT_NUMBER_406": {
+        "CASE_NUMBER": "406",
         "FOUND_ON": "2024-05-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "435962617958367267",
@@ -8865,8 +8928,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:24:26.030516"
     },
-    "ACCOUNT_NUMBER_404": {
-        "CASE_NUMBER": "404",
+    "ACCOUNT_NUMBER_407": {
+        "CASE_NUMBER": "407",
         "FOUND_ON": "2024-05-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "393807661222723604",
@@ -8887,8 +8950,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_405": {
-        "CASE_NUMBER": "405",
+    "ACCOUNT_NUMBER_408": {
+        "CASE_NUMBER": "408",
         "FOUND_ON": "2024-05-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "535685566759436289",
@@ -8909,8 +8972,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_406": {
-        "CASE_NUMBER": "406",
+    "ACCOUNT_NUMBER_409": {
+        "CASE_NUMBER": "409",
         "FOUND_ON": "2024-05-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "622363287509663755",
@@ -8931,8 +8994,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_407": {
-        "CASE_NUMBER": "407",
+    "ACCOUNT_NUMBER_410": {
+        "CASE_NUMBER": "410",
         "FOUND_ON": "2024-05-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1104009748157833248",
@@ -8953,8 +9016,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_408": {
-        "CASE_NUMBER": "408",
+    "ACCOUNT_NUMBER_411": {
+        "CASE_NUMBER": "411",
         "FOUND_ON": "2024-05-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "310600299985502229",
@@ -8975,8 +9038,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:25:23.441136"
     },
-    "ACCOUNT_NUMBER_409": {
-        "CASE_NUMBER": "409",
+    "ACCOUNT_NUMBER_412": {
+        "CASE_NUMBER": "412",
         "FOUND_ON": "2024-05-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "110961894352773120",
@@ -8997,8 +9060,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:25:27.379286"
     },
-    "ACCOUNT_NUMBER_410": {
-        "CASE_NUMBER": "410",
+    "ACCOUNT_NUMBER_413": {
+        "CASE_NUMBER": "413",
         "FOUND_ON": "2024-05-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1184158972459094056",
@@ -9019,8 +9082,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_411": {
-        "CASE_NUMBER": "411",
+    "ACCOUNT_NUMBER_414": {
+        "CASE_NUMBER": "414",
         "FOUND_ON": "2024-05-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "378587045859295262",
@@ -9041,8 +9104,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:26:22.701364"
     },
-    "ACCOUNT_NUMBER_412": {
-        "CASE_NUMBER": "412",
+    "ACCOUNT_NUMBER_415": {
+        "CASE_NUMBER": "415",
         "FOUND_ON": "2024-05-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "548537275483684874",
@@ -9063,8 +9126,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:26:24.144606"
     },
-    "ACCOUNT_NUMBER_413": {
-        "CASE_NUMBER": "413",
+    "ACCOUNT_NUMBER_416": {
+        "CASE_NUMBER": "416",
         "FOUND_ON": "2024-05-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "790593040620322879",
@@ -9085,8 +9148,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_414": {
-        "CASE_NUMBER": "414",
+    "ACCOUNT_NUMBER_417": {
+        "CASE_NUMBER": "417",
         "FOUND_ON": "2024-05-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "348140787881738242",
@@ -9107,8 +9170,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_415": {
-        "CASE_NUMBER": "415",
+    "ACCOUNT_NUMBER_418": {
+        "CASE_NUMBER": "418",
         "FOUND_ON": "2024-05-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "604744122099826705",
@@ -9129,8 +9192,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_416": {
-        "CASE_NUMBER": "416",
+    "ACCOUNT_NUMBER_419": {
+        "CASE_NUMBER": "419",
         "FOUND_ON": "2024-05-30",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1108822740141604874",
@@ -9151,8 +9214,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_417": {
-        "CASE_NUMBER": "417",
+    "ACCOUNT_NUMBER_420": {
+        "CASE_NUMBER": "420",
         "FOUND_ON": "2024-05-30",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "755078480613474306",
@@ -9173,8 +9236,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_418": {
-        "CASE_NUMBER": "418",
+    "ACCOUNT_NUMBER_421": {
+        "CASE_NUMBER": "421",
         "FOUND_ON": "2024-05-31",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "923264554010566767",
@@ -9195,8 +9258,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_419": {
-        "CASE_NUMBER": "419",
+    "ACCOUNT_NUMBER_422": {
+        "CASE_NUMBER": "422",
         "FOUND_ON": "2024-05-31",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "980300487603667006",
@@ -9217,8 +9280,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_420": {
-        "CASE_NUMBER": "420",
+    "ACCOUNT_NUMBER_423": {
+        "CASE_NUMBER": "423",
         "FOUND_ON": "2024-05-31",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "658050583600562200",
@@ -9239,8 +9302,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_421": {
-        "CASE_NUMBER": "421",
+    "ACCOUNT_NUMBER_424": {
+        "CASE_NUMBER": "424",
         "FOUND_ON": "2024-05-31",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "658050583600562200",
@@ -9261,8 +9324,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_422": {
-        "CASE_NUMBER": "422",
+    "ACCOUNT_NUMBER_425": {
+        "CASE_NUMBER": "425",
         "FOUND_ON": "2024-06-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "878012771407638528",
@@ -9283,8 +9346,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_423": {
-        "CASE_NUMBER": "423",
+    "ACCOUNT_NUMBER_426": {
+        "CASE_NUMBER": "426",
         "FOUND_ON": "2024-06-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "478816097530019860",
@@ -9305,8 +9368,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:27:22.721283"
     },
-    "ACCOUNT_NUMBER_424": {
-        "CASE_NUMBER": "424",
+    "ACCOUNT_NUMBER_427": {
+        "CASE_NUMBER": "427",
         "FOUND_ON": "2024-06-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1118110218669277214",
@@ -9327,8 +9390,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:27:24.183069"
     },
-    "ACCOUNT_NUMBER_425": {
-        "CASE_NUMBER": "425",
+    "ACCOUNT_NUMBER_428": {
+        "CASE_NUMBER": "428",
         "FOUND_ON": "2024-06-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "432130145562787841",
@@ -9349,8 +9412,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:28:22.735593"
     },
-    "ACCOUNT_NUMBER_426": {
-        "CASE_NUMBER": "426",
+    "ACCOUNT_NUMBER_429": {
+        "CASE_NUMBER": "429",
         "FOUND_ON": "2024-06-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "728764036316921936",
@@ -9371,8 +9434,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_427": {
-        "CASE_NUMBER": "427",
+    "ACCOUNT_NUMBER_430": {
+        "CASE_NUMBER": "430",
         "FOUND_ON": "2024-06-03",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "562323160222138390",
@@ -9393,8 +9456,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_428": {
-        "CASE_NUMBER": "428",
+    "ACCOUNT_NUMBER_431": {
+        "CASE_NUMBER": "431",
         "FOUND_ON": "2024-06-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "978497238743523358",
@@ -9415,8 +9478,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_429": {
-        "CASE_NUMBER": "429",
+    "ACCOUNT_NUMBER_432": {
+        "CASE_NUMBER": "432",
         "FOUND_ON": "2024-06-05",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "805069669874401280",
@@ -9437,8 +9500,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:28:25.407941"
     },
-    "ACCOUNT_NUMBER_430": {
-        "CASE_NUMBER": "430",
+    "ACCOUNT_NUMBER_433": {
+        "CASE_NUMBER": "433",
         "FOUND_ON": "2024-06-05",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "855026873829556225",
@@ -9459,8 +9522,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:29:22.736806"
     },
-    "ACCOUNT_NUMBER_431": {
-        "CASE_NUMBER": "431",
+    "ACCOUNT_NUMBER_434": {
+        "CASE_NUMBER": "434",
         "FOUND_ON": "2024-06-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1042347518018719814",
@@ -9481,8 +9544,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:29:24.095044"
     },
-    "ACCOUNT_NUMBER_432": {
-        "CASE_NUMBER": "432",
+    "ACCOUNT_NUMBER_435": {
+        "CASE_NUMBER": "435",
         "FOUND_ON": "2024-06-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1042347518018719814",
@@ -9503,8 +9566,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:30:22.846993"
     },
-    "ACCOUNT_NUMBER_433": {
-        "CASE_NUMBER": "433",
+    "ACCOUNT_NUMBER_436": {
+        "CASE_NUMBER": "436",
         "FOUND_ON": "2024-06-07",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1000599288310681681",
@@ -9525,8 +9588,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_434": {
-        "CASE_NUMBER": "434",
+    "ACCOUNT_NUMBER_437": {
+        "CASE_NUMBER": "437",
         "FOUND_ON": "2024-06-07",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1005792460213072038",
@@ -9547,75 +9610,9 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_435": {
-        "CASE_NUMBER": "435",
-        "FOUND_ON": "2024-06-08",
-        "FOUND_ON_SERVER": "PROJECT_CW",
-        "DISCORD_ID": "1167961426464342099",
-        "USERNAME": "regrets69",
-        "ACCOUNT_STATUS": "COMPROMISED",
-        "BEHAVIOUR": "Potential Source of Message",
-        "ATTACK_METHOD": "Telegram Fraud",
-        "ATTACK_VECTOR": "Telegram Channels",
-        "ATTACK_GOAL": "Various Accounts",
-        "ATTACK_SURFACE": "Telegram",
-        "SUSPECTED_REGION_OF_ORIGIN": "NL",
-        "SURFACE_URL": "https://t.me/LockBit_logs",
-        "SURFACE_URL_DOMAIN": "t.me",
-        "SURFACE_URL_STATUS": "ACTIVE",
-        "FINAL_URL": "https://t.me/LockBit_logs",
-        "FINAL_URL_DOMAIN": "t.me",
-        "FINAL_URL_STATUS": "ACTIVE",
-        "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": "2025-03-13T02:07:12.542632"
-    },
-    "ACCOUNT_NUMBER_436": {
-        "CASE_NUMBER": "436",
-        "FOUND_ON": "2024-06-08",
-        "FOUND_ON_SERVER": "PROJECT_CW",
-        "DISCORD_ID": "1126852906059051008",
-        "USERNAME": "andrjja",
-        "ACCOUNT_STATUS": "COMPROMISED",
-        "BEHAVIOUR": "Markdown URL Obfuscation",
-        "ATTACK_METHOD": "Phishing Website",
-        "ATTACK_VECTOR": "Cloned Steam Pages",
-        "ATTACK_GOAL": "Steam Accounts",
-        "ATTACK_SURFACE": "Steam",
-        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
-        "SURFACE_URL": "http://alturl.com/fbsbg",
-        "SURFACE_URL_DOMAIN": "alturl.com",
-        "SURFACE_URL_STATUS": "INACTIVE",
-        "FINAL_URL": "https://steamcommnuiety.com/digitolcard/6656132",
-        "FINAL_URL_DOMAIN": "steamcommnuiety.com",
-        "FINAL_URL_STATUS": "INACTIVE",
-        "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": "2025-03-12T21:30:25.848176"
-    },
-    "ACCOUNT_NUMBER_437": {
-        "CASE_NUMBER": "437",
-        "FOUND_ON": "2024-06-08",
-        "FOUND_ON_SERVER": "PROJECT_CW",
-        "DISCORD_ID": "1167961426464342099",
-        "USERNAME": "regrets69",
-        "ACCOUNT_STATUS": "COMPROMISED",
-        "BEHAVIOUR": "Markdown URL Obfuscation",
-        "ATTACK_METHOD": "Phishing Website",
-        "ATTACK_VECTOR": "Cloned Steam Pages",
-        "ATTACK_GOAL": "Steam Accounts",
-        "ATTACK_SURFACE": "Steam",
-        "SUSPECTED_REGION_OF_ORIGIN": "RU",
-        "SURFACE_URL": "https://sc.link/XUBF3",
-        "SURFACE_URL_DOMAIN": "sc.link",
-        "SURFACE_URL_STATUS": "INACTIVE",
-        "FINAL_URL": "https://sc.link/XUBF3",
-        "FINAL_URL_DOMAIN": "sc.link",
-        "FINAL_URL_STATUS": "INACTIVE",
-        "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": "2025-03-12T21:31:22.866981"
-    },
     "ACCOUNT_NUMBER_438": {
         "CASE_NUMBER": "438",
-        "FOUND_ON": "2024-06-09",
+        "FOUND_ON": "2024-06-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1167961426464342099",
         "USERNAME": "regrets69",
@@ -9637,6 +9634,72 @@
     },
     "ACCOUNT_NUMBER_439": {
         "CASE_NUMBER": "439",
+        "FOUND_ON": "2024-06-08",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "1126852906059051008",
+        "USERNAME": "andrjja",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "http://alturl.com/fbsbg",
+        "SURFACE_URL_DOMAIN": "alturl.com",
+        "SURFACE_URL_STATUS": "INACTIVE",
+        "FINAL_URL": "https://steamcommnuiety.com/digitolcard/6656132",
+        "FINAL_URL_DOMAIN": "steamcommnuiety.com",
+        "FINAL_URL_STATUS": "INACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-12T21:30:25.848176"
+    },
+    "ACCOUNT_NUMBER_440": {
+        "CASE_NUMBER": "440",
+        "FOUND_ON": "2024-06-08",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "1167961426464342099",
+        "USERNAME": "regrets69",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "RU",
+        "SURFACE_URL": "https://sc.link/XUBF3",
+        "SURFACE_URL_DOMAIN": "sc.link",
+        "SURFACE_URL_STATUS": "INACTIVE",
+        "FINAL_URL": "https://sc.link/XUBF3",
+        "FINAL_URL_DOMAIN": "sc.link",
+        "FINAL_URL_STATUS": "INACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-12T21:31:22.866981"
+    },
+    "ACCOUNT_NUMBER_441": {
+        "CASE_NUMBER": "441",
+        "FOUND_ON": "2024-06-09",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "1167961426464342099",
+        "USERNAME": "regrets69",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Potential Source of Message",
+        "ATTACK_METHOD": "Telegram Fraud",
+        "ATTACK_VECTOR": "Telegram Channels",
+        "ATTACK_GOAL": "Various Accounts",
+        "ATTACK_SURFACE": "Telegram",
+        "SUSPECTED_REGION_OF_ORIGIN": "NL",
+        "SURFACE_URL": "https://t.me/LockBit_logs",
+        "SURFACE_URL_DOMAIN": "t.me",
+        "SURFACE_URL_STATUS": "ACTIVE",
+        "FINAL_URL": "https://t.me/LockBit_logs",
+        "FINAL_URL_DOMAIN": "t.me",
+        "FINAL_URL_STATUS": "ACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-13T02:07:12.542632"
+    },
+    "ACCOUNT_NUMBER_442": {
+        "CASE_NUMBER": "442",
         "FOUND_ON": "2024-06-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "917797900606640129",
@@ -9657,8 +9720,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:31:25.592319"
     },
-    "ACCOUNT_NUMBER_440": {
-        "CASE_NUMBER": "440",
+    "ACCOUNT_NUMBER_443": {
+        "CASE_NUMBER": "443",
         "FOUND_ON": "2024-06-10",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "749291245817430126",
@@ -9679,8 +9742,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:32:22.935479"
     },
-    "ACCOUNT_NUMBER_441": {
-        "CASE_NUMBER": "441",
+    "ACCOUNT_NUMBER_444": {
+        "CASE_NUMBER": "444",
         "FOUND_ON": "2024-06-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "686110587159183362",
@@ -9701,8 +9764,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_442": {
-        "CASE_NUMBER": "442",
+    "ACCOUNT_NUMBER_445": {
+        "CASE_NUMBER": "445",
         "FOUND_ON": "2024-06-13",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "792303731495534632",
@@ -9723,8 +9786,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:32:25.360739"
     },
-    "ACCOUNT_NUMBER_443": {
-        "CASE_NUMBER": "443",
+    "ACCOUNT_NUMBER_446": {
+        "CASE_NUMBER": "446",
         "FOUND_ON": "2024-06-13",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "792303731495534632",
@@ -9745,8 +9808,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:33:22.821571"
     },
-    "ACCOUNT_NUMBER_444": {
-        "CASE_NUMBER": "444",
+    "ACCOUNT_NUMBER_447": {
+        "CASE_NUMBER": "447",
         "FOUND_ON": "2024-06-14",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "898544182484959253",
@@ -9767,8 +9830,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_445": {
-        "CASE_NUMBER": "445",
+    "ACCOUNT_NUMBER_448": {
+        "CASE_NUMBER": "448",
         "FOUND_ON": "2024-06-14",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1070780159327752343",
@@ -9789,8 +9852,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_446": {
-        "CASE_NUMBER": "446",
+    "ACCOUNT_NUMBER_449": {
+        "CASE_NUMBER": "449",
         "FOUND_ON": "2024-06-14",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "411512287426510868",
@@ -9811,8 +9874,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:33:25.272402"
     },
-    "ACCOUNT_NUMBER_447": {
-        "CASE_NUMBER": "447",
+    "ACCOUNT_NUMBER_450": {
+        "CASE_NUMBER": "450",
         "FOUND_ON": "2024-06-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "631722528179617802",
@@ -9833,8 +9896,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_448": {
-        "CASE_NUMBER": "448",
+    "ACCOUNT_NUMBER_451": {
+        "CASE_NUMBER": "451",
         "FOUND_ON": "2024-06-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "559410877355261955",
@@ -9855,8 +9918,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_449": {
-        "CASE_NUMBER": "449",
+    "ACCOUNT_NUMBER_452": {
+        "CASE_NUMBER": "452",
         "FOUND_ON": "2024-06-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "921365542466633748",
@@ -9877,8 +9940,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:34:23.006478"
     },
-    "ACCOUNT_NUMBER_450": {
-        "CASE_NUMBER": "450",
+    "ACCOUNT_NUMBER_453": {
+        "CASE_NUMBER": "453",
         "FOUND_ON": "2024-06-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1163074064835940433",
@@ -9899,8 +9962,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-12T21:34:24.066307"
     },
-    "ACCOUNT_NUMBER_451": {
-        "CASE_NUMBER": "451",
+    "ACCOUNT_NUMBER_454": {
+        "CASE_NUMBER": "454",
         "FOUND_ON": "2024-06-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1163074064835940433",
@@ -9921,8 +9984,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_452": {
-        "CASE_NUMBER": "452",
+    "ACCOUNT_NUMBER_455": {
+        "CASE_NUMBER": "455",
         "FOUND_ON": "2024-06-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1163074064835940433",
@@ -9943,8 +10006,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_453": {
-        "CASE_NUMBER": "453",
+    "ACCOUNT_NUMBER_456": {
+        "CASE_NUMBER": "456",
         "FOUND_ON": "2024-06-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "681146203122958389",
@@ -9965,8 +10028,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_454": {
-        "CASE_NUMBER": "454",
+    "ACCOUNT_NUMBER_457": {
+        "CASE_NUMBER": "457",
         "FOUND_ON": "2024-06-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1242484435203657901",
@@ -9987,8 +10050,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_455": {
-        "CASE_NUMBER": "455",
+    "ACCOUNT_NUMBER_458": {
+        "CASE_NUMBER": "458",
         "FOUND_ON": "2024-06-18",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "1205200475214057557",
@@ -10009,8 +10072,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_456": {
-        "CASE_NUMBER": "456",
+    "ACCOUNT_NUMBER_459": {
+        "CASE_NUMBER": "459",
         "FOUND_ON": "2024-06-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "774359884963250207",
@@ -10031,8 +10094,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_457": {
-        "CASE_NUMBER": "457",
+    "ACCOUNT_NUMBER_460": {
+        "CASE_NUMBER": "460",
         "FOUND_ON": "2024-06-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "774359884963250207",
@@ -10053,8 +10116,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_458": {
-        "CASE_NUMBER": "458",
+    "ACCOUNT_NUMBER_461": {
+        "CASE_NUMBER": "461",
         "FOUND_ON": "2024-06-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1232755001890308126",
@@ -10075,8 +10138,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_459": {
-        "CASE_NUMBER": "459",
+    "ACCOUNT_NUMBER_462": {
+        "CASE_NUMBER": "462",
         "FOUND_ON": "2024-06-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "710394675370000455",
@@ -10097,8 +10160,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_460": {
-        "CASE_NUMBER": "460",
+    "ACCOUNT_NUMBER_463": {
+        "CASE_NUMBER": "463",
         "FOUND_ON": "2024-06-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "559152887150936084",
@@ -10119,8 +10182,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_461": {
-        "CASE_NUMBER": "461",
+    "ACCOUNT_NUMBER_464": {
+        "CASE_NUMBER": "464",
         "FOUND_ON": "2024-06-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "716948399240511501",
@@ -10141,8 +10204,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_462": {
-        "CASE_NUMBER": "462",
+    "ACCOUNT_NUMBER_465": {
+        "CASE_NUMBER": "465",
         "FOUND_ON": "2024-06-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "101008667079360512",
@@ -10163,8 +10226,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_463": {
-        "CASE_NUMBER": "463",
+    "ACCOUNT_NUMBER_466": {
+        "CASE_NUMBER": "466",
         "FOUND_ON": "2024-06-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "892763358963585116",
@@ -10185,8 +10248,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_464": {
-        "CASE_NUMBER": "464",
+    "ACCOUNT_NUMBER_467": {
+        "CASE_NUMBER": "467",
         "FOUND_ON": "2024-06-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "981882582675374140",
@@ -10207,8 +10270,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_465": {
-        "CASE_NUMBER": "465",
+    "ACCOUNT_NUMBER_468": {
+        "CASE_NUMBER": "468",
         "FOUND_ON": "2024-06-21",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "1011715621865672774",
@@ -10229,8 +10292,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_466": {
-        "CASE_NUMBER": "466",
+    "ACCOUNT_NUMBER_469": {
+        "CASE_NUMBER": "469",
         "FOUND_ON": "2024-06-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "821799323929935892",
@@ -10251,8 +10314,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_467": {
-        "CASE_NUMBER": "467",
+    "ACCOUNT_NUMBER_470": {
+        "CASE_NUMBER": "470",
         "FOUND_ON": "2024-06-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1126852906059051008",
@@ -10273,8 +10336,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_468": {
-        "CASE_NUMBER": "468",
+    "ACCOUNT_NUMBER_471": {
+        "CASE_NUMBER": "471",
         "FOUND_ON": "2024-06-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1007485743234560060",
@@ -10295,8 +10358,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_469": {
-        "CASE_NUMBER": "469",
+    "ACCOUNT_NUMBER_472": {
+        "CASE_NUMBER": "472",
         "FOUND_ON": "2024-06-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "431893053297393706",
@@ -10317,8 +10380,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_470": {
-        "CASE_NUMBER": "470",
+    "ACCOUNT_NUMBER_473": {
+        "CASE_NUMBER": "473",
         "FOUND_ON": "2024-06-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "889855891472543745",
@@ -10339,8 +10402,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_471": {
-        "CASE_NUMBER": "471",
+    "ACCOUNT_NUMBER_474": {
+        "CASE_NUMBER": "474",
         "FOUND_ON": "2024-06-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "346289156789370893",
@@ -10361,8 +10424,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_472": {
-        "CASE_NUMBER": "472",
+    "ACCOUNT_NUMBER_475": {
+        "CASE_NUMBER": "475",
         "FOUND_ON": "2024-06-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "374646598656983040",
@@ -10383,8 +10446,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_473": {
-        "CASE_NUMBER": "473",
+    "ACCOUNT_NUMBER_476": {
+        "CASE_NUMBER": "476",
         "FOUND_ON": "2024-06-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1200374568108429362",
@@ -10405,8 +10468,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_474": {
-        "CASE_NUMBER": "474",
+    "ACCOUNT_NUMBER_477": {
+        "CASE_NUMBER": "477",
         "FOUND_ON": "2024-06-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1025430437755109396",
@@ -10427,8 +10490,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_475": {
-        "CASE_NUMBER": "475",
+    "ACCOUNT_NUMBER_478": {
+        "CASE_NUMBER": "478",
         "FOUND_ON": "2024-06-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "887208872220164138",
@@ -10449,8 +10512,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_476": {
-        "CASE_NUMBER": "476",
+    "ACCOUNT_NUMBER_479": {
+        "CASE_NUMBER": "479",
         "FOUND_ON": "2024-06-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "927268272070623314",
@@ -10471,8 +10534,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_477": {
-        "CASE_NUMBER": "477",
+    "ACCOUNT_NUMBER_480": {
+        "CASE_NUMBER": "480",
         "FOUND_ON": "2024-06-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "879756103452356668",
@@ -10493,8 +10556,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_478": {
-        "CASE_NUMBER": "478",
+    "ACCOUNT_NUMBER_481": {
+        "CASE_NUMBER": "481",
         "FOUND_ON": "2024-06-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "765617421272219689",
@@ -10515,8 +10578,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_479": {
-        "CASE_NUMBER": "479",
+    "ACCOUNT_NUMBER_482": {
+        "CASE_NUMBER": "482",
         "FOUND_ON": "2024-06-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "979874824425967617",
@@ -10537,8 +10600,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_480": {
-        "CASE_NUMBER": "480",
+    "ACCOUNT_NUMBER_483": {
+        "CASE_NUMBER": "483",
         "FOUND_ON": "2024-06-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1177772313912016988",
@@ -10559,8 +10622,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_481": {
-        "CASE_NUMBER": "481",
+    "ACCOUNT_NUMBER_484": {
+        "CASE_NUMBER": "484",
         "FOUND_ON": "2024-06-25",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1004078214467039336",
@@ -10581,8 +10644,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_482": {
-        "CASE_NUMBER": "482",
+    "ACCOUNT_NUMBER_485": {
+        "CASE_NUMBER": "485",
         "FOUND_ON": "2024-06-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1185466179482034256",
@@ -10603,8 +10666,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_483": {
-        "CASE_NUMBER": "483",
+    "ACCOUNT_NUMBER_486": {
+        "CASE_NUMBER": "486",
         "FOUND_ON": "2024-06-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "692556379206057984",
@@ -10625,8 +10688,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_484": {
-        "CASE_NUMBER": "484",
+    "ACCOUNT_NUMBER_487": {
+        "CASE_NUMBER": "487",
         "FOUND_ON": "2024-06-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1054980277585326221",
@@ -10647,8 +10710,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_485": {
-        "CASE_NUMBER": "485",
+    "ACCOUNT_NUMBER_488": {
+        "CASE_NUMBER": "488",
         "FOUND_ON": "2024-06-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "647830247516930076",
@@ -10669,8 +10732,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_486": {
-        "CASE_NUMBER": "486",
+    "ACCOUNT_NUMBER_489": {
+        "CASE_NUMBER": "489",
         "FOUND_ON": "2024-06-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "647830247516930076",
@@ -10691,78 +10754,12 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_487": {
-        "CASE_NUMBER": "487",
-        "FOUND_ON": "2024-06-27",
-        "FOUND_ON_SERVER": "PROJECT_CW",
-        "DISCORD_ID": "1160616370006929479",
-        "USERNAME": "andre1970_43066",
-        "ACCOUNT_STATUS": "COMPROMISED",
-        "BEHAVIOUR": "Markdown URL Obfuscation",
-        "ATTACK_METHOD": "Phishing Website",
-        "ATTACK_VECTOR": "Cloned Steam Pages",
-        "ATTACK_GOAL": "Steam Accounts",
-        "ATTACK_SURFACE": "Steam",
-        "SUSPECTED_REGION_OF_ORIGIN": "RU",
-        "SURFACE_URL": "https://sc.link/NQpo3",
-        "SURFACE_URL_DOMAIN": "sc.link",
-        "SURFACE_URL_STATUS": "INACTIVE",
-        "FINAL_URL": "https://sc.link/NQpo3",
-        "FINAL_URL_DOMAIN": "sc.link",
-        "FINAL_URL_STATUS": "INACTIVE",
-        "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": "2025-03-13T02:07:12.542632"
-    },
-    "ACCOUNT_NUMBER_488": {
-        "CASE_NUMBER": "488",
-        "FOUND_ON": "2024-06-27",
-        "FOUND_ON_SERVER": "PROJECT_CW",
-        "DISCORD_ID": "1160616370006929479",
-        "USERNAME": "andre1970_43066",
-        "ACCOUNT_STATUS": "COMPROMISED",
-        "BEHAVIOUR": "Markdown URL Obfuscation",
-        "ATTACK_METHOD": "Phishing Website",
-        "ATTACK_VECTOR": "Cloned Steam Pages",
-        "ATTACK_GOAL": "Steam Accounts",
-        "ATTACK_SURFACE": "Steam",
-        "SUSPECTED_REGION_OF_ORIGIN": "RU",
-        "SURFACE_URL": "https://sc.link/H4mvl",
-        "SURFACE_URL_DOMAIN": "sc.link",
-        "SURFACE_URL_STATUS": "INACTIVE",
-        "FINAL_URL": "https://sc.link/H4mvl",
-        "FINAL_URL_DOMAIN": "sc.link",
-        "FINAL_URL_STATUS": "INACTIVE",
-        "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": "2025-03-13T02:07:12.542632"
-    },
-    "ACCOUNT_NUMBER_489": {
-        "CASE_NUMBER": "489",
-        "FOUND_ON": "2024-06-27",
-        "FOUND_ON_SERVER": "PROJECT_CW",
-        "DISCORD_ID": "415088012419006474",
-        "USERNAME": "micha_b.",
-        "ACCOUNT_STATUS": "COMPROMISED",
-        "BEHAVIOUR": "Markdown URL Obfuscation",
-        "ATTACK_METHOD": "Phishing Website",
-        "ATTACK_VECTOR": "Cloned Steam Pages",
-        "ATTACK_GOAL": "Steam Accounts",
-        "ATTACK_SURFACE": "Steam",
-        "SUSPECTED_REGION_OF_ORIGIN": "RU",
-        "SURFACE_URL": "https://sc.link/NQpo3",
-        "SURFACE_URL_DOMAIN": "sc.link",
-        "SURFACE_URL_STATUS": "INACTIVE",
-        "FINAL_URL": "https://sc.link/NQpo3",
-        "FINAL_URL_DOMAIN": "sc.link",
-        "FINAL_URL_STATUS": "INACTIVE",
-        "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": "2025-03-13T02:07:12.542632"
-    },
     "ACCOUNT_NUMBER_490": {
         "CASE_NUMBER": "490",
         "FOUND_ON": "2024-06-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
-        "DISCORD_ID": "415088012419006474",
-        "USERNAME": "micha_b.",
+        "DISCORD_ID": "1160616370006929479",
+        "USERNAME": "andre1970_43066",
         "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
@@ -10770,10 +10767,10 @@
         "ATTACK_GOAL": "Steam Accounts",
         "ATTACK_SURFACE": "Steam",
         "SUSPECTED_REGION_OF_ORIGIN": "RU",
-        "SURFACE_URL": "https://sc.link/H4mvl",
+        "SURFACE_URL": "https://sc.link/NQpo3",
         "SURFACE_URL_DOMAIN": "sc.link",
         "SURFACE_URL_STATUS": "INACTIVE",
-        "FINAL_URL": "https://sc.link/H4mvl",
+        "FINAL_URL": "https://sc.link/NQpo3",
         "FINAL_URL_DOMAIN": "sc.link",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
@@ -10781,6 +10778,72 @@
     },
     "ACCOUNT_NUMBER_491": {
         "CASE_NUMBER": "491",
+        "FOUND_ON": "2024-06-27",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "1160616370006929479",
+        "USERNAME": "andre1970_43066",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "RU",
+        "SURFACE_URL": "https://sc.link/H4mvl",
+        "SURFACE_URL_DOMAIN": "sc.link",
+        "SURFACE_URL_STATUS": "INACTIVE",
+        "FINAL_URL": "https://sc.link/H4mvl",
+        "FINAL_URL_DOMAIN": "sc.link",
+        "FINAL_URL_STATUS": "INACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-13T02:07:12.542632"
+    },
+    "ACCOUNT_NUMBER_492": {
+        "CASE_NUMBER": "492",
+        "FOUND_ON": "2024-06-27",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "415088012419006474",
+        "USERNAME": "micha_b.",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "RU",
+        "SURFACE_URL": "https://sc.link/NQpo3",
+        "SURFACE_URL_DOMAIN": "sc.link",
+        "SURFACE_URL_STATUS": "INACTIVE",
+        "FINAL_URL": "https://sc.link/NQpo3",
+        "FINAL_URL_DOMAIN": "sc.link",
+        "FINAL_URL_STATUS": "INACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-13T02:07:12.542632"
+    },
+    "ACCOUNT_NUMBER_493": {
+        "CASE_NUMBER": "493",
+        "FOUND_ON": "2024-06-27",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "415088012419006474",
+        "USERNAME": "micha_b.",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "RU",
+        "SURFACE_URL": "https://sc.link/H4mvl",
+        "SURFACE_URL_DOMAIN": "sc.link",
+        "SURFACE_URL_STATUS": "INACTIVE",
+        "FINAL_URL": "https://sc.link/H4mvl",
+        "FINAL_URL_DOMAIN": "sc.link",
+        "FINAL_URL_STATUS": "INACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-13T02:07:12.542632"
+    },
+    "ACCOUNT_NUMBER_494": {
+        "CASE_NUMBER": "494",
         "FOUND_ON": "2024-06-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1196896651688824882",
@@ -10801,8 +10864,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_492": {
-        "CASE_NUMBER": "492",
+    "ACCOUNT_NUMBER_495": {
+        "CASE_NUMBER": "495",
         "FOUND_ON": "2024-06-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "675027706177388545",
@@ -10823,8 +10886,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_493": {
-        "CASE_NUMBER": "493",
+    "ACCOUNT_NUMBER_496": {
+        "CASE_NUMBER": "496",
         "FOUND_ON": "2024-06-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "927873782050328586",
@@ -10845,8 +10908,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_494": {
-        "CASE_NUMBER": "494",
+    "ACCOUNT_NUMBER_497": {
+        "CASE_NUMBER": "497",
         "FOUND_ON": "2024-06-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "773500012423675964",
@@ -10867,8 +10930,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_495": {
-        "CASE_NUMBER": "495",
+    "ACCOUNT_NUMBER_498": {
+        "CASE_NUMBER": "498",
         "FOUND_ON": "2024-06-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "979497473317928970",
@@ -10889,8 +10952,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_496": {
-        "CASE_NUMBER": "496",
+    "ACCOUNT_NUMBER_499": {
+        "CASE_NUMBER": "499",
         "FOUND_ON": "2024-06-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "615146473146810388",
@@ -10911,8 +10974,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_497": {
-        "CASE_NUMBER": "497",
+    "ACCOUNT_NUMBER_500": {
+        "CASE_NUMBER": "500",
         "FOUND_ON": "2024-06-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "795143939765567528",
@@ -10933,8 +10996,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_498": {
-        "CASE_NUMBER": "498",
+    "ACCOUNT_NUMBER_501": {
+        "CASE_NUMBER": "501",
         "FOUND_ON": "2024-06-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "797025687852548099",
@@ -10955,8 +11018,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_499": {
-        "CASE_NUMBER": "499",
+    "ACCOUNT_NUMBER_502": {
+        "CASE_NUMBER": "502",
         "FOUND_ON": "2024-06-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "579379985782145035",
@@ -10977,8 +11040,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_500": {
-        "CASE_NUMBER": "500",
+    "ACCOUNT_NUMBER_503": {
+        "CASE_NUMBER": "503",
         "FOUND_ON": "2024-06-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "545583882578427904",
@@ -10999,8 +11062,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_501": {
-        "CASE_NUMBER": "501",
+    "ACCOUNT_NUMBER_504": {
+        "CASE_NUMBER": "504",
         "FOUND_ON": "2024-06-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "280002478882160640",
@@ -11021,8 +11084,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_502": {
-        "CASE_NUMBER": "502",
+    "ACCOUNT_NUMBER_505": {
+        "CASE_NUMBER": "505",
         "FOUND_ON": "2024-06-30",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "532628214791536641",
@@ -11043,8 +11106,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_503": {
-        "CASE_NUMBER": "503",
+    "ACCOUNT_NUMBER_506": {
+        "CASE_NUMBER": "506",
         "FOUND_ON": "2024-06-30",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "910587753169838170",
@@ -11065,8 +11128,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_504": {
-        "CASE_NUMBER": "504",
+    "ACCOUNT_NUMBER_507": {
+        "CASE_NUMBER": "507",
         "FOUND_ON": "2024-06-30",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "659468230242467840",
@@ -11087,8 +11150,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_505": {
-        "CASE_NUMBER": "505",
+    "ACCOUNT_NUMBER_508": {
+        "CASE_NUMBER": "508",
         "FOUND_ON": "2024-07-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "613747721278586897",
@@ -11109,8 +11172,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_506": {
-        "CASE_NUMBER": "506",
+    "ACCOUNT_NUMBER_509": {
+        "CASE_NUMBER": "509",
         "FOUND_ON": "2024-07-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "545941635083534337",
@@ -11131,8 +11194,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_507": {
-        "CASE_NUMBER": "507",
+    "ACCOUNT_NUMBER_510": {
+        "CASE_NUMBER": "510",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "473763068673785856",
@@ -11153,8 +11216,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_508": {
-        "CASE_NUMBER": "508",
+    "ACCOUNT_NUMBER_511": {
+        "CASE_NUMBER": "511",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "339521721956564994",
@@ -11175,8 +11238,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_509": {
-        "CASE_NUMBER": "509",
+    "ACCOUNT_NUMBER_512": {
+        "CASE_NUMBER": "512",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1198319144253280267",
@@ -11197,8 +11260,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_510": {
-        "CASE_NUMBER": "510",
+    "ACCOUNT_NUMBER_513": {
+        "CASE_NUMBER": "513",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "391683541592965120",
@@ -11219,8 +11282,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_511": {
-        "CASE_NUMBER": "511",
+    "ACCOUNT_NUMBER_514": {
+        "CASE_NUMBER": "514",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1037110059840319618",
@@ -11241,8 +11304,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_512": {
-        "CASE_NUMBER": "512",
+    "ACCOUNT_NUMBER_515": {
+        "CASE_NUMBER": "515",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "442910565610946560",
@@ -11263,8 +11326,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_513": {
-        "CASE_NUMBER": "513",
+    "ACCOUNT_NUMBER_516": {
+        "CASE_NUMBER": "516",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "304278505041035266",
@@ -11285,8 +11348,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_514": {
-        "CASE_NUMBER": "514",
+    "ACCOUNT_NUMBER_517": {
+        "CASE_NUMBER": "517",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "544833730251063316",
@@ -11307,8 +11370,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_515": {
-        "CASE_NUMBER": "515",
+    "ACCOUNT_NUMBER_518": {
+        "CASE_NUMBER": "518",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "610110216825995264",
@@ -11329,8 +11392,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_516": {
-        "CASE_NUMBER": "516",
+    "ACCOUNT_NUMBER_519": {
+        "CASE_NUMBER": "519",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "900014919926313011",
@@ -11351,8 +11414,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_517": {
-        "CASE_NUMBER": "517",
+    "ACCOUNT_NUMBER_520": {
+        "CASE_NUMBER": "520",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1015522517340930110",
@@ -11373,8 +11436,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_518": {
-        "CASE_NUMBER": "518",
+    "ACCOUNT_NUMBER_521": {
+        "CASE_NUMBER": "521",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1033954678494466078",
@@ -11395,8 +11458,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_519": {
-        "CASE_NUMBER": "519",
+    "ACCOUNT_NUMBER_522": {
+        "CASE_NUMBER": "522",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1036563944720044104",
@@ -11417,8 +11480,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_520": {
-        "CASE_NUMBER": "520",
+    "ACCOUNT_NUMBER_523": {
+        "CASE_NUMBER": "523",
         "FOUND_ON": "2024-07-02",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "1116542663634718781",
@@ -11439,8 +11502,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_521": {
-        "CASE_NUMBER": "521",
+    "ACCOUNT_NUMBER_524": {
+        "CASE_NUMBER": "524",
         "FOUND_ON": "2024-07-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "408060728876990466",
@@ -11461,8 +11524,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_522": {
-        "CASE_NUMBER": "522",
+    "ACCOUNT_NUMBER_525": {
+        "CASE_NUMBER": "525",
         "FOUND_ON": "2024-07-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1143932655331717242",
@@ -11483,8 +11546,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_523": {
-        "CASE_NUMBER": "523",
+    "ACCOUNT_NUMBER_526": {
+        "CASE_NUMBER": "526",
         "FOUND_ON": "2024-07-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "484988875111006208",
@@ -11505,8 +11568,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_524": {
-        "CASE_NUMBER": "524",
+    "ACCOUNT_NUMBER_527": {
+        "CASE_NUMBER": "527",
         "FOUND_ON": "2024-07-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "303957070707949569",
@@ -11527,8 +11590,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_525": {
-        "CASE_NUMBER": "525",
+    "ACCOUNT_NUMBER_528": {
+        "CASE_NUMBER": "528",
         "FOUND_ON": "2024-07-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1178695311900807188",
@@ -11549,8 +11612,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_526": {
-        "CASE_NUMBER": "526",
+    "ACCOUNT_NUMBER_529": {
+        "CASE_NUMBER": "529",
         "FOUND_ON": "2024-07-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "647115064754831360",
@@ -11571,8 +11634,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_527": {
-        "CASE_NUMBER": "527",
+    "ACCOUNT_NUMBER_530": {
+        "CASE_NUMBER": "530",
         "FOUND_ON": "2024-07-07",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "699541521891852389",
@@ -11593,8 +11656,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_528": {
-        "CASE_NUMBER": "528",
+    "ACCOUNT_NUMBER_531": {
+        "CASE_NUMBER": "531",
         "FOUND_ON": "2024-07-07",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1246063848084209769",
@@ -11615,8 +11678,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_529": {
-        "CASE_NUMBER": "529",
+    "ACCOUNT_NUMBER_532": {
+        "CASE_NUMBER": "532",
         "FOUND_ON": "2024-07-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "407654803921960961",
@@ -11637,8 +11700,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_530": {
-        "CASE_NUMBER": "530",
+    "ACCOUNT_NUMBER_533": {
+        "CASE_NUMBER": "533",
         "FOUND_ON": "2024-07-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "940963702541279272",
@@ -11659,8 +11722,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_531": {
-        "CASE_NUMBER": "531",
+    "ACCOUNT_NUMBER_534": {
+        "CASE_NUMBER": "534",
         "FOUND_ON": "2024-07-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1129878203448688661",
@@ -11681,8 +11744,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_532": {
-        "CASE_NUMBER": "532",
+    "ACCOUNT_NUMBER_535": {
+        "CASE_NUMBER": "535",
         "FOUND_ON": "2024-07-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "377104745577316353",
@@ -11703,8 +11766,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_533": {
-        "CASE_NUMBER": "533",
+    "ACCOUNT_NUMBER_536": {
+        "CASE_NUMBER": "536",
         "FOUND_ON": "2024-07-10",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "776816173684621333",
@@ -11725,8 +11788,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_534": {
-        "CASE_NUMBER": "534",
+    "ACCOUNT_NUMBER_537": {
+        "CASE_NUMBER": "537",
         "FOUND_ON": "2024-07-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "892800651397070878",
@@ -11747,8 +11810,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_535": {
-        "CASE_NUMBER": "535",
+    "ACCOUNT_NUMBER_538": {
+        "CASE_NUMBER": "538",
         "FOUND_ON": "2024-07-13",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1098700341039603814",
@@ -11769,8 +11832,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_536": {
-        "CASE_NUMBER": "536",
+    "ACCOUNT_NUMBER_539": {
+        "CASE_NUMBER": "539",
         "FOUND_ON": "2024-07-14",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "707900460547178596",
@@ -11791,8 +11854,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_537": {
-        "CASE_NUMBER": "537",
+    "ACCOUNT_NUMBER_540": {
+        "CASE_NUMBER": "540",
         "FOUND_ON": "2024-07-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "723073795849453578",
@@ -11813,8 +11876,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_538": {
-        "CASE_NUMBER": "538",
+    "ACCOUNT_NUMBER_541": {
+        "CASE_NUMBER": "541",
         "FOUND_ON": "2024-07-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "546452140370165782",
@@ -11835,8 +11898,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_539": {
-        "CASE_NUMBER": "539",
+    "ACCOUNT_NUMBER_542": {
+        "CASE_NUMBER": "542",
         "FOUND_ON": "2024-07-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "209314246671073281",
@@ -11857,8 +11920,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_540": {
-        "CASE_NUMBER": "540",
+    "ACCOUNT_NUMBER_543": {
+        "CASE_NUMBER": "543",
         "FOUND_ON": "2024-07-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1086684837823397908",
@@ -11879,8 +11942,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_541": {
-        "CASE_NUMBER": "541",
+    "ACCOUNT_NUMBER_544": {
+        "CASE_NUMBER": "544",
         "FOUND_ON": "2024-07-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "756510908728999958",
@@ -11901,8 +11964,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_542": {
-        "CASE_NUMBER": "542",
+    "ACCOUNT_NUMBER_545": {
+        "CASE_NUMBER": "545",
         "FOUND_ON": "2024-07-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "213791571676626944",
@@ -11923,8 +11986,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_543": {
-        "CASE_NUMBER": "543",
+    "ACCOUNT_NUMBER_546": {
+        "CASE_NUMBER": "546",
         "FOUND_ON": "2024-07-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "821843903409029190",
@@ -11945,8 +12008,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_544": {
-        "CASE_NUMBER": "544",
+    "ACCOUNT_NUMBER_547": {
+        "CASE_NUMBER": "547",
         "FOUND_ON": "2024-07-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "702203321653526549",
@@ -11967,8 +12030,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_545": {
-        "CASE_NUMBER": "545",
+    "ACCOUNT_NUMBER_548": {
+        "CASE_NUMBER": "548",
         "FOUND_ON": "2024-07-21",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "1169190585861677097",
@@ -11989,8 +12052,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_546": {
-        "CASE_NUMBER": "546",
+    "ACCOUNT_NUMBER_549": {
+        "CASE_NUMBER": "549",
         "FOUND_ON": "2024-07-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "690915728496525344",
@@ -12011,8 +12074,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_547": {
-        "CASE_NUMBER": "547",
+    "ACCOUNT_NUMBER_550": {
+        "CASE_NUMBER": "550",
         "FOUND_ON": "2024-07-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1028685842018992190",
@@ -12033,8 +12096,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_548": {
-        "CASE_NUMBER": "548",
+    "ACCOUNT_NUMBER_551": {
+        "CASE_NUMBER": "551",
         "FOUND_ON": "2024-07-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "756112348711747627",
@@ -12055,8 +12118,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_549": {
-        "CASE_NUMBER": "549",
+    "ACCOUNT_NUMBER_552": {
+        "CASE_NUMBER": "552",
         "FOUND_ON": "2024-07-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "385921644742574090",
@@ -12077,8 +12140,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_550": {
-        "CASE_NUMBER": "550",
+    "ACCOUNT_NUMBER_553": {
+        "CASE_NUMBER": "553",
         "FOUND_ON": "2024-07-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "385921644742574090",
@@ -12099,8 +12162,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_551": {
-        "CASE_NUMBER": "551",
+    "ACCOUNT_NUMBER_554": {
+        "CASE_NUMBER": "554",
         "FOUND_ON": "2024-07-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "488374087643693077",
@@ -12121,8 +12184,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_552": {
-        "CASE_NUMBER": "552",
+    "ACCOUNT_NUMBER_555": {
+        "CASE_NUMBER": "555",
         "FOUND_ON": "2024-07-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1144283530159996979",
@@ -12143,8 +12206,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_553": {
-        "CASE_NUMBER": "553",
+    "ACCOUNT_NUMBER_556": {
+        "CASE_NUMBER": "556",
         "FOUND_ON": "2024-07-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "385921644742574090",
@@ -12165,8 +12228,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_554": {
-        "CASE_NUMBER": "554",
+    "ACCOUNT_NUMBER_557": {
+        "CASE_NUMBER": "557",
         "FOUND_ON": "2024-07-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1198485463091138642",
@@ -12187,8 +12250,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_555": {
-        "CASE_NUMBER": "555",
+    "ACCOUNT_NUMBER_558": {
+        "CASE_NUMBER": "558",
         "FOUND_ON": "2024-07-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1194981295797833789",
@@ -12209,8 +12272,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_556": {
-        "CASE_NUMBER": "556",
+    "ACCOUNT_NUMBER_559": {
+        "CASE_NUMBER": "559",
         "FOUND_ON": "2024-07-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "414851904728858643",
@@ -12231,8 +12294,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_557": {
-        "CASE_NUMBER": "557",
+    "ACCOUNT_NUMBER_560": {
+        "CASE_NUMBER": "560",
         "FOUND_ON": "2024-07-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "683369245542973504",
@@ -12253,8 +12316,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_558": {
-        "CASE_NUMBER": "558",
+    "ACCOUNT_NUMBER_561": {
+        "CASE_NUMBER": "561",
         "FOUND_ON": "2024-07-30",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1081436445207711814",
@@ -12275,8 +12338,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_559": {
-        "CASE_NUMBER": "559",
+    "ACCOUNT_NUMBER_562": {
+        "CASE_NUMBER": "562",
         "FOUND_ON": "2024-07-30",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1195830589518008373",
@@ -12297,8 +12360,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_560": {
-        "CASE_NUMBER": "560",
+    "ACCOUNT_NUMBER_563": {
+        "CASE_NUMBER": "563",
         "FOUND_ON": "2024-07-30",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "701687786914316320",
@@ -12319,8 +12382,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_561": {
-        "CASE_NUMBER": "561",
+    "ACCOUNT_NUMBER_564": {
+        "CASE_NUMBER": "564",
         "FOUND_ON": "2024-08-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "703759870150705163",
@@ -12341,8 +12404,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_562": {
-        "CASE_NUMBER": "562",
+    "ACCOUNT_NUMBER_565": {
+        "CASE_NUMBER": "565",
         "FOUND_ON": "2024-08-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "984139266395365426",
@@ -12363,8 +12426,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_563": {
-        "CASE_NUMBER": "563",
+    "ACCOUNT_NUMBER_566": {
+        "CASE_NUMBER": "566",
         "FOUND_ON": "2024-08-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "331401683315851264",
@@ -12385,8 +12448,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_564": {
-        "CASE_NUMBER": "564",
+    "ACCOUNT_NUMBER_567": {
+        "CASE_NUMBER": "567",
         "FOUND_ON": "2024-08-05",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "264403592746762240",
@@ -12407,8 +12470,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_565": {
-        "CASE_NUMBER": "565",
+    "ACCOUNT_NUMBER_568": {
+        "CASE_NUMBER": "568",
         "FOUND_ON": "2024-08-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "459050679147954178",
@@ -12429,8 +12492,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_566": {
-        "CASE_NUMBER": "566",
+    "ACCOUNT_NUMBER_569": {
+        "CASE_NUMBER": "569",
         "FOUND_ON": "2024-08-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "528220210520522753",
@@ -12451,8 +12514,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_567": {
-        "CASE_NUMBER": "567",
+    "ACCOUNT_NUMBER_570": {
+        "CASE_NUMBER": "570",
         "FOUND_ON": "2024-08-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "352219834538393623",
@@ -12473,8 +12536,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_568": {
-        "CASE_NUMBER": "568",
+    "ACCOUNT_NUMBER_571": {
+        "CASE_NUMBER": "571",
         "FOUND_ON": "2024-08-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "UNKNOWN",
@@ -12495,8 +12558,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_569": {
-        "CASE_NUMBER": "569",
+    "ACCOUNT_NUMBER_572": {
+        "CASE_NUMBER": "572",
         "FOUND_ON": "2024-08-19",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "537683559251574796",
@@ -12517,8 +12580,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_570": {
-        "CASE_NUMBER": "570",
+    "ACCOUNT_NUMBER_573": {
+        "CASE_NUMBER": "573",
         "FOUND_ON": "2024-08-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "715515828279443548",
@@ -12539,8 +12602,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_571": {
-        "CASE_NUMBER": "571",
+    "ACCOUNT_NUMBER_574": {
+        "CASE_NUMBER": "574",
         "FOUND_ON": "2024-08-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1276498474304667650",
@@ -12561,8 +12624,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_572": {
-        "CASE_NUMBER": "572",
+    "ACCOUNT_NUMBER_575": {
+        "CASE_NUMBER": "575",
         "FOUND_ON": "2024-08-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "453528793345163276",
@@ -12583,8 +12646,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_573": {
-        "CASE_NUMBER": "573",
+    "ACCOUNT_NUMBER_576": {
+        "CASE_NUMBER": "576",
         "FOUND_ON": "2024-08-25",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "UNKNOWN",
@@ -12605,8 +12668,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_574": {
-        "CASE_NUMBER": "574",
+    "ACCOUNT_NUMBER_577": {
+        "CASE_NUMBER": "577",
         "FOUND_ON": "2024-08-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "613356074350673980",
@@ -12627,8 +12690,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_575": {
-        "CASE_NUMBER": "575",
+    "ACCOUNT_NUMBER_578": {
+        "CASE_NUMBER": "578",
         "FOUND_ON": "2024-09-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "597376378173915157",
@@ -12649,8 +12712,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_576": {
-        "CASE_NUMBER": "576",
+    "ACCOUNT_NUMBER_579": {
+        "CASE_NUMBER": "579",
         "FOUND_ON": "2024-09-03",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "1197457788041957388",
@@ -12671,8 +12734,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_577": {
-        "CASE_NUMBER": "577",
+    "ACCOUNT_NUMBER_580": {
+        "CASE_NUMBER": "580",
         "FOUND_ON": "2024-09-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1280508688230256682",
@@ -12693,8 +12756,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_578": {
-        "CASE_NUMBER": "578",
+    "ACCOUNT_NUMBER_581": {
+        "CASE_NUMBER": "581",
         "FOUND_ON": "2024-09-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1058765878650474538",
@@ -12715,8 +12778,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_579": {
-        "CASE_NUMBER": "579",
+    "ACCOUNT_NUMBER_582": {
+        "CASE_NUMBER": "582",
         "FOUND_ON": "2024-09-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "191999821702365184",
@@ -12737,8 +12800,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_580": {
-        "CASE_NUMBER": "580",
+    "ACCOUNT_NUMBER_583": {
+        "CASE_NUMBER": "583",
         "FOUND_ON": "2024-09-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "893736393073885184",
@@ -12759,8 +12822,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_581": {
-        "CASE_NUMBER": "581",
+    "ACCOUNT_NUMBER_584": {
+        "CASE_NUMBER": "584",
         "FOUND_ON": "2024-09-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "431124187512307714",
@@ -12781,8 +12844,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_582": {
-        "CASE_NUMBER": "582",
+    "ACCOUNT_NUMBER_585": {
+        "CASE_NUMBER": "585",
         "FOUND_ON": "2024-09-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1288545825617743896",
@@ -12803,8 +12866,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_583": {
-        "CASE_NUMBER": "583",
+    "ACCOUNT_NUMBER_586": {
+        "CASE_NUMBER": "586",
         "FOUND_ON": "2024-10-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1290672922280722487",
@@ -12825,8 +12888,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_584": {
-        "CASE_NUMBER": "584",
+    "ACCOUNT_NUMBER_587": {
+        "CASE_NUMBER": "587",
         "FOUND_ON": "2024-10-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "799830188938625034",
@@ -12847,8 +12910,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_585": {
-        "CASE_NUMBER": "585",
+    "ACCOUNT_NUMBER_588": {
+        "CASE_NUMBER": "588",
         "FOUND_ON": "2024-10-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "391838560946225153",
@@ -12869,8 +12932,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_586": {
-        "CASE_NUMBER": "586",
+    "ACCOUNT_NUMBER_589": {
+        "CASE_NUMBER": "589",
         "FOUND_ON": "2024-10-07",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "609757169088331786",
@@ -12891,8 +12954,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_587": {
-        "CASE_NUMBER": "587",
+    "ACCOUNT_NUMBER_590": {
+        "CASE_NUMBER": "590",
         "FOUND_ON": "2024-10-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "540454653289037824",
@@ -12913,8 +12976,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_588": {
-        "CASE_NUMBER": "588",
+    "ACCOUNT_NUMBER_591": {
+        "CASE_NUMBER": "591",
         "FOUND_ON": "2024-10-17",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "663144559739666453",
@@ -12935,8 +12998,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_589": {
-        "CASE_NUMBER": "589",
+    "ACCOUNT_NUMBER_592": {
+        "CASE_NUMBER": "592",
         "FOUND_ON": "2024-10-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "488595449507348491",
@@ -12957,8 +13020,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_590": {
-        "CASE_NUMBER": "590",
+    "ACCOUNT_NUMBER_593": {
+        "CASE_NUMBER": "593",
         "FOUND_ON": "2024-10-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "441961295969779712",
@@ -12979,8 +13042,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_591": {
-        "CASE_NUMBER": "591",
+    "ACCOUNT_NUMBER_594": {
+        "CASE_NUMBER": "594",
         "FOUND_ON": "2024-10-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "602217280390299687",
@@ -13001,8 +13064,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_592": {
-        "CASE_NUMBER": "592",
+    "ACCOUNT_NUMBER_595": {
+        "CASE_NUMBER": "595",
         "FOUND_ON": "2024-10-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "UNKNOWN",
@@ -13023,8 +13086,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_593": {
-        "CASE_NUMBER": "593",
+    "ACCOUNT_NUMBER_596": {
+        "CASE_NUMBER": "596",
         "FOUND_ON": "2024-10-31",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1068872126418919444",
@@ -13045,8 +13108,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_594": {
-        "CASE_NUMBER": "594",
+    "ACCOUNT_NUMBER_597": {
+        "CASE_NUMBER": "597",
         "FOUND_ON": "2024-11-05",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1302732889548525689",
@@ -13067,8 +13130,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_595": {
-        "CASE_NUMBER": "595",
+    "ACCOUNT_NUMBER_598": {
+        "CASE_NUMBER": "598",
         "FOUND_ON": "2024-11-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "886444678772301885",
@@ -13089,8 +13152,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_596": {
-        "CASE_NUMBER": "596",
+    "ACCOUNT_NUMBER_599": {
+        "CASE_NUMBER": "599",
         "FOUND_ON": "2024-11-14",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1306250805212610564",
@@ -13111,8 +13174,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_597": {
-        "CASE_NUMBER": "597",
+    "ACCOUNT_NUMBER_600": {
+        "CASE_NUMBER": "600",
         "FOUND_ON": "2024-11-16",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "939952037116915753",
@@ -13133,8 +13196,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_598": {
-        "CASE_NUMBER": "598",
+    "ACCOUNT_NUMBER_601": {
+        "CASE_NUMBER": "601",
         "FOUND_ON": "2024-11-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1306934551750381580",
@@ -13155,8 +13218,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_599": {
-        "CASE_NUMBER": "599",
+    "ACCOUNT_NUMBER_602": {
+        "CASE_NUMBER": "602",
         "FOUND_ON": "2024-11-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1311811050995449938",
@@ -13177,8 +13240,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_600": {
-        "CASE_NUMBER": "600",
+    "ACCOUNT_NUMBER_603": {
+        "CASE_NUMBER": "603",
         "FOUND_ON": "2024-11-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "311874995699712000",
@@ -13199,8 +13262,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_601": {
-        "CASE_NUMBER": "601",
+    "ACCOUNT_NUMBER_604": {
+        "CASE_NUMBER": "604",
         "FOUND_ON": "2024-11-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "487412438996746250",
@@ -13221,8 +13284,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_602": {
-        "CASE_NUMBER": "602",
+    "ACCOUNT_NUMBER_605": {
+        "CASE_NUMBER": "605",
         "FOUND_ON": "2024-12-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "210713024053510144",
@@ -13243,8 +13306,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_603": {
-        "CASE_NUMBER": "603",
+    "ACCOUNT_NUMBER_606": {
+        "CASE_NUMBER": "606",
         "FOUND_ON": "2024-12-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "733613745896685640",
@@ -13265,8 +13328,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_604": {
-        "CASE_NUMBER": "604",
+    "ACCOUNT_NUMBER_607": {
+        "CASE_NUMBER": "607",
         "FOUND_ON": "2024-12-10",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "557955956609122304",
@@ -13287,8 +13350,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_605": {
-        "CASE_NUMBER": "605",
+    "ACCOUNT_NUMBER_608": {
+        "CASE_NUMBER": "608",
         "FOUND_ON": "2024-12-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "866313135191228458",
@@ -13309,8 +13372,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_606": {
-        "CASE_NUMBER": "606",
+    "ACCOUNT_NUMBER_609": {
+        "CASE_NUMBER": "609",
         "FOUND_ON": "2024-12-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "358309905356029962",
@@ -13331,8 +13394,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_607": {
-        "CASE_NUMBER": "607",
+    "ACCOUNT_NUMBER_610": {
+        "CASE_NUMBER": "610",
         "FOUND_ON": "2024-12-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "372472706353987584",
@@ -13353,8 +13416,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_608": {
-        "CASE_NUMBER": "608",
+    "ACCOUNT_NUMBER_611": {
+        "CASE_NUMBER": "611",
         "FOUND_ON": "2024-12-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1198856202231238756",
@@ -13375,8 +13438,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_609": {
-        "CASE_NUMBER": "609",
+    "ACCOUNT_NUMBER_612": {
+        "CASE_NUMBER": "612",
         "FOUND_ON": "2024-12-19",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "923204984168923147",
@@ -13397,8 +13460,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_610": {
-        "CASE_NUMBER": "610",
+    "ACCOUNT_NUMBER_613": {
+        "CASE_NUMBER": "613",
         "FOUND_ON": "2024-12-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "583983011469721601",
@@ -13419,8 +13482,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_611": {
-        "CASE_NUMBER": "611",
+    "ACCOUNT_NUMBER_614": {
+        "CASE_NUMBER": "614",
         "FOUND_ON": "2024-12-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "430172918765322242",
@@ -13441,8 +13504,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_612": {
-        "CASE_NUMBER": "612",
+    "ACCOUNT_NUMBER_615": {
+        "CASE_NUMBER": "615",
         "FOUND_ON": "2024-12-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1001122128608899163",
@@ -13463,8 +13526,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_613": {
-        "CASE_NUMBER": "613",
+    "ACCOUNT_NUMBER_616": {
+        "CASE_NUMBER": "616",
         "FOUND_ON": "2024-12-31",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1313419389487415307",
@@ -13485,8 +13548,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_614": {
-        "CASE_NUMBER": "614",
+    "ACCOUNT_NUMBER_617": {
+        "CASE_NUMBER": "617",
         "FOUND_ON": "2025-01-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "372012170524753921",
@@ -13507,8 +13570,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_615": {
-        "CASE_NUMBER": "615",
+    "ACCOUNT_NUMBER_618": {
+        "CASE_NUMBER": "618",
         "FOUND_ON": "2025-01-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1324660577594769463",
@@ -13529,8 +13592,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_616": {
-        "CASE_NUMBER": "616",
+    "ACCOUNT_NUMBER_619": {
+        "CASE_NUMBER": "619",
         "FOUND_ON": "2025-01-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "738756241773297736",
@@ -13551,8 +13614,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_617": {
-        "CASE_NUMBER": "617",
+    "ACCOUNT_NUMBER_620": {
+        "CASE_NUMBER": "620",
         "FOUND_ON": "2025-01-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "275354933778186242",
@@ -13573,8 +13636,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_618": {
-        "CASE_NUMBER": "618",
+    "ACCOUNT_NUMBER_621": {
+        "CASE_NUMBER": "621",
         "FOUND_ON": "2025-01-10",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "286421155550593024",
@@ -13595,8 +13658,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_619": {
-        "CASE_NUMBER": "619",
+    "ACCOUNT_NUMBER_622": {
+        "CASE_NUMBER": "622",
         "FOUND_ON": "2025-01-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "885354478243557408",
@@ -13617,8 +13680,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_620": {
-        "CASE_NUMBER": "620",
+    "ACCOUNT_NUMBER_623": {
+        "CASE_NUMBER": "623",
         "FOUND_ON": "2025-01-13",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "222981255359102976",
@@ -13639,8 +13702,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_621": {
-        "CASE_NUMBER": "621",
+    "ACCOUNT_NUMBER_624": {
+        "CASE_NUMBER": "624",
         "FOUND_ON": "2025-01-13",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1296332762139066401",
@@ -13661,8 +13724,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_622": {
-        "CASE_NUMBER": "622",
+    "ACCOUNT_NUMBER_625": {
+        "CASE_NUMBER": "625",
         "FOUND_ON": "2025-01-14",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "677203903086985237",
@@ -13683,8 +13746,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_623": {
-        "CASE_NUMBER": "623",
+    "ACCOUNT_NUMBER_626": {
+        "CASE_NUMBER": "626",
         "FOUND_ON": "2025-01-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "880038983856431204",
@@ -13705,8 +13768,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_624": {
-        "CASE_NUMBER": "624",
+    "ACCOUNT_NUMBER_627": {
+        "CASE_NUMBER": "627",
         "FOUND_ON": "2025-01-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "350648899687415810",
@@ -13727,8 +13790,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_625": {
-        "CASE_NUMBER": "625",
+    "ACCOUNT_NUMBER_628": {
+        "CASE_NUMBER": "628",
         "FOUND_ON": "2025-01-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "446980143593029632",
@@ -13749,8 +13812,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_626": {
-        "CASE_NUMBER": "626",
+    "ACCOUNT_NUMBER_629": {
+        "CASE_NUMBER": "629",
         "FOUND_ON": "2025-01-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "217685652769210368",
@@ -13771,8 +13834,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_627": {
-        "CASE_NUMBER": "627",
+    "ACCOUNT_NUMBER_630": {
+        "CASE_NUMBER": "630",
         "FOUND_ON": "2025-01-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "UNKNOWN",
@@ -13793,8 +13856,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_628": {
-        "CASE_NUMBER": "628",
+    "ACCOUNT_NUMBER_631": {
+        "CASE_NUMBER": "631",
+        "FOUND_ON": "2025-01-19",
+        "DISCORD_ID": "772585980490022923",
+        "USERNAME": "max_192308",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://stenmcomnmunity.com/10538602985",
+        "SURFACE_URL_DOMAIN": "stenmcomnmunity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_632": {
+        "CASE_NUMBER": "632",
         "FOUND_ON": "2025-01-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1185356987656044585",
@@ -13815,8 +13899,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_629": {
-        "CASE_NUMBER": "629",
+    "ACCOUNT_NUMBER_633": {
+        "CASE_NUMBER": "633",
         "FOUND_ON": "2025-01-24",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1119687344946172014",
@@ -13837,8 +13921,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_630": {
-        "CASE_NUMBER": "630",
+    "ACCOUNT_NUMBER_634": {
+        "CASE_NUMBER": "634",
+        "FOUND_ON": "2025-01-24",
+        "DISCORD_ID": "938390842522075146",
+        "USERNAME": "tomasz_dzialowy",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://stemscommunity.com/activation/id=15615238573",
+        "SURFACE_URL_DOMAIN": "stemscommunity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_635": {
+        "CASE_NUMBER": "635",
         "FOUND_ON": "2025-01-26",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1188143594079522981",
@@ -13859,8 +13964,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_631": {
-        "CASE_NUMBER": "631",
+    "ACCOUNT_NUMBER_636": {
+        "CASE_NUMBER": "636",
+        "FOUND_ON": "2025-01-27",
+        "DISCORD_ID": "486287956491894786",
+        "USERNAME": "drjorre",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://stemcommunnuty.com/activation/id=156158928574",
+        "SURFACE_URL_DOMAIN": "stemcommunnuty.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_637": {
+        "CASE_NUMBER": "637",
         "FOUND_ON": "2025-01-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "805125765011865632",
@@ -13881,8 +14007,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_632": {
-        "CASE_NUMBER": "632",
+    "ACCOUNT_NUMBER_638": {
+        "CASE_NUMBER": "638",
         "FOUND_ON": "2025-01-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "939541694267916358",
@@ -13903,8 +14029,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_633": {
-        "CASE_NUMBER": "633",
+    "ACCOUNT_NUMBER_639": {
+        "CASE_NUMBER": "639",
         "FOUND_ON": "2025-01-28",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "933228345108348928",
@@ -13925,8 +14051,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_634": {
-        "CASE_NUMBER": "634",
+    "ACCOUNT_NUMBER_640": {
+        "CASE_NUMBER": "640",
         "FOUND_ON": "2025-01-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "435782913682833408",
@@ -13947,8 +14073,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_635": {
-        "CASE_NUMBER": "635",
+    "ACCOUNT_NUMBER_641": {
+        "CASE_NUMBER": "641",
         "FOUND_ON": "2025-01-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1192539940983160938",
@@ -13969,8 +14095,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_636": {
-        "CASE_NUMBER": "636",
+    "ACCOUNT_NUMBER_642": {
+        "CASE_NUMBER": "642",
         "FOUND_ON": "2025-01-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "932356958672003133",
@@ -13991,8 +14117,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_637": {
-        "CASE_NUMBER": "637",
+    "ACCOUNT_NUMBER_643": {
+        "CASE_NUMBER": "643",
         "FOUND_ON": "2025-01-31",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "508367714834972704",
@@ -14013,8 +14139,50 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_638": {
-        "CASE_NUMBER": "638",
+    "ACCOUNT_NUMBER_644": {
+        "CASE_NUMBER": "644",
+        "FOUND_ON": "2025-01-31",
+        "DISCORD_ID": "314528313580191756",
+        "USERNAME": "dimekson4ik",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://stenmcommumnuty.com/105839423091",
+        "SURFACE_URL_DOMAIN": "stenmcommumnuty.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_645": {
+        "CASE_NUMBER": "645",
+        "FOUND_ON": "2025-01-31",
+        "DISCORD_ID": "820156029471555605",
+        "USERNAME": "plaxt1cc",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://stemmcommumnuty.com/105378980416",
+        "SURFACE_URL_DOMAIN": "stemmcommumnuty.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_646": {
+        "CASE_NUMBER": "646",
         "FOUND_ON": "2025-02-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "813385796567564328",
@@ -14035,8 +14203,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_639": {
-        "CASE_NUMBER": "639",
+    "ACCOUNT_NUMBER_647": {
+        "CASE_NUMBER": "647",
         "FOUND_ON": "2025-02-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "944717999179460668",
@@ -14057,8 +14225,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_640": {
-        "CASE_NUMBER": "640",
+    "ACCOUNT_NUMBER_648": {
+        "CASE_NUMBER": "648",
         "FOUND_ON": "2025-02-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "350624598343024641",
@@ -14079,8 +14247,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_641": {
-        "CASE_NUMBER": "641",
+    "ACCOUNT_NUMBER_649": {
+        "CASE_NUMBER": "649",
         "FOUND_ON": "2025-02-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "599670359863853089",
@@ -14101,8 +14269,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_642": {
-        "CASE_NUMBER": "642",
+    "ACCOUNT_NUMBER_650": {
+        "CASE_NUMBER": "650",
         "FOUND_ON": "2025-02-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "406560928641843200",
@@ -14123,8 +14291,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_643": {
-        "CASE_NUMBER": "643",
+    "ACCOUNT_NUMBER_651": {
+        "CASE_NUMBER": "651",
         "FOUND_ON": "2025-02-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "674648578773352511",
@@ -14145,8 +14313,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_644": {
-        "CASE_NUMBER": "644",
+    "ACCOUNT_NUMBER_652": {
+        "CASE_NUMBER": "652",
         "FOUND_ON": "2025-02-07",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1213594174029430828",
@@ -14167,8 +14335,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_645": {
-        "CASE_NUMBER": "645",
+    "ACCOUNT_NUMBER_653": {
+        "CASE_NUMBER": "653",
+        "FOUND_ON": "2025-02-07",
+        "DISCORD_ID": "347445390448132096",
+        "USERNAME": "cnstluci",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamrcommunnity.com/10539109425",
+        "SURFACE_URL_DOMAIN": "steamrcommunnity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_654": {
+        "CASE_NUMBER": "654",
         "FOUND_ON": "2025-02-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "997586046080532530",
@@ -14189,8 +14378,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_646": {
-        "CASE_NUMBER": "646",
+    "ACCOUNT_NUMBER_655": {
+        "CASE_NUMBER": "655",
         "FOUND_ON": "2025-02-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "472137196963627038",
@@ -14211,8 +14400,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_647": {
-        "CASE_NUMBER": "647",
+    "ACCOUNT_NUMBER_656": {
+        "CASE_NUMBER": "656",
+        "FOUND_ON": "2025-02-08",
+        "DISCORD_ID": "1056603744927744131",
+        "USERNAME": "nom_n1",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamecommuinity.com/10529105992",
+        "SURFACE_URL_DOMAIN": "steamecommuinity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_657": {
+        "CASE_NUMBER": "657",
         "FOUND_ON": "2025-02-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "323157282256846858",
@@ -14233,8 +14443,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_648": {
-        "CASE_NUMBER": "648",
+    "ACCOUNT_NUMBER_658": {
+        "CASE_NUMBER": "658",
         "FOUND_ON": "2025-02-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "233676894493605888",
@@ -14255,8 +14465,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_649": {
-        "CASE_NUMBER": "649",
+    "ACCOUNT_NUMBER_659": {
+        "CASE_NUMBER": "659",
         "FOUND_ON": "2025-02-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1144968074525679636",
@@ -14277,8 +14487,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_650": {
-        "CASE_NUMBER": "650",
+    "ACCOUNT_NUMBER_660": {
+        "CASE_NUMBER": "660",
         "FOUND_ON": "2025-02-10",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1181662158602391626",
@@ -14299,8 +14509,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_651": {
-        "CASE_NUMBER": "651",
+    "ACCOUNT_NUMBER_661": {
+        "CASE_NUMBER": "661",
         "FOUND_ON": "2025-02-10",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "191695529674145794",
@@ -14321,8 +14531,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_652": {
-        "CASE_NUMBER": "652",
+    "ACCOUNT_NUMBER_662": {
+        "CASE_NUMBER": "662",
         "FOUND_ON": "2025-02-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1175766097618813029",
@@ -14343,8 +14553,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_653": {
-        "CASE_NUMBER": "653",
+    "ACCOUNT_NUMBER_663": {
+        "CASE_NUMBER": "663",
         "FOUND_ON": "2025-02-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1175766097618813029",
@@ -14365,8 +14575,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_654": {
-        "CASE_NUMBER": "654",
+    "ACCOUNT_NUMBER_664": {
+        "CASE_NUMBER": "664",
         "FOUND_ON": "2025-02-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "UNKNOWN",
@@ -14387,8 +14597,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_655": {
-        "CASE_NUMBER": "655",
+    "ACCOUNT_NUMBER_665": {
+        "CASE_NUMBER": "665",
         "FOUND_ON": "2025-02-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "UNKNOWN",
@@ -14409,8 +14619,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_656": {
-        "CASE_NUMBER": "656",
+    "ACCOUNT_NUMBER_666": {
+        "CASE_NUMBER": "666",
         "FOUND_ON": "2025-02-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "389812437118877716",
@@ -14431,8 +14641,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_657": {
-        "CASE_NUMBER": "657",
+    "ACCOUNT_NUMBER_667": {
+        "CASE_NUMBER": "667",
         "FOUND_ON": "2025-02-12",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "799284471609556992",
@@ -14453,8 +14663,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_658": {
-        "CASE_NUMBER": "658",
+    "ACCOUNT_NUMBER_668": {
+        "CASE_NUMBER": "668",
         "FOUND_ON": "2025-02-13",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "765833862692601867",
@@ -14475,8 +14685,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_659": {
-        "CASE_NUMBER": "659",
+    "ACCOUNT_NUMBER_669": {
+        "CASE_NUMBER": "669",
         "FOUND_ON": "2025-02-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "880320842737786880",
@@ -14497,8 +14707,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_660": {
-        "CASE_NUMBER": "660",
+    "ACCOUNT_NUMBER_670": {
+        "CASE_NUMBER": "670",
         "FOUND_ON": "2025-02-15",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "431875994039615489",
@@ -14519,8 +14729,50 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_661": {
-        "CASE_NUMBER": "661",
+    "ACCOUNT_NUMBER_671": {
+        "CASE_NUMBER": "671",
+        "FOUND_ON": "2025-02-15",
+        "DISCORD_ID": "214326447702147072",
+        "USERNAME": "NOT_SCANNED",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamrconmmunity.com/s/104291095314",
+        "SURFACE_URL_DOMAIN": "steamrconmmunity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_672": {
+        "CASE_NUMBER": "672",
+        "FOUND_ON": "2025-02-15",
+        "DISCORD_ID": "676422169126764570",
+        "USERNAME": "NOT_SCANNED",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamecomrmunity.com/s/10293042916",
+        "SURFACE_URL_DOMAIN": "steamecomrmunity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_673": {
+        "CASE_NUMBER": "673",
         "FOUND_ON": "2025-02-16",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "321562173774102528",
@@ -14541,8 +14793,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_662": {
-        "CASE_NUMBER": "662",
+    "ACCOUNT_NUMBER_674": {
+        "CASE_NUMBER": "674",
+        "FOUND_ON": "2025-02-16",
+        "DISCORD_ID": "1002897140781154344",
+        "USERNAME": "ghostyy_007_psx",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://spoo.me/EEcvzb",
+        "SURFACE_URL_DOMAIN": "spoo.me",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_675": {
+        "CASE_NUMBER": "675",
         "FOUND_ON": "2025-02-17",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "423338844767911937",
@@ -14563,8 +14836,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
     },
-    "ACCOUNT_NUMBER_663": {
-        "CASE_NUMBER": "663",
+    "ACCOUNT_NUMBER_676": {
+        "CASE_NUMBER": "676",
+        "FOUND_ON": "2025-02-17",
+        "DISCORD_ID": "890488646166249484",
+        "USERNAME": "rin_eiei",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamescommnunity.com/s/10543750149",
+        "SURFACE_URL_DOMAIN": "steamescommnunity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_677": {
+        "CASE_NUMBER": "677",
         "FOUND_ON": "2025-02-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "477276493718749194",
@@ -14585,8 +14879,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_664": {
-        "CASE_NUMBER": "664",
+    "ACCOUNT_NUMBER_678": {
+        "CASE_NUMBER": "678",
         "FOUND_ON": "2025-02-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "524553126116851743",
@@ -14607,8 +14901,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_665": {
-        "CASE_NUMBER": "665",
+    "ACCOUNT_NUMBER_679": {
+        "CASE_NUMBER": "679",
         "FOUND_ON": "2025-02-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "180817756067725312",
@@ -14629,8 +14923,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_666": {
-        "CASE_NUMBER": "666",
+    "ACCOUNT_NUMBER_680": {
+        "CASE_NUMBER": "680",
+        "FOUND_ON": "2025-02-18",
+        "DISCORD_ID": "463936674884485124",
+        "USERNAME": "nox_caustic",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://linkshort.digital/3Jsd03",
+        "SURFACE_URL_DOMAIN": "linkshort.digital",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_681": {
+        "CASE_NUMBER": "681",
         "FOUND_ON": "2025-02-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1290388779940446335",
@@ -14651,8 +14966,113 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_667": {
-        "CASE_NUMBER": "667",
+    "ACCOUNT_NUMBER_682": {
+        "CASE_NUMBER": "682",
+        "FOUND_ON": "2025-02-19",
+        "DISCORD_ID": "588753598318379008",
+        "USERNAME": "insanehellfire",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamecommunity.gifts/s/1052901495",
+        "SURFACE_URL_DOMAIN": "steamecommunity.gifts",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_683": {
+        "CASE_NUMBER": "683",
+        "FOUND_ON": "2025-02-20",
+        "DISCORD_ID": "1161734848575184929",
+        "USERNAME": "xx_xolod_xx",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steanmcommunity.gifts/s/1042910952",
+        "SURFACE_URL_DOMAIN": "steanmcommunity.gifts",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_684": {
+        "CASE_NUMBER": "684",
+        "FOUND_ON": "2025-02-20",
+        "DISCORD_ID": "716513984202932295",
+        "USERNAME": "aktepkorm2",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steanmcommunity.gifts/s/1042910952",
+        "SURFACE_URL_DOMAIN": "steanmcommunity.gifts",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_685": {
+        "CASE_NUMBER": "685",
+        "FOUND_ON": "2025-02-20",
+        "DISCORD_ID": "844124540568600577",
+        "USERNAME": "taihoagishere",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steanmcommunity.gifts/s/1042910954",
+        "SURFACE_URL_DOMAIN": "steanmcommunity.gifts",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_686": {
+        "CASE_NUMBER": "686",
+        "FOUND_ON": "2025-02-20",
+        "DISCORD_ID": "832617214384668683",
+        "USERNAME": "brzinho",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steanmcommunity.gifts/s/1042910951",
+        "SURFACE_URL_DOMAIN": "steanmcommunity.gifts",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_687": {
+        "CASE_NUMBER": "687",
         "FOUND_ON": "2025-02-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "304995372198133762",
@@ -14673,8 +15093,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_668": {
-        "CASE_NUMBER": "668",
+    "ACCOUNT_NUMBER_688": {
+        "CASE_NUMBER": "688",
         "FOUND_ON": "2025-02-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "257629396800765952",
@@ -14695,8 +15115,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_669": {
-        "CASE_NUMBER": "669",
+    "ACCOUNT_NUMBER_689": {
+        "CASE_NUMBER": "689",
         "FOUND_ON": "2025-02-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1342274717159260191",
@@ -14717,8 +15137,29 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_670": {
-        "CASE_NUMBER": "670",
+    "ACCOUNT_NUMBER_690": {
+        "CASE_NUMBER": "690",
+        "FOUND_ON": "2025-02-22",
+        "DISCORD_ID": "729407151331737680",
+        "USERNAME": "lilsnasx",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamnscommnunity.com/1052914093",
+        "SURFACE_URL_DOMAIN": "steamnscommnunity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_691": {
+        "CASE_NUMBER": "691",
         "FOUND_ON": "2025-02-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "336536870618136577",
@@ -14739,8 +15180,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_671": {
-        "CASE_NUMBER": "671",
+    "ACCOUNT_NUMBER_692": {
+        "CASE_NUMBER": "692",
         "FOUND_ON": "2025-02-23",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "879050350160646145",
@@ -14761,8 +15202,92 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_672": {
-        "CASE_NUMBER": "672",
+    "ACCOUNT_NUMBER_693": {
+        "CASE_NUMBER": "693",
+        "FOUND_ON": "2025-02-24",
+        "DISCORD_ID": "222678820468162570",
+        "USERNAME": "mestougan",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamticketgift.com/s/1052901946",
+        "SURFACE_URL_DOMAIN": "steamticketgift.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_694": {
+        "CASE_NUMBER": "694",
+        "FOUND_ON": "2025-02-24",
+        "DISCORD_ID": "302636836482973696",
+        "USERNAME": "orcsking",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamticketgift.com/s/1052901946",
+        "SURFACE_URL_DOMAIN": "steamticketgift.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_695": {
+        "CASE_NUMBER": "695",
+        "FOUND_ON": "2025-02-25",
+        "DISCORD_ID": "434877395024084992",
+        "USERNAME": "halito2040",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamgiveawaygift.com/1058204195",
+        "SURFACE_URL_DOMAIN": "steamgiveawaygift.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_696": {
+        "CASE_NUMBER": "696",
+        "FOUND_ON": "2025-02-25",
+        "DISCORD_ID": "632549592948408320",
+        "USERNAME": "_ludek",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamgiveawaygift.com/1053910957",
+        "SURFACE_URL_DOMAIN": "steamgiveawaygift.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_697": {
+        "CASE_NUMBER": "697",
         "FOUND_ON": "2025-02-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "231810808131092480",
@@ -14783,8 +15308,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_673": {
-        "CASE_NUMBER": "673",
+    "ACCOUNT_NUMBER_698": {
+        "CASE_NUMBER": "698",
         "FOUND_ON": "2025-02-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "308568944686399488",
@@ -14805,8 +15330,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_674": {
-        "CASE_NUMBER": "674",
+    "ACCOUNT_NUMBER_699": {
+        "CASE_NUMBER": "699",
         "FOUND_ON": "2025-03-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1157936675402563685",
@@ -14827,8 +15352,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_675": {
-        "CASE_NUMBER": "675",
+    "ACCOUNT_NUMBER_700": {
+        "CASE_NUMBER": "700",
         "FOUND_ON": "2025-03-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1202765196658212897",
@@ -14849,8 +15374,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_676": {
-        "CASE_NUMBER": "676",
+    "ACCOUNT_NUMBER_701": {
+        "CASE_NUMBER": "701",
         "FOUND_ON": "2025-03-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "754039350219505855",
@@ -14871,8 +15396,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_677": {
-        "CASE_NUMBER": "677",
+    "ACCOUNT_NUMBER_702": {
+        "CASE_NUMBER": "702",
         "FOUND_ON": "2025-03-01",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "560431434179805207",
@@ -14893,8 +15418,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_678": {
-        "CASE_NUMBER": "678",
+    "ACCOUNT_NUMBER_703": {
+        "CASE_NUMBER": "703",
         "FOUND_ON": "2025-03-02",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "698707707884208159",
@@ -14915,8 +15440,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_679": {
-        "CASE_NUMBER": "679",
+    "ACCOUNT_NUMBER_704": {
+        "CASE_NUMBER": "704",
         "FOUND_ON": "2025-03-03",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "488205722560102422",
@@ -14937,8 +15462,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_680": {
-        "CASE_NUMBER": "680",
+    "ACCOUNT_NUMBER_705": {
+        "CASE_NUMBER": "705",
         "FOUND_ON": "2025-03-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "522910326510059521",
@@ -14959,8 +15484,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_681": {
-        "CASE_NUMBER": "681",
+    "ACCOUNT_NUMBER_706": {
+        "CASE_NUMBER": "706",
         "FOUND_ON": "2025-03-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "355781628540223488",
@@ -14981,8 +15506,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_682": {
-        "CASE_NUMBER": "682",
+    "ACCOUNT_NUMBER_707": {
+        "CASE_NUMBER": "707",
         "FOUND_ON": "2025-03-04",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1199486866265755751",
@@ -15003,8 +15528,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_683": {
-        "CASE_NUMBER": "683",
+    "ACCOUNT_NUMBER_708": {
+        "CASE_NUMBER": "708",
         "FOUND_ON": "2025-03-05",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1146865375145885737",
@@ -15025,8 +15550,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_684": {
-        "CASE_NUMBER": "684",
+    "ACCOUNT_NUMBER_709": {
+        "CASE_NUMBER": "709",
         "FOUND_ON": "2025-03-05",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1067042285029707788",
@@ -15047,8 +15572,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_685": {
-        "CASE_NUMBER": "685",
+    "ACCOUNT_NUMBER_710": {
+        "CASE_NUMBER": "710",
         "FOUND_ON": "2025-03-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "388774081899790337",
@@ -15069,8 +15594,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_686": {
-        "CASE_NUMBER": "686",
+    "ACCOUNT_NUMBER_711": {
+        "CASE_NUMBER": "711",
         "FOUND_ON": "2025-03-06",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "427566053175066642",
@@ -15091,8 +15616,71 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_687": {
-        "CASE_NUMBER": "687",
+    "ACCOUNT_NUMBER_712": {
+        "CASE_NUMBER": "712",
+        "FOUND_ON": "2025-03-06",
+        "DISCORD_ID": "418531986550816778",
+        "USERNAME": "krally4627",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steanmecomnmunity.com/1095309416",
+        "SURFACE_URL_DOMAIN": "steanmecomnmunity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_713": {
+        "CASE_NUMBER": "713",
+        "FOUND_ON": "2025-03-06",
+        "DISCORD_ID": "713116971683676323",
+        "USERNAME": "sn1z",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steanmecomnmunity.com/1095309416",
+        "SURFACE_URL_DOMAIN": "steanmecomnmunity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_714": {
+        "CASE_NUMBER": "714",
+        "FOUND_ON": "2025-03-06",
+        "DISCORD_ID": "993276730989105212",
+        "USERNAME": "ashoo0799",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamecommunjty.com/105932041",
+        "SURFACE_URL_DOMAIN": "steamecommunjty.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_715": {
+        "CASE_NUMBER": "715",
         "FOUND_ON": "2025-03-07",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "682420811277271130",
@@ -15113,8 +15701,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_688": {
-        "CASE_NUMBER": "688",
+    "ACCOUNT_NUMBER_716": {
+        "CASE_NUMBER": "716",
         "FOUND_ON": "2025-03-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1188813024295923737",
@@ -15135,8 +15723,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_689": {
-        "CASE_NUMBER": "689",
+    "ACCOUNT_NUMBER_717": {
+        "CASE_NUMBER": "717",
         "FOUND_ON": "2025-03-08",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "905873360410538036",
@@ -15157,8 +15745,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_690": {
-        "CASE_NUMBER": "690",
+    "ACCOUNT_NUMBER_718": {
+        "CASE_NUMBER": "718",
         "FOUND_ON": "2025-03-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "977549234712760390",
@@ -15179,8 +15767,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_691": {
-        "CASE_NUMBER": "691",
+    "ACCOUNT_NUMBER_719": {
+        "CASE_NUMBER": "719",
         "FOUND_ON": "2025-03-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "648874646774611978",
@@ -15201,8 +15789,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_692": {
-        "CASE_NUMBER": "692",
+    "ACCOUNT_NUMBER_720": {
+        "CASE_NUMBER": "720",
         "FOUND_ON": "2025-03-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "336920691880361986",
@@ -15223,8 +15811,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_693": {
-        "CASE_NUMBER": "693",
+    "ACCOUNT_NUMBER_721": {
+        "CASE_NUMBER": "721",
         "FOUND_ON": "2025-03-09",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "841766080211976193",
@@ -15245,8 +15833,50 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_694": {
-        "CASE_NUMBER": "694",
+    "ACCOUNT_NUMBER_722": {
+        "CASE_NUMBER": "722",
+        "FOUND_ON": "2025-03-09",
+        "DISCORD_ID": "843961834407329793",
+        "USERNAME": "ninjaghost",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamcommnunity.gifts/104291052",
+        "SURFACE_URL_DOMAIN": "steamcommnunity.gifts",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_723": {
+        "CASE_NUMBER": "723",
+        "FOUND_ON": "2025-03-09",
+        "DISCORD_ID": "1108892722380677191",
+        "USERNAME": "laraxzx012",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamcommnunity.gifts/104291052",
+        "SURFACE_URL_DOMAIN": "steamcommnunity.gifts",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_724": {
+        "CASE_NUMBER": "724",
         "FOUND_ON": "2025-03-10",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "757057161242214460",
@@ -15267,8 +15897,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_695": {
-        "CASE_NUMBER": "695",
+    "ACCOUNT_NUMBER_725": {
+        "CASE_NUMBER": "725",
         "FOUND_ON": "2025-03-10",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "541872543573999616",
@@ -15289,8 +15919,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_696": {
-        "CASE_NUMBER": "696",
+    "ACCOUNT_NUMBER_726": {
+        "CASE_NUMBER": "726",
         "FOUND_ON": "2025-03-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1342150059483070506",
@@ -15311,8 +15941,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_697": {
-        "CASE_NUMBER": "697",
+    "ACCOUNT_NUMBER_727": {
+        "CASE_NUMBER": "727",
         "FOUND_ON": "2025-03-11",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "217922266577502208",
@@ -15333,8 +15963,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_698": {
-        "CASE_NUMBER": "698",
+    "ACCOUNT_NUMBER_728": {
+        "CASE_NUMBER": "728",
         "FOUND_ON": "2025-03-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "541872543573999616",
@@ -15355,8 +15985,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_699": {
-        "CASE_NUMBER": "699",
+    "ACCOUNT_NUMBER_729": {
+        "CASE_NUMBER": "729",
         "FOUND_ON": "2025-03-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "691835106565947473",
@@ -15377,8 +16007,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-13T02:07:12.542632"
     },
-    "ACCOUNT_NUMBER_700": {
-        "CASE_NUMBER": "700",
+    "ACCOUNT_NUMBER_730": {
+        "CASE_NUMBER": "730",
         "FOUND_ON": "2025-03-12",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1138023535651074070",
@@ -15399,8 +16029,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-14T04:30:13.518608"
     },
-    "ACCOUNT_NUMBER_701": {
-        "CASE_NUMBER": "701",
+    "ACCOUNT_NUMBER_731": {
+        "CASE_NUMBER": "731",
         "FOUND_ON": "2025-03-14",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "422088091625586689",
@@ -15421,8 +16051,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-14T09:39:34.764665"
     },
-    "ACCOUNT_NUMBER_702": {
-        "CASE_NUMBER": "702",
+    "ACCOUNT_NUMBER_732": {
+        "CASE_NUMBER": "732",
         "FOUND_ON": "2025-03-14",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "1038480388110176257",
@@ -15442,5 +16072,110 @@
         "FINAL_URL_STATUS": "",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-15T05:02:10.767515"
+    },
+    "ACCOUNT_NUMBER_733": {
+        "CASE_NUMBER": "733",
+        "FOUND_ON": "2025-03-15",
+        "DISCORD_ID": "279698162225119233",
+        "USERNAME": "misiu52",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://tinyurl.com/mry5w2x3",
+        "SURFACE_URL_DOMAIN": "tinyurl.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_734": {
+        "CASE_NUMBER": "734",
+        "FOUND_ON": "2025-03-15",
+        "DISCORD_ID": "690161086804394114",
+        "USERNAME": "cibotarumarius",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://shortlinks.guru/s/CNKTQ",
+        "SURFACE_URL_DOMAIN": "shortlinks.guru",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_735": {
+        "CASE_NUMBER": "735",
+        "FOUND_ON": "2025-03-15",
+        "DISCORD_ID": "656502440891514881",
+        "USERNAME": "sharkuma",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://shortlinks.guru/s/CNTQK",
+        "SURFACE_URL_DOMAIN": "shortlinks.guru",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_736": {
+        "CASE_NUMBER": "736",
+        "FOUND_ON": "2025-03-15",
+        "DISCORD_ID": "492403264172589076",
+        "USERNAME": "2steepcat",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://u.to/OdsoIg",
+        "SURFACE_URL_DOMAIN": "u.to",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
+    },
+    "ACCOUNT_NUMBER_737": {
+        "CASE_NUMBER": "737",
+        "FOUND_ON": "2025-03-15",
+        "DISCORD_ID": "476732513260142592",
+        "USERNAME": "mexates",
+        "ACCOUNT_STATUS": "",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://stearmecommunity.com/185291082",
+        "SURFACE_URL_DOMAIN": "stearmecommunity.com",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "",
+        "FINAL_URL_DOMAIN": "",
+        "FINAL_URL_STATUS": "",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-15T21:14:25.777172"
     }
 }
