@@ -11,7 +11,7 @@ def log(message):
 
 # Open the Excel file
 log("Loading Excel file...")
-workbook = openpyxl.load_workbook("ExporterSheet.xlsx")
+workbook = openpyxl.load_workbook("../ExporterSheet.xlsx")
 worksheet = workbook.active
 
 # Load existing data from the output JSON file if it exists
