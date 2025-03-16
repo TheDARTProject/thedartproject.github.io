@@ -260,6 +260,11 @@ footer a:hover {
 	max-width: 1300px;
 	margin: 0 auto;
 	padding: 0 2rem;
+	margin-top: -10px;
+}
+
+nav .flex.items-center.space-x-2 {
+    margin-top: 5px;
 }
 
 #infoHeader {
