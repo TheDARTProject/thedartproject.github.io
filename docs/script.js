@@ -17,6 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Add event listener for the FAQ button
+    const faqButton = document.getElementById('faqButton');
+    if (faqButton) {
+        faqButton.addEventListener('click', () => {
+            window.location.href = 'faq.html';
+        });
+    }
+
     // Other event listeners and initialization code...
     if (window.location.pathname.includes('dashboard.html')) {
         fetchData();
