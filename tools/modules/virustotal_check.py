@@ -18,7 +18,7 @@ VT_URL = "https://www.virustotal.com/api/v3/urls"
 HEADERS = {"x-apikey": VIRUSTOTAL_API_KEY}
 
 # Load the JSON data
-json_path = "Compromised-Discord-Accounts.json"
+json_path = "../Compromised-Discord-Accounts.json"
 
 with open(json_path, "r", encoding="utf-8") as file:
     data = json.load(file)

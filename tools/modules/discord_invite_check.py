@@ -72,7 +72,7 @@ def update_invite_status():
         f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Loading compromised account data..."
     )
 
-    with open("Compromised-Discord-Accounts.json", "r") as f:
+    with open("../Compromised-Discord-Accounts.json", "r") as f:
         accounts_data = json.load(f)
 
     total_accounts = len(accounts_data)
@@ -128,7 +128,7 @@ def update_invite_status():
             print(
                 f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Saving updated account data for {account}..."
             )
-            with open("Compromised-Discord-Accounts.json", "w") as f:
+            with open("../Compromised-Discord-Accounts.json", "w") as f:
                 json.dump(accounts_data, f, indent=4)
 
             print(
