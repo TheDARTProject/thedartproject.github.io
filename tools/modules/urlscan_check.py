@@ -10,12 +10,15 @@ from datetime import datetime
 load_dotenv("../.env")
 
 URLSCAN_API_KEY = os.getenv("URLSCAN_API_TOKEN")
+if not URLSCAN_API_KEY:
+    raise ValueError("URLSCAN_API_TOKEN not found in environment variables")
+
 EXCLUDED_DOMAINS = set(os.getenv("EXCLUDED_DOMAINS", "").split(","))
 RATE_LIMIT = int(os.getenv("URLSCAN_RATE_LIMIT", 4))  # Requests per minute
 
 URLSCAN_SUBMIT_URL = "https://urlscan.io/api/v1/scan/"
 URLSCAN_RESULT_URL = "https://urlscan.io/api/v1/result/"
-HEADERS = {"API-Key": URLSCAN_API_KEY}
+HEADERS = {"API-Key": URLSCAN_API_KEY, "Content-Type": "application/json"}
 
 # Load the JSON data
 json_path = "../Compromised-Discord-Accounts.json"
@@ -57,6 +60,29 @@ def get_final_url(url):
         submit_response = requests.post(
             URLSCAN_SUBMIT_URL, headers=HEADERS, json=submit_data
         )
+
+        # Handle DNS resolution errors as inactive domains
+        if submit_response.status_code == 400:
+            response_json = submit_response.json()
+            error_message = response_json.get("message", "")
+            if (
+                "DNS Error" in error_message
+                or "could not resolve domain" in error_message.lower()
+            ):
+                log(f"Domain cannot be resolved. Marking as INACTIVE: {url}")
+                return url  # Return original URL, which will be marked as INACTIVE
+
+            # Log other 400 errors for debugging
+            log(
+                f"URLScan API error: {submit_response.status_code} - {submit_response.text}"
+            )
+            return url
+
+        # Handle 404 status codes as inactive domains
+        if submit_response.status_code == 404:
+            log(f"URL returned 404 status. Marking as INACTIVE: {url}")
+            return url  # Return original URL, which will be marked as INACTIVE
+
         submit_response.raise_for_status()
 
         scan_uuid = submit_response.json().get("uuid")
@@ -85,6 +111,13 @@ def get_final_url(url):
             return url
 
         result_data = result_response.json()
+
+        # Check if the scan detected a 404 response in the page status
+        page = result_data.get("page", {})
+        status_code = page.get("statusCode")
+        if status_code == 404:
+            log(f"URL returned 404 status in scan results. Marking as INACTIVE: {url}")
+            return url  # Return original URL, which will be marked as INACTIVE
 
         # Extract final URL from the redirection chain
         # URLScan stores this information in data.requests
@@ -171,16 +204,59 @@ for i, (account, details) in enumerate(items):
     details["FINAL_URL"] = final_url
     details["FINAL_URL_DOMAIN"] = final_url_domain
 
+    # Check if the final URL is different from the surface URL (i.e., there was a redirect)
     if final_url_domain != urlparse(surface_url).netloc:
-        details["SURFACE_URL_STATUS"] = "ACTIVE"
-        details["FINAL_URL_STATUS"] = "ACTIVE"
-        log(f"URL Redirect Detected! Marking as ACTIVE.")
-        total_active += 1
+        # If there was a redirect, check if the final URL returns a 404 or 400
+        if final_url_domain == urlparse(surface_url).netloc:
+            # No redirect, but no 400 or 404, mark as ACTIVE
+            details["SURFACE_URL_STATUS"] = "ACTIVE"
+            details["FINAL_URL_STATUS"] = "ACTIVE"
+            log(f"No Redirect but no 400/404. Marking as ACTIVE.")
+            total_active += 1
+        else:
+            # There was a redirect, check if the final URL returns a 404 or 400
+            try:
+                final_response = requests.get(final_url)
+                if final_response.status_code in [400, 404]:
+                    details["SURFACE_URL_STATUS"] = "ACTIVE"
+                    details["FINAL_URL_STATUS"] = "INACTIVE"
+                    log(
+                        f"Redirect detected but final URL is INACTIVE. Marking surface URL as ACTIVE."
+                    )
+                    total_active += 1
+                else:
+                    details["SURFACE_URL_STATUS"] = "ACTIVE"
+                    details["FINAL_URL_STATUS"] = "ACTIVE"
+                    log(
+                        f"Redirect detected and final URL is ACTIVE. Marking as ACTIVE."
+                    )
+                    total_active += 1
+            except requests.RequestException:
+                details["SURFACE_URL_STATUS"] = "ACTIVE"
+                details["FINAL_URL_STATUS"] = "INACTIVE"
+                log(
+                    f"Redirect detected but final URL is INACTIVE. Marking surface URL as ACTIVE."
+                )
+                total_active += 1
     else:
-        details["SURFACE_URL_STATUS"] = "INACTIVE"
-        details["FINAL_URL_STATUS"] = "INACTIVE"
-        log(f"No Redirect. Marking as INACTIVE.")
-        total_inactive += 1
+        # No redirect, check if the URL returns a 400 or 404
+        try:
+            surface_response = requests.get(surface_url)
+            if surface_response.status_code in [400, 404]:
+                details["SURFACE_URL_STATUS"] = "INACTIVE"
+                details["FINAL_URL_STATUS"] = "INACTIVE"
+                log(f"No Redirect and URL is INACTIVE. Marking as INACTIVE.")
+                total_inactive += 1
+            else:
+                details["SURFACE_URL_STATUS"] = "ACTIVE"
+                details["FINAL_URL_STATUS"] = "ACTIVE"
+                log(f"No Redirect but no 400/404. Marking as ACTIVE.")
+                total_active += 1
+        except requests.RequestException:
+            details["SURFACE_URL_STATUS"] = "INACTIVE"
+            details["FINAL_URL_STATUS"] = "INACTIVE"
+            log(f"No Redirect and URL is INACTIVE. Marking as INACTIVE.")
+            total_inactive += 1
 
     # Save after each update
     save_json()
