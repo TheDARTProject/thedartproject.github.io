@@ -66,8 +66,8 @@ def get_final_url(url):
             response_json = submit_response.json()
             error_message = response_json.get("message", "")
             if (
-                "DNS Error" in error_message
-                or "could not resolve domain" in error_message.lower()
+                    "DNS Error" in error_message
+                    or "could not resolve domain" in error_message.lower()
             ):
                 log(f"Domain cannot be resolved. Marking as INACTIVE: {url}")
                 return url  # Return original URL, which will be marked as INACTIVE
@@ -142,60 +142,32 @@ def get_final_url(url):
         return url
 
 
-# Process each account entry with rate limiting
-log("Starting URLScan URL check...")
-
-# Count the total number of cases
-total_cases = len(data)
-log(f"Total cases: {total_cases}")
-
-# Count non-excluded URLs
-non_excluded_count = sum(
-    1
-    for details in data.values()
-    if details.get("SURFACE_URL", "")
-    and urlparse(details.get("SURFACE_URL", "")).netloc not in EXCLUDED_DOMAINS
-)
-log(f"Cases to process (non-excluded URLs): {non_excluded_count}")
-
-request_count = 0  # Initialize the request count
-excluded_count = 0  # For counting excluded domains between processed accounts
-total_excluded = 0  # For overall statistics
-total_active = 0  # Count of active URLs
-total_inactive = 0  # Count of inactive URLs
-
-# Convert data.items() to a list to make it iterable multiple times
-items = list(data.items())
-
-for i, (account, details) in enumerate(items):
+def process_account(account, details, request_timestamps):
+    """Process a single account and update its URL details."""
     surface_url = details.get("SURFACE_URL", "")
     if not surface_url:
-        continue
+        return False, request_timestamps
 
     if urlparse(surface_url).netloc in EXCLUDED_DOMAINS:
-        excluded_count += 1
-        total_excluded += 1
-
-        # Check if next item is also excluded or if this is the last item
-        next_is_excluded = False
-        if i + 1 < len(items):
-            next_account, next_details = items[i + 1]
-            next_url = next_details.get("SURFACE_URL", "")
-            if next_url and urlparse(next_url).netloc in EXCLUDED_DOMAINS:
-                next_is_excluded = True
-
-        # Only print excluded count when we're about to process a non-excluded account
-        # or if this is the last item
-        if not next_is_excluded or i + 1 == len(items):
-            plural = "s" if excluded_count != 1 else ""
-            log(f"Skipping {excluded_count} account{plural} with excluded domains")
-            excluded_count = 0  # Reset counter
-        continue
+        return False, request_timestamps
 
     log(f"Processing Account: {account} | URL: {surface_url}")
 
-    # Only apply the rate limit for URLs that are actually sent through the API
-    request_count += 1
+    # Respect rate limit by checking timestamps
+    current_time = time.time()
+    # Remove timestamps older than 60 seconds
+    while request_timestamps and current_time - request_timestamps[0] > 60:
+        request_timestamps.pop(0)
+
+    # If we've reached the rate limit, wait until enough time has passed
+    if len(request_timestamps) >= RATE_LIMIT:
+        wait_time = 60 - (current_time - request_timestamps[0])
+        if wait_time > 0:
+            log(f"Rate limit reached. Waiting {wait_time:.2f} seconds...")
+            time.sleep(wait_time)
+
+    # Add current request timestamp
+    request_timestamps.append(time.time())
 
     final_url = get_final_url(surface_url)
     final_url_domain = urlparse(final_url).netloc
@@ -212,7 +184,7 @@ for i, (account, details) in enumerate(items):
             details["SURFACE_URL_STATUS"] = "ACTIVE"
             details["FINAL_URL_STATUS"] = "ACTIVE"
             log(f"No Redirect but no 400/404. Marking as ACTIVE.")
-            total_active += 1
+            return True, request_timestamps
         else:
             # There was a redirect, check if the final URL returns a 404 or 400
             try:
@@ -223,21 +195,20 @@ for i, (account, details) in enumerate(items):
                     log(
                         f"Redirect detected but final URL is INACTIVE. Marking surface URL as ACTIVE."
                     )
-                    total_active += 1
                 else:
                     details["SURFACE_URL_STATUS"] = "ACTIVE"
                     details["FINAL_URL_STATUS"] = "ACTIVE"
                     log(
                         f"Redirect detected and final URL is ACTIVE. Marking as ACTIVE."
                     )
-                    total_active += 1
+                return True, request_timestamps
             except requests.RequestException:
                 details["SURFACE_URL_STATUS"] = "ACTIVE"
                 details["FINAL_URL_STATUS"] = "INACTIVE"
                 log(
                     f"Redirect detected but final URL is INACTIVE. Marking surface URL as ACTIVE."
                 )
-                total_active += 1
+                return True, request_timestamps
     else:
         # No redirect, check if the URL returns a 400 or 404
         try:
@@ -246,34 +217,84 @@ for i, (account, details) in enumerate(items):
                 details["SURFACE_URL_STATUS"] = "INACTIVE"
                 details["FINAL_URL_STATUS"] = "INACTIVE"
                 log(f"No Redirect and URL is INACTIVE. Marking as INACTIVE.")
-                total_inactive += 1
+                return False, request_timestamps
             else:
                 details["SURFACE_URL_STATUS"] = "ACTIVE"
                 details["FINAL_URL_STATUS"] = "ACTIVE"
                 log(f"No Redirect but no 400/404. Marking as ACTIVE.")
-                total_active += 1
+                return True, request_timestamps
         except requests.RequestException:
             details["SURFACE_URL_STATUS"] = "INACTIVE"
             details["FINAL_URL_STATUS"] = "INACTIVE"
             log(f"No Redirect and URL is INACTIVE. Marking as INACTIVE.")
+            return False, request_timestamps
+
+
+# Main execution
+def main():
+    # Convert data.items() to a list to make it iterable multiple times
+    items = list(data.items())
+
+    # Ask user for run mode
+    print("\n=== URLScan Check Tool ===")
+    print("1. Complete run (process all accounts)")
+    print("2. Start from specific account number")
+    choice = input("Enter your choice (1 or 2): ")
+
+    start_index = 0
+    if choice == "2":
+        total_accounts = len(items)
+        print(f"There are {total_accounts} accounts in total.")
+        while True:
+            try:
+                start_number = int(input(f"Enter starting account number (1-{total_accounts}): "))
+                if 1 <= start_number <= total_accounts:
+                    start_index = start_number - 1
+                    break
+                else:
+                    print(f"Please enter a number between 1 and {total_accounts}.")
+            except ValueError:
+                print("Please enter a valid number.")
+
+    log(f"Starting URLScan URL check from account #{start_index + 1}...")
+
+    # Stats counters
+    total_excluded = 0
+    total_active = 0
+    total_inactive = 0
+    request_timestamps = []  # Track when requests were made for rate limiting
+
+    # Process each account entry with proper rate limiting
+    for i, (account, details) in enumerate(items[start_index:], start=start_index):
+        surface_url = details.get("SURFACE_URL", "")
+        if not surface_url:
+            continue
+
+        if urlparse(surface_url).netloc in EXCLUDED_DOMAINS:
+            total_excluded += 1
+            continue
+
+        is_active, request_timestamps = process_account(account, details, request_timestamps)
+
+        if is_active:
+            total_active += 1
+        else:
             total_inactive += 1
 
-    # Save after each update
-    save_json()
+        # Save after each update
+        save_json()
 
-    # Respect rate limit
-    if request_count >= RATE_LIMIT:
-        log(f"Rate limit reached ({RATE_LIMIT} requests). Waiting 60 seconds...")
-        time.sleep(60)
-        request_count = 0  # Reset the request count after the wait
+    # Print final statistics
+    log("Finished processing. All results have been saved to the JSON file.")
+    log("Final Statistics:")
+    excluded_plural = "s" if total_excluded != 1 else ""
+    log(f"- Total accounts skipped: {total_excluded} account{excluded_plural}")
+    active_plural = "s" if total_active != 1 else ""
+    log(f"- URLs flagged as ACTIVE: {total_active} account{active_plural}")
+    inactive_plural = "s" if total_inactive != 1 else ""
+    log(f"- URLs flagged as INACTIVE: {total_inactive} account{inactive_plural}")
+    log(f"- Total accounts processed: {total_active + total_inactive}")
 
-# Print final statistics
-log("Finished processing. All results have been saved to the JSON file.")
-log("Final Statistics:")
-excluded_plural = "s" if total_excluded != 1 else ""
-log(f"- Total accounts skipped: {total_excluded} account{excluded_plural}")
-active_plural = "s" if total_active != 1 else ""
-log(f"- URLs flagged as ACTIVE: {total_active} account{active_plural}")
-inactive_plural = "s" if total_inactive != 1 else ""
-log(f"- URLs flagged as INACTIVE: {total_inactive} account{inactive_plural}")
-log(f"- Total accounts processed: {total_active + total_inactive}")
+
+if __name__ == "__main__":
+    main()
