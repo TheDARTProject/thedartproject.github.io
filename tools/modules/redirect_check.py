@@ -76,6 +76,13 @@ def process_compromised_accounts():
             print(f"Updating account {account_key} with final URL: {final_url} and domain: {final_domain}")
             account_info['FINAL_URL'] = final_url
             account_info['FINAL_URL_DOMAIN'] = final_domain
+
+            # Check if FINAL_URL is different from SURFACE_URL and update statuses
+            if surface_url != final_url:
+                account_info['SURFACE_URL_STATUS'] = "ACTIVE"
+                account_info['FINAL_URL_STATUS'] = "ACTIVE"
+                print(f"FINAL_URL differs from SURFACE_URL. Set statuses to ACTIVE for account {account_key}.")
+
             updated_count += 1
         else:
             print(f"No final URL found for account {account_key}, skipping update...")
