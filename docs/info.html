@@ -101,11 +101,6 @@
                   <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
                 </svg> Home </a>
             </li>
-            <!-- Dashboard Breadcrumb -->
-            <li class="inline-flex items-center">
-              <span class="text-gray-400 mx-2">></span>
-              <a href="/CDA-Project/dashboard.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-indigo-600"> Dashboard </a>
-            </li>
             <!-- Information Breadcrumb -->
             <li class="inline-flex items-center">
               <span class="text-gray-400 mx-2">></span>
@@ -173,54 +168,60 @@
         <div class="mb-8">
           <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contributing Servers</h3>
           <p class="text-gray-600 mb-6">I am grateful to the following Discord servers that have contributed their automod logs to help improve this project. Their contributions have been invaluable in tracking and analyzing malicious activities across Discord.</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="flex flex-wrap justify-center gap-6">
             <!-- Server Card: Project CW -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full md:w-5/12 lg:w-3/10 max-w-sm">
               <div class="flex items-center space-x-4">
-                <div class="flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
+                <div class="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden">
+                  <img src="https://cdn.discordapp.com/icons/1098161688898973696/6ac93df83203f1bfaf2112197ed43f2a.webp?size=128" alt="Server Icon" class="discord-server-icon w-full h-full object-cover">
                 </div>
                 <div>
                   <h4 class="text-lg font-semibold text-indigo-600">Project CW</h4>
                   <p class="text-gray-600">Active Contributor</p>
+                  <p class="text-gray-600">666 Cases Contributed</p>
                 </div>
               </div>
             </div>
             <!-- Server Card: BlitzHUB EU -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full md:w-5/12 lg:w-3/10 max-w-sm">
               <div class="flex items-center space-x-4">
-                <div class="flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
+                <div class="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden">
+                  <img src="https://cdn.discordapp.com/icons/784161851310735370/636bcfef663896954e52c2c179fad616.webp?size=128" alt="Server Icon" class="discord-server-icon w-full h-full object-cover">
                 </div>
                 <div>
                   <h4 class="text-lg font-semibold text-indigo-600">BlitzHUB EU</h4>
                   <p class="text-gray-600">Active Contributor</p>
+                  <p class="text-gray-600">36 Cases Contributed</p>
                 </div>
               </div>
             </div>
             <!-- Server Card: Anonymous Servers -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full md:w-5/12 lg:w-3/10 max-w-sm">
               <div class="flex items-center space-x-4">
-                <div class="flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
+                <div class="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden">
+                  <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/site-data/images/Anon.png" alt="Server Icon" class="discord-server-icon w-full h-full object-cover">
                 </div>
                 <div>
-                  <h4 class="text-lg font-semibold text-indigo-600">Anonymous Servers</h4>
-                  <p class="text-gray-600">1 Anonymous Contributor</p>
+                  <h4 class="text-lg font-semibold text-indigo-600">1 Anonymous Server</h4>
+                  <p class="text-gray-600">Active Contributor</p>
+                  <p class="text-gray-600">35 Cases Contributed</p>
+                </div>
+              </div>
+            </div>
+            <!-- Server Card: Future Contributors -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full md:w-5/12 lg:w-3/10 max-w-sm">
+              <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden">
+                  <img src="https://cdn.discordapp.com/icons/1232199448688590899/b69fb04b9bc8b8b468da8fe79b132651.png?size=128" alt="Server Icon" class="discord-server-icon w-full h-full object-cover">
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-indigo-600">Future Contributors Here</h4>
+                  <p class="text-gray-600">Let's get in contact</p>
+                  <p class="text-gray-600">and join the project!</p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Subtext for Anonymous Servers -->
-          <p class="text-gray-600 mt-6">Several servers have chosen to remain anonymous while contributing their automod logs. Their data has been crucial in identifying patterns of malicious behavior without revealing their identities.</p>
-          <!-- Call to Action -->
-          <p class="text-gray-600 mt-6">If your server has contributed and you don't see it listed here, please contact me on Discord to ensure it's added. I value every contribution and strive to give credit where it's due.</p>
         </div>
         <!-- Project Timeline Section -->
         <div class="mb-8">
