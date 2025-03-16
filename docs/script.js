@@ -4,9 +4,8 @@ let filteredData = [];
 let currentPage = 1;
 const rowsPerPage = 10;
 
-// Existing DOMContentLoaded event listener
+// Event listeners
 document.addEventListener('DOMContentLoaded', () => {
-
     // Add event listener for the info button
     const infoButton = document.getElementById('infoButton');
     if (infoButton) {
@@ -95,7 +94,85 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initializeTheme();
+
+    const symbols = ['🔒', '🛡️', '🔐', '⚠️', '{...}', '</>',
+        '101010', '0x1A3F', 'SSL', 'HTTPS', 'RSA', 'SHA-256'
+    ];
+
+    // Create and initialize symbol animation
+    initializeSecuritySymbols(symbols);
 });
+
+function initializeSecuritySymbols(symbols) {
+    if (!document.querySelector('.texture')) {
+        setTimeout(() => {
+            if (document.querySelector('.texture')) {
+                startSecuritySymbolsAnimation(symbols);
+            }
+        }, 500);
+    } else {
+        startSecuritySymbolsAnimation(symbols);
+    }
+}
+
+function startSecuritySymbolsAnimation(symbols) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+    }
+
+    const container = document.body;
+    let animationInterval;
+
+    // Function to add security symbol
+    function addSecuritySymbol() {
+        if (!document.querySelector('.texture')) {
+            clearInterval(animationInterval);
+            return;
+        }
+
+        const symbol = document.createElement('div');
+        symbol.className = 'security-symbol';
+        symbol.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+        // Random position
+        symbol.style.left = Math.random() * 95 + '%';
+        symbol.style.top = Math.random() * 95 + '%';
+        symbol.style.fontSize = (Math.random() * 14 + 8) + 'px';
+        symbol.style.opacity = '0';
+        symbol.style.transform = 'rotate(' + (Math.random() * 40 - 20) + 'deg)';
+        symbol.style.zIndex = '-1'; // Ensure it stays behind content
+        symbol.style.pointerEvents = 'none'; // Ensure it doesn't block interaction
+
+        container.appendChild(symbol);
+
+        // Animate it
+        setTimeout(() => {
+            symbol.style.animation = 'symbolFade 3s ease-in-out forwards';
+
+            // Remove after animation
+            setTimeout(() => {
+                if (symbol && symbol.parentNode === container) {
+                    container.removeChild(symbol);
+                }
+            }, 3000);
+        }, 100);
+    }
+
+    // Start the animation interval
+    animationInterval = setInterval(addSecuritySymbol, 2000);
+
+    // Initial symbol to start immediately
+    setTimeout(addSecuritySymbol, 200);
+
+    // Clean up animation if page visibility changes
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            clearInterval(animationInterval);
+        } else if (document.querySelector('.texture')) {
+            animationInterval = setInterval(addSecuritySymbol, 2000);
+        }
+    });
+}
 
 // Dark mode toggle
 const darkModeToggle = document.getElementById('darkModeToggle');
