@@ -1,3 +1,6 @@
+// Imports
+import serverNames from './servers.js';
+
 // Main data object
 let accountsData = {};
 let filteredData = [];
@@ -588,9 +591,12 @@ function showAccountDetails(caseNumber) {
                 <h3 class="font-medium text-lg mb-2">Account Information</h3>
                 <p><span class="font-medium">Case Number:</span> ${account.CASE_NUMBER}</p>
                 <p><span class="font-medium">Found On:</span> ${formatDate(account.FOUND_ON)}</p>
+                <p><span class="font-medium">Found On Server:</span> ${account.FOUND_ON_SERVER}</p>
                 <p><span class="font-medium">Discord ID:</span> ${account.DISCORD_ID}</p>
                 <p><span class="font-medium">Username:</span> ${account.USERNAME}</p>
+                <p><span class="font-medium">Account Status:</span> ${account.ACCOUNT_STATUS}</p>
                 <p><span class="font-medium">Behaviour:</span> ${account.BEHAVIOUR}</p>
+                <p><span class="font-medium">Non-ASCII Username:</span> ${account.NON_ASCII_USERNAME ? 'Yes' : 'No'}</p>
             </div>
             <div>
                 <h3 class="font-medium text-lg mb-2">Attack Details</h3>
@@ -598,7 +604,8 @@ function showAccountDetails(caseNumber) {
                 <p><span class="font-medium">Attack Vector:</span> ${account.ATTACK_VECTOR}</p>
                 <p><span class="font-medium">Attack Goal:</span> ${account.ATTACK_GOAL}</p>
                 <p><span class="font-medium">Attack Surface:</span> ${account.ATTACK_SURFACE}</p>
-                <p><span class="font-medium">Suspected Origin:</span> ${account.SUSPECTED_REGION_OF_ORIGIN}</p>
+                <p><span class="font-medium">Suspected Region of Origin:</span> ${account.SUSPECTED_REGION_OF_ORIGIN}</p>
+                <p><span class="font-medium">Last Check:</span> ${formatDate(account.LAST_CHECK)}</p>
             </div>
         </div>
         <div class="mt-4">
@@ -663,6 +670,91 @@ function createCharts() {
     createStatusAccountsChart();
     createGoalsChart();
     createMethodGoalChart();
+    createServerCasesChart();
+}
+
+// Create server cases chart
+function createServerCasesChart() {
+    const canvas = document.getElementById('serverCasesChart');
+
+    // Destroy existing chart if it exists
+    if (canvas.chart) {
+        canvas.chart.destroy();
+    }
+
+    // Count cases by server
+    const serverCounts = {};
+    let anonymousServerCount = 0;
+
+    // Count the number of anonymous servers from serverNames
+    const anonymousServerKeys = Object.keys(serverNames).filter(key => key.startsWith('ANONYMOUS_SERVER'));
+    const totalAnonymousServers = anonymousServerKeys.length;
+
+    filteredData.forEach(account => {
+        const server = account.FOUND_ON_SERVER || 'Unknown';
+
+        // Check if the server is an anonymous server
+        if (server.startsWith('ANONYMOUS_SERVER')) {
+            anonymousServerCount += 1;
+        } else {
+            serverCounts[server] = (serverCounts[server] || 0) + 1;
+        }
+    });
+
+    // Add the aggregated anonymous server count to the serverCounts object
+    if (anonymousServerCount > 0) {
+        const anonymousLabel = totalAnonymousServers === 1 ?
+            "1 Anonymous Server" :
+            `${totalAnonymousServers} Anonymous Servers`;
+        serverCounts[anonymousLabel] = anonymousServerCount;
+    }
+
+    // Map server codes to their full names using serverNames
+    const labels = Object.keys(serverCounts).map(server => serverNames[server] || server);
+    const data = Object.values(serverCounts);
+
+    // Create chart
+    canvas.chart = new Chart(canvas, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Number of Cases',
+                data: data,
+                backgroundColor: 'rgba(99, 102, 241, 0.8)', // Indigo color
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: (context) => {
+                            return `${context.label}: ${context.raw} cases`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        precision: 0
+                    }
+                },
+                x: {
+                    ticks: {
+                        autoSkip: false
+                    }
+                }
+            }
+        }
+    });
 }
 
 // Attack Goal Distribution
