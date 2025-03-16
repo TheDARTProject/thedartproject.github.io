@@ -696,11 +696,20 @@ def process_batch(batch, excluded_domains, proxy_rotator, rate_limiter, results)
 def save_data(data, filename, backup=False):
     """
     Save data to a JSON file with proper error handling.
+    Backup and recovered files are stored in a 'backup' folder in the script's directory.
     """
-    global target_file
+    global target_file, backup_dir
     try:
+        # Define the backup folder path
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        backup_dir = os.path.join(script_dir, "backup")
+
+        # Ensure the backup directory exists
+        os.makedirs(backup_dir, exist_ok=True)
+
+        # Set target file paths
         suffix = ".backup" if backup else ""
-        target_file = f"../{filename}{suffix}.json"
+        target_file = os.path.join(backup_dir, f"{filename}{suffix}.json")
 
         logger.info(f"Saving data to {target_file}...")
         with open(target_file, "w", encoding="utf-8") as file:
@@ -709,8 +718,9 @@ def save_data(data, filename, backup=False):
         return True
     except Exception as ex:
         logger.error(f"Error saving data to {target_file}: {ex}")
-        # Try to save to an alternative location
-        recovery_file = f"./{filename}.recovered.json"
+
+        # Attempt to save to a recovery file
+        recovery_file = os.path.join(backup_dir, f"{filename}.recovered.json")
         try:
             with open(recovery_file, "w", encoding="utf-8") as file:
                 json.dump(data, file, indent=4)
