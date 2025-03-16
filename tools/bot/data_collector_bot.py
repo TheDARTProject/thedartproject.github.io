@@ -12,9 +12,11 @@ from dotenv import load_dotenv
 # Load the .env file with the correct path
 load_dotenv("../.env")
 
-# Retrieve both the bot token and client ID from the .env file
+# Retrieve bot token, client ID, and word list from the .env file
 TOKEN = os.getenv("DISCORD_TOKEN")
-CLIENT_ID = os.getenv("CLIENT_ID")  # Now getting Client ID from .env file
+CLIENT_ID = os.getenv("CLIENT_ID")
+# Get the comma-separated word list and split it into a list
+WORD_LIST = os.getenv("WORD_LIST", "").split(",")
 
 # Define intents
 intents = discord.Intents.default()
@@ -48,6 +50,9 @@ DEFAULT_COOLDOWN = 10  # seconds
 async def on_ready():
     print(f"Logged in as {bot.user}")
 
+    # Log the loaded word list
+    print(f"Monitoring for the following words: {', '.join(WORD_LIST)}")
+
     # Generate invite URL with proper permissions, now using CLIENT_ID from .env
     invite_url = f"https://discord.com/api/oauth2/authorize?client_id={CLIENT_ID}&permissions=66560&scope=bot%20applications.commands"
 
@@ -56,36 +61,46 @@ async def on_ready():
 
 
 @bot.event
-@bot.event
 async def on_message(message):
     # Ignore messages from the bot itself
     if message.author == bot.user:
         return
 
-    # Check message content first
-    has_target_text = "Message sent by" in message.content
+    # Check if the message contains any of the words from the word list
+    content_to_check = message.content.lower()
+    has_target_word = any(
+        word.lower() in content_to_check for word in WORD_LIST if word
+    )
 
     # Then check embeds if no match in content
-    if not has_target_text and message.embeds:
+    if not has_target_word and message.embeds:
         for embed in message.embeds:
             # Check embed title
-            if embed.title and "Message sent by" in embed.title:
-                has_target_text = True
+            if embed.title and any(
+                word.lower() in embed.title.lower() for word in WORD_LIST if word
+            ):
+                has_target_word = True
                 break
 
             # Check embed description
-            if embed.description and "Message sent by" in embed.description:
-                has_target_text = True
+            if embed.description and any(
+                word.lower() in embed.description.lower() for word in WORD_LIST if word
+            ):
+                has_target_word = True
                 break
 
             # Check embed fields
             for field in embed.fields:
-                if "Message sent by" in field.name or "Message sent by" in field.value:
-                    has_target_text = True
+                if any(
+                    word.lower() in field.name.lower() for word in WORD_LIST if word
+                ) or any(
+                    word.lower() in field.value.lower() for word in WORD_LIST if word
+                ):
+                    has_target_word = True
                     break
 
-    # Process if target text was found anywhere
-    if has_target_text:
+    # Process if target word was found anywhere
+    if has_target_word:
         # Get basic information
         guild_id = message.guild.id if message.guild else None
 
@@ -98,31 +113,36 @@ async def on_message(message):
                 # Prepare a simple log message with available information
                 try:
                     # Extract whatever information we can from the message
-                    content_lines = message.content.split("\n")
-                    main_line = content_lines[0] if content_lines else message.content
+                    matched_words = [
+                        word
+                        for word in WORD_LIST
+                        if word.lower() in content_to_check.lower()
+                    ]
 
                     # If content is empty, but we have embeds, get information from embeds
-                    if not main_line and message.embeds:
+                    if not message.content and message.embeds:
                         embed = message.embeds[0]
-                        main_line = (
-                            embed.title or embed.description or "Embedded Message"
-                        )
-                        # Add field contents if available
+                        embed_content = []
+                        if embed.title:
+                            embed_content.append(embed.title)
+                        if embed.description:
+                            embed_content.append(embed.description)
                         for field in embed.fields:
-                            content_lines.append(f"{field.name}: {field.value}")
+                            embed_content.append(f"{field.name}: {field.value}")
 
-                    # Get channel mention if available in the message
-                    channel_info = "Unknown"
-                    if "in" in main_line:
-                        parts = main_line.split("in")
-                        if len(parts) > 1:
-                            channel_info = parts[1].strip().rstrip(".")
+                        combined_content = "\n".join(embed_content)
+                        matched_words = [
+                            word
+                            for word in WORD_LIST
+                            if word.lower() in combined_content.lower()
+                        ]
 
                     await log_channel.send(
-                        f"**Deleted Message Detected**\n"
-                        f"**Source:** {message.channel.mention}\n"
-                        f"**Original Message:** {message.content or 'Embedded content'}\n"
-                        f"**Detected In:** {channel_info}\n"
+                        f"**Filtered Message Detected**\n"
+                        f"**Channel:** {message.channel.mention}\n"
+                        f"**Author:** {message.author.mention} ({message.author.name})\n"
+                        f"**Matched Words:** {', '.join(matched_words)}\n"
+                        f"**Message Content:** {message.content or 'Embedded content'}\n"
                         f"**Detection Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
                     )
                 except discord.HTTPException as e:
@@ -169,7 +189,7 @@ def load_progress():
 # Hybrid command for collect_messages (works with both / and ! prefix)
 @bot.hybrid_command(
     name="collect_messages",
-    description="Collects deleted messages from the channel history",
+    description="Collects messages containing words from the word list",
 )
 @app_commands.describe(
     batch_size="Number of messages to fetch in each batch (default: 100)",
@@ -179,7 +199,7 @@ async def collect_messages(
     ctx, batch_size: int = DEFAULT_BATCH_SIZE, cooldown: int = DEFAULT_COOLDOWN
 ):
     """
-    Collects deleted messages from the channel history.
+    Collects messages containing words from the word list.
 
     Parameters:
     - batch_size: Number of messages to fetch in each batch (default: 100)
@@ -190,7 +210,9 @@ async def collect_messages(
     matched_messages = []
 
     # Status message that will be updated
-    status_message = await ctx.send("Starting message collection...")
+    status_message = await ctx.send(
+        f"Starting message collection for words: {', '.join(WORD_LIST)}..."
+    )
 
     # Recover any progress from a previous scan
     before_message = None
@@ -238,96 +260,76 @@ async def collect_messages(
                 # Process the batch
                 for message in message_batch:
                     # Check message content first
-                    has_target_text = "Message sent by" in message.content
+                    content_to_check = message.content.lower()
+                    has_target_word = any(
+                        word.lower() in content_to_check for word in WORD_LIST if word
+                    )
+                    matched_word_list = []
                     embed_content = ""
 
+                    # Find which words matched
+                    if has_target_word:
+                        matched_word_list = [
+                            word
+                            for word in WORD_LIST
+                            if word and word.lower() in content_to_check
+                        ]
+
                     # Then check embeds if no match in content
-                    if not has_target_text and message.embeds:
+                    if not has_target_word and message.embeds:
                         for embed in message.embeds:
+                            embed_texts = []
+
                             # Check embed title
-                            if embed.title and "Message sent by" in embed.title:
-                                has_target_text = True
-                                embed_content = embed.title
-                                break
+                            if embed.title:
+                                embed_texts.append(embed.title)
 
                             # Check embed description
-                            if (
-                                embed.description
-                                and "Message sent by" in embed.description
-                            ):
-                                has_target_text = True
-                                embed_content = embed.description
-                                break
+                            if embed.description:
+                                embed_texts.append(embed.description)
 
                             # Check embed fields
                             for field in embed.fields:
-                                if "Message sent by" in field.name:
-                                    has_target_text = True
-                                    embed_content = field.name
-                                    break
-                                if "Message sent by" in field.value:
-                                    has_target_text = True
-                                    embed_content = field.value
-                                    break
+                                embed_texts.append(field.name)
+                                embed_texts.append(field.value)
+
+                            # Combine all embed texts for checking
+                            combined_embed_text = " ".join(embed_texts).lower()
+
+                            # Check if any word matches
+                            for word in WORD_LIST:
+                                if word and word.lower() in combined_embed_text:
+                                    has_target_word = True
+                                    matched_word_list.append(word)
+
+                            if has_target_word:
+                                embed_content = "\n".join(embed_texts)
+                                break
 
                     # Process if target text was found anywhere
-                    if has_target_text:
-                        # Parse basic information from the content
+                    if has_target_word:
+                        # Use message content or embed content
                         content = message.content or embed_content
-                        content_lines = content.split("\n")
-                        main_line = content_lines[0] if content_lines else content
-
-                        # If using embed, and we don't have good main line content
-                        if not main_line.strip() and message.embeds:
-                            embed = message.embeds[0]
-                            # Try to build a better content representation from the embed
-                            embed_parts = []
-                            if embed.title:
-                                embed_parts.append(embed.title)
-                            if embed.description:
-                                embed_parts.append(embed.description)
-                            for field in embed.fields:
-                                embed_parts.append(f"{field.name}: {field.value}")
-
-                            # Join all parts with newlines
-                            content = "\n".join(embed_parts)
-                            content_lines = content.split("\n")
-                            main_line = content_lines[0] if content_lines else content
-
-                        # Extract user ID if we can find it in the format <@numbers>
-                        user_id = "Unknown"
-                        if "<@" in main_line and ">" in main_line:
-                            start_idx = main_line.find("<@") + 2
-                            end_idx = main_line.find(">", start_idx)
-                            if start_idx != -1 and end_idx != -1:
-                                user_id = main_line[start_idx:end_idx]
-
-                        # Extract channel name if possible
-                        channel_name = "Unknown"
-                        if "in" in main_line:
-                            parts = main_line.split("in")
-                            if len(parts) > 1:
-                                channel_name = parts[1].strip().rstrip(".")
 
                         # Get attachment info if any
                         attachment_info = ""
                         if message.attachments:
-                            attachment_info = (
-                                f", {len(message.attachments)} attachment(s)"
-                            )
-                        elif len(content_lines) > 1:
-                            # Try to get the filename from the next line if it exists
-                            attachment_info = (
-                                f", possible attachment: {content_lines[1]}"
-                            )
+                            attachment_urls = [
+                                attachment.url for attachment in message.attachments
+                            ]
+                            attachment_info = ", ".join(attachment_urls)
 
                         matched_messages.append(
                             {
-                                "Sender ID": user_id,
-                                "Channel": channel_name,
-                                "Author ID": message.author.id,  # The bot that reported the deletion
+                                "Author": message.author.name,
+                                "Author ID": message.author.id,
+                                "Channel": message.channel.name,
+                                "Channel ID": message.channel.id,
+                                "Guild": message.guild.name if message.guild else "DM",
+                                "Guild ID": message.guild.id if message.guild else None,
                                 "Message ID": message.id,
                                 "Message Content": content,
+                                "Matched Words": ", ".join(matched_word_list),
                                 "Attachment Info": attachment_info,
                                 "Timestamp": message.created_at.isoformat(),
                             }
@@ -429,13 +431,13 @@ async def cancel_scan(ctx):
         await ctx.send("No scan in progress.")
 
 
-# New command to start logging messages with "Message sent by"
+# New command to start logging messages with words from the word list
 @bot.hybrid_command(
     name="start_logging",
-    description="Start logging messages containing 'Message sent by' in this channel",
+    description="Start logging messages containing words from the word list in this channel",
 )
 async def start_logging(ctx):
-    """Start logging messages containing 'Message sent by' in this channel"""
+    """Start logging messages containing words from the word list in this channel"""
     guild_id = ctx.guild.id if ctx.guild else None
 
     if not guild_id:
@@ -446,17 +448,17 @@ async def start_logging(ctx):
     bot.logging_channels[guild_id] = ctx.channel.id
 
     await ctx.send(
-        f"✅ Now logging messages containing 'Message sent by' in this channel."
+        f"✅ Now logging messages containing the following words in this channel: {', '.join(WORD_LIST)}"
     )
 
 
 # Command to stop logging messages
 @bot.hybrid_command(
     name="stop_logging",
-    description="Stop logging messages containing 'Message sent by'",
+    description="Stop logging messages containing words from the word list",
 )
 async def stop_logging(ctx):
-    """Stop logging messages containing 'Message sent by'"""
+    """Stop logging messages containing words from the word list"""
     guild_id = ctx.guild.id if ctx.guild else None
 
     if not guild_id:
@@ -468,6 +470,23 @@ async def stop_logging(ctx):
         await ctx.send("✅ Stopped logging messages.")
     else:
         await ctx.send("❌ No active logging in this server.")
+
+
+# Command to list current word list
+@bot.hybrid_command(
+    name="list_words",
+    description="List the words currently being monitored",
+)
+async def list_words(ctx):
+    """List the words currently being monitored"""
+    if WORD_LIST and any(WORD_LIST):
+        await ctx.send(
+            f"Currently monitoring for the following words: {', '.join(WORD_LIST)}"
+        )
+    else:
+        await ctx.send(
+            "No words are currently being monitored. Please add words to the WORD_LIST in your .env file."
+        )
 
 
 # Run the bot
