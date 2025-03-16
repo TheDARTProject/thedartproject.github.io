@@ -1,7 +1,7 @@
 {
     "name": "CDA Project",
     "short_name": "CDA Project",
-    "description": "A comprehensive security dashboard designed to track and analyze malicious activities across various platforms. The CDA Project provides real-time threat monitoring, advanced analytics, and a unified processing engine to help users detect and prevent cyber threats effectively.",
+    "description": "A comprehensive security dashboard designed to track and analyze malicious activities across Discord servers. The CDA Project provides threat monitoring, advanced analytics to help server owners detect and prevent cyber threats effectively.",
     "start_url": "/CDA-Project",
     "display": "standalone",
     "orientation": "portrait",
