@@ -42,9 +42,9 @@ When manually validating and updating the database, it is important to follow th
    - **Purpose**: Validate and fix URLs in the `SURFACE_URL` and `FINAL_URL` fields.
    - **Why Ninth?**: This script ensures that all URLs are valid and properly formatted before any further checks, such as VirusTotal.
 
-10. **`virustotal_check.py`**  
+10. **`urlscan_check.py`**  
     - **Purpose**: Check URLs against VirusTotal to detect redirections and update the `FINAL_URL` and `FINAL_URL_STATUS` fields.
-    - **Why Tenth?**: This script should be run last as it performs external API calls to VirusTotal, which may take time and should only be done after all other checks are complete.
+    - **Why Tenth?**: This script should be run last as it performs external API calls to URLScan, which may take time and should only be done after all other checks are complete.
 
 11. **`ipinfo_check.py`**  
     - **Purpose**: Retrieve and update IP-related information using the IPInfo API to check and update the SUSPECTED_REGION_OF_ORIGIN field based on the IP of the `FINAL_URL`.

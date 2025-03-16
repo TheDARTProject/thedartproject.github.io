@@ -1,7 +1,6 @@
 import json
 import os
 import time
-import base64
 import requests
 from urllib.parse import urlparse
 from dotenv import load_dotenv
@@ -10,12 +9,13 @@ from datetime import datetime
 # Load environment variables
 load_dotenv("../.env")
 
-VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_TOKEN")
+URLSCAN_API_KEY = os.getenv("URLSCAN_API_TOKEN")
 EXCLUDED_DOMAINS = set(os.getenv("EXCLUDED_DOMAINS", "").split(","))
-RATE_LIMIT = int(os.getenv("VIRUSTOTAL_RATE_LIMIT", 4))  # Requests per minute
+RATE_LIMIT = int(os.getenv("URLSCAN_RATE_LIMIT", 4))  # Requests per minute
 
-VT_URL = "https://www.virustotal.com/api/v3/urls"
-HEADERS = {"x-apikey": VIRUSTOTAL_API_KEY}
+URLSCAN_SUBMIT_URL = "https://urlscan.io/api/v1/scan/"
+URLSCAN_RESULT_URL = "https://urlscan.io/api/v1/result/"
+HEADERS = {"API-Key": URLSCAN_API_KEY}
 
 # Load the JSON data
 json_path = "../Compromised-Discord-Accounts.json"
@@ -30,13 +30,15 @@ def log(message):
     print(f"{timestamp} {message}")
 
 
-def encode_url(url):
-    """Encodes the URL in base64 (without padding) for VirusTotal API requests."""
-    return base64.urlsafe_b64encode(url.encode()).decode().strip("=")
+def save_json():
+    """Saves the current data to the JSON file."""
+    with open(json_path, "w", encoding="utf-8") as file:
+        json.dump(data, file, indent=4)
+    log("JSON file updated.")
 
 
 def get_final_url(url):
-    """Fetches the redirection chain from VirusTotal."""
+    """Submits URL to URLScan and retrieves final URL from the redirection chain."""
     parsed_url = urlparse(url)
     domain = parsed_url.netloc.lower()
 
@@ -44,26 +46,63 @@ def get_final_url(url):
         return url
 
     try:
-        # Base64-encode URL
-        encoded_url = encode_url(url)
+        log(f"Submitting URL to URLScan: {url}")
 
-        log(f"Checking URL on VirusTotal: {url}")
+        # Submit the URL for scanning
+        submit_data = {
+            "url": url,
+            "visibility": "public",
+        }
 
-        # Query VirusTotal for URL analysis
-        response = requests.get(f"{VT_URL}/{encoded_url}", headers=HEADERS)
+        submit_response = requests.post(
+            URLSCAN_SUBMIT_URL, headers=HEADERS, json=submit_data
+        )
+        submit_response.raise_for_status()
 
-        if response.status_code == 404:
-            log(f"No VirusTotal data for {url}, keeping as is.")
+        scan_uuid = submit_response.json().get("uuid")
+        if not scan_uuid:
+            log(f"No scan UUID returned for {url}, keeping as is.")
             return url
 
-        response.raise_for_status()
-        json_response = response.json()
+        # Wait for scan to complete (typically takes 10-30 seconds)
+        log(f"Scan submitted successfully. UUID: {scan_uuid}. Waiting for results...")
+        time.sleep(30)  # Wait 30 seconds for the scan to complete
 
-        # Extract final redirection URL
-        last_url = json_response["data"]["attributes"].get("last_final_url", url)
+        # Retrieve the results
+        result_response = requests.get(
+            f"{URLSCAN_RESULT_URL}{scan_uuid}/", headers=HEADERS
+        )
 
-        log(f"Final URL found: {last_url}")
-        return last_url
+        if result_response.status_code == 404:
+            log(f"Scan results not ready or not found for {url}, trying again...")
+            time.sleep(15)  # Wait a bit more
+            result_response = requests.get(
+                f"{URLSCAN_RESULT_URL}{scan_uuid}/", headers=HEADERS
+            )
+
+        if result_response.status_code != 200:
+            log(f"Failed to retrieve results for {url}, keeping as is.")
+            return url
+
+        result_data = result_response.json()
+
+        # Extract final URL from the redirection chain
+        # URLScan stores this information in data.requests
+        requests_data = result_data.get("data", {}).get("requests", [])
+
+        if not requests_data:
+            log(f"No request data for {url}, keeping as is.")
+            return url
+
+        # Get the last request URL
+        final_url = url  # Default to original URL
+        for request in requests_data:
+            request_url = request.get("request", {}).get("url", "")
+            if request_url:
+                final_url = request_url
+
+        log(f"Final URL found: {final_url}")
+        return final_url
 
     except requests.RequestException as e:
         log(f"Error checking {url}: {e}")
@@ -71,7 +110,7 @@ def get_final_url(url):
 
 
 # Process each account entry with rate limiting
-log("Starting VirusTotal URL check...")
+log("Starting URLScan URL check...")
 
 # Count the total number of cases
 total_cases = len(data)
@@ -143,18 +182,17 @@ for i, (account, details) in enumerate(items):
         log(f"No Redirect. Marking as INACTIVE.")
         total_inactive += 1
 
+    # Save after each update
+    save_json()
+
     # Respect rate limit
     if request_count >= RATE_LIMIT:
         log(f"Rate limit reached ({RATE_LIMIT} requests). Waiting 60 seconds...")
         time.sleep(60)
         request_count = 0  # Reset the request count after the wait
 
-# Save the updated data
-with open(json_path, "w", encoding="utf-8") as file:
-    json.dump(data, file, indent=4)
-
 # Print final statistics
-log("Finished processing. JSON file updated with VirusTotal results.")
+log("Finished processing. All results have been saved to the JSON file.")
 log("Final Statistics:")
 excluded_plural = "s" if total_excluded != 1 else ""
 log(f"- Total accounts skipped: {total_excluded} account{excluded_plural}")
