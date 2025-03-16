@@ -1011,20 +1011,20 @@ body.bg-gray-900 .breadcrumb li span {
 }
 
 .database-table th {
-	background-color: var(--gray-100);
-	color: var(--gray-700);
-	font-size: 0.875rem;
-	font-weight: 600;
-	padding: 0.75rem;
+	padding: 12px;
 	text-align: left;
-	border-bottom: 1px solid var(--gray-200);
+	font-size: 12px;
+	font-weight: 600;
+	color: #4b5563;
+	background-color: #f3f4f6;
+	border-bottom: 1px solid #e5e7eb;
 }
 
 .database-table td {
-	padding: 0.75rem;
-	border-bottom: 1px solid var(--gray-200);
-	font-size: 0.875rem;
-	color: var(--gray-700);
+	padding: 12px;
+	border-bottom: 1px solid #e5e7eb;
+	font-size: 12px;
+	color: #4b5563;
 }
 
 .database-table tr:hover {
