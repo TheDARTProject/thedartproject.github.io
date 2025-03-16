@@ -178,19 +178,23 @@ The tool implements a robust state machine that tracks the complete lifecycle of
 | Persistent Logging           | Rotating log system    | Python logging, Immediate fsync           |
 | Rate Limit Management        | Adaptive throttling    | Time.perf_counter, Request tracking       |
 
-
 ## Repository Structure
 
 ```markdown
-├── 📂 docs/                                      # Web dashboard and assets
-│   ├── 📜 index.html                             # Main web interface
-│   ├── 📜 info.html                              # Project information page
-│   ├── 🎨 styles.css                             # Dashboard styling
+├── 📂 docs/                                      # Site files
+│   ├── 📜 index.html                             # Home page
+│   ├── 📜 info.html                              # Information page
+│   ├── 📜 dashboard.html                         # Dashboard page
+│   ├── 📜 database.html                          # Database page
+│   ├── 🎨 styles.css                             # Main styling
 │   ├── 🎨 tailwind.min.css                       # Tailwind CSS framework
 │   ├── ⚙️ script.js                              # Interactive dashboard logic
+│   ├── ⚙️ servers.js                             # Server names mapping
 │   ├── 🕒 dayjs.min.js                           # Date handling library
 │   ├── 📊 chart.min.js                           # Chart.js for visualizations
 │   ├── 📂 site-data/                             # Miscellaneous site data
+│   │   ├── 📂 images/                            # Images used in the project
+│   │   │   └── 🖼️ Anon.png                       # Anonymous server icon
 │   │   ├── 🔗 social-share/                      # Social sharing related assets
 │   │   └── 🖼️ CDA-Project.png                    # Embed image for social sharing
 │   ├── 📂 icons/                                 # Various platform icons
@@ -200,39 +204,58 @@ The tool implements a robust state machine that tracks the complete lifecycle of
 │   │   ├── 🖥️ ms-icon-*.png                      # Microsoft icons (70x70 → 310x310)
 │   ├── 📝 site.manifest                          # Web app manifest
 ├── 📂 data/                                      # Data storage
-│   └── 🔒 Compromised-Discord-Accounts.json      # Dataset of compromised accounts
+│   └── 🔒 Compromised-Discord-Accounts.json      # Main dataset of compromised accounts
 └── 📂 Tools/                                     # Utility scripts
-    ├── 📜 Database-Checker.py                    # Unified processing engine
     ├── 📊 ExporterSheet.xlsx                     # Exported dataset from private Google Sheet
-    └── 🔒 Compromised-Discord-Accounts.json      # Backup copy of dataset that is used in edits
+    ├── 🔒 Compromised-Discord-Accounts.json      # Backup copy of dataset that is used in edits
+    ├── 📂 bot/                                   # Automated data collection bot
+    │   └── 🤖 data_collector_bot.py              # Script for collecting data
+    ├── 📂 modules/                               # Various data validation modules
+    │   ├── 🔠 ascii_name_check.py                # ASCII name validation
+    │   ├── 🔢 case_number_check.py               # Case number validation
+    │   ├── 📂 case_sorter.py                     # Case sorting logic
+    │   ├── 📥 database_importer.py               # Database import handler
+    │   ├── 🔗 discord_invite_check.py            # Discord invite validation
+    │   ├── ⏳ discord_rate_limit_check.py        # Discord API rate limit checker
+    │   ├── 👤 discord_user_check.py              # Discord user validation
+    │   ├── 🌍 ipinfo_check.py                    # IP information lookup
+    │   ├── 🔀 redirect_check.py                  # URL redirection validation
+    │   ├── 📊 server_counter.py                  # Server counter script
+    │   ├── 🕒 timestamp_check.py                 # Timestamp validation
+    │   ├── 🔍 url_check.py                       # URL validation
+    │   ├── 🛡️ urlscan_check.py                   # URL scanning script
+    ├── 🔑 .env                                   # Environment variables (private)
+    ├── 📝 .env.example                           # Example environment file
+    ├── 🔍 Compromised-Discord-Accounts.json      # Backup dataset
+    ├── 📊 Database-Checker.py                    # Script for checking database entries
+    ├── 📊 ExporterSheet.xlsx                     # Exported dataset from private Google Sheet
+    └── 📑 Order-Of-Operations.md                 # Documentation on execution order
 ```
 
 ## Complete Data Schema
 
-| Field                      | Type        | Description                              | Example Value                      |
-|----------------------------|-------------|------------------------------------------|------------------------------------|
-| CASE_NUMBER                | Integer     | Unique investigation identifier          | 202503101                          |
-| FOUND_ON                   | ISO Date    | Discovery timestamp                      | 2025-03-10T07:16:00Z               |
-| DISCORD_ID                 | Snowflake   | 18-digit Discord user ID                 | 123456789012345678                 |
-| USERNAME                   | String      | Current account username                 | PhishMaster_01                     |
-| BEHAVIOUR                  | Text        | Observed malicious patterns              | "Mass DMing fake nitro links"      |
-| ATTACK_METHOD              | Categorical | Primary attack classification            | Credential Harvesting              |
-| ATTACK_VECTOR              | Categorical | Technical implementation method          | Fake Discord Nitro Portal          |
-| ATTACK_GOAL                | Text        | Campaign objectives                      | Steal 2FA codes                    |
-| ATTACK_SURFACE             | Categorical | Targeted platform/service                | Discord Marketplace                |
-| SUSPECTED_REGION_OF_ORIGIN | Geolocation | Suspected origin region                  | Eastern Europe                     |
-| SURFACE_URL                | URL         | Initial contact URL                      | https://discord-nitro[.]gift/claim |
-| SURFACE_URL_DOMAIN         | Domain      | Registered domain of surface URL         | discord-nitro[.]gift               |
-| SURFACE_URL_STATUS         | Enum        | Current status (ACTIVE/INACTIVE/UNKNOWN) | ACTIVE                             |
-| FINAL_URL                  | URL         | Endpoint malicious URL                   | https://steallogin[.]xyz/submit    |
-| FINAL_URL_DOMAIN           | Domain      | Registered domain of final URL           | steallogin[.]xyz                   |
-| FINAL_URL_STATUS           | Enum        | Current status (ACTIVE/INACTIVE/UNKNOWN) | INACTIVE                           |
-| NON_ASCII_USERNAME         | Boolean     | Unicode character detection flag         | true                               |
-| LAST_VT_CHECK              | ISO 8601    | Last VirusTotal verification timestamp   | 2025-03-11T14:28:33Z               |
-| ACCOUNT_STATUS             | Enum        | Account investigation status             | COMPROMISED                        |
-| SURFACE_URL_STATUS         | Enum        | URL status with Discord checks           | ACTIVE                             |
-| FINAL_URL_STATUS           | Enum        | URL status with VT verification          | INACTIVE                           |
-| INVITE_CACHE               | Object      | Cached Discord invite statuses           | 2025-03-11T12:45:19Z               |
+| Field                      | Type    | Description                                  | Example Value                          |
+|----------------------------|---------|----------------------------------------------|----------------------------------------|
+| CASE_NUMBER                | String  | Unique investigation identifier              | "429"                                  |
+| FOUND_ON                   | Date    | Discovery date                               | "2025-02-27"                           |
+| FOUND_ON_SERVER            | String  | Server where account was found               | "GAMING_HANGOUT"                       |
+| DISCORD_ID                 | String  | 18-digit Discord user ID                     | "123456789012345678"                   |
+| USERNAME                   | String  | Current account username                     | "game_wizard_99"                       |
+| ACCOUNT_STATUS             | String  | Account status                               | "COMPROMISED"                          |
+| BEHAVIOUR                  | String  | Observed malicious patterns                  | "Automated Messaging Campaigns"        |
+| ATTACK_METHOD              | String  | Primary attack classification                | "Phishing Website"                     |
+| ATTACK_VECTOR              | String  | Technical implementation method              | "Cloned Steam Pages"                   |
+| ATTACK_GOAL                | String  | Campaign objectives                          | "Steam Accounts"                       |
+| ATTACK_SURFACE             | String  | Targeted platform/service                    | "Steam"                                |
+| SUSPECTED_REGION_OF_ORIGIN | String  | Suspected origin region                      | "US"                                   |
+| SURFACE_URL                | String  | Initial contact URL                          | "https://example.com/fake-login"       |
+| SURFACE_URL_DOMAIN         | String  | Registered domain of surface URL             | "example.com"                          |
+| SURFACE_URL_STATUS         | String  | Surface URL status (ACTIVE/INACTIVE/UNKNOWN) | "ACTIVE"                               |
+| FINAL_URL                  | String  | Endpoint malicious URL                       | "https://example.com/final-fake-login" |
+| FINAL_URL_DOMAIN           | String  | Registered domain of final URL               | "example.com"                          |
+| FINAL_URL_STATUS           | String  | Final URL status (ACTIVE/INACTIVE/UNKNOWN)   | "ACTIVE"                               |
+| NON_ASCII_USERNAME         | Boolean | Unicode character detection flag             | false                                  |
+| LAST_CHECK                 | String  | Last check timestamp                         | "2025-02-28T14:22:37.451089"           |
 
 ## Deployment Options
 
