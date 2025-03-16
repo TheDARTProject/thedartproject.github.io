@@ -36,24 +36,25 @@ def check_rate_limits():
     else:
         log(f"Unexpected status code: {invite_response.status_code}")
 
-    invite_limit = invite_response.headers.get("X-RateLimit-Limit")
-    invite_remaining = invite_response.headers.get("X-RateLimit-Remaining")
-    invite_reset_timestamp = float(invite_response.headers.get("X-RateLimit-Reset"))
+    # Handle possible missing headers
+    invite_limit = invite_response.headers.get("X-RateLimit-Limit", "N/A")
+    invite_remaining = invite_response.headers.get("X-RateLimit-Remaining", "N/A")
+    invite_reset_timestamp = invite_response.headers.get("X-RateLimit-Reset")
 
-    # Convert the invite reset timestamp to a human-readable format
-    invite_reset_time = datetime.utcfromtimestamp(invite_reset_timestamp).strftime(
-        "%Y-%m-%d %H:%M:%S"
-    )
+    # Check if the invite reset timestamp exists and convert it to a human-readable format
+    if invite_reset_timestamp:
+        invite_reset_time = datetime.utcfromtimestamp(float(invite_reset_timestamp)).strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
+    else:
+        invite_reset_time = "N/A"
 
     log(f"X-RateLimit-Limit: {invite_limit}")
     log(f"X-RateLimit-Remaining: {invite_remaining}")
     log(f"X-RateLimit-Reset (human-readable): {invite_reset_time}")
 
     # Username Check Endpoint
-    # Example: Using a random Discord user ID for the test
-    discord_user_id = (
-        "363284446268620800"  # Replace with a valid Discord ID for testing
-    )
+    discord_user_id = "363284446268620800"  # Replace with a valid Discord ID for testing
     user_url = f"https://discord.com/api/v10/users/{discord_user_id}"
 
     # Check Username Endpoint rate limits
@@ -66,14 +67,17 @@ def check_rate_limits():
     else:
         log(f"Unexpected status code: {user_response.status_code}")
 
-    limit = user_response.headers.get("X-RateLimit-Limit")
-    remaining = user_response.headers.get("X-RateLimit-Remaining")
-    reset_timestamp = float(user_response.headers.get("X-RateLimit-Reset"))
+    limit = user_response.headers.get("X-RateLimit-Limit", "N/A")
+    remaining = user_response.headers.get("X-RateLimit-Remaining", "N/A")
+    reset_timestamp = user_response.headers.get("X-RateLimit-Reset")
 
     # Convert the reset timestamp to a human-readable format
-    reset_time = datetime.utcfromtimestamp(reset_timestamp).strftime(
-        "%Y-%m-%d %H:%M:%S"
-    )
+    if reset_timestamp:
+        reset_time = datetime.utcfromtimestamp(float(reset_timestamp)).strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
+    else:
+        reset_time = "N/A"
 
     log(f"X-RateLimit-Limit: {limit}")
     log(f"X-RateLimit-Remaining: {remaining}")
