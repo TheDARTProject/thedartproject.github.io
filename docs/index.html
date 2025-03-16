@@ -175,7 +175,8 @@
     <script>
       // Set a version ID for current announcement
       // Change this whenever the announcement content gets updated
-      const CURRENT_ANNOUNCEMENT_VERSION = "2025-03-15";
+      // Format: YYYY-MM-DD-HH-MM (in GMT+2 timezone)
+      const CURRENT_ANNOUNCEMENT_VERSION = "2025-03-16-13-48";
       document.getElementById('closeAnnouncement').addEventListener('click', function() {
         document.getElementById('announcement-bar').classList.add('hidden');
         // Save both the closed state and the version of the announcement that was closed
@@ -194,6 +195,18 @@
           document.getElementById('announcement-bar').classList.remove('hidden');
         }
       });
+      // Helper function to get current GMT+2 time in the required format
+      function getCurrentGMT2Version() {
+        const now = new Date();
+        // Adjust to GMT+2 (add 2 hours to UTC)
+        const gmt2Time = new Date(now.getTime() + (2 * 60 * 60 * 1000));
+        const year = gmt2Time.getUTCFullYear();
+        const month = String(gmt2Time.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(gmt2Time.getUTCDate()).padStart(2, '0');
+        const hours = String(gmt2Time.getUTCHours()).padStart(2, '0');
+        const minutes = String(gmt2Time.getUTCMinutes()).padStart(2, '0');
+        return `${year}-${month}-${day}-${hours}-${minutes}`;
+      }
     </script>
   </body>
 </html>
