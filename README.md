@@ -4,7 +4,7 @@
 
 ![Banner](https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/.github/SCREENSHOTS/CDA-Project.png)
 
-A comprehensive security dashboard tracking malicious activities with advanced analytics capabilities and unified processing engine
+A comprehensive security dashboard designed to track and analyze malicious activities across various platforms. The CDA Project provides real-time threat monitoring, advanced analytics, and a unified processing engine to help users detect and prevent cyber threats effectively.
 
 </div>
 
@@ -91,6 +91,12 @@ Offers definitions and explanations for key metrics and status indicators, helpi
 
 ![Data-Glossary](https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/.github/SCREENSHOTS/Data-Glossary.png)
 
+### Timeline
+
+Tracks the frequency of attacks over time, providing insights into trends and patterns of malicious activity for better threat analysis.
+
+![Timeline](https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/.github/SCREENSHOTS/Timeline.png)
+
 ### Charts
 
 Visual representations of key security data, showcasing trends in attack methods, compromised accounts, and targeted platforms for quick insights.
@@ -141,7 +147,7 @@ A comprehensive table or dataset providing in-depth information about each detec
 
 - **Enhanced JSON Schema**:
   - `NON_ASCII_USERNAME` flag
-  - `LAST_VT_CHECK` timestamps
+  - `LAST_CHECK` timestamps
   - Dual URL status tracking
   - Automated case numbering
   - Regional attribution system
