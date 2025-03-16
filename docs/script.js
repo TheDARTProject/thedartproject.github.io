@@ -412,16 +412,16 @@ function updateStats() {
     let statusText;
     if (activeFinalUrls === 0) {
         activeUrlsElement.classList.add('text-green-600');
-        statusText = 'No immediate risk detected';
+        statusText = 'No risk detected';
     } else if (activeFinalUrls <= 100) {
         activeUrlsElement.classList.add('text-green-600');
-        statusText = 'Minimal risk detected now';
+        statusText = 'Minimal risk detected';
     } else if (activeFinalUrls <= 200) {
         activeUrlsElement.classList.add('text-orange-500');
-        statusText = 'Moderate risk detected currently';
+        statusText = 'Moderate risk detected';
     } else {
         activeUrlsElement.classList.add('text-red-600');
-        statusText = 'Severe critical risk detected';
+        statusText = 'Severe risk detected';
     }
 
     // Update status text
