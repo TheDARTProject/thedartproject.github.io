@@ -1503,3 +1503,21 @@ body.bg-gray-900 .sidebar-link {
 body.bg-gray-900 .sidebar-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+/* Intelligence Reports */
+#intelligenceReports .bg-white {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.bg-gray-900 #intelligenceReports .bg-white {
+    background-color: var(--gray-800);
+    color: var(--gray-100);
+}
+
+body.bg-gray-900 #intelligenceReports .bg-white h3 {
+    color: var(--primary-light);
+}
+
+body.bg-gray-900 #intelligenceReports .bg-white p {
+    color: var(--gray-300);
+}

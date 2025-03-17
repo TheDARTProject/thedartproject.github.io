@@ -158,7 +158,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize status checks
     initializeStatusChecks();
+
+    // Add the intelligence page fetch functionality
+    if (window.location.pathname.includes('intelligence.html')) {
+        fetchIntelligenceData();
+    }
 });
+
 
 function initializeSecuritySymbols(symbols) {
     if (!document.querySelector('.texture')) {
@@ -269,6 +275,183 @@ function initializeTheme() {
             glossary.classList.add('bg-gray-800', 'text-white');
         }
     }
+}
+
+// Function to fetch and process data for the intelligence page
+async function fetchIntelligenceData() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Compromised-Discord-Accounts.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch intelligence data');
+        }
+        const data = await response.json();
+        processIntelligenceData(data);
+    } catch (error) {
+        console.error('Error fetching intelligence data:', error);
+        alert('Failed to load intelligence data. Please check that the data file exists and is accessible.');
+    }
+}
+
+// Function to process the data and generate monthly and yearly reports
+function processIntelligenceData(data) {
+    const monthlyReports = {};
+    const yearlyReports = {};
+
+    // Group data by month and year
+    Object.values(data).forEach(account => {
+        const date = new Date(account.FOUND_ON);
+        const year = date.getFullYear();
+        const month = date.toLocaleString('default', { month: 'long' });
+        const yearMonth = `${year}-${date.getMonth() + 1}`;
+
+        if (!monthlyReports[yearMonth]) {
+            monthlyReports[yearMonth] = {
+                year,
+                month,
+                cases: [],
+                totalCases: 0,
+                activeUrls: 0,
+                commonAttackMethod: '',
+                commonAttackSurface: '',
+                commonAttackGoal: ''
+            };
+        }
+
+        monthlyReports[yearMonth].cases.push(account);
+        monthlyReports[yearMonth].totalCases++;
+
+        if (account.FINAL_URL_STATUS === 'ACTIVE') {
+            monthlyReports[yearMonth].activeUrls++;
+        }
+
+        // Calculate common attack methods, surfaces, and goals
+        const attackMethods = {};
+        const attackSurfaces = {};
+        const attackGoals = {};
+
+        monthlyReports[yearMonth].cases.forEach(caseData => {
+            attackMethods[caseData.ATTACK_METHOD] = (attackMethods[caseData.ATTACK_METHOD] || 0) + 1;
+            attackSurfaces[caseData.ATTACK_SURFACE] = (attackSurfaces[caseData.ATTACK_SURFACE] || 0) + 1;
+            attackGoals[caseData.ATTACK_GOAL] = (attackGoals[caseData.ATTACK_GOAL] || 0) + 1;
+        });
+
+        monthlyReports[yearMonth].commonAttackMethod = Object.keys(attackMethods).reduce((a, b) => attackMethods[a] > attackMethods[b] ? a : b);
+        monthlyReports[yearMonth].commonAttackSurface = Object.keys(attackSurfaces).reduce((a, b) => attackSurfaces[a] > attackSurfaces[b] ? a : b);
+        monthlyReports[yearMonth].commonAttackGoal = Object.keys(attackGoals).reduce((a, b) => attackGoals[a] > attackGoals[b] ? a : b);
+    });
+
+    // Group monthly reports by year
+    Object.keys(monthlyReports).forEach(yearMonth => {
+        const year = monthlyReports[yearMonth].year;
+        if (!yearlyReports[year]) {
+            yearlyReports[year] = {
+                year,
+                totalCases: 0,
+                activeUrls: 0,
+                commonAttackMethod: '',
+                commonAttackSurface: '',
+                commonAttackGoal: ''
+            };
+        }
+
+        yearlyReports[year].totalCases += monthlyReports[yearMonth].totalCases;
+        yearlyReports[year].activeUrls += monthlyReports[yearMonth].activeUrls;
+
+        // Calculate common attack methods, surfaces, and goals for the year
+        const attackMethods = {};
+        const attackSurfaces = {};
+        const attackGoals = {};
+
+        Object.keys(monthlyReports).forEach(ym => {
+            if (monthlyReports[ym].year === year) {
+                monthlyReports[ym].cases.forEach(caseData => {
+                    attackMethods[caseData.ATTACK_METHOD] = (attackMethods[caseData.ATTACK_METHOD] || 0) + 1;
+                    attackSurfaces[caseData.ATTACK_SURFACE] = (attackSurfaces[caseData.ATTACK_SURFACE] || 0) + 1;
+                    attackGoals[caseData.ATTACK_GOAL] = (attackGoals[caseData.ATTACK_GOAL] || 0) + 1;
+                });
+            }
+        });
+
+        yearlyReports[year].commonAttackMethod = Object.keys(attackMethods).reduce((a, b) => attackMethods[a] > attackMethods[b] ? a : b);
+        yearlyReports[year].commonAttackSurface = Object.keys(attackSurfaces).reduce((a, b) => attackSurfaces[a] > attackSurfaces[b] ? a : b);
+        yearlyReports[year].commonAttackGoal = Object.keys(attackGoals).reduce((a, b) => attackGoals[a] > attackGoals[b] ? a : b);
+    });
+
+    // Render the reports
+    renderIntelligenceReports(monthlyReports, yearlyReports);
+}
+
+// Function to render the reports on the page
+function renderIntelligenceReports(monthlyReports, yearlyReports) {
+    const container = document.getElementById('intelligenceReports');
+    container.innerHTML = '';
+
+    let currentYear = null;
+
+    Object.keys(monthlyReports).sort().forEach(yearMonth => {
+        const report = monthlyReports[yearMonth];
+        const year = report.year;
+
+        if (year !== currentYear) {
+            if (currentYear !== null) {
+                // Add a yearly report box
+                const yearlyReport = yearlyReports[currentYear];
+                const yearlyBox = document.createElement('div');
+                yearlyBox.className = 'bg-white p-6 rounded-lg shadow-lg col-span-2';
+                yearlyBox.innerHTML = `
+                    <h3 class="text-2xl font-bold text-indigo-700 mb-4">Yearly Report - ${currentYear}</h3>
+                    <p class="text-gray-600">Total Cases: ${yearlyReport.totalCases}</p>
+                    <p class="text-gray-600">Active URLs: ${yearlyReport.activeUrls}</p>
+                    <p class="text-gray-600">Most Common Attack Method: ${yearlyReport.commonAttackMethod}</p>
+                    <p class="text-gray-600">Most Common Attack Surface: ${yearlyReport.commonAttackSurface}</p>
+                    <p class="text-gray-600">Most Common Attack Goal: ${yearlyReport.commonAttackGoal}</p>
+                `;
+                container.appendChild(yearlyBox);
+            }
+
+            currentYear = year;
+        }
+
+        // Add a monthly report box
+        const monthlyBox = document.createElement('div');
+        monthlyBox.className = 'bg-white p-6 rounded-lg shadow-lg';
+        monthlyBox.innerHTML = `
+            <h3 class="text-xl font-bold text-indigo-700 mb-4">${report.month} ${report.year}</h3>
+            <p class="text-gray-600">Total Cases: ${report.totalCases}</p>
+            <p class="text-gray-600">Active URLs: ${report.activeUrls}</p>
+            <p class="text-gray-600">Most Common Attack Method: ${report.commonAttackMethod}</p>
+            <p class="text-gray-600">Most Common Attack Surface: ${report.commonAttackSurface}</p>
+            <p class="text-gray-600">Most Common Attack Goal: ${report.commonAttackGoal}</p>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">Summary</h4>
+                <p class="text-gray-600">${generateSummaryText(report)}</p>
+            </div>
+        `;
+        container.appendChild(monthlyBox);
+    });
+
+    // Add the last yearly report box
+    if (currentYear !== null) {
+        const yearlyReport = yearlyReports[currentYear];
+        const yearlyBox = document.createElement('div');
+        yearlyBox.className = 'bg-white p-6 rounded-lg shadow-lg col-span-2';
+        yearlyBox.innerHTML = `
+            <h3 class="text-2xl font-bold text-indigo-700 mb-4">Yearly Report - ${currentYear}</h3>
+            <p class="text-gray-600">Total Cases: ${yearlyReport.totalCases}</p>
+            <p class="text-gray-600">Active URLs: ${yearlyReport.activeUrls}</p>
+            <p class="text-gray-600">Most Common Attack Method: ${yearlyReport.commonAttackMethod}</p>
+            <p class="text-gray-600">Most Common Attack Surface: ${yearlyReport.commonAttackSurface}</p>
+            <p class="text-gray-600">Most Common Attack Goal: ${yearlyReport.commonAttackGoal}</p>
+        `;
+        container.appendChild(yearlyBox);
+    }
+}
+
+// Function to generate a summary text for the monthly report
+function generateSummaryText(report) {
+    return `In ${report.month} ${report.year}, there were ${report.totalCases} reported cases of compromised Discord accounts.
+            The most common attack method was ${report.commonAttackMethod}, targeting ${report.commonAttackSurface} platforms,
+            with the primary goal of ${report.commonAttackGoal}. ${report.activeUrls} active malicious URLs were identified during this period.`;
 }
 
 // Function to fetch and update developer messages
