@@ -1,1 +1,39 @@
-/* PLACEHOLDER FILE FOR FUTURE UPDATE */
+/* home.css */
+
+/* Custom Styles for Home Page */
+.text-center h1 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	letter-spacing: -0.05em;
+	margin-bottom: 1rem;
+}
+
+.text-center span {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	background-color: rgba(99, 102, 241, 0.1);
+	padding: 0.5rem 1.5rem;
+	border-radius: 9999px;
+	display: inline-block;
+	margin-bottom: 1.5rem;
+}
+
+.text-center p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	line-height: 1.75;
+	color: #4a5568;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+
+/* Button Enhancements for Home Page */
+.bg-indigo-600 {
+	transition: all 0.3s ease;
+}
+
+.bg-indigo-600:hover {
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
