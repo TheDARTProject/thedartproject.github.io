@@ -9,11 +9,19 @@ const rowsPerPage = 10;
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
+    // Determine if we're on the home page (index.html)
+    const isHomePage = window.location.pathname.endsWith('index.html') ||
+                        window.location.pathname.endsWith('/') ||
+                        window.location.pathname === '';
+
+    // Set the base path for info and FAQ based on current page
+    const basePath = isHomePage ? 'pages/' : '';
+
     // Add event listener for the info button
     const infoButton = document.getElementById('infoButton');
     if (infoButton) {
         infoButton.addEventListener('click', () => {
-            window.location.href = 'pages/info.html';
+            window.location.href = basePath + 'info.html';
         });
     }
 
@@ -21,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const faqButton = document.getElementById('faqButton');
     if (faqButton) {
         faqButton.addEventListener('click', () => {
-            window.location.href = 'pages/faq.html';
+            window.location.href = basePath + 'faq.html';
         });
     }
 
