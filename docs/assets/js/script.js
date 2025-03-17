@@ -377,27 +377,34 @@ function processIntelligenceData(data) {
         yearlyReports[year].commonAttackGoal = Object.keys(attackGoals).reduce((a, b) => attackGoals[a] > attackGoals[b] ? a : b);
     });
 
+    // Sort the monthly reports by the FOUND_ON date of the cases (newest first)
+    const sortedMonthlyReports = Object.entries(monthlyReports).sort((a, b) => {
+        const latestDateA = new Date(Math.max(...a[1].cases.map(caseData => new Date(caseData.FOUND_ON))));
+        const latestDateB = new Date(Math.max(...b[1].cases.map(caseData => new Date(caseData.FOUND_ON))));
+        return latestDateB - latestDateA; // Sort in descending order (newest first)
+    });
+
     // Render the reports
-    renderIntelligenceReports(monthlyReports, yearlyReports);
+    renderIntelligenceReports(sortedMonthlyReports, yearlyReports);
 }
 
 // Function to render the reports on the page
-function renderIntelligenceReports(monthlyReports, yearlyReports) {
+function renderIntelligenceReports(sortedMonthlyReports, yearlyReports) {
     const container = document.getElementById('intelligenceReports');
     container.innerHTML = '';
 
     let currentYear = null;
 
-    Object.keys(monthlyReports).sort().forEach(yearMonth => {
-        const report = monthlyReports[yearMonth];
+    // Render the sorted monthly reports
+    sortedMonthlyReports.forEach(([yearMonth, report]) => {
         const year = report.year;
 
+        // Add a yearly report box if the year changes
         if (year !== currentYear) {
             if (currentYear !== null) {
-                // Add a yearly report box
                 const yearlyReport = yearlyReports[currentYear];
                 const yearlyBox = document.createElement('div');
-                yearlyBox.className = 'bg-white p-6 rounded-lg shadow-lg col-span-2';
+                yearlyBox.className = 'bg-gray-50 p-6 rounded-lg shadow-lg col-span-2';
                 yearlyBox.innerHTML = `
                     <h3 class="text-2xl font-bold text-indigo-700 mb-4">Yearly Report - ${currentYear}</h3>
                     <p class="text-gray-600">Total Cases: ${yearlyReport.totalCases}</p>
@@ -414,7 +421,7 @@ function renderIntelligenceReports(monthlyReports, yearlyReports) {
 
         // Add a monthly report box
         const monthlyBox = document.createElement('div');
-        monthlyBox.className = 'bg-white p-6 rounded-lg shadow-lg';
+        monthlyBox.className = 'bg-gray-50 p-6 rounded-lg shadow-lg';
         monthlyBox.innerHTML = `
             <h3 class="text-xl font-bold text-indigo-700 mb-4">${report.month} ${report.year}</h3>
             <p class="text-gray-600">Total Cases: ${report.totalCases}</p>
@@ -434,7 +441,7 @@ function renderIntelligenceReports(monthlyReports, yearlyReports) {
     if (currentYear !== null) {
         const yearlyReport = yearlyReports[currentYear];
         const yearlyBox = document.createElement('div');
-        yearlyBox.className = 'bg-white p-6 rounded-lg shadow-lg col-span-2';
+        yearlyBox.className = 'bg-gray-50 p-6 rounded-lg shadow-lg col-span-2';
         yearlyBox.innerHTML = `
             <h3 class="text-2xl font-bold text-indigo-700 mb-4">Yearly Report - ${currentYear}</h3>
             <p class="text-gray-600">Total Cases: ${yearlyReport.totalCases}</p>

@@ -1505,19 +1505,32 @@ body.bg-gray-900 .sidebar-link:hover {
 }
 
 /* Intelligence Reports */
-#intelligenceReports .bg-white {
+#intelligenceReports .bg-gray-50 {
+    background-color: var(--gray-50);
+    color: var(--gray-900);
+    border-radius: 0.5rem;
+    box-shadow: var(--card-shadow);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.bg-gray-900 #intelligenceReports .bg-white {
+#intelligenceReports .bg-gray-50 h3 {
+    color: var(--primary);
+}
+
+#intelligenceReports .bg-gray-50 p {
+    color: var(--gray-600);
+}
+
+/* Dark Mode Adjustments */
+body.bg-gray-900 #intelligenceReports .bg-gray-50 {
     background-color: var(--gray-800);
     color: var(--gray-100);
 }
 
-body.bg-gray-900 #intelligenceReports .bg-white h3 {
+body.bg-gray-900 #intelligenceReports .bg-gray-50 h3 {
     color: var(--primary-light);
 }
 
-body.bg-gray-900 #intelligenceReports .bg-white p {
+body.bg-gray-900 #intelligenceReports .bg-gray-50 p {
     color: var(--gray-300);
 }
