@@ -37,16 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
     const sidebarToggle = document.getElementById('sidebarToggle');
     const closeSidebar = document.getElementById('closeSidebar');
+
     if (sidebarToggle) {
         sidebarToggle.addEventListener('click', () => {
             sidebar.classList.toggle('open');
         });
     }
+
     if (closeSidebar) {
         closeSidebar.addEventListener('click', () => {
             sidebar.classList.remove('open');
         });
     }
+
     // Close sidebar when clicking outside of it
     document.addEventListener('click', (event) => {
         if (!sidebar.contains(event.target) && !sidebarToggle.contains(event.target)) {
