@@ -112,7 +112,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Create and initialize symbol animation
     initializeSecuritySymbols(symbols);
+
+    // Initialize server counts
+    initializeServerCounts();
 });
+
 
 function initializeSecuritySymbols(symbols) {
     if (!document.querySelector('.texture')) {
@@ -319,6 +323,73 @@ async function fetchData() {
     }
 }
 
+// Function to fetch the account data for server cards
+async function fetchAccountData() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Compromised-Discord-Accounts.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return await response.json();
+    } catch (error) {
+        console.error('Error fetching account data:', error);
+        return {};
+    }
+}
+
+// Function to count cases per server for server cards
+function countCasesPerServer(data) {
+    const serverCounts = {};
+
+    // Initialize counters for known servers
+    Object.keys(serverNames).forEach(server => {
+        serverCounts[server] = 0;
+    });
+
+    // Count cases from the data
+    Object.values(data).forEach(account => {
+        const server = account.FOUND_ON_SERVER;
+        if (server) {
+            serverCounts[server] = (serverCounts[server] || 0) + 1;
+        }
+    });
+
+    return serverCounts;
+}
+
+// Function to update server cards with case counts
+function updateServerCards(serverCounts) {
+    const serverCards = document.querySelectorAll('.server-card');
+
+    serverCards.forEach(card => {
+        const titleElement = card.querySelector('h4');
+        if (!titleElement) return;
+
+        const serverTitle = titleElement.textContent.trim();
+
+        // Find the corresponding server key
+        const serverKey = Object.keys(serverNames).find(key =>
+            serverNames[key] === serverTitle
+        );
+
+        if (serverKey && serverCounts[serverKey] !== undefined) {
+            const caseCountElement = card.querySelector('.case-count');
+            if (caseCountElement) {
+                caseCountElement.textContent = `${serverCounts[serverKey]} Cases Contributed`;
+            }
+        }
+    });
+}
+
+// Function to update server cards
+async function initializeServerCounts() {
+    const accountsData = await fetchAccountData();
+    const serverCounts = countCasesPerServer(accountsData);
+    updateServerCards(serverCounts);
+
+    console.log('Server counts updated:', serverCounts);
+}
+
 // Process data and initialize charts
 function processData() {
     // Populate filter dropdowns
@@ -332,6 +403,9 @@ function processData() {
 
     // Create charts
     createCharts();
+
+    // Update server cards with case counts
+    updateServerCards();
 }
 
 // Populate filter dropdowns
