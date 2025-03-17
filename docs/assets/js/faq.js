@@ -1,1 +1,3 @@
+// faq.js
+
 // PLACEHOLDER FILE FOR FUTURE UPDATE
