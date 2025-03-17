@@ -16278,5 +16278,27 @@
         "FINAL_URL_STATUS": "UNKNOWN",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-17T02:59:26.578931"
+    },
+    "ACCOUNT_NUMBER_741": {
+        "CASE_NUMBER": "741",
+        "FOUND_ON": "2025-03-17",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "839462789873270835",
+        "USERNAME": "fluck58",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "NSFW Discord Invite",
+        "ATTACK_VECTOR": "Discord Servers",
+        "ATTACK_GOAL": "Discord Accounts",
+        "ATTACK_SURFACE": "Discord",
+        "SUSPECTED_REGION_OF_ORIGIN": "US",
+        "SURFACE_URL": "https://discord.gg/vFJxM7X6r8",
+        "SURFACE_URL_DOMAIN": "discord.gg",
+        "SURFACE_URL_STATUS": "ACTIVE",
+        "FINAL_URL": "https://discord.com/invite/vFJxM7X6r8",
+        "FINAL_URL_DOMAIN": "discord.com",
+        "FINAL_URL_STATUS": "ACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-17T20:12:54.127321"
     }
 }
