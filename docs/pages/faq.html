@@ -47,6 +47,59 @@
     <meta name="twitter:image" content="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/social-share/CDA-Project-FAQ.png">
   </head>
   <body class="bg-gray-100 min-h-screen texture">
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar bg-indigo-700">
+    <div class="sidebar-header">
+      <button id="closeSidebar" class="close-sidebar bg-indigo-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <nav class="sidebar-nav bg-indigo-700">
+      <ul>
+        <li>
+          <a href="/CDA-Project/index.html" class="sidebar-link hover:bg-indigo-600">Home</a>
+        </li>
+        <li>
+          <a href="/CDA-Project/pages/dashboard.html" class="sidebar-link hover:bg-indigo-600">Dashboard</a>
+        </li>
+        <li>
+          <a href="/CDA-Project/pages/status.html" class="sidebar-link hover:bg-indigo-600">System Status</a>
+        </li>
+        <li>
+          <a href="/CDA-Project/pages/database.html" class="sidebar-link hover:bg-indigo-600">Database</a>
+        </li>
+        <li>
+          <a href="/CDA-Project/pages/info.html" class="sidebar-link hover:bg-indigo-600">Info Center</a>
+        </li>
+        <li>
+          <a href="/CDA-Project/pages/faq.html" class="sidebar-link hover:bg-indigo-600">Frequent Questions</a>
+        </li>
+        <li>
+          <a href="https://discord.com/invite/2nHHHBWNDw" class="sidebar-link hover:bg-indigo-600">Discord</a>
+        </li>
+        <li>
+          <a href="https://github.com/ThatSINEWAVE/CDA-Project" class="sidebar-link hover:bg-indigo-600">Repository</a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link hover:bg-indigo-600">Threat Map (Coming Soon)</a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link hover:bg-indigo-600">Intelligence (Coming Soon)</a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link hover:bg-indigo-600">Resources (Coming Soon)</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Sidebar Toggle Button -->
+  <button id="sidebarToggle" class="sidebar-toggle bg-indigo-700">
+    <svg xmlns="http://www.w3.org/2000/svg" class=" h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
     <!-- Header -->
     <nav class="bg-indigo-700 text-white shadow-md">
       <div class="header-content">
@@ -84,12 +137,12 @@
       </div>
     </nav>
     <!-- Announcement Bar -->
-    <div id="announcement-bar" class="announcement-bar">
+    <div id="announcement-bar" class="announcement-bar hidden">
       <div class="container mx-auto py-3 px-4">
         <div class="flex items-center justify-between">
           <!-- Announcement Message -->
           <div class="announcement-content">
-            <p class="text-sm md:text-base font-medium">🔔 Update - 16.03.2025 13:50 GMT+2: Database maintenance is still in progress. All cases have been validated except for those involving Discord invite URLs due to ongoing API issues. We will provide an update once the issue is resolved. We appreciate your understanding!</p>
+            <p id="announcement-text" class="text-sm md:text-base font-medium"></p>
           </div>
           <!-- Close Announcement Button -->
           <button id="closeAnnouncement" class="ml-4 text-white opacity-70 hover:opacity-100 transition-opacity">
@@ -225,40 +278,30 @@
     </script>
     <!-- Announcement Script -->
     <script>
-      // Set a version ID for current announcement
-      // Change this whenever the announcement content gets updated
-      // Format: YYYY-MM-DD-HH-MM (in GMT+2 timezone)
-      const CURRENT_ANNOUNCEMENT_VERSION = "2025-03-16-13-48";
-      document.getElementById('closeAnnouncement').addEventListener('click', function() {
-        document.getElementById('announcement-bar').classList.add('hidden');
-        // Save both the closed state and the version of the announcement that was closed
-        localStorage.setItem('announcementClosed', 'true');
-        localStorage.setItem('lastClosedAnnouncementVersion', CURRENT_ANNOUNCEMENT_VERSION);
-      });
-      // Check if announcement was previously closed AND if it's the same version
       document.addEventListener('DOMContentLoaded', function() {
-        const announcementClosed = localStorage.getItem('announcementClosed') === 'true';
-        const lastClosedVersion = localStorage.getItem('lastClosedAnnouncementVersion');
-        // Only hide if it was closed AND it's the same version
-        if (announcementClosed && lastClosedVersion === CURRENT_ANNOUNCEMENT_VERSION) {
-          document.getElementById('announcement-bar').classList.add('hidden');
-        } else {
-          // Show the bar if either it was never closed or it's a new version
-          document.getElementById('announcement-bar').classList.remove('hidden');
-        }
+        fetch("https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Announcement.json").then(response => response.json()).then(data => {
+          const announcementDate = data.date; // Example: "2025-03-16 13:50 GMT+2"
+          const announcementText = data.text;
+          // Format the version string
+          const dateParts = announcementDate.match(/\d+/g);
+          const CURRENT_ANNOUNCEMENT_VERSION = `${dateParts[0]}-${dateParts[1]}-${dateParts[2]}-${dateParts[3]}-${dateParts[4]}`;
+          document.getElementById('announcement-text').textContent = `🔔 Update - ${announcementDate}: ${announcementText}`;
+          // Check if announcement was previously closed AND if it's the same version
+          const announcementClosed = localStorage.getItem('announcementClosed') === 'true';
+          const lastClosedVersion = localStorage.getItem('lastClosedAnnouncementVersion');
+          if (announcementClosed && lastClosedVersion === CURRENT_ANNOUNCEMENT_VERSION) {
+            document.getElementById('announcement-bar').classList.add('hidden');
+          } else {
+            document.getElementById('announcement-bar').classList.remove('hidden');
+          }
+          // Close button logic
+          document.getElementById('closeAnnouncement').addEventListener('click', function() {
+            document.getElementById('announcement-bar').classList.add('hidden');
+            localStorage.setItem('announcementClosed', 'true');
+            localStorage.setItem('lastClosedAnnouncementVersion', CURRENT_ANNOUNCEMENT_VERSION);
+          });
+        }).catch(error => console.error("Error fetching announcement:", error));
       });
-      // Helper function to get current GMT+2 time in the required format
-      function getCurrentGMT2Version() {
-        const now = new Date();
-        // Adjust to GMT+2 (add 2 hours to UTC)
-        const gmt2Time = new Date(now.getTime() + (2 * 60 * 60 * 1000));
-        const year = gmt2Time.getUTCFullYear();
-        const month = String(gmt2Time.getUTCMonth() + 1).padStart(2, '0');
-        const day = String(gmt2Time.getUTCDate()).padStart(2, '0');
-        const hours = String(gmt2Time.getUTCHours()).padStart(2, '0');
-        const minutes = String(gmt2Time.getUTCMinutes()).padStart(2, '0');
-        return `${year}-${month}-${day}-${hours}-${minutes}`;
-      }
     </script>
   </body>
 </html>
