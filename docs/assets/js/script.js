@@ -9,8 +9,13 @@ const rowsPerPage = 10;
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
-    // Call fetchDeveloperMessages function
-    fetchDeveloperMessages();
+    // Determine if we're on the status page
+    const isStatusPage = window.location.pathname.includes('status.html');
+
+    // Only call fetchDeveloperMessages if we're on the status page
+    if (isStatusPage) {
+        fetchDeveloperMessages();
+    }
 
     // Determine if we're on the home page (index.html)
     const isHomePage = window.location.pathname.endsWith('index.html') ||
