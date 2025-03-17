@@ -650,6 +650,358 @@ function initializeStatusChecks() {
     );
 }
 
+// Main function to fetch data and generate intelligence reports
+async function loadIntelligenceReports() {
+    try {
+        // Fetch the compromised accounts data
+        const response = await fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Compromised-Discord-Accounts.json');
+        const data = await response.json();
+
+        // Process the data to generate monthly and yearly statistics
+        const statistics = processAccountData(data);
+
+        // Generate the HTML for the reports
+        generateReportHTML(statistics);
+    } catch (error) {
+        console.error('Error loading intelligence reports:', error);
+        document.getElementById('intelligenceGrid').innerHTML = `
+            <div class="col-span-full p-6 bg-red-100 text-red-700 rounded-lg">
+                <p class="font-bold">Error loading intelligence data</p>
+                <p>Please try again later or check the console for more details.</p>
+            </div>`;
+    }
+}
+
+// Process account data to generate monthly and yearly statistics
+function processAccountData(data) {
+    // Initialize statistics object
+    const statistics = {
+        monthly: {},
+        yearly: {}
+    };
+
+    // Process each account
+    Object.values(data).forEach(account => {
+        // Extract date information
+        const foundDate = new Date(account.FOUND_ON);
+        const year = foundDate.getFullYear().toString();
+        const month = foundDate.toLocaleString('default', { month: 'long' });
+        const monthKey = `${year}-${month}`;
+
+        // Initialize month data if it doesn't exist
+        if (!statistics.monthly[monthKey]) {
+            statistics.monthly[monthKey] = {
+                year,
+                month,
+                count: 0,
+                attacks: {},
+                vectors: {},
+                goals: {},
+                behaviours: {},
+                statuses: {}
+            };
+        }
+
+        // Initialize year data if it doesn't exist
+        if (!statistics.yearly[year]) {
+            statistics.yearly[year] = {
+                year,
+                count: 0,
+                attacks: {},
+                vectors: {},
+                goals: {},
+                behaviours: {},
+                statuses: {}
+            };
+        }
+
+        // Update monthly statistics
+        const monthData = statistics.monthly[monthKey];
+        monthData.count++;
+        incrementProperty(monthData.attacks, account.ATTACK_METHOD);
+        incrementProperty(monthData.vectors, account.ATTACK_VECTOR);
+        incrementProperty(monthData.goals, account.ATTACK_GOAL);
+        incrementProperty(monthData.behaviours, account.BEHAVIOUR);
+        incrementProperty(monthData.statuses, account.ACCOUNT_STATUS);
+
+        // Update yearly statistics
+        const yearData = statistics.yearly[year];
+        yearData.count++;
+        incrementProperty(yearData.attacks, account.ATTACK_METHOD);
+        incrementProperty(yearData.vectors, account.ATTACK_VECTOR);
+        incrementProperty(yearData.goals, account.ATTACK_GOAL);
+        incrementProperty(yearData.behaviours, account.BEHAVIOUR);
+        incrementProperty(yearData.statuses, account.ACCOUNT_STATUS);
+    });
+
+    // Sort the data by date (most recent first)
+    const sortedMonthly = Object.entries(statistics.monthly)
+        .sort((a, b) => {
+            const dateA = new Date(`${a[1].year}-${getMonthNumber(a[1].month)}-01`);
+            const dateB = new Date(`${b[1].year}-${getMonthNumber(b[1].month)}-01`);
+            return dateB - dateA;
+        })
+        .reduce((obj, [key, value]) => {
+            obj[key] = value;
+            return obj;
+        }, {});
+
+    const sortedYearly = Object.entries(statistics.yearly)
+        .sort((a, b) => b[1].year - a[1].year)
+        .reduce((obj, [key, value]) => {
+            obj[key] = value;
+            return obj;
+        }, {});
+
+    return {
+        monthly: sortedMonthly,
+        yearly: sortedYearly
+    };
+}
+
+// Helper function to get month number from month name
+function getMonthNumber(monthName) {
+    const date = new Date(Date.parse(`${monthName} 1, 2025`));
+    return (date.getMonth() + 1).toString().padStart(2, '0');
+}
+
+// Helper function to increment a property in an object or initialize it if it doesn't exist
+function incrementProperty(obj, property) {
+    if (!property || property === "UNKNOWN") return;
+
+    if (!obj[property]) {
+        obj[property] = 1;
+    } else {
+        obj[property]++;
+    }
+}
+
+// Generate HTML for the reports
+function generateReportHTML(statistics) {
+    const grid = document.getElementById('intelligenceGrid');
+    grid.innerHTML = '';
+
+    let currentYear = null;
+    let yearInserted = false;
+
+    // Add monthly reports
+    Object.values(statistics.monthly).forEach(monthData => {
+        // If we've moved to a new year, add the yearly report first
+        if (monthData.year !== currentYear) {
+            if (currentYear !== null && !yearInserted) {
+                const yearData = statistics.yearly[currentYear];
+                grid.appendChild(createYearlyReportCard(yearData));
+                yearInserted = true;
+            }
+            currentYear = monthData.year;
+            yearInserted = false;
+        }
+
+        // Add the monthly report
+        grid.appendChild(createMonthlyReportCard(monthData));
+
+        // If this is the last month of the year (December), add the yearly report
+        if (monthData.month === 'December') {
+            const yearData = statistics.yearly[monthData.year];
+            grid.appendChild(createYearlyReportCard(yearData));
+            yearInserted = true;
+        }
+    });
+
+    // Add the last year report if it hasn't been added yet
+    if (currentYear !== null && !yearInserted) {
+        const yearData = statistics.yearly[currentYear];
+        grid.appendChild(createYearlyReportCard(yearData));
+    }
+}
+
+// Create a monthly report card
+function createMonthlyReportCard(monthData) {
+    // Find the top items in each category
+    const topAttack = getTopItem(monthData.attacks);
+    const topVector = getTopItem(monthData.vectors);
+    const topGoal = getTopItem(monthData.goals);
+    const topBehaviour = getTopItem(monthData.behaviours);
+
+    const card = document.createElement('div');
+    card.className = 'bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300';
+
+    card.innerHTML = `
+        <h3 class="text-xl font-bold text-indigo-600 mb-2">${monthData.month} ${monthData.year}</h3>
+        <div class="text-3xl font-bold mb-4">${monthData.count} <span class="text-sm text-gray-500">Cases</span></div>
+
+        <div class="space-y-3 text-sm">
+            <div>
+                <p class="font-semibold text-gray-700">Top Attack Method:</p>
+                <p>${topAttack ? topAttack.name : 'N/A'} ${topAttack ? `(${topAttack.count})` : ''}</p>
+            </div>
+            <div>
+                <p class="font-semibold text-gray-700">Top Attack Vector:</p>
+                <p>${topVector ? topVector.name : 'N/A'} ${topVector ? `(${topVector.count})` : ''}</p>
+            </div>
+            <div>
+                <p class="font-semibold text-gray-700">Top Attack Goal:</p>
+                <p>${topGoal ? topGoal.name : 'N/A'} ${topGoal ? `(${topGoal.count})` : ''}</p>
+            </div>
+            <div>
+                <p class="font-semibold text-gray-700">Common Behaviour:</p>
+                <p>${topBehaviour ? topBehaviour.name : 'N/A'} ${topBehaviour ? `(${topBehaviour.count})` : ''}</p>
+            </div>
+        </div>
+
+        <button class="view-details mt-4 text-indigo-600 hover:text-indigo-800 text-sm font-medium"
+                data-period="monthly"
+                data-year="${monthData.year}"
+                data-month="${monthData.month}">
+            View Full Report →
+        </button>
+    `;
+
+    return card;
+}
+
+// Create a yearly report card
+function createYearlyReportCard(yearData) {
+    // Find the top items in each category
+    const topAttack = getTopItem(yearData.attacks);
+    const topVector = getTopItem(yearData.vectors);
+    const topGoal = getTopItem(yearData.goals);
+    const topBehaviour = getTopItem(yearData.behaviours);
+
+    const card = document.createElement('div');
+    card.className = 'bg-indigo-50 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300 md:col-span-2';
+
+    card.innerHTML = `
+        <div class="flex justify-between items-start">
+            <h3 class="text-2xl font-bold text-indigo-700 mb-2">Annual Report ${yearData.year}</h3>
+            <div class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-bold">
+                ${yearData.count} Cases
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="space-y-3">
+                <div>
+                    <p class="font-semibold text-gray-700">Primary Attack Method:</p>
+                    <p class="text-lg">${topAttack ? topAttack.name : 'N/A'} ${topAttack ? `(${topAttack.count})` : ''}</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700">Main Attack Vector:</p>
+                    <p class="text-lg">${topVector ? topVector.name : 'N/A'} ${topVector ? `(${topVector.count})` : ''}</p>
+                </div>
+            </div>
+            <div class="space-y-3">
+                <div>
+                    <p class="font-semibold text-gray-700">Top Attack Goal:</p>
+                    <p class="text-lg">${topGoal ? topGoal.name : 'N/A'} ${topGoal ? `(${topGoal.count})` : ''}</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700">Prevalent Behaviour:</p>
+                    <p class="text-lg">${topBehaviour ? topBehaviour.name : 'N/A'} ${topBehaviour ? `(${topBehaviour.count})` : ''}</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="view-details mt-6 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                data-period="yearly"
+                data-year="${yearData.year}">
+            View Complete Annual Report
+        </button>
+    `;
+
+    return card;
+}
+
+// Helper function to get the top item in a category
+function getTopItem(items) {
+    if (!items || Object.keys(items).length === 0) return null;
+
+    let topItem = null;
+    let topCount = 0;
+
+    for (const [name, count] of Object.entries(items)) {
+        if (count > topCount) {
+            topItem = name;
+            topCount = count;
+        }
+    }
+
+    return { name: topItem, count: topCount };
+}
+
+// Show detailed report modal
+function showDetailedReport(period, year, month = null) {
+    // This function would create and show a modal with more detailed statistics
+    // For simplicity, this is just a placeholder - you would implement this based on your UI framework
+    console.log(`Showing ${period} report for ${year}${month ? ` - ${month}` : ''}`);
+
+    // Example implementation - create a basic modal
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+    modal.innerHTML = `
+        <div class="bg-white rounded-lg p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold text-indigo-700">
+                    ${period === 'yearly' ? `Annual Report ${year}` : `${month} ${year} Report`}
+                </h3>
+                <button class="close-modal text-gray-500 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-content">
+                <p>Loading detailed statistics...</p>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    // Add event listener to close the modal
+    modal.querySelector('.close-modal').addEventListener('click', () => {
+        document.body.removeChild(modal);
+    });
+
+    // You would then populate the modal-content with detailed statistics
+    // This would require fetching the data again or using the data you already have
+}
+
+// Event delegation for view details buttons
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('view-details')) {
+        const period = event.target.getAttribute('data-period');
+        const year = event.target.getAttribute('data-year');
+        const month = event.target.getAttribute('data-month');
+
+        showDetailedReport(period, year, month);
+    }
+});
+
+// Initialize the page
+document.addEventListener('DOMContentLoaded', loadIntelligenceReports);
+
+// Add dark mode support for dynamically created elements
+function updateDarkModeForIntelligenceCards() {
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    if (isDarkMode) {
+        // Update all monthly cards
+        const monthlyCards = document.querySelectorAll('#intelligenceGrid > div:not(.md\\:col-span-2)');
+        monthlyCards.forEach(card => {
+            card.classList.remove('bg-white');
+            card.classList.add('bg-gray-800', 'text-white');
+        });
+
+        // Update all yearly cards
+        const yearlyCards = document.querySelectorAll('#intelligenceGrid > div.md\\:col-span-2');
+        yearlyCards.forEach(card => {
+            card.classList.remove('bg-indigo-50');
+            card.classList.add('bg-gray-700', 'text-white');
+        });
+    }
+}
+
 // Process data and initialize charts
 function processData() {
     // Populate filter dropdowns
