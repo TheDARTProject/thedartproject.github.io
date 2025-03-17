@@ -263,7 +263,7 @@ footer a:hover {
 }
 
 nav .flex.items-center.space-x-2 {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 #infoHeader {
@@ -680,9 +680,9 @@ body.bg-gray-900 ::-webkit-scrollbar-thumb {
 	nav .container {
 		padding: 0.5rem 1rem;
 		flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 		height: 80px;
 	}
 
@@ -690,25 +690,26 @@ body.bg-gray-900 ::-webkit-scrollbar-thumb {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-        align-items: center;
-        text-align: center;
+		align-items: center;
+		text-align: center;
 		margin-top: 5px;
 	}
 
 	nav h1 {
 		font-size: 1.5rem;
 		margin-right: 0.5rem;
-		margin-left: 45px; /* Adjustment for the Beta Tag */
+		margin-left: 45px;
+		/* Adjustment for the Beta Tag */
 		justify-content: center;
-        align-items: center;
-        text-align: center;
+		align-items: center;
+		text-align: center;
 	}
 
 	nav p {
 		font-size: 0.75rem;
 		justify-content: center;
-        align-items: center;
-        text-align: center;
+		align-items: center;
+		text-align: center;
 	}
 
 	/* Adjust the buttons in the header */
@@ -1212,4 +1213,189 @@ body.bg-gray-900 .database-table .pagination-controls button {
 
 body.bg-gray-900 .database-table .pagination-controls button:hover:not(:disabled) {
 	background-color: var(--gray-600);
+}
+
+/* ======================= */
+/*    Threat Map Styles    */
+/* ======================= */
+/* Map container */
+#map {
+	width: 100%;
+	height: 600px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulsing ping marker */
+.ping-marker {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--ping-color);
+	position: relative;
+	opacity: 0.8;
+	animation: pulse 2s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+	0% {
+		transform: scale(0.5);
+		opacity: 1;
+	}
+
+	70% {
+		transform: scale(2);
+		opacity: 0.5;
+	}
+
+	100% {
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+/* Ping shadow */
+.ping-marker::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: var(--ping-color);
+	opacity: 0.4;
+	transform: scale(1);
+	animation: shadow-pulse 2s infinite;
+}
+
+/* Shadow pulse animation */
+@keyframes shadow-pulse {
+	0% {
+		transform: scale(1);
+		opacity: 0.6;
+	}
+
+	70% {
+		transform: scale(2.5);
+		opacity: 0.2;
+	}
+
+	100% {
+		transform: scale(3);
+		opacity: 0;
+	}
+}
+
+/* Threat popup styles */
+.threat-popup {
+	padding: 8px;
+	max-width: 250px;
+}
+
+.threat-popup h3 {
+	margin-top: 0;
+	margin-bottom: 5px;
+	color: #333;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+}
+
+.threat-popup p {
+	margin: 5px 0;
+	color: #555;
+}
+
+/* Threat level colors */
+.text-red-600 {
+	color: #DC2626;
+}
+
+.text-orange-500 {
+	color: #F97316;
+}
+
+.text-yellow-500 {
+	color: #EAB308;
+}
+
+.text-green-500 {
+	color: #22C55E;
+}
+
+.text-gray-500 {
+	color: #6B7280;
+}
+
+/* Loader styles */
+.loader {
+	border: 4px solid #f3f3f3;
+	border-top: 4px solid #6366F1;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 2s linear infinite;
+	margin: 20px auto;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Dark mode styles */
+.dark-mode #map {
+	filter: invert(1) hue-rotate(180deg);
+}
+
+.dark-mode .leaflet-popup-content-wrapper {
+	background-color: #333;
+	color: #fff;
+}
+
+.dark-mode .threat-popup h3 {
+	color: #fff;
+	border-bottom: 1px solid #555;
+}
+
+.dark-mode .threat-popup p {
+	color: #ddd;
+}
+
+/* Dark mode styles for the map */
+body.bg-gray-900 #map {
+	filter: invert(1) hue-rotate(180deg);
+}
+
+body.bg-gray-900 .leaflet-popup-content-wrapper {
+	background-color: var(--gray-800);
+	color: var(--gray-100);
+}
+
+body.bg-gray-900 .threat-popup h3 {
+	color: var(--gray-100);
+	border-bottom: 1px solid var(--gray-600);
+}
+
+body.bg-gray-900 .threat-popup p {
+	color: var(--gray-300);
+}
+
+/* Dark mode styles for the legend */
+body.bg-gray-900 .legend {
+	background-color: var(--gray-800);
+	color: var(--gray-100);
+	border: 1px solid var(--gray-600);
+}
+
+body.bg-gray-900 .legend h3 {
+	color: var(--gray-100);
+}
+
+body.bg-gray-900 .legend span {
+	color: var(--gray-300);
 }
