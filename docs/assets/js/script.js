@@ -9,6 +9,9 @@ const rowsPerPage = 10;
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
+    // Call fetchDeveloperMessages function
+    fetchDeveloperMessages();
+
     // Determine if we're on the home page (index.html)
     const isHomePage = window.location.pathname.endsWith('index.html') ||
                         window.location.pathname.endsWith('/') ||
@@ -259,6 +262,45 @@ function initializeTheme() {
         const glossary = document.getElementById('infoBar');
         if (glossary) {
             glossary.classList.add('bg-gray-800', 'text-white');
+        }
+    }
+}
+
+// Function to fetch and update developer messages
+async function fetchDeveloperMessages() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Status-Message.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch developer messages');
+        }
+
+        const messageData = await response.json();
+        const currentStatus = messageData.Statuses.find(status => status.id === messageData.CurrentStatus);
+
+        // Update developer message title and description
+        const messageTitleElement = document.getElementById('developerMessageTitle');
+        const messageDescriptionElement = document.getElementById('developerMessageDescription');
+
+        if (messageTitleElement) {
+            messageTitleElement.textContent = currentStatus.name;
+        }
+
+        if (messageDescriptionElement) {
+            messageDescriptionElement.textContent = currentStatus.description;
+        }
+    } catch (error) {
+        console.error('Error fetching developer messages:', error);
+
+        const messageTitleElement = document.getElementById('developerMessageTitle');
+        const messageDescriptionElement = document.getElementById('developerMessageDescription');
+
+        if (messageTitleElement) {
+            messageTitleElement.textContent = 'Error';
+            messageTitleElement.className = 'text-xl font-bold text-red-600';
+        }
+
+        if (messageDescriptionElement) {
+            messageDescriptionElement.textContent = 'Failed to load developer messages.';
         }
     }
 }
