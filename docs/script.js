@@ -446,7 +446,7 @@ async function fetchDatabaseStatus() {
             const element = document.getElementById(id);
             if (element) {
                 element.textContent = 'Unavailable';
-                element.className = 'font-medium text-red-600';
+                element.className = 'text-2xl font-bold text-red-600';
             }
         });
     }
@@ -464,16 +464,16 @@ async function checkDatabaseFile(url, elementId) {
             // Try to parse JSON to ensure it's valid
             await response.json();
             statusElement.textContent = 'Operational';
-            statusElement.className = 'font-medium text-green-600';
+            statusElement.className = 'text-2xl font-bold text-green-600';
         } else {
             statusElement.textContent = 'Offline';
-            statusElement.className = 'font-medium text-red-600';
+            statusElement.className = 'text-2xl font-bold text-red-600';
         }
     } catch (error) {
         const statusElement = document.getElementById(elementId);
         if (statusElement) {
             statusElement.textContent = 'Error';
-            statusElement.className = 'font-medium text-orange-600';
+            statusElement.className = 'text-2xl font-bold text-orange-600';
         }
     }
 }
