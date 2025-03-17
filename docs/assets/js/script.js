@@ -33,6 +33,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Sidebar Toggle Functionality
+    const sidebar = document.getElementById('sidebar');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const closeSidebar = document.getElementById('closeSidebar');
+    if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+    }
+    if (closeSidebar) {
+        closeSidebar.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+        });
+    }
+    // Close sidebar when clicking outside of it
+    document.addEventListener('click', (event) => {
+        if (!sidebar.contains(event.target) && !sidebarToggle.contains(event.target)) {
+            sidebar.classList.remove('open');
+        }
+    });
+
     // Other event listeners and initialization code...
     if (window.location.pathname.includes('dashboard.html')) {
         fetchData();
@@ -127,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize status checks
     initializeStatusChecks();
 });
-
 
 function initializeSecuritySymbols(symbols) {
     if (!document.querySelector('.texture')) {
