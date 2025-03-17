@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thatsinewave.github.io/CDA-Project/sitemap.xml

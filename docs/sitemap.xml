@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<!-- Home Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/index.html</loc>
+		<lastmod>2025-03-17</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<!-- Status Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/status.html</loc>
+		<lastmod>2025-03-17</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<!-- Information Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/info.html</loc>
+		<lastmod>2025-03-17</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<!-- FAQ Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/faq.html</loc>
+		<lastmod>2025-03-17</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<!-- Database Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/database.html</loc>
+		<lastmod>2025-03-17</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<!-- Dashboard Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/dashboard.html</loc>
+		<lastmod>2025-03-17</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
+</urlset>

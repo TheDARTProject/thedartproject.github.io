@@ -1,0 +1,17 @@
+/* TEAM */
+  Creator: ThatSINEWAVE
+  GitHub: https://github.com/ThatSINEWAVE
+  Discord: sinewave_
+  Contact: sinewave_ (Discord)
+
+/* THANKS */
+  Tailwind CSS: https://tailwindcss.com/
+  Chart.js: https://www.chartjs.org/
+  Day.js: https://day.js.org/
+  GitHub Pages: https://pages.github.com/
+
+/* SITE */
+  Last update: 2025/03/16
+  Language: English
+  Doctype: HTML5
+  IDE: WebStorm
