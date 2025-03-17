@@ -1,0 +1,35 @@
+{
+  "CurrentStatus": 2,
+  "Statuses": [
+    {
+      "id": 1,
+      "name": "Working as Expected",
+      "description": "The database is fully operational and functioning as expected.",
+      "color": "text-green-600"
+    },
+    {
+      "id": 2,
+      "name": "Under Maintenance",
+      "description": "The database is currently undergoing maintenance. Some features may be unavailable.",
+      "color": "text-orange-500"
+    },
+    {
+      "id": 3,
+      "name": "Degraded Performance",
+      "description": "The database is experiencing performance issues. Response times may be slower than usual.",
+      "color": "text-yellow-500"
+    },
+    {
+      "id": 4,
+      "name": "Partial Outage",
+      "description": "The database is partially unavailable. Some features may not work as expected.",
+      "color": "text-red-600"
+    },
+    {
+      "id": 5,
+      "name": "Offline",
+      "description": "The database is completely offline. No features are available at this time.",
+      "color": "text-red-600"
+    }
+  ]
+}
