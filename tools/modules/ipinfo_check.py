@@ -16,7 +16,7 @@ IPINFO_URL = "https://ipinfo.io/"
 
 # Domains that should be automatically set to US
 AUTO_US_DOMAINS = {"discord.com", "discord.gg", "steamcommunity.com", "funpay.com", "mediafire.com", "t.me",
-                   "telegram.com"}
+                   "telegram.com", "telegra.ph"}
 
 
 def log(message):
