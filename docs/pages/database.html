@@ -594,16 +594,6 @@
               updateTable();
           }
       });
-
-      document.getElementById('closeModal').addEventListener('click', () => {
-          document.getElementById('detailModal').classList.add('hidden');
-      });
-
-      document.getElementById('detailModal').addEventListener('click', (e) => {
-          if (e.target === document.getElementById('detailModal')) {
-              document.getElementById('detailModal').classList.add('hidden');
-          }
-      });
     </script>
   </body>
 </html>
