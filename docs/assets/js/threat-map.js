@@ -1,3 +1,5 @@
+// threat-map.js
+
 // Map configuration
 const mapConfig = {
     center: [20, 0], // Starting position [lat, lng]
@@ -11,36 +13,156 @@ const mapConfig = {
 
 // Country codes and their approximate center coordinates
 const countryCenters = {
-    "US": { lat: 37.0902, lng: -95.7129, name: "United States" },
-    "RU": { lat: 61.5240, lng: 105.3188, name: "Russia" },
-    "CN": { lat: 35.8617, lng: 104.1954, name: "China" },
-    "BR": { lat: -14.2350, lng: -51.9253, name: "Brazil" },
-    "IN": { lat: 20.5937, lng: 78.9629, name: "India" },
-    "CA": { lat: 56.1304, lng: -106.3468, name: "Canada" },
-    "AU": { lat: -25.2744, lng: 133.7751, name: "Australia" },
-    "DE": { lat: 51.1657, lng: 10.4515, name: "Germany" },
-    "FR": { lat: 46.2276, lng: 2.2137, name: "France" },
-    "GB": { lat: 55.3781, lng: -3.4360, name: "United Kingdom" },
-    "JP": { lat: 36.2048, lng: 138.2529, name: "Japan" },
-    "KR": { lat: 35.9078, lng: 127.7669, name: "South Korea" },
-    "TR": { lat: 38.9637, lng: 35.2433, name: "Turkey" },
-    "IT": { lat: 41.8719, lng: 12.5674, name: "Italy" },
-    "ES": { lat: 40.4637, lng: -3.7492, name: "Spain" },
-    "MX": { lat: 23.6345, lng: -102.5528, name: "Mexico" },
-    "ID": { lat: -0.7893, lng: 113.9213, name: "Indonesia" },
-    "PL": { lat: 51.9194, lng: 19.1451, name: "Poland" },
-    "UA": { lat: 48.3794, lng: 31.1656, name: "Ukraine" },
-    "NL": { lat: 52.1326, lng: 5.2913, name: "Netherlands" },
-    "IR": { lat: 32.4279, lng: 53.6880, name: "Iran" },
-    "KP": { lat: 40.3399, lng: 127.5101, name: "North Korea" },
-    "VN": { lat: 14.0583, lng: 108.2772, name: "Vietnam" },
-    "ZA": { lat: -30.5595, lng: 22.9375, name: "South Africa" },
-    "TH": { lat: 15.8700, lng: 100.9925, name: "Thailand" },
-    "EG": { lat: 26.8206, lng: 30.8025, name: "Egypt" },
-    "AR": { lat: -38.4161, lng: -63.6167, name: "Argentina" },
-    "SA": { lat: 23.8859, lng: 45.0792, name: "Saudi Arabia" },
-    "RO": { lat: 45.9432, lng: 24.9668, name: "Romania" },
-    "MY": { lat: 4.2105, lng: 101.9758, name: "Malaysia" }
+    "US": {
+        lat: 37.0902,
+        lng: -95.7129,
+        name: "United States"
+    },
+    "RU": {
+        lat: 61.5240,
+        lng: 105.3188,
+        name: "Russia"
+    },
+    "CN": {
+        lat: 35.8617,
+        lng: 104.1954,
+        name: "China"
+    },
+    "BR": {
+        lat: -14.2350,
+        lng: -51.9253,
+        name: "Brazil"
+    },
+    "IN": {
+        lat: 20.5937,
+        lng: 78.9629,
+        name: "India"
+    },
+    "CA": {
+        lat: 56.1304,
+        lng: -106.3468,
+        name: "Canada"
+    },
+    "AU": {
+        lat: -25.2744,
+        lng: 133.7751,
+        name: "Australia"
+    },
+    "DE": {
+        lat: 51.1657,
+        lng: 10.4515,
+        name: "Germany"
+    },
+    "FR": {
+        lat: 46.2276,
+        lng: 2.2137,
+        name: "France"
+    },
+    "GB": {
+        lat: 55.3781,
+        lng: -3.4360,
+        name: "United Kingdom"
+    },
+    "JP": {
+        lat: 36.2048,
+        lng: 138.2529,
+        name: "Japan"
+    },
+    "KR": {
+        lat: 35.9078,
+        lng: 127.7669,
+        name: "South Korea"
+    },
+    "TR": {
+        lat: 38.9637,
+        lng: 35.2433,
+        name: "Turkey"
+    },
+    "IT": {
+        lat: 41.8719,
+        lng: 12.5674,
+        name: "Italy"
+    },
+    "ES": {
+        lat: 40.4637,
+        lng: -3.7492,
+        name: "Spain"
+    },
+    "MX": {
+        lat: 23.6345,
+        lng: -102.5528,
+        name: "Mexico"
+    },
+    "ID": {
+        lat: -0.7893,
+        lng: 113.9213,
+        name: "Indonesia"
+    },
+    "PL": {
+        lat: 51.9194,
+        lng: 19.1451,
+        name: "Poland"
+    },
+    "UA": {
+        lat: 48.3794,
+        lng: 31.1656,
+        name: "Ukraine"
+    },
+    "NL": {
+        lat: 52.1326,
+        lng: 5.2913,
+        name: "Netherlands"
+    },
+    "IR": {
+        lat: 32.4279,
+        lng: 53.6880,
+        name: "Iran"
+    },
+    "KP": {
+        lat: 40.3399,
+        lng: 127.5101,
+        name: "North Korea"
+    },
+    "VN": {
+        lat: 14.0583,
+        lng: 108.2772,
+        name: "Vietnam"
+    },
+    "ZA": {
+        lat: -30.5595,
+        lng: 22.9375,
+        name: "South Africa"
+    },
+    "TH": {
+        lat: 15.8700,
+        lng: 100.9925,
+        name: "Thailand"
+    },
+    "EG": {
+        lat: 26.8206,
+        lng: 30.8025,
+        name: "Egypt"
+    },
+    "AR": {
+        lat: -38.4161,
+        lng: -63.6167,
+        name: "Argentina"
+    },
+    "SA": {
+        lat: 23.8859,
+        lng: 45.0792,
+        name: "Saudi Arabia"
+    },
+    "RO": {
+        lat: 45.9432,
+        lng: 24.9668,
+        name: "Romania"
+    },
+    "MY": {
+        lat: 4.2105,
+        lng: 101.9758,
+        name: "Malaysia"
+    }
 };
 
 // Country codes for random selection when region is unknown

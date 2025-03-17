@@ -1,3 +1,5 @@
+// servers.js
+
 const serverNames = {
     PROJECT_CW: "Project CW",
     BLITZHUB_EU: "BlitzHUB EU",

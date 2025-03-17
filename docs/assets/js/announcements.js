@@ -1,4 +1,5 @@
 // Announcements.js
+
 document.addEventListener('DOMContentLoaded', function() {
   fetch("https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Announcement.json")
     .then(response => response.json())
