@@ -50,7 +50,7 @@ body.texture::after {
 	right: 0;
 	bottom: 0;
 	pointer-events: none;
-	z-index: -1;
+	z-index: -2;
 }
 
 body.texture::before {
@@ -210,7 +210,7 @@ h2+p {
 nav {
 	position: sticky;
 	top: 0;
-	z-index: 30;
+    z-index: 50;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 1rem 2rem;
 }
@@ -237,8 +237,9 @@ nav p:hover {
 
 /* Footer */
 footer {
-	margin-top: auto;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 50;
+    margin-top: auto;
 }
 
 footer a {
@@ -676,6 +677,10 @@ body.bg-gray-900 ::-webkit-scrollbar-thumb {
 	.chart-container {
 		height: 250px;
 	}
+
+    .sidebar-header {
+        margin-top: 15px;
+    }
 
 	nav .container {
 		padding: 0.5rem 1rem;
@@ -1406,12 +1411,9 @@ body.bg-gray-900 .legend span {
     top: 0;
     left: -300px;
     width: 300px;
-    height: 100vh;
-    background-color: #1e293b;
-    color: white;
+    height: 5000px;
     transition: left 0.3s ease;
-    z-index: 1000;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 40;
 }
 
 .sidebar.open {
@@ -1422,14 +1424,7 @@ body.bg-gray-900 .legend span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid #334155;
-}
-
-.sidebar-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ffffff;
+    padding: 1.4rem;
 }
 
 .close-sidebar {
@@ -1489,12 +1484,12 @@ body.bg-gray-900 .legend span {
 }
 
 .sidebar-toggle:hover {
-    background-color: #2563eb;
+    background-color: #564ccf;
 }
 
 /* Dark Mode Adjustments */
 body.bg-gray-900 .sidebar {
-    background-color: #111827;
+    background-color: #4338ca;
 }
 
 body.bg-gray-900 .sidebar-title {
