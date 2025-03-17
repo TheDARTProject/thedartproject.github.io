@@ -389,8 +389,6 @@ async function initializeServerCounts() {
     const accountsData = await fetchAccountData();
     const serverCounts = countCasesPerServer(accountsData);
     updateServerCards(serverCounts);
-
-    console.log('Server counts updated:', serverCounts);
 }
 
 // Function to fetch and update the database status
