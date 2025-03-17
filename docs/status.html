@@ -136,6 +136,27 @@
             </div>
           </div>
         </div>
+        <!-- Individual Database Status Cards -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Database Instances</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Main Database -->
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="text-lg font-semibold text-indigo-600 mb-2">Main Database</h4>
+                <p id="mainDatabaseStatus" class="text-2xl font-bold text-yellow-600">Checking...</p>
+            </div>
+            <!-- Edit Database -->
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="text-lg font-semibold text-indigo-600 mb-2">Edit Database</h4>
+                <p id="editDatabaseStatus" class="text-2xl font-bold text-yellow-600">Checking...</p>
+            </div>
+            <!-- Backup Database -->
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="text-lg font-semibold text-indigo-600 mb-2">Backup Database</h4>
+                <p id="backupDatabaseStatus" class="text-2xl font-bold text-yellow-600">Checking...</p>
+            </div>
+          </div>
+        </div>
         <!-- External Services Status -->
         <div class="mb-8">
           <h3 class="text-2xl font-semibold text-gray-800 mb-4">External Services Status</h3>

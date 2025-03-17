@@ -396,6 +396,7 @@ async function initializeServerCounts() {
 // Function to fetch and update the database status
 async function fetchDatabaseStatus() {
     try {
+        // Fetch the status data
         const response = await fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Database-Status.json');
         if (!response.ok) {
             throw new Error('Failed to fetch database status');
@@ -404,6 +405,7 @@ async function fetchDatabaseStatus() {
         const statusData = await response.json();
         const currentStatus = statusData.Statuses.find(status => status.id === statusData.CurrentStatus);
 
+        // Update overall database status
         const databaseStatusElement = document.getElementById('databaseStatus');
         if (databaseStatusElement) {
             databaseStatusElement.textContent = currentStatus.name;
@@ -414,6 +416,23 @@ async function fetchDatabaseStatus() {
         if (databaseDescriptionElement) {
             databaseDescriptionElement.textContent = currentStatus.description;
         }
+
+        // Check individual database files
+        await checkDatabaseFile(
+            'https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Compromised-Discord-Accounts.json',
+            'mainDatabaseStatus'
+        );
+
+        await checkDatabaseFile(
+            'https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/Compromised-Discord-Accounts.json',
+            'editDatabaseStatus'
+        );
+
+        await checkDatabaseFile(
+            'https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/modules/backup/Compromised-Discord-Accounts.backup.json',
+            'backupDatabaseStatus'
+        );
+
     } catch (error) {
         console.error('Error fetching database status:', error);
         const databaseStatusElement = document.getElementById('databaseStatus');
@@ -421,18 +440,61 @@ async function fetchDatabaseStatus() {
             databaseStatusElement.textContent = 'Status Unavailable';
             databaseStatusElement.className = 'text-2xl font-bold text-red-600';
         }
+
+        // Set all individual statuses to unavailable
+        ['mainDatabaseStatus', 'editDatabaseStatus', 'backupDatabaseStatus'].forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.textContent = 'Unavailable';
+                element.className = 'font-medium text-red-600';
+            }
+        });
+    }
+}
+
+// Function to check individual database files
+async function checkDatabaseFile(url, elementId) {
+    try {
+        const response = await fetch(url);
+        const statusElement = document.getElementById(elementId);
+
+        if (!statusElement) return;
+
+        if (response.ok) {
+            // Try to parse JSON to ensure it's valid
+            await response.json();
+            statusElement.textContent = 'Operational';
+            statusElement.className = 'font-medium text-green-600';
+        } else {
+            statusElement.textContent = 'Offline';
+            statusElement.className = 'font-medium text-red-600';
+        }
+    } catch (error) {
+        const statusElement = document.getElementById(elementId);
+        if (statusElement) {
+            statusElement.textContent = 'Error';
+            statusElement.className = 'font-medium text-orange-600';
+        }
     }
 }
 
 // Improved function to check the status of external services
 async function checkServiceStatus(serviceName, endpoint, statusElement) {
+    statusElement.textContent = 'Checking...';
+    statusElement.classList.remove('text-green-600', 'text-red-600');
+    statusElement.classList.add('text-yellow-500');
+
     try {
+        // For GitHub API (which supports CORS) or endpoints that are already proxied
         const response = await fetch(endpoint, {
-            method: 'HEAD', // Use HEAD to avoid downloading the entire response
-            cache: 'no-cache' // Ensure we don't get a cached response
+            method: 'GET',
+            cache: 'no-cache', // Ensure we don't get a cached response
+            mode: 'cors'
         });
 
-        if (response.ok) {
+        // For Discord Users API, we expect a 401 if the API is online but requires auth
+        // This allows us to determine if the API is operational even without credentials
+        if (response.ok || (serviceName === 'Discord API Users' && response.status === 401)) {
             statusElement.textContent = 'Operational';
             statusElement.classList.remove('text-red-600', 'text-yellow-500');
             statusElement.classList.add('text-green-600');
@@ -440,11 +502,13 @@ async function checkServiceStatus(serviceName, endpoint, statusElement) {
             statusElement.textContent = 'Degraded';
             statusElement.classList.remove('text-green-600', 'text-yellow-500');
             statusElement.classList.add('text-red-600');
+            console.log(`${serviceName} returned status ${response.status}`);
         }
     } catch (error) {
         statusElement.textContent = 'Offline';
         statusElement.classList.remove('text-green-600', 'text-yellow-500');
         statusElement.classList.add('text-red-600');
+        console.log(`Error checking ${serviceName}:`, error.message);
     }
 }
 
@@ -452,34 +516,36 @@ async function checkServiceStatus(serviceName, endpoint, statusElement) {
 function initializeStatusChecks() {
     fetchDatabaseStatus();
 
+    const corsProxyUrl = 'https://corsproxy.io/?';
+
     // Check the status of all external services
     checkServiceStatus(
         'VirusTotal API',
-        'https://www.virustotal.com/api/v3/domains/google.com',
+        `${corsProxyUrl}https://www.virustotal.com/api/v3/ip-addresses/8.8.8.8`,
         document.getElementById('virustotalStatus')
     );
 
     checkServiceStatus(
         'URLScan.io API',
-        'https://urlscan.io/api/v1/scan/',
+        `${corsProxyUrl}https://urlscan.io/api/v1/search/?q=domain:example.com`,
         document.getElementById('urlscanStatus')
     );
 
     checkServiceStatus(
         'IPinfo.io API',
-        'https://ipinfo.io/8.8.8.8/json',
+        `${corsProxyUrl}https://ipinfo.io/8.8.8.8/json`,
         document.getElementById('ipinfoStatus')
     );
 
     checkServiceStatus(
         'Discord API Invites',
-        'https://discord.com/api/v9/invites/discord-developers',
+        `${corsProxyUrl}https://discord.com/api/v9/gateway`,
         document.getElementById('discordInvitesStatus')
     );
 
     checkServiceStatus(
         'Discord API Users',
-        'https://discord.com/api/v9/users/@me',
+        `${corsProxyUrl}https://discord.com/api/v9/gateway/bot`,
         document.getElementById('discordUsersStatus')
     );
 
