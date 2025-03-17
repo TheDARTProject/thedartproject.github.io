@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const infoButton = document.getElementById('infoButton');
     if (infoButton) {
         infoButton.addEventListener('click', () => {
-            window.location.href = 'info.html';
+            window.location.href = 'pages/info.html';
         });
     }
 
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const faqButton = document.getElementById('faqButton');
     if (faqButton) {
         faqButton.addEventListener('click', () => {
-            window.location.href = 'faq.html';
+            window.location.href = 'pages/faq.html';
         });
     }
 
