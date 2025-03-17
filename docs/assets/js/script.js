@@ -430,7 +430,7 @@ function renderIntelligenceReports(sortedMonthlyReports, yearlyReports) {
             <p class="text-gray-600">Most Common Attack Surface: ${report.commonAttackSurface}</p>
             <p class="text-gray-600">Most Common Attack Goal: ${report.commonAttackGoal}</p>
             <div class="mt-4">
-                <h4 class="text-lg font-semibold text-gray-800">Summary</h4>
+                <h4 class="text-lg font-semibold text-gray-700">Summary</h4>
                 <p class="text-gray-600">${generateSummaryText(report)}</p>
             </div>
         `;
@@ -443,7 +443,7 @@ function renderIntelligenceReports(sortedMonthlyReports, yearlyReports) {
         const yearlyBox = document.createElement('div');
         yearlyBox.className = 'bg-gray-50 p-6 rounded-lg shadow-lg col-span-2';
         yearlyBox.innerHTML = `
-            <h3 class="text-2xl font-bold text-indigo-700 mb-4">Yearly Report - ${currentYear}</h3>
+            <h3 class="text-2xl font-bold text-indigo-900 mb-4">Yearly Report - ${currentYear}</h3>
             <p class="text-gray-600">Total Cases: ${yearlyReport.totalCases}</p>
             <p class="text-gray-600">Active URLs: ${yearlyReport.activeUrls}</p>
             <p class="text-gray-600">Most Common Attack Method: ${yearlyReport.commonAttackMethod}</p>
