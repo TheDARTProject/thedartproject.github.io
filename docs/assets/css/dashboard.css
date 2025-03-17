@@ -1,1 +1,360 @@
-/* PLACEHOLDER FILE FOR FUTURE UPDATE */
+/* dashboard.css */
+
+/* Dashboard Cards */
+.dashboard-card {
+	transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+	border-radius: 0.5rem;
+	overflow: hidden;
+	box-shadow: var(--card-shadow);
+}
+
+.dashboard-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card h3 {
+	font-size: 0.875rem;
+	margin-bottom: 0.5rem;
+}
+
+.dashboard-card p {
+	font-weight: 700;
+	line-height: 1.1;
+	transition: var(--transition-normal);
+}
+
+/* Data Glossary */
+#infoHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#infoContent {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#infoContent.open {
+	max-height: 1500px;
+	opacity: 1;
+}
+
+#expandButton {
+	transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Active URLs Status */
+#activeUrls {
+	transition: color 0.3s ease;
+}
+
+#activeUrls.text-green-600 {
+	color: #10b981;
+}
+
+#activeUrls.text-orange-500 {
+	color: #f59e0b;
+}
+
+#activeUrls.text-red-600 {
+	color: #ef4444;
+}
+
+#activeUrlsStatus {
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+	margin-top: -0.1rem;
+	transition: color 0.3s ease;
+	display: block;
+}
+
+#activeUrlsStatus:contains("No risk"),
+#activeUrlsStatus:contains("Low risk") {
+	color: #10b981;
+	font-weight: 500;
+}
+
+#activeUrlsStatus:contains("Elevated risk") {
+	color: #f59e0b;
+	font-weight: 500;
+}
+
+#activeUrlsStatus:contains("Critical risk") {
+	color: #ef4444;
+	font-weight: 600;
+}
+
+/* Chart color adjustments */
+#statusAccountsChart .deleted-accounts {
+	background-color: rgba(147, 51, 234, 0.8);
+}
+
+#statusAccountsChart .active-accounts {
+	background-color: rgba(16, 185, 129, 0.8);
+}
+
+.text-purple-600 {
+	color: #9333ea;
+}
+
+/* Pagination */
+.pagination-controls {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+}
+
+.pagination-controls button {
+	padding: 0.5rem 1rem;
+	border-radius: 0.375rem;
+	font-weight: 500;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	transition: var(--transition-normal);
+	background-color: var(--gray-200);
+	color: var(--gray-700);
+	border: 1px solid var(--gray-300);
+}
+
+.pagination-controls button:hover:not(:disabled) {
+	background-color: var(--gray-300);
+	transform: translateY(-1px);
+}
+
+/* Status Indicators */
+.bg-red-100 {
+	background-color: #fee2e2;
+	color: #b91c1c;
+	font-weight: 600;
+}
+
+.bg-orange-100 {
+	background-color: #ffedd5;
+	color: #c2410c;
+	font-weight: 600;
+}
+
+.bg-green-100 {
+	background-color: #d1fae5;
+	color: #047857;
+	font-weight: 600;
+}
+
+/* Buttons */
+button {
+	transition: var(--transition-normal);
+	font-weight: 500;
+}
+
+button:disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+button.bg-indigo-600 {
+	background-color: var(--primary);
+}
+
+button.bg-indigo-600:hover:not(:disabled) {
+	background-color: var(--primary-dark);
+}
+
+button.bg-green-600 {
+	background-color: var(--success);
+}
+
+button.bg-green-600:hover:not(:disabled) {
+	background-color: #0ea271;
+}
+
+#refreshData {
+	position: relative;
+	overflow: hidden;
+}
+
+#refreshData::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+}
+
+#refreshData:hover::after {
+	transform: translateX(0);
+}
+
+/* View Details Button */
+.view-details {
+	font-weight: 500;
+	transition: all 0.2s ease;
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.25rem;
+}
+
+.view-details:hover {
+	background-color: rgba(79, 70, 229, 0.1);
+}
+
+/* Modal Columns */
+#detailModal .url-cell {
+	max-width: 250px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+#detailModal .domain-cell {
+	max-width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#detailModal table th:nth-child(1),
+#detailModal table td:nth-child(1) {
+	width: 100px;
+}
+
+#detailModal table th:nth-child(2),
+#detailModal table td:nth-child(2) {
+	width: 250px;
+}
+
+#detailModal table th:nth-child(3),
+#detailModal table td:nth-child(3) {
+	width: 150px;
+}
+
+#detailModal table th:nth-child(4),
+#detailModal table td:nth-child(4) {
+	width: 100px;
+}
+
+/* Scrollbars */
+body.bg-gray-900 ::-webkit-scrollbar-track {
+	background: var(--gray-700);
+}
+
+body.bg-gray-900 ::-webkit-scrollbar-thumb {
+	background: var(--gray-600);
+	border: 2px solid var(--gray-700);
+}
+
+/* Loader */
+.loader {
+	width: 48px;
+	height: 48px;
+	border: 3px solid #e2e8f0;
+	border-bottom-color: var(--primary);
+	border-radius: 50%;
+	display: inline-block;
+	animation: rotation 1s linear infinite;
+}
+
+/* Charts */
+.chart-container {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.5rem;
+}
+
+/* Modals */
+#detailModal {
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+
+#detailModal.hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+
+#detailModal:not(.hidden) {
+	visibility: visible;
+	opacity: 1;
+}
+
+#detailModal .bg-white {
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	transform: scale(0.95);
+	opacity: 0;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#detailModal:not(.hidden) .bg-white {
+	transform: scale(1);
+	opacity: 1;
+}
+
+#detailModal table td {
+	word-break: break-word;
+	vertical-align: top;
+}
+
+/* Text Truncation */
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	display: block;
+}
+
+.truncate-tooltip {
+	position: relative;
+}
+
+.truncate-tooltip:hover::after {
+	font-size: 0.875rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.5rem;
+	z-index: 999;
+}
+
+/* Status Colors */
+body.bg-gray-900 #activeUrlsStatus:contains("No risk"),
+body.bg-gray-900 #activeUrlsStatus:contains("Low risk") {
+	color: #34d399;
+}
+
+body.bg-gray-900 #activeUrlsStatus:contains("Elevated risk") {
+	color: #fbbf24;
+}
+
+body.bg-gray-900 #activeUrlsStatus:contains("Critical risk") {
+	color: #f87171;
+}
+
+/* Scrollbars */
+.table-container::-webkit-scrollbar {
+	width: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+	background: #f3f4f6;
+	border-radius: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+	background: #9ca3af;
+	border-radius: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+	background: #6b7280;
+}
