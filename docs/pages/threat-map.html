@@ -313,65 +313,20 @@
       </div>
     </footer>
     <!-- Scripts -->
-    <!-- Main Script -->
-    <script src="../assets/js/script.js" type="module"></script>
     <!-- Threat Map Script -->
     <script src="../assets/js/threat-map.js" type="module"></script>
+    <!-- Main Script -->
+    <script src="../assets/js/main.js" type="module"></script>
+    <!-- Utilities Script -->
+    <script src="../assets/js/utils.js" type="module"></script>
+    <!-- Announcements Script -->
+    <script src="../assets/js/announcements.js" type="module"></script>
+    <!-- Theme Script -->
+    <script src="../assets/js/theme-loader.js" type="module"></script>
     <!-- Local Chart.js Copy -->
     <script src="../assets/js/chart.min.js"></script>
-    <!-- Local leaflet.js Copy -->
+    <!-- Local leaflet.js Copies -->
     <script src="../assets/js/leaflet.js"></script>
     <script src="../assets/js/Control.FullScreen.min.js"></script>
-    <!-- Theme Script -->
-    <script>
-      // Initialize theme when the page loads
-      document.addEventListener('DOMContentLoaded', () => {
-        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
-        if (isDarkMode) {
-          document.body.classList.add('bg-gray-900', 'text-white');
-          const cards = document.querySelectorAll('.bg-white');
-          cards.forEach(card => {
-            card.classList.add('bg-gray-800', 'text-white');
-          });
-        }
-      });
-    </script>
-    <!-- Announcement Script -->
-    <script>
-      // Set a version ID for current announcement
-      // Change this whenever the announcement content gets updated
-      // Format: YYYY-MM-DD-HH-MM (in GMT+2 timezone)
-      const CURRENT_ANNOUNCEMENT_VERSION = "2025-03-16-13-48";
-      document.getElementById('closeAnnouncement').addEventListener('click', function() {
-        document.getElementById('announcement-bar').classList.add('hidden');
-        // Save both the closed state and the version of the announcement that was closed
-        localStorage.setItem('announcementClosed', 'true');
-        localStorage.setItem('lastClosedAnnouncementVersion', CURRENT_ANNOUNCEMENT_VERSION);
-      });
-      // Check if announcement was previously closed AND if it's the same version
-      document.addEventListener('DOMContentLoaded', function() {
-        const announcementClosed = localStorage.getItem('announcementClosed') === 'true';
-        const lastClosedVersion = localStorage.getItem('lastClosedAnnouncementVersion');
-        // Only hide if it was closed AND it's the same version
-        if (announcementClosed && lastClosedVersion === CURRENT_ANNOUNCEMENT_VERSION) {
-          document.getElementById('announcement-bar').classList.add('hidden');
-        } else {
-          // Show the bar if either it was never closed or it's a new version
-          document.getElementById('announcement-bar').classList.remove('hidden');
-        }
-      });
-      // Helper function to get current GMT+2 time in the required format
-      function getCurrentGMT2Version() {
-        const now = new Date();
-        // Adjust to GMT+2 (add 2 hours to UTC)
-        const gmt2Time = new Date(now.getTime() + (2 * 60 * 60 * 1000));
-        const year = gmt2Time.getUTCFullYear();
-        const month = String(gmt2Time.getUTCMonth() + 1).padStart(2, '0');
-        const day = String(gmt2Time.getUTCDate()).padStart(2, '0');
-        const hours = String(gmt2Time.getUTCHours()).padStart(2, '0');
-        const minutes = String(gmt2Time.getUTCMinutes()).padStart(2, '0');
-        return `${year}-${month}-${day}-${hours}-${minutes}`;
-      }
-    </script>
   </body>
 </html>
