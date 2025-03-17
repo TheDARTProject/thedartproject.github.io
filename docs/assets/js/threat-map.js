@@ -139,6 +139,12 @@ function processThreatData() {
             region = getRandomCountryCode();
         }
 
+        // Skip if the region is not in our countryCenters mapping
+        if (!countryCenters[region]) {
+            console.warn(`Unknown region: ${region}. Skipping this account.`);
+            return;
+        }
+
         // Add to the threats by country
         if (!threatsByCountry[region]) {
             threatsByCountry[region] = [];
@@ -153,7 +159,7 @@ function processThreatData() {
         // Create multiple pings for countries with multiple threats
         accounts.forEach(account => {
             // Create a slightly randomized location within the country
-            const pingLocation = getRandomLocationNear(baseLocation.lat, baseLocation.lng, 10); // Increased radius for better spread
+            const pingLocation = getRandomLocationNear(baseLocation.lat, baseLocation.lng, 2); // Reduced radius to keep pings within the country
 
             // Determine threat level based on account properties
             const threatLevel = determineThreatLevel(account);
@@ -192,7 +198,7 @@ function getCountryLocation(countryCode) {
 }
 
 // Get a random location near the specified coordinates
-function getRandomLocationNear(lat, lng, radiusInDegrees = 3) {
+function getRandomLocationNear(lat, lng, radiusInDegrees = 2) {
     const radius = radiusInDegrees * (Math.random() * 0.8 + 0.2); // Random radius between 20% and 100% of max
     const angle = Math.random() * 2 * Math.PI; // Random angle
 
