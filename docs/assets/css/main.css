@@ -451,12 +451,14 @@ body.bg-gray-900 .sidebar-link:hover {
 .breadcrumb {
 	display: flex;
 	justify-content: flex-start;
+	background-color: transparent;
 	align-items: center;
 	padding: 0.5rem 0;
 }
 
 .breadcrumb-container nav {
 	box-shadow: none;
+	background-color: transparent;
 }
 
 .breadcrumb ol {
@@ -495,14 +497,17 @@ body.bg-gray-900 .breadcrumb-container {
 
 body.bg-gray-900 .breadcrumb li a {
 	color: var(--gray-300);
+	background-color: transparent;
 }
 
 body.bg-gray-900 .breadcrumb li a:hover {
 	color: var(--primary-light);
+	background-color: transparent;
 }
 
 body.bg-gray-900 .breadcrumb li span {
 	color: var(--gray-400);
+	background-color: transparent;
 }
 
 /* Search/Filter Section */
