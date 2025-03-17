@@ -299,10 +299,6 @@ function toggleGlossary() {
     expandButton.setAttribute('aria-expanded', isExpanded);
 }
 
-// Event Listeners for Glossary
-infoHeader.addEventListener('click', toggleGlossary);
-expandButton.addEventListener('click', toggleGlossary);
-
 // Fetch data from JSON file
 async function fetchData() {
     try {
@@ -477,7 +473,16 @@ async function checkDatabaseFile(url, elementId) {
 }
 
 // Improved function to check the status of external services
-async function checkServiceStatus(serviceName, endpoint, statusElement) {
+async function checkServiceStatus(serviceName, endpoint, elementId) {
+    // Get the status element by ID
+    const statusElement = document.getElementById(elementId);
+
+    // Check if the element exists before attempting to modify it
+    if (!statusElement) {
+        console.error(`Status element with ID "${elementId}" not found for service "${serviceName}"`);
+        return; // Exit the function if the element doesn't exist
+    }
+
     statusElement.textContent = 'Checking...';
     statusElement.classList.remove('text-green-600', 'text-red-600');
     statusElement.classList.add('text-yellow-500');
@@ -512,7 +517,20 @@ async function checkServiceStatus(serviceName, endpoint, statusElement) {
 
 // Function to initialize the status checks
 function initializeStatusChecks() {
-    fetchDatabaseStatus();
+    // Check if we're on the status page by looking at the current URL
+    const isStatusPage = window.location.pathname.includes('status.html') ||
+                        window.location.pathname.endsWith('status') ||
+                        document.getElementById('statusPageContainer'); // Additional check for a container element
+
+    // Only run status checks if we're on the status page
+    if (!isStatusPage) {
+        return; // Exit if not on status page
+    }
+
+    // Call fetchDatabaseStatus if it exists and we're on the status page
+    if (typeof fetchDatabaseStatus === 'function') {
+        fetchDatabaseStatus();
+    }
 
     const corsProxyUrl = 'https://corsproxy.io/?';
 
@@ -520,37 +538,37 @@ function initializeStatusChecks() {
     checkServiceStatus(
         'VirusTotal API',
         `${corsProxyUrl}https://www.virustotal.com/api/v3/ip-addresses/8.8.8.8`,
-        document.getElementById('virustotalStatus')
+        'virustotalStatus'
     );
 
     checkServiceStatus(
         'URLScan.io API',
         `${corsProxyUrl}https://urlscan.io/api/v1/search/?q=domain:example.com`,
-        document.getElementById('urlscanStatus')
+        'urlscanStatus'
     );
 
     checkServiceStatus(
         'IPinfo.io API',
         `${corsProxyUrl}https://ipinfo.io/8.8.8.8/json`,
-        document.getElementById('ipinfoStatus')
+        'ipinfoStatus'
     );
 
     checkServiceStatus(
         'Discord API Invites',
         `${corsProxyUrl}https://discord.com/api/v9/gateway`,
-        document.getElementById('discordInvitesStatus')
+        'discordInvitesStatus'
     );
 
     checkServiceStatus(
         'Discord API Users',
         `${corsProxyUrl}https://discord.com/api/v9/gateway/bot`,
-        document.getElementById('discordUsersStatus')
+        'discordUsersStatus'
     );
 
     checkServiceStatus(
         'GitHub API',
         'https://api.github.com',
-        document.getElementById('githubStatus')
+        'githubStatus'
     );
 }
 
