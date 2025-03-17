@@ -202,7 +202,11 @@ async function initThreatMap() {
         }).addTo(map);
 
         // Add fullscreen control
-        map.addControl(new L.Control.Fullscreen());
+        if (L.control.fullscreen) {
+            map.addControl(new L.control.fullscreen());
+        } else {
+            console.error('Fullscreen control plugin not loaded.');
+        }
 
         // Force the map to resize and load correctly
         setTimeout(() => {
@@ -222,14 +226,14 @@ async function initThreatMap() {
     } catch (error) {
         console.error('Error initializing threat map:', error);
         loadingElement.innerHTML = `
-      <div class="text-center">
-        <svg class="mx-auto h-12 w-12 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-        </svg>
-        <p class="mt-2 text-lg font-semibold text-red-500">Failed to load threat data</p>
-        <p class="text-gray-600">Please try again later or contact support.</p>
-      </div>
-    `;
+            <div class="text-center">
+                <svg class="mx-auto h-12 w-12 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <p class="mt-2 text-lg font-semibold text-red-500">Failed to load threat data</p>
+                <p class="text-gray-600">Please try again later or contact support.</p>
+            </div>
+        `;
     }
 }
 
