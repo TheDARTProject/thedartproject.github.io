@@ -115,6 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize server counts
     initializeServerCounts();
+
+    // Initialize status checks
+    initializeStatusChecks();
 });
 
 
@@ -388,6 +391,103 @@ async function initializeServerCounts() {
     updateServerCards(serverCounts);
 
     console.log('Server counts updated:', serverCounts);
+}
+
+// Function to fetch and update the database status
+async function fetchDatabaseStatus() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Database-Status.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch database status');
+        }
+
+        const statusData = await response.json();
+        const currentStatus = statusData.Statuses.find(status => status.id === statusData.CurrentStatus);
+
+        const databaseStatusElement = document.getElementById('databaseStatus');
+        if (databaseStatusElement) {
+            databaseStatusElement.textContent = currentStatus.name;
+            databaseStatusElement.className = `text-2xl font-bold ${currentStatus.color}`;
+        }
+
+        const databaseDescriptionElement = document.getElementById('databaseDescription');
+        if (databaseDescriptionElement) {
+            databaseDescriptionElement.textContent = currentStatus.description;
+        }
+    } catch (error) {
+        console.error('Error fetching database status:', error);
+        const databaseStatusElement = document.getElementById('databaseStatus');
+        if (databaseStatusElement) {
+            databaseStatusElement.textContent = 'Status Unavailable';
+            databaseStatusElement.className = 'text-2xl font-bold text-red-600';
+        }
+    }
+}
+
+// Improved function to check the status of external services
+async function checkServiceStatus(serviceName, endpoint, statusElement) {
+    try {
+        const response = await fetch(endpoint, {
+            method: 'HEAD', // Use HEAD to avoid downloading the entire response
+            cache: 'no-cache' // Ensure we don't get a cached response
+        });
+
+        if (response.ok) {
+            statusElement.textContent = 'Operational';
+            statusElement.classList.remove('text-red-600', 'text-yellow-500');
+            statusElement.classList.add('text-green-600');
+        } else {
+            statusElement.textContent = 'Degraded';
+            statusElement.classList.remove('text-green-600', 'text-yellow-500');
+            statusElement.classList.add('text-red-600');
+        }
+    } catch (error) {
+        statusElement.textContent = 'Offline';
+        statusElement.classList.remove('text-green-600', 'text-yellow-500');
+        statusElement.classList.add('text-red-600');
+    }
+}
+
+// Function to initialize the status checks
+function initializeStatusChecks() {
+    fetchDatabaseStatus();
+
+    // Check the status of all external services
+    checkServiceStatus(
+        'VirusTotal API',
+        'https://www.virustotal.com/api/v3/domains/google.com',
+        document.getElementById('virustotalStatus')
+    );
+
+    checkServiceStatus(
+        'URLScan.io API',
+        'https://urlscan.io/api/v1/scan/',
+        document.getElementById('urlscanStatus')
+    );
+
+    checkServiceStatus(
+        'IPinfo.io API',
+        'https://ipinfo.io/8.8.8.8/json',
+        document.getElementById('ipinfoStatus')
+    );
+
+    checkServiceStatus(
+        'Discord API Invites',
+        'https://discord.com/api/v9/invites/discord-developers',
+        document.getElementById('discordInvitesStatus')
+    );
+
+    checkServiceStatus(
+        'Discord API Users',
+        'https://discord.com/api/v9/users/@me',
+        document.getElementById('discordUsersStatus')
+    );
+
+    checkServiceStatus(
+        'GitHub API',
+        'https://api.github.com',
+        document.getElementById('githubStatus')
+    );
 }
 
 // Process data and initialize charts
