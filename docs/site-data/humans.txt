@@ -9,6 +9,8 @@
   Chart.js: https://www.chartjs.org/
   Day.js: https://day.js.org/
   GitHub Pages: https://pages.github.com/
+  Leaflet.js: https://leafletjs.com/
+  Leaflet Fullscreen Plugin: https://github.com/Leaflet/Leaflet.fullscreen
 
 /* SITE */
   Last update: 2025/03/16

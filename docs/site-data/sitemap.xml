@@ -10,35 +10,42 @@
 	</url>
 	<!-- Status Page -->
 	<url>
-		<loc>https://thatsinewave.github.io/CDA-Project/status.html</loc>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/status.html</loc>
 		<lastmod>2025-03-17</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 	<!-- Information Page -->
 	<url>
-		<loc>https://thatsinewave.github.io/CDA-Project/info.html</loc>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/info.html</loc>
 		<lastmod>2025-03-17</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<!-- FAQ Page -->
 	<url>
-		<loc>https://thatsinewave.github.io/CDA-Project/faq.html</loc>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/faq.html</loc>
 		<lastmod>2025-03-17</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<!-- Database Page -->
 	<url>
-		<loc>https://thatsinewave.github.io/CDA-Project/database.html</loc>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/database.html</loc>
 		<lastmod>2025-03-17</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 	<!-- Dashboard Page -->
 	<url>
-		<loc>https://thatsinewave.github.io/CDA-Project/dashboard.html</loc>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/dashboard.html</loc>
+		<lastmod>2025-03-17</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<!-- Threat Map Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/threat-map.html</loc>
 		<lastmod>2025-03-17</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
