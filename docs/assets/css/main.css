@@ -122,12 +122,6 @@ nav {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 1rem 2rem;
 	background-color: white;
-	transition: transform 0.3s ease-in-out;
-}
-
-/* Hide header when scrolling down */
-nav.hide {
-    transform: translateY(-100%);
 }
 
 nav .container {
