@@ -122,6 +122,12 @@ nav {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 1rem 2rem;
 	background-color: white;
+	transition: transform 0.3s ease-in-out;
+}
+
+/* Hide header when scrolling down */
+nav.hide {
+    transform: translateY(-100%);
 }
 
 nav .container {
@@ -617,7 +623,7 @@ body.bg-gray-900 .text-gray-700 {
 	background-color: var(--gray-700);
 	color: white;
 	position: sticky;
-	top: 10px;
+	top: -100px;
 	z-index: 25;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	transition: var(--transition-normal);
@@ -646,13 +652,24 @@ body.bg-gray-900 .text-gray-700 {
 /* ======================= */
 /* Dark Mode Adjustments   */
 /* ======================= */
-body.bg-gray-900 {
-	background-color: var(--gray-800);
+body.bg-gray-900 nav {
+	background-color: var(--gray-900);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.bg-gray-900 nav h1,
+body.bg-gray-900 nav p {
 	color: var(--gray-100);
 }
 
-body.bg-gray-900 nav {
-	background-color: transparent;
+body.bg-gray-900 nav button,
+body.bg-gray-900 nav a {
+	color: var(--gray-100);
+}
+
+body.bg-gray-900 {
+	background-color: var(--gray-800);
+	color: var(--gray-100);
 }
 
 body.bg-gray-900 footer {
@@ -744,7 +761,7 @@ Symbols
 
 	/* Adjust the announcement bar for mobile */
 	.announcement-bar {
-		top: 64px;
+		top: -100px;
 	}
 
 	.announcement-content p {

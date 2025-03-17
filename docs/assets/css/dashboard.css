@@ -24,6 +24,17 @@ body.bg-gray-900.texture::after {
 	background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30,10 L45,18 L45,42 L30,50 L15,42 L15,18 Z' stroke='rgb(99,102,241)' stroke-opacity='0.08' stroke-width='0.5' fill='none'/%3E%3C/svg%3E");
 }
 
+/* Charts */
+.chart-container {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.5rem;
+}
+
 /* Dark Mode Adjustments for Dashboard Cards */
 body.bg-gray-900 .dashboard-card h3 {
 	color: var(--gray-300);
@@ -164,11 +175,6 @@ body.bg-gray-900 .legend h3 {
 
 body.bg-gray-900 .legend span {
 	color: var(--gray-300);
-}
-
-/* Dark Mode Adjustments for Sidebar */
-body.bg-gray-900 .sidebar {
-	background-color: #4338ca;
 }
 
 body.bg-gray-900 .sidebar-title {
@@ -315,27 +321,6 @@ body.bg-gray-900 footer a:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Dark Mode Adjustments for Navigation */
-body.bg-gray-900 nav {
-	background-color: var(--gray-800);
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-body.bg-gray-900 nav h1,
-body.bg-gray-900 nav p {
-	color: var(--gray-100);
-}
-
-body.bg-gray-900 nav button,
-body.bg-gray-900 nav a {
-	color: var(--gray-100);
-}
-
-body.bg-gray-900 nav button:hover,
-body.bg-gray-900 nav a:hover {
-	background-color: rgba(255, 255, 255, 0.1);
-}
-
 /* Dark Mode Adjustments for Home Page */
 body.bg-gray-900 .text-center h1 {
 	color: var(--gray-100);
@@ -462,21 +447,4 @@ body.bg-gray-900 .legend h3 {
 
 body.bg-gray-900 .legend span {
 	color: var(--gray-300);
-}
-
-/* Dark Mode Adjustments for Sidebar */
-body.bg-gray-900 .sidebar {
-	background-color: #4338ca;
-}
-
-body.bg-gray-900 .sidebar-title {
-	color: #f3f4f6;
-}
-
-body.bg-gray-900 .sidebar-link {
-	color: #f3f4f6;
-}
-
-body.bg-gray-900 .sidebar-link:hover {
-	background-color: rgba(255, 255, 255, 0.1);
 }
