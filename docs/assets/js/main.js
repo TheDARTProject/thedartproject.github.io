@@ -39,18 +39,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Info and FAQ buttons
+    // Info and FAQ buttons with page-aware navigation
     const infoButton = document.getElementById('infoButton');
-    if (infoButton) {
-        infoButton.addEventListener('click', () => {
-            window.location.href = 'info.html';
-        });
-    }
-
     const faqButton = document.getElementById('faqButton');
-    if (faqButton) {
-        faqButton.addEventListener('click', () => {
-            window.location.href = 'faq.html';
-        });
+
+    if (infoButton || faqButton) {
+        // Get current page path
+        const currentPath = window.location.pathname;
+        const isIndexOr404 = currentPath.endsWith('index.html') ||
+                            currentPath.endsWith('404.html') ||
+                            currentPath === '/'; // Root path
+
+        // Set appropriate paths based on current page
+        const infoPath = isIndexOr404 ? 'pages/info.html' : 'info.html';
+        const faqPath = isIndexOr404 ? 'pages/faq.html' : 'faq.html';
+
+        if (infoButton) {
+            infoButton.addEventListener('click', () => {
+                window.location.href = infoPath;
+            });
+        }
+
+        if (faqButton) {
+            faqButton.addEventListener('click', () => {
+                window.location.href = faqPath;
+            });
+        }
     }
 });
