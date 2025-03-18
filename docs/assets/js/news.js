@@ -1,19 +1,25 @@
 // news.js
 
 document.addEventListener("DOMContentLoaded", function() {
-    const newsContainer = document.getElementById("news-container");
+    const articleCards = document.querySelectorAll(".article-card");
     const loadingSpinner = document.getElementById("loading-spinner");
+    const newsContainer = document.getElementById("news-container");
     const placeholderImage = "https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/Placeholder.png";
     const rssFeedUrl = "https://www.digitalvocano.com/cybersecurity/rss/latest-posts";
+    const noNewsMessage = document.getElementById("no-news-message");
 
     // Show loading spinner and hide news container
     loadingSpinner.classList.remove("hidden");
     newsContainer.classList.add("hidden");
 
-    // Function to generate article cards
-    function createArticleCard(article) {
-        const articleCard = document.createElement("div");
-        articleCard.className = "bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col dark:bg-gray-800 dark:text-gray-200";
+    // Function to update article card with data
+    function updateArticleCard(articleCard, article) {
+        const imageElement = articleCard.querySelector(".article-image");
+        const titleElement = articleCard.querySelector(".article-title");
+        const descriptionElement = articleCard.querySelector(".article-description");
+        const dateElement = articleCard.querySelector(".article-date");
+        const authorElement = articleCard.querySelector(".article-author");
+        const linkElement = articleCard.querySelector(".article-link");
 
         const articleImage = article.enclosure?.url || placeholderImage;
         const articleTitle = article.title;
@@ -26,20 +32,20 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         const articleAuthor = article.author || "Unknown Author";
 
-        articleCard.innerHTML = `
-      <img src="${articleImage}" alt="${articleTitle}" class="w-full h-48 object-cover rounded-t-lg mb-4" onerror="this.src='${placeholderImage}'">
-      <h3 class="text-xl font-semibold text-indigo-600 mb-2 dark:text-indigo-400">${articleTitle}</h3>
-      <p class="text-gray-600 mb-4 flex-grow dark:text-gray-300">${articleDescription}</p>
-      <div class="flex justify-between items-center text-sm text-gray-500 mb-4 dark:text-gray-400">
-        <span>${articleDate}</span>
-        <span>By ${articleAuthor}</span>
-      </div>
-      <a href="${articleLink}" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors dark:bg-indigo-700 dark:hover:bg-indigo-600">
-        Read More
-      </a>
-    `;
+        imageElement.src = articleImage;
+        imageElement.alt = articleTitle;
+        imageElement.onerror = function() {
+            this.src = placeholderImage;
+        };
 
-        return articleCard;
+        titleElement.textContent = articleTitle;
+        descriptionElement.textContent = articleDescription;
+        dateElement.textContent = articleDate;
+        authorElement.textContent = `By ${articleAuthor}`;
+        linkElement.href = articleLink;
+
+        // Make the article card visible
+        articleCard.classList.remove("hidden");
     }
 
     // Fetch and parse the RSS feed
@@ -48,29 +54,47 @@ document.addEventListener("DOMContentLoaded", function() {
             const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssFeedUrl)}`);
             const data = await response.json();
 
-            if (data.status === "ok" && data.items) {
-                // Clear the container before adding new articles
-                newsContainer.innerHTML = "";
-
+            if (data.status === "ok" && data.items && data.items.length > 0) {
                 // Sort articles by date (newest first)
                 const sortedArticles = data.items.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
-                // Generate article cards and append them to the container
-                sortedArticles.forEach((article) => {
-                    const articleCard = createArticleCard(article);
-                    newsContainer.appendChild(articleCard);
+                // Get only the first 10 articles (or less if there aren't 10)
+                const articlesToShow = sortedArticles.slice(0, 10);
+
+                // Update each article card with data
+                articleCards.forEach((card, index) => {
+                    if (index < articlesToShow.length) {
+                        updateArticleCard(card, articlesToShow[index]);
+                    } else {
+                        // Hide any extra cards if there are fewer than 10 articles
+                        card.classList.add("hidden");
+                    }
                 });
 
                 // Hide loading spinner and show news container
                 loadingSpinner.classList.add("hidden");
                 newsContainer.classList.remove("hidden");
+
+                if (noNewsMessage) {
+                    noNewsMessage.classList.add("hidden");
+                }
             } else {
-                throw new Error("Failed to fetch news articles.");
+                throw new Error("No news articles found.");
             }
         } catch (error) {
             console.error("Error fetching news:", error);
             loadingSpinner.classList.add("hidden");
-            newsContainer.innerHTML = `<p class="text-red-500 dark:text-red-400">Failed to load news articles. Please try again later.</p>`;
+
+            if (noNewsMessage) {
+                noNewsMessage.classList.remove("hidden");
+            } else {
+                // Create a message if it doesn't exist
+                const errorMessage = document.createElement("p");
+                errorMessage.className = "text-red-500 dark:text-red-400 text-center py-8";
+                errorMessage.textContent = "Failed to load news articles. Please try again later.";
+                newsContainer.appendChild(errorMessage);
+            }
+
             newsContainer.classList.remove("hidden");
         }
     }
