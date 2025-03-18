@@ -66,4 +66,20 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // Listen for theme changes and update article cards
+    document.addEventListener("themeChanged", () => {
+        const isDarkMode = document.documentElement.classList.contains("dark");
+        const articleCards = newsContainer.querySelectorAll(".bg-white");
+
+        articleCards.forEach((card) => {
+            if (isDarkMode) {
+                card.classList.remove("bg-white");
+                card.classList.add("dark:bg-gray-800", "dark:text-gray-200");
+            } else {
+                card.classList.remove("dark:bg-gray-800", "dark:text-gray-200");
+                card.classList.add("bg-white");
+            }
+        });
+    });
 });
