@@ -43,6 +43,20 @@
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
+	<!-- Intelligence Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/intelligence.html</loc>
+		<lastmod>2025-03-18</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<!-- Resources Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/resources.html</loc>
+		<lastmod>2025-03-18</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
 	<!-- Threat Map Page -->
 	<url>
 		<loc>https://thatsinewave.github.io/CDA-Project/pages/threat-map.html</loc>
