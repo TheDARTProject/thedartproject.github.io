@@ -75,21 +75,21 @@
       "startDate": "2024-03-17",
       "deadline": "2024-03-30",
       "description": "Develop a resource center page to share information, tools, and reporting methods for users and server owners.",
-      "status": "In Progress"
+      "status": "Completed"
     },
     {
       "name": "Fix Mobile UI Issues",
       "startDate": "2024-03-18",
       "deadline": "2024-03-30",
       "description": "Resolve various UI issues affecting mobile browsers for better usability.",
-      "status": "In Progress"
+      "status": "Completed"
     },
     {
       "name": "Adjust Theme for UI Fixes",
       "startDate": "2024-03-18",
       "deadline": "2024-03-30",
       "description": "Fine-tune the theme to fix elements that do not function as expected.",
-      "status": "In Progress"
+      "status": "Completed"
     }
   ]
 }
