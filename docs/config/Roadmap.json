@@ -132,6 +132,13 @@
       "deadline": "2024-03-30",
       "description": "Developed a suite of modules to validate and process database files.",
       "status": "Completed"
+    },
+    {
+      "name": "Add GitHub Related Pages",
+      "startDate": "2024-03-17",
+      "deadline": "2024-03-30",
+      "description": "Created dedicated pages on the website for the LICENSE, SECURITY.md, CONTRIBUTING.md and CODE_OF_CONDUCT.md",
+      "status": "Completed"
     }
   ]
 }
