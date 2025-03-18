@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const roadmapList = document.getElementById('roadmap-list');
 
   // Fetch the roadmap data from the JSON file
-  fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Roadmap.json')
+  fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/config/Roadmap.json')
     .then(response => response.json())
     .then(data => {
       data.roadmap.forEach(item => {

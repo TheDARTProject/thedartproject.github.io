@@ -1,7 +1,7 @@
 // Announcements.js
 
 document.addEventListener('DOMContentLoaded', function() {
-  fetch("https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Announcement.json")
+  fetch("https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/config/Announcement.json")
     .then(response => response.json())
     .then(data => {
       const announcementDate = data.date; // Example: "2025-03-16 13:50 GMT+2"
