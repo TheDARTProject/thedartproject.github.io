@@ -16300,5 +16300,27 @@
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-17T20:12:54.127321"
+    },
+    "ACCOUNT_NUMBER_742": {
+        "CASE_NUMBER": "742",
+        "FOUND_ON": "2025-03-17",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "524647836143452161",
+        "USERNAME": "v7_jiggzaw",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "NSFW Discord Invite",
+        "ATTACK_VECTOR": "Discord Servers",
+        "ATTACK_GOAL": "Discord Accounts",
+        "ATTACK_SURFACE": "Discord",
+        "SUSPECTED_REGION_OF_ORIGIN": "US",
+        "SURFACE_URL": "https://discord.gg/SpJqNPaB6Y",
+        "SURFACE_URL_DOMAIN": "discord.gg",
+        "SURFACE_URL_STATUS": "ACTIVE",
+        "FINAL_URL": "https://discord.com/invite/SpJqNPaB6Y",
+        "FINAL_URL_DOMAIN": "discord.com",
+        "FINAL_URL_STATUS": "ACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-17T23:46:27.732154"
     }
 }
