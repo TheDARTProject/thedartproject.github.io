@@ -47,8 +47,12 @@ function processIntelligenceData(data) {
                 totalCases: 0,
                 activeUrls: 0,
                 commonAttackMethod: '',
+                commonAttackVector: '',
+                commonAttackGoal: '',
                 commonAttackSurface: '',
-                commonAttackGoal: ''
+                accountStatusDistribution: {},
+                attackVectorDistribution: {},
+                attackSurfaceDistribution: {}
             };
         }
 
@@ -59,20 +63,28 @@ function processIntelligenceData(data) {
             monthlyReports[yearMonth].activeUrls++;
         }
 
-        // Calculate common attack methods, surfaces, and goals
+        // Calculate common attack methods, vectors, surfaces, and goals
         const attackMethods = {};
+        const attackVectors = {};
         const attackSurfaces = {};
         const attackGoals = {};
+        const accountStatuses = {};
 
         monthlyReports[yearMonth].cases.forEach(caseData => {
             attackMethods[caseData.ATTACK_METHOD] = (attackMethods[caseData.ATTACK_METHOD] || 0) + 1;
+            attackVectors[caseData.ATTACK_VECTOR] = (attackVectors[caseData.ATTACK_VECTOR] || 0) + 1;
             attackSurfaces[caseData.ATTACK_SURFACE] = (attackSurfaces[caseData.ATTACK_SURFACE] || 0) + 1;
             attackGoals[caseData.ATTACK_GOAL] = (attackGoals[caseData.ATTACK_GOAL] || 0) + 1;
+            accountStatuses[caseData.ACCOUNT_STATUS] = (accountStatuses[caseData.ACCOUNT_STATUS] || 0) + 1;
         });
 
         monthlyReports[yearMonth].commonAttackMethod = Object.keys(attackMethods).reduce((a, b) => attackMethods[a] > attackMethods[b] ? a : b);
+        monthlyReports[yearMonth].commonAttackVector = Object.keys(attackVectors).reduce((a, b) => attackVectors[a] > attackVectors[b] ? a : b);
         monthlyReports[yearMonth].commonAttackSurface = Object.keys(attackSurfaces).reduce((a, b) => attackSurfaces[a] > attackSurfaces[b] ? a : b);
         monthlyReports[yearMonth].commonAttackGoal = Object.keys(attackGoals).reduce((a, b) => attackGoals[a] > attackGoals[b] ? a : b);
+        monthlyReports[yearMonth].accountStatusDistribution = accountStatuses;
+        monthlyReports[yearMonth].attackVectorDistribution = attackVectors;
+        monthlyReports[yearMonth].attackSurfaceDistribution = attackSurfaces;
     });
 
     // Group monthly reports by year
@@ -84,32 +96,44 @@ function processIntelligenceData(data) {
                 totalCases: 0,
                 activeUrls: 0,
                 commonAttackMethod: '',
+                commonAttackVector: '',
+                commonAttackGoal: '',
                 commonAttackSurface: '',
-                commonAttackGoal: ''
+                accountStatusDistribution: {},
+                attackVectorDistribution: {},
+                attackSurfaceDistribution: {}
             };
         }
 
         yearlyReports[year].totalCases += monthlyReports[yearMonth].totalCases;
         yearlyReports[year].activeUrls += monthlyReports[yearMonth].activeUrls;
 
-        // Calculate common attack methods, surfaces, and goals for the year
+        // Calculate common attack methods, vectors, surfaces, and goals for the year
         const attackMethods = {};
+        const attackVectors = {};
         const attackSurfaces = {};
         const attackGoals = {};
+        const accountStatuses = {};
 
         Object.keys(monthlyReports).forEach(ym => {
             if (monthlyReports[ym].year === year) {
                 monthlyReports[ym].cases.forEach(caseData => {
                     attackMethods[caseData.ATTACK_METHOD] = (attackMethods[caseData.ATTACK_METHOD] || 0) + 1;
+                    attackVectors[caseData.ATTACK_VECTOR] = (attackVectors[caseData.ATTACK_VECTOR] || 0) + 1;
                     attackSurfaces[caseData.ATTACK_SURFACE] = (attackSurfaces[caseData.ATTACK_SURFACE] || 0) + 1;
                     attackGoals[caseData.ATTACK_GOAL] = (attackGoals[caseData.ATTACK_GOAL] || 0) + 1;
+                    accountStatuses[caseData.ACCOUNT_STATUS] = (accountStatuses[caseData.ACCOUNT_STATUS] || 0) + 1;
                 });
             }
         });
 
         yearlyReports[year].commonAttackMethod = Object.keys(attackMethods).reduce((a, b) => attackMethods[a] > attackMethods[b] ? a : b);
+        yearlyReports[year].commonAttackVector = Object.keys(attackVectors).reduce((a, b) => attackVectors[a] > attackVectors[b] ? a : b);
         yearlyReports[year].commonAttackSurface = Object.keys(attackSurfaces).reduce((a, b) => attackSurfaces[a] > attackSurfaces[b] ? a : b);
         yearlyReports[year].commonAttackGoal = Object.keys(attackGoals).reduce((a, b) => attackGoals[a] > attackGoals[b] ? a : b);
+        yearlyReports[year].accountStatusDistribution = accountStatuses;
+        yearlyReports[year].attackVectorDistribution = attackVectors;
+        yearlyReports[year].attackSurfaceDistribution = attackSurfaces;
     });
 
     // Sort the monthly reports by the FOUND_ON date of the cases (newest first)
@@ -145,8 +169,27 @@ function renderIntelligenceReports(sortedMonthlyReports, yearlyReports) {
                     <p class="text-gray-600">Total Cases: ${yearlyReport.totalCases}</p>
                     <p class="text-gray-600">Active URLs: ${yearlyReport.activeUrls}</p>
                     <p class="text-gray-600">Most Common Attack Method: ${yearlyReport.commonAttackMethod}</p>
+                    <p class="text-gray-600">Most Common Attack Vector: ${yearlyReport.commonAttackVector}</p>
                     <p class="text-gray-600">Most Common Attack Surface: ${yearlyReport.commonAttackSurface}</p>
                     <p class="text-gray-600">Most Common Attack Goal: ${yearlyReport.commonAttackGoal}</p>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-semibold text-gray-700">Account Status Distribution</h4>
+                        <ul class="text-gray-600">
+                            ${Object.entries(yearlyReport.accountStatusDistribution).map(([status, count]) => `<li>${status}: ${count}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-semibold text-gray-700">Attack Vector Distribution</h4>
+                        <ul class="text-gray-600">
+                            ${Object.entries(yearlyReport.attackVectorDistribution).map(([vector, count]) => `<li>${vector}: ${count}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-semibold text-gray-700">Attack Surface Distribution</h4>
+                        <ul class="text-gray-600">
+                            ${Object.entries(yearlyReport.attackSurfaceDistribution).map(([surface, count]) => `<li>${surface}: ${count}</li>`).join('')}
+                        </ul>
+                    </div>
                 `;
                 container.appendChild(yearlyBox);
             }
@@ -162,8 +205,27 @@ function renderIntelligenceReports(sortedMonthlyReports, yearlyReports) {
             <p class="text-gray-600">Total Cases: ${report.totalCases}</p>
             <p class="text-gray-600">Active URLs: ${report.activeUrls}</p>
             <p class="text-gray-600">Most Common Attack Method: ${report.commonAttackMethod}</p>
+            <p class="text-gray-600">Most Common Attack Vector: ${report.commonAttackVector}</p>
             <p class="text-gray-600">Most Common Attack Surface: ${report.commonAttackSurface}</p>
             <p class="text-gray-600">Most Common Attack Goal: ${report.commonAttackGoal}</p>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-700">Account Status Distribution</h4>
+                <ul class="text-gray-600">
+                    ${Object.entries(report.accountStatusDistribution).map(([status, count]) => `<li>${status}: ${count}</li>`).join('')}
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-700">Attack Vector Distribution</h4>
+                <ul class="text-gray-600">
+                    ${Object.entries(report.attackVectorDistribution).map(([vector, count]) => `<li>${vector}: ${count}</li>`).join('')}
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-700">Attack Surface Distribution</h4>
+                <ul class="text-gray-600">
+                    ${Object.entries(report.attackSurfaceDistribution).map(([surface, count]) => `<li>${surface}: ${count}</li>`).join('')}
+                </ul>
+            </div>
             <div class="mt-4">
                 <h4 class="text-lg font-semibold text-gray-700">Summary</h4>
                 <p class="text-gray-600">${generateSummaryText(report)}</p>
@@ -182,8 +244,27 @@ function renderIntelligenceReports(sortedMonthlyReports, yearlyReports) {
             <p class="text-gray-600">Total Cases: ${yearlyReport.totalCases}</p>
             <p class="text-gray-600">Active URLs: ${yearlyReport.activeUrls}</p>
             <p class="text-gray-600">Most Common Attack Method: ${yearlyReport.commonAttackMethod}</p>
+            <p class="text-gray-600">Most Common Attack Vector: ${yearlyReport.commonAttackVector}</p>
             <p class="text-gray-600">Most Common Attack Surface: ${yearlyReport.commonAttackSurface}</p>
             <p class="text-gray-600">Most Common Attack Goal: ${yearlyReport.commonAttackGoal}</p>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-700">Account Status Distribution</h4>
+                <ul class="text-gray-600">
+                    ${Object.entries(yearlyReport.accountStatusDistribution).map(([status, count]) => `<li>${status}: ${count}</li>`).join('')}
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-700">Attack Vector Distribution</h4>
+                <ul class="text-gray-600">
+                    ${Object.entries(yearlyReport.attackVectorDistribution).map(([vector, count]) => `<li>${vector}: ${count}</li>`).join('')}
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-700">Attack Surface Distribution</h4>
+                <ul class="text-gray-600">
+                    ${Object.entries(yearlyReport.attackSurfaceDistribution).map(([surface, count]) => `<li>${surface}: ${count}</li>`).join('')}
+                </ul>
+            </div>
         `;
         container.appendChild(yearlyBox);
     }
