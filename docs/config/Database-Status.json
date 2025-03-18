@@ -1,0 +1,35 @@
+{
+  "CurrentStatus": 1,
+  "Statuses": [
+    {
+      "id": 1,
+      "name": "Working as Expected",
+      "description": "The database is fully operational, with all features running smoothly and without any issues. No disruptions or delays are expected.",
+      "color": "text-green-600"
+    },
+    {
+      "id": 2,
+      "name": "Under Maintenance",
+      "description": "The database is currently undergoing scheduled maintenance to improve accuracy and stability. During this period, some features may be temporarily unavailable or display incorrect information.",
+      "color": "text-orange-500"
+    },
+    {
+      "id": 3,
+      "name": "Degraded Performance",
+      "description": "The database is experiencing performance issues, which may result in slower response times and occasional delays. We are actively investigating and working to restore optimal performance.",
+      "color": "text-yellow-500"
+    },
+    {
+      "id": 4,
+      "name": "Partial Outage",
+      "description": "Certain parts of the database are currently unavailable, causing disruptions and incorrect information to be displayed. While some functionality remains operational, users may encounter intermittent issues.",
+      "color": "text-red-600"
+    },
+    {
+      "id": 5,
+      "name": "Offline",
+      "description": "The database is completely offline due to an unexpected issue or scheduled downtime. All features are currently inaccessible. We are actively working to resolve the problem as quickly as possible.",
+      "color": "text-red-600"
+    }
+  ]
+}
