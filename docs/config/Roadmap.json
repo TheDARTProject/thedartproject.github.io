@@ -44,9 +44,16 @@
     },
     {
       "name": "Add Info Page",
-      "startDate": "2024-02-20",
+      "startDate": "2024-03-16",
       "deadline": "2024-03-25",
-      "description": "Detailed every part of the site in a dedicated information page.",
+      "description": "Detail every part of the site in a dedicated information page.",
+      "status": "Completed"
+    },
+    {
+      "name": "Add News Page",
+      "startDate": "2024-02-17",
+      "deadline": "2024-03-27",
+      "description": "Public news page using an API or RSS Feed to fetch up-to-date news articles.",
       "status": "Completed"
     },
     {
@@ -89,6 +96,41 @@
       "startDate": "2024-03-18",
       "deadline": "2024-03-30",
       "description": "Fine-tune the theme to fix elements that do not function as expected.",
+      "status": "Completed"
+    },
+    {
+      "name": "Add Intelligence Page",
+      "startDate": "2024-03-19",
+      "deadline": "2024-03-30",
+      "description": "Created the intelligence page to display aggregated data and insights.",
+      "status": "Completed"
+    },
+    {
+      "name": "Add Roadmap Page",
+      "startDate": "2024-03-19",
+      "deadline": "2024-03-30",
+      "description": "Set up the roadmap page to track development progress.",
+      "status": "Completed"
+    },
+    {
+      "name": "Add 404 Page",
+      "startDate": "2024-03-19",
+      "deadline": "2024-03-30",
+      "description": "Designed and implemented a custom 404 error page.",
+      "status": "Completed"
+    },
+    {
+      "name": "Add All Site-Data Files",
+      "startDate": "2024-03-15",
+      "deadline": "2024-03-30",
+      "description": "Added all necessary site-data files for full PWA implementation and indexing.",
+      "status": "Completed"
+    },
+    {
+      "name": "Create Suite of Database Modules",
+      "startDate": "2024-03-16",
+      "deadline": "2024-03-30",
+      "description": "Developed a suite of modules to validate and process database files.",
       "status": "Completed"
     }
   ]
