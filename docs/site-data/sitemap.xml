@@ -29,13 +29,6 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
-	<!-- Database Page -->
-	<url>
-		<loc>https://thatsinewave.github.io/CDA-Project/pages/database.html</loc>
-		<lastmod>2025-03-17</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.9</priority>
-	</url>
 	<!-- Dashboard Page -->
 	<url>
 		<loc>https://thatsinewave.github.io/CDA-Project/pages/dashboard.html</loc>
