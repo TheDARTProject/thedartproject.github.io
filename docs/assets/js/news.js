@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const authorElement = articleCard.querySelector(".article-author");
         const linkElement = articleCard.querySelector(".article-link");
 
-        const articleImage = article.enclosure?.url || placeholderImage;
+        // Check if the enclosure property exists and has a valid link
+        const articleImage = article.enclosure && article.enclosure.link ? article.enclosure.link : placeholderImage;
         const articleTitle = article.title;
         const articleDescription = article.description.replace(/<[^>]+>/g, ""); // Remove HTML tags
         const articleLink = article.link;
@@ -32,10 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         const articleAuthor = article.author || "Unknown Author";
 
+        // Set the image source and handle errors
         imageElement.src = articleImage;
         imageElement.alt = articleTitle;
         imageElement.onerror = function() {
-            this.src = placeholderImage;
+            this.src = placeholderImage; // Fallback to placeholder image if the image fails to load
         };
 
         titleElement.textContent = articleTitle;
