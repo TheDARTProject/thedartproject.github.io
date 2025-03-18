@@ -1,6 +1,6 @@
 <div align="center">
 
-# Code of Conduct - Malicious-URLs-DB
+# Code of Conduct - CDA-Project
 
 </div>
 
