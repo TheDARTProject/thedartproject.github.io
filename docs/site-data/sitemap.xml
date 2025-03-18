@@ -71,4 +71,32 @@
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
+	<!-- License Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/license.html</loc>
+		<lastmod>2025-03-18</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<!-- Security Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/security.html</loc>
+		<lastmod>2025-03-18</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<!-- Contributing Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/contributing.html</loc>
+		<lastmod>2025-03-18</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<!-- Code of Conduct Page -->
+	<url>
+		<loc>https://thatsinewave.github.io/CDA-Project/pages/code-of-conduct.html</loc>
+		<lastmod>2025-03-18</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
 </urlset>
