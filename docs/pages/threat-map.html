@@ -152,12 +152,12 @@
       </div>
     </nav>
     <!-- Announcement Bar -->
-    <div id="announcement-bar" class="announcement-bar">
+    <div id="announcement-bar" class="announcement-bar hidden">
       <div class="container mx-auto py-3 px-4">
         <div class="flex items-center justify-between">
           <!-- Announcement Message -->
           <div class="announcement-content">
-            <p class="text-sm md:text-base font-medium">🔔 Update - 16.03.2025 13:50 GMT+2: Database maintenance is still in progress. All cases have been validated except for those involving Discord invite URLs due to ongoing API issues. We will provide an update once the issue is resolved. We appreciate your understanding!</p>
+            <p id="announcement-text" class="text-sm md:text-base font-medium"></p>
           </div>
           <!-- Close Announcement Button -->
           <button id="closeAnnouncement" class="ml-4 text-white opacity-70 hover:opacity-100 transition-opacity">
