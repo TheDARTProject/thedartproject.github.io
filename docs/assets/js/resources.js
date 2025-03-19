@@ -1,3 +1,0 @@
-// resources.js
-
-// PLACEHOLDER FILE FOR FUTURE UPDATE
