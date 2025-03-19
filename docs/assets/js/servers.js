@@ -6,4 +6,13 @@ const serverNames = {
     ANONYMOUS_SERVER_1: "1 Anonymous Server"
 };
 
-export default serverNames;
+const serverInvites = {
+    PROJECT_CW: "https://discord.gg/projectcw",
+    BLITZHUB_EU: "https://discord.gg/WKz7RJvtUK",
+    // ANONYMOUS_SERVER_1 does not need an invite link
+};
+
+export {
+    serverNames,
+    serverInvites
+};

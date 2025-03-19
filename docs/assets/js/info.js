@@ -1,8 +1,14 @@
 // info.js
 
 // Import necessary functions from utils.js
-import { initializeTheme, toggleDarkMode } from './utils.js';
-import serverNames from './servers.js';
+import {
+    initializeTheme,
+    toggleDarkMode
+} from './utils.js';
+import {
+    serverNames,
+    serverInvites
+} from './servers.js';
 
 // Initialize theme when the page loads
 document.addEventListener('DOMContentLoaded', () => {
@@ -48,6 +54,24 @@ async function fetchAccountData() {
     }
 }
 
+// Function to fetch member count from Discord invite link
+async function fetchMemberCount(inviteLink) {
+    if (!inviteLink) return "Member Count Hidden";
+
+    try {
+        const inviteCode = inviteLink.split('/').pop();
+        const response = await fetch(`https://discord.com/api/v9/invites/${inviteCode}?with_counts=true`);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        return data.approximate_member_count || "Member Count Hidden";
+    } catch (error) {
+        console.error('Error fetching member count:', error);
+        return "Member Count Hidden";
+    }
+}
+
 // Function to count cases per server for server cards
 function countCasesPerServer(data) {
     const serverCounts = {};
@@ -68,13 +92,13 @@ function countCasesPerServer(data) {
     return serverCounts;
 }
 
-// Function to update server cards with case counts
-function updateServerCards(serverCounts) {
+// Function to update server cards with case counts and member counts
+async function updateServerCards(serverCounts) {
     const serverCards = document.querySelectorAll('.server-card');
 
-    serverCards.forEach(card => {
+    for (const card of serverCards) {
         const titleElement = card.querySelector('h4');
-        if (!titleElement) return;
+        if (!titleElement) continue;
 
         const serverTitle = titleElement.textContent.trim();
 
@@ -84,17 +108,28 @@ function updateServerCards(serverCounts) {
         );
 
         if (serverKey && serverCounts[serverKey] !== undefined) {
+            // Update case count
             const caseCountElement = card.querySelector('.case-count');
             if (caseCountElement) {
                 caseCountElement.textContent = `${serverCounts[serverKey]} Cases Contributed`;
             }
+
+            // Update member count
+            const memberCountElement = card.querySelector('.text-gray-600'); // Find the first <p> with "Members"
+            if (memberCountElement && memberCountElement.textContent.trim() === "Members") {
+                const inviteLink = serverInvites[serverKey];
+                const memberCount = await fetchMemberCount(inviteLink);
+                if (memberCount !== "Member Count Hidden") {
+                    memberCountElement.textContent = `${memberCount} Members`;
+                }
+            }
         }
-    });
+    }
 }
 
 // Function to initialize server counts
 async function initializeServerCounts() {
     const accountsData = await fetchAccountData();
     const serverCounts = countCasesPerServer(accountsData);
-    updateServerCards(serverCounts);
+    await updateServerCards(serverCounts);
 }
