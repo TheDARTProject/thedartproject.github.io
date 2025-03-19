@@ -6,6 +6,7 @@ from discord import app_commands
 from dotenv import load_dotenv
 from cogs.setup import SetupCog
 from cogs.monitor import MonitorCog
+from cogs.info import InfoCog  # Import the new InfoCog
 
 # Load environment variables
 load_dotenv("../.env")
@@ -31,6 +32,7 @@ global_logger.addHandler(logging.StreamHandler())
 async def load_cogs():
     await bot.add_cog(SetupCog(bot, WORD_LIST))  # Pass WORD_LIST to SetupCog
     await bot.add_cog(MonitorCog(bot, WORD_LIST))  # Pass WORD_LIST to MonitorCog
+    await bot.add_cog(InfoCog(bot, WORD_LIST))  # Pass WORD_LIST to InfoCog
 
 
 # Bot event: on_ready
@@ -40,6 +42,7 @@ async def on_ready():
     await load_cogs()
     await bot.tree.sync()  # Sync slash commands
     global_logger.info("Commands synced.")
+
 
 # Run the bot
 global_logger.info("Starting bot...")

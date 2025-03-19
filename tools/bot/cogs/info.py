@@ -7,6 +7,16 @@ from discord import app_commands
 from datetime import datetime
 
 
+def load_server_settings():
+    # Load server settings from the JSON file
+    config_dir = "config"
+    servers_file = os.path.join(config_dir, "servers.json")
+    if os.path.exists(servers_file):
+        with open(servers_file, "r") as file:
+            return json.load(file)
+    return {}
+
+
 class InfoCog(commands.Cog):
     def __init__(self, bot, word_list):
         self.bot = bot
@@ -16,11 +26,15 @@ class InfoCog(commands.Cog):
     async def on_ready(self):
         print("InfoCog is ready.")
 
-    @app_commands.command(name="info", description="Get information about the bot and flagged messages.")
+    @app_commands.command(
+        name="info", description="Get information about the bot and flagged messages."
+    )
     async def info(self, interaction: discord.Interaction):
         # Ensure the command is used in a server
         if interaction.guild is None:
-            await interaction.response.send_message("This command can only be used in a server.", ephemeral=True)
+            await interaction.response.send_message(
+                "This command can only be used in a server.", ephemeral=True
+            )
             return
 
         # Get the server-specific CSV file
@@ -38,7 +52,7 @@ class InfoCog(commands.Cog):
                     last_scan_date = rows[-1][5]  # Timestamp is in the 6th column
 
         # Get the number of monitored channels
-        server_settings = self.load_server_settings()
+        server_settings = load_server_settings()
         monitored_channels = []
         for server_key, server_data in server_settings.items():
             if server_data["Guild ID"] == interaction.guild.id:
@@ -70,7 +84,9 @@ class InfoCog(commands.Cog):
         )
         embed.add_field(
             name="Monitored Channels",
-            value=", ".join([channel["Channel Name"] for channel in monitored_channels]) if monitored_channels else "No channels being monitored.",
+            value=", ".join([channel["Channel Name"] for channel in monitored_channels])
+            if monitored_channels
+            else "No channels being monitored.",
             inline=False,
         )
 
@@ -83,12 +99,3 @@ class InfoCog(commands.Cog):
 
         # Send the embed
         await interaction.response.send_message(embed=embed, ephemeral=True)
-
-    def load_server_settings(self):
-        # Load server settings from the JSON file
-        config_dir = "config"
-        servers_file = os.path.join(config_dir, "servers.json")
-        if os.path.exists(servers_file):
-            with open(servers_file, "r") as file:
-                return json.load(file)
-        return {}

@@ -9,7 +9,9 @@ if not os.path.exists(DATA_DIR):
 
 def log_message_to_csv(message):
     logger = configure_server_logging(message.guild.id)
-    logger.info(f"Logging message to CSV: {message.content} (Server: {message.guild.name}, Channel: {message.channel.name})")
+    logger.info(
+        f"Logging message to CSV: {message.content} (Server: {message.guild.name}, Channel: {message.channel.name})"
+    )
 
     # Create a server-specific CSV file in the data folder
     csv_file = os.path.join(DATA_DIR, f"messages_guild_{message.guild.id}.csv")

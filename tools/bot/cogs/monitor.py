@@ -18,7 +18,9 @@ class MonitorCog(commands.Cog):
     async def on_message(self, message):
         if message.guild:  # Check if the message is from a guild
             logger = configure_server_logging(message.guild.id)
-            logger.info(f"Message received: {message.content} (Server: {message.guild.name}, Channel: {message.channel.name})")
+            logger.info(
+                f"Message received: {message.content} (Server: {message.guild.name}, Channel: {message.channel.name})"
+            )
             server_settings = load_server_settings()
             for server_key, server_data in server_settings.items():
                 if server_data["Guild ID"] == message.guild.id:
@@ -27,6 +29,9 @@ class MonitorCog(commands.Cog):
                         for channel in server_data["Monitored Channels"]
                     ]
                     if message.channel.id in monitored_channels:
-                        if any(word.lower() in message.content.lower() for word in self.word_list):  # Use self.word_list
+                        if any(
+                            word.lower() in message.content.lower()
+                            for word in self.word_list
+                        ):  # Use self.word_list
                             log_message_to_csv(message)
         await self.bot.process_commands(message)
