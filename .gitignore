@@ -9,3 +9,4 @@ tools/bot/utils/__pycache__/__init__.cpython-39.pyc
 tools/bot/utils/__pycache__/config.cpython-39.pyc
 tools/bot/utils/__pycache__/csv_handler.cpython-39.pyc
 tools/bot/utils/__pycache__/logging.cpython-39.pyc
+tools/bot/cogs/__pycache__/info.cpython-39.pyc
