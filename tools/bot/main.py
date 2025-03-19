@@ -1,4 +1,5 @@
 import os
+import json
 import logging
 import discord
 from discord.ext import commands
@@ -6,14 +7,27 @@ from discord import app_commands
 from dotenv import load_dotenv
 from cogs.setup import SetupCog
 from cogs.monitor import MonitorCog
-from cogs.info import InfoCog  # Import the new InfoCog
+from cogs.info import InfoCog
 
 # Load environment variables
 load_dotenv("../.env")
 
 # Constants
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
-WORD_LIST = os.getenv("WORD_LIST").split(",")  # Load WORD_LIST from .env
+
+
+# Load wordlist from wordlist.json
+def load_wordlist():
+    config_dir = "config"
+    wordlist_file = os.path.join(config_dir, "wordlist.json")
+    if os.path.exists(wordlist_file):
+        with open(wordlist_file, "r") as file:
+            data = json.load(file)
+            return data.get("words", [])  # Return the list of words
+    return []  # Return an empty list if the file doesn't exist
+
+
+WORD_LIST = load_wordlist()  # Load the wordlist
 
 # Initialize bot
 intents = discord.Intents.default()
