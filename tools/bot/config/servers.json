@@ -8,19 +8,5 @@
                 "Channel Name": "log-channel"
             }
         ]
-    },
-    "SERVER_NO_2": {
-        "Guild ID": 1217413617344053270,
-        "Server Name": "Bot Development",
-        "Monitored Channels": [
-            {
-                "Channel ID": 1217413617800970332,
-                "Channel Name": "test-room-1"
-            },
-            {
-                "Channel ID": 1217414958162116679,
-                "Channel Name": "bot-invites"
-            }
-        ]
     }
 }
