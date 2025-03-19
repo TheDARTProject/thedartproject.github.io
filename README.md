@@ -6,6 +6,10 @@
 
 A comprehensive security dashboard designed to track and analyze malicious activities across various platforms. The CDA Project provides real-time threat monitoring, advanced analytics, and a unified processing engine to help users detect and prevent cyber threats effectively.
 
+# README IS OUTDATED
+
+The current state of this README file is outdated and may include incorrect or missing information.
+
 </div>
 
 ## Enhanced Features
