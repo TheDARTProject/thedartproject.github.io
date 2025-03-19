@@ -108,9 +108,9 @@ def log_message_to_csv(message):
         # Write the message data
         writer.writerow(
             [
-                message.id,
+                f'"{message.id}"',
                 message.author.name,
-                message.author.id,
+                f'"{message.author.id}"',
                 message.content,
                 message.channel.name,
                 message.created_at,
