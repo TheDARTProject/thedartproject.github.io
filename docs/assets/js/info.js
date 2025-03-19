@@ -95,6 +95,9 @@ function countCasesPerServer(data) {
 // Function to update server cards with case counts and member counts
 async function updateServerCards(serverCounts) {
     const serverCards = document.querySelectorAll('.server-card');
+    let totalMemberCount = 0;
+    let serverWithMemberCount = 0;
+    const memberCountsMap = {};
 
     for (const card of serverCards) {
         const titleElement = card.querySelector('h4');
@@ -121,15 +124,80 @@ async function updateServerCards(serverCounts) {
                 const memberCount = await fetchMemberCount(inviteLink);
                 if (memberCount !== "Member Count Hidden") {
                     memberCountElement.textContent = `${memberCount} Members`;
+
+                    // Add to total member count
+                    const numericCount = parseInt(memberCount, 10);
+                    if (!isNaN(numericCount)) {
+                        totalMemberCount += numericCount;
+                        memberCountsMap[serverKey] = numericCount;
+                        serverWithMemberCount++;
+                    }
                 }
             }
         }
     }
+
+    return totalMemberCount;
+}
+
+// Function to update placeholders in the page content
+function updatePlaceholders(numberOfServers, totalMemberCount) {
+
+    // Manual replacement for specific placeholders
+    const serverCountPlaceholder = '{NUMBER_OF_SERVERS}';
+    const memberCountPlaceholder = '{TOTAL_MEMBER_COUNT}';
+
+    // Find all text nodes in the document
+    const textNodes = [];
+
+    function findTextNodes(node) {
+        if (node.nodeType === 3) { // Text node
+            textNodes.push(node);
+        } else if (node.nodeType === 1) { // Element node
+            for (let i = 0; i < node.childNodes.length; i++) {
+                findTextNodes(node.childNodes[i]);
+            }
+        }
+    }
+    findTextNodes(document.body);
+
+    // Replace placeholders in text nodes
+    textNodes.forEach(textNode => {
+        if (textNode.nodeValue.includes(serverCountPlaceholder)) {
+            textNode.nodeValue = textNode.nodeValue.replace(serverCountPlaceholder, numberOfServers);
+        }
+        if (textNode.nodeValue.includes(memberCountPlaceholder)) {
+            textNode.nodeValue = textNode.nodeValue.replace(memberCountPlaceholder, totalMemberCount.toLocaleString());
+        }
+    });
+
+    // Also try innerHTML replacement on paragraphs
+    document.querySelectorAll('p').forEach(p => {
+        if (p.innerHTML.includes(serverCountPlaceholder)) {
+            p.innerHTML = p.innerHTML.replace(new RegExp(serverCountPlaceholder, 'g'), numberOfServers);
+        }
+        if (p.innerHTML.includes(memberCountPlaceholder)) {
+            p.innerHTML = p.innerHTML.replace(new RegExp(memberCountPlaceholder, 'g'), totalMemberCount.toLocaleString());
+        }
+    });
 }
 
 // Function to initialize server counts
 async function initializeServerCounts() {
     const accountsData = await fetchAccountData();
     const serverCounts = countCasesPerServer(accountsData);
-    await updateServerCards(serverCounts);
+
+    // Get the total number of servers directly from serverNames
+    const numberOfServers = Object.keys(serverNames).length;
+
+    // Update server cards and get the total member count
+    const totalMemberCount = await updateServerCards(serverCounts);
+
+    // Update placeholders
+    updatePlaceholders(numberOfServers, totalMemberCount || 0);
+
+    // Try a second update with a delay to ensure DOM changes are processed
+    setTimeout(() => {
+        updatePlaceholders(numberOfServers, totalMemberCount || 0);
+    }, 500);
 }
