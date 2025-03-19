@@ -162,6 +162,21 @@ const countryCenters = {
         lat: 4.2105,
         lng: 101.9758,
         name: "Malaysia"
+    },
+    "HU": {
+        lat: 47.1625,
+        lng: 19.5033,
+        name: "Hungary"
+    },
+    "BE": {
+        lat: 50.6403,
+        lng: 4.6667,
+        name: "Belgium"
+    },
+    "SK": {
+        lat: 48.6690,
+        lng: 19.6990,
+        name: "Slovakia"
     }
 };
 
