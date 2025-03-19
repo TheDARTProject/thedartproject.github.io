@@ -24,13 +24,18 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # File to store server settings
-SERVERS_FILE = "servers.json"
+CONFIG_DIR = "config"
+SERVERS_FILE = os.path.join(CONFIG_DIR, "servers.json")
 
 # Logs directory
 LOGS_DIR = "bot_logs"
 if not os.path.exists(LOGS_DIR):
     os.makedirs(LOGS_DIR)
 
+# Data directory for CSV files
+DATA_DIR = "data"
+if not os.path.exists(DATA_DIR):
+    os.makedirs(DATA_DIR)
 
 # Function to get or create a server-specific log folder
 def get_server_log_folder(guild_id):
@@ -69,9 +74,10 @@ global_logger = logging.getLogger("global")
 global_logger.setLevel(logging.INFO)
 global_logger.addHandler(logging.StreamHandler())
 
-
 # Load server settings from JSON file
 def load_server_settings():
+    if not os.path.exists(CONFIG_DIR):
+        os.makedirs(CONFIG_DIR)
     if os.path.exists(SERVERS_FILE):
         with open(SERVERS_FILE, "r") as file:
             return json.load(file)
@@ -80,6 +86,8 @@ def load_server_settings():
 
 # Save server settings to JSON file
 def save_server_settings(settings):
+    if not os.path.exists(CONFIG_DIR):
+        os.makedirs(CONFIG_DIR)
     with open(SERVERS_FILE, "w") as file:
         json.dump(settings, file, indent=4)
 
@@ -90,8 +98,12 @@ def log_message_to_csv(message):
     logger.info(
         f"Logging message to CSV: {message.content} (Server: {message.guild.name}, Channel: {message.channel.name})"
     )
-    file_exists = os.path.isfile("message_log.csv")
-    with open("message_log.csv", mode="a", newline="", encoding="utf-8") as file:
+
+    # Create a server-specific CSV file in the data folder
+    csv_file = os.path.join(DATA_DIR, f"messages_guild_{message.guild.id}.csv")
+    file_exists = os.path.isfile(csv_file)
+
+    with open(csv_file, mode="a", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         # Write column titles if the file is being created for the first time
         if not file_exists:
@@ -103,6 +115,7 @@ def log_message_to_csv(message):
                     "Message Content",
                     "Channel Name",
                     "Timestamp",
+                    "Guild ID",
                 ]
             )
         # Write the message data
@@ -114,6 +127,7 @@ def log_message_to_csv(message):
                 message.content,
                 message.channel.name,
                 message.created_at,
+                f'"{message.guild.id}"',
             ]
         )
 
