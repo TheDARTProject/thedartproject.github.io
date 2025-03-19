@@ -5,6 +5,7 @@ import logging
 from datetime import datetime
 import discord
 from discord.ext import commands
+from discord.ui import Select, View
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -150,70 +151,159 @@ async def setup(interaction: discord.Interaction):
     )
     if interaction.guild is None:
         await interaction.response.send_message(
-            "Please set up the bot in a server, not in DMs."
+            "Please set up the bot in a server, not in DMs.", ephemeral=True
         )
         return
 
-    # Ask user to select channels
-    await interaction.response.send_message(
-        "Please mention the channels you want to monitor (e.g., #general #random):"
+    # Create an embed for the setup process
+    setup_embed = discord.Embed(
+        title="Bot Setup",
+        description="Welcome to the bot setup! Please follow the steps below.",
+        color=discord.Color.blue(),
     )
 
-    def check(m):
-        return m.author == interaction.user and m.channel == interaction.channel
+    # Step 1: Channel Selection
+    setup_embed.add_field(
+        name="Step 1: Channel Selection",
+        value="Please select the channels you want to monitor from the dropdown below.",
+        inline=False,
+    )
 
-    try:
-        channel_msg = await bot.wait_for("message", timeout=60.0, check=check)
-        channel_ids = [
-            int(channel_id.strip("<#!>"))
-            for channel_id in channel_msg.content.split()
-            if channel_id.startswith("<#")
+    # Create a dropdown menu for channel selection
+    channel_options = [
+        discord.SelectOption(label=channel.name, value=str(channel.id))
+        for channel in interaction.guild.text_channels
+    ]
+
+    # Store selected channels in a class variable
+    selected_channels = []
+
+    async def select_callback(select_interaction):
+        nonlocal selected_channels
+        # Get the selected channel objects
+        selected_channels = [
+            interaction.guild.get_channel(int(channel_id))
+            for channel_id in select_interaction.data["values"]
         ]
-        channels = [bot.get_channel(channel_id) for channel_id in channel_ids]
 
-        # Ask user if they want to perform a historical scan
-        await interaction.followup.send(
-            "Do you want to perform a full historical scan before starting to monitor? (yes/no)"
+        # Update the embed for Step 2: Historical Scan
+        step2_embed = discord.Embed(
+            title="Bot Setup",
+            description="Welcome to the bot setup! Please follow the steps below.",
+            color=discord.Color.blue(),
         )
-        historical_scan_msg = await bot.wait_for("message", timeout=60.0, check=check)
+        step2_embed.add_field(
+            name="Step 2: Historical Scan",
+            value="Do you want to perform a full historical scan of the selected channels? React with ✅ for yes or ❌ for no.",
+            inline=False,
+        )
 
-        if historical_scan_msg.content.lower() == "yes":
-            for channel in channels:
-                await interaction.followup.send(
-                    f"Starting historical scan for channel {channel.name}..."
+        # Create buttons for yes/no
+        yes_button = discord.ui.Button(
+            label="Yes", style=discord.ButtonStyle.green, custom_id="yes"
+        )
+        no_button = discord.ui.Button(
+            label="No", style=discord.ButtonStyle.red, custom_id="no"
+        )
+
+        async def yes_callback(button_interaction):
+            for channel in selected_channels:
+                update_embed = discord.Embed(
+                    title="Bot Setup",
+                    description="Welcome to the bot setup! Please follow the steps below.",
+                    color=discord.Color.blue(),
+                )
+                update_embed.add_field(
+                    name="Historical Scan",
+                    value=f"Starting historical scan for channel {channel.name}...",
+                    inline=False,
+                )
+                await button_interaction.response.edit_message(
+                    embed=update_embed, view=None
                 )
                 await historical_scan(channel)
-                await interaction.followup.send(
-                    f"Historical scan for channel {channel.name} completed."
-                )
 
-        # Load existing server settings
-        server_settings = load_server_settings()
+            finish_embed = discord.Embed(
+                title="Bot Setup",
+                description="Welcome to the bot setup! Please follow the steps below.",
+                color=discord.Color.blue(),
+            )
+            finish_embed.add_field(
+                name="Setup Complete",
+                value="Monitoring has been set up successfully! The bot will now log messages containing the specified words.",
+                inline=False,
+            )
+            await button_interaction.edit_original_response(embed=finish_embed)
 
-        # Determine the next server number
-        server_count = len(server_settings)
-        new_server_key = f"SERVER_NO_{server_count + 1}"
+            # Save the server settings
+            save_server_config(interaction.guild, selected_channels)
+            logger.info(f"Monitoring started for guild: {interaction.guild.name}")
 
-        # Add the new server to the settings
-        server_settings[new_server_key] = {
-            "Guild ID": interaction.guild.id,
-            "Server Name": interaction.guild.name,
-            "Monitored Channels": [
-                {"Channel ID": channel.id, "Channel Name": channel.name}
-                for channel in channels
-            ],
-        }
+        async def no_callback(button_interaction):
+            finish_embed = discord.Embed(
+                title="Bot Setup",
+                description="Welcome to the bot setup! Please follow the steps below.",
+                color=discord.Color.blue(),
+            )
+            finish_embed.add_field(
+                name="Setup Complete",
+                value="Monitoring has been set up successfully without historical scan! The bot will now log messages containing the specified words.",
+                inline=False,
+            )
+            await button_interaction.response.edit_message(
+                embed=finish_embed, view=None
+            )
 
-        # Save the updated settings
-        save_server_settings(server_settings)
-        await interaction.followup.send(
-            "Monitoring started. I will log messages containing the specified words."
+            # Save the server settings
+            save_server_config(interaction.guild, selected_channels)
+            logger.info(
+                f"Monitoring started for guild: {interaction.guild.name} (without historical scan)"
+            )
+
+        yes_button.callback = yes_callback
+        no_button.callback = no_callback
+
+        step2_view = discord.ui.View()
+        step2_view.add_item(yes_button)
+        step2_view.add_item(no_button)
+
+        await select_interaction.response.edit_message(
+            embed=step2_embed, view=step2_view
         )
-        logger.info(f"Monitoring started for guild: {interaction.guild.name}")
 
-    except Exception as e:
-        await interaction.followup.send(f"An error occurred: {e}")
-        logger.error(f"Error during setup: {e}")
+    # Create the select menu
+    select = discord.ui.Select(
+        placeholder="Select channels to monitor...",
+        min_values=1,
+        max_values=len(channel_options),
+        options=channel_options,
+    )
+    select.callback = select_callback
+
+    setup_view = discord.ui.View()
+    setup_view.add_item(select)
+
+    await interaction.response.send_message(
+        embed=setup_embed, view=setup_view, ephemeral=True
+    )
+
+
+# Helper function to save server configuration
+def save_server_config(guild, selected_channels):
+    server_settings = load_server_settings()
+    server_count = len(server_settings)
+    new_server_key = f"SERVER_NO_{server_count + 1}"
+
+    server_settings[new_server_key] = {
+        "Guild ID": guild.id,
+        "Server Name": guild.name,
+        "Monitored Channels": [
+            {"Channel ID": channel.id, "Channel Name": channel.name}
+            for channel in selected_channels
+        ],
+    }
+
+    save_server_settings(server_settings)
 
 
 # Bot event: on_message
