@@ -29,6 +29,13 @@
       "status": "Delayed"
     },
     {
+      "name": "Create a Discord Bot",
+      "startDate": "2024-03-18",
+      "deadline": "2024-03-31",
+      "description": "Develop a Discord bot with the goal of automating the data collection and monitoring of cases in each server",
+      "status": "Delayed"
+    },
+    {
       "name": "Add Status Check Page",
       "startDate": "2024-03-15",
       "deadline": "2024-03-20",
