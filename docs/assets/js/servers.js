@@ -12,7 +12,7 @@ const serverInvites = {
     // ANONYMOUS_SERVER_1 does not need an invite link
 };
 
-export {
+export default {
     serverNames,
     serverInvites
 };
