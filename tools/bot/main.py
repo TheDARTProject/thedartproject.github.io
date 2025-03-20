@@ -9,6 +9,7 @@ from cogs.setup import SetupCog
 from cogs.monitor import MonitorCog
 from cogs.info import InfoCog
 from cogs.reset import ResetCog
+from cogs.dump import DumpCog
 from cogs.rich_presence import RichPresenceCog
 
 # Load environment variables
@@ -55,6 +56,7 @@ async def load_cogs():
     await bot.add_cog(InfoCog(bot, WORD_LIST))
     await bot.add_cog(RichPresenceCog(bot))
     await bot.add_cog(ResetCog(bot))
+    await bot.add_cog(DumpCog(bot))
 
 
 # Bot event: on_ready
