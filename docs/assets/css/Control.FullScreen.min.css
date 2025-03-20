@@ -1,18 +1,14 @@
 .fullscreen-icon {
 	background-image: url(../../images/icons/icon-fullscreen.svg);
-	background-size: 26px 52px
+	background-size: 20px 20px
 }
 
 .fullscreen-icon.leaflet-fullscreen-on {
-	background-position: 0 -26px
+	background-position: -20px -26px
 }
 
 .leaflet-touch .fullscreen-icon {
-	background-position: 2px 2px
-}
-
-.leaflet-touch .fullscreen-icon.leaflet-fullscreen-on {
-	background-position: 2px -24px
+	background-position: 5px 5px
 }
 
 .leaflet-container:-webkit-full-screen {
