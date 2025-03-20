@@ -11,6 +11,7 @@ from cogs.info import InfoCog
 from cogs.reset import ResetCog
 from cogs.dump import DumpCog
 from cogs.rich_presence import RichPresenceCog
+from utils.server_utils import add_server_to_config, remove_server_from_config
 
 # Load environment variables
 load_dotenv(".env")
@@ -69,6 +70,28 @@ async def on_ready():
     await load_cogs()
     await bot.tree.sync()  # Sync slash commands
     global_logger.info("Commands synced.")
+
+
+# Bot event: on_guild_join
+@bot.event
+async def on_guild_join(guild):
+    """
+    Event triggered when the bot joins a new server.
+    Adds the server to the servers.json configuration file.
+    """
+    global_logger.info(f"Bot joined server: {guild.name} (ID: {guild.id})")
+    add_server_to_config(guild)  # Add the server to the config
+
+
+# Bot event: on_guild_remove
+@bot.event
+async def on_guild_remove(guild):
+    """
+    Event triggered when the bot is kicked or banned from a server.
+    Removes the server from the servers.json configuration file.
+    """
+    global_logger.info(f"Bot removed from server: {guild.name} (ID: {guild.id})")
+    remove_server_from_config(guild.id)  # Remove the server from the config
 
 
 # Run the bot
