@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const articleCards = document.querySelectorAll(".article-card");
     const loadingSpinner = document.getElementById("loading-spinner");
     const newsContainer = document.getElementById("news-container");
-    const placeholderImage = "https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/Placeholder.png";
+    const placeholderImage = "https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-LOADED.png";
     const rssFeedUrl = "https://www.digitalvocano.com/cybersecurity/rss/latest-posts";
     const noNewsMessage = document.getElementById("no-news-message");
 
