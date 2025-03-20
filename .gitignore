@@ -14,3 +14,4 @@ tools/bot/config/wordlist.json
 tools/bot/cogs/__pycache__/rich_presence.cpython-39.pyc
 tools/bot/.env
 tools/bot/cogs/__pycache__/reset.cpython-39.pyc
+tools/bot/utils/__pycache__/embed_utils.cpython-39.pyc
