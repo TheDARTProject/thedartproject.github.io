@@ -8802,7 +8802,7 @@
     "ACCOUNT_NUMBER_401": {
         "CASE_NUMBER": "401",
         "FOUND_ON": "2024-05-24",
-        "FOUND_ON_SERVER": "PROJECT_CW",
+        "FOUND_ON_SERVER": "SINEWAVE_DEVELOPMENT",
         "DISCORD_ID": "1237671235131936811",
         "USERNAME": "tranquil_unicorn_43259",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -16347,6 +16347,28 @@
     },
     "ACCOUNT_NUMBER_744": {
         "CASE_NUMBER": "744",
+        "FOUND_ON": "2025-03-15",
+        "FOUND_ON_SERVER": "SINEWAVE_DEVELOPMENT",
+        "DISCORD_ID": "standon_biz",
+        "USERNAME": "841876341627813901",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Game Cheat Invite",
+        "ATTACK_VECTOR": "Unknown Vector",
+        "ATTACK_GOAL": "Unknown Goal",
+        "ATTACK_SURFACE": "Discord",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://discord.gg/AK7ecx6wRf",
+        "SURFACE_URL_DOMAIN": "discord.gg",
+        "SURFACE_URL_STATUS": "ACTIVE",
+        "FINAL_URL": "https://discord.com/invite/AK7ecx6wRf",
+        "FINAL_URL_DOMAIN": "discord.com",
+        "FINAL_URL_STATUS": "ACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-20T07:42:04.158692"
+    },
+    "ACCOUNT_NUMBER_745": {
+        "CASE_NUMBER": "745",
         "FOUND_ON": "2025-03-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1143501896875782154",
@@ -16367,8 +16389,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-19T01:06:01.690124"
     },
-    "ACCOUNT_NUMBER_745": {
-        "CASE_NUMBER": "745",
+    "ACCOUNT_NUMBER_746": {
+        "CASE_NUMBER": "746",
         "FOUND_ON": "2025-03-18",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1198324403298111689",
@@ -16389,8 +16411,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-19T01:06:01.690124"
     },
-    "ACCOUNT_NUMBER_746": {
-        "CASE_NUMBER": "746",
+    "ACCOUNT_NUMBER_747": {
+        "CASE_NUMBER": "747",
         "FOUND_ON": "2025-03-19",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "451302551992664065",
