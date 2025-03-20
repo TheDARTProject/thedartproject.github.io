@@ -17,11 +17,22 @@ class MonitorCog(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, message):
         if message.guild:  # Check if the message is from a guild
+            server_settings = load_server_settings()
+
+            # Check if the server is still in the configuration
+            server_in_config = any(
+                server_data["Guild ID"] == message.guild.id
+                for server_data in server_settings.values()
+            )
+
+            if not server_in_config:
+                return  # Skip monitoring if the server is no longer in the configuration
+
             logger = configure_server_logging(message.guild.id)
             logger.info(
                 f"Message received: {message.content} (Server: {message.guild.name}, Channel: {message.channel.name})"
             )
-            server_settings = load_server_settings()
+
             for server_key, server_data in server_settings.items():
                 if server_data["Guild ID"] == message.guild.id:
                     monitored_channels = [
@@ -32,6 +43,6 @@ class MonitorCog(commands.Cog):
                         if any(
                             word.lower() in message.content.lower()
                             for word in self.word_list
-                        ):  # Use self.word_list
+                        ):
                             log_message_to_csv(message)
         await self.bot.process_commands(message)

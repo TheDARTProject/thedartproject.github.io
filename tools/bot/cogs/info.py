@@ -4,6 +4,7 @@ import json
 import discord
 from discord.ext import commands
 from discord import app_commands
+from utils.embed_utils import add_embed_elements
 from datetime import datetime
 
 
@@ -66,16 +67,10 @@ class InfoCog(commands.Cog):
             color=discord.Color.blue(),
         )
 
-        # Header image
-        embed.set_thumbnail(
-            url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
-        )
+        # Add common elements to the embed using the utility function
+        embed = add_embed_elements(embed)
 
-        embed.set_author(
-            name="CDA Monitor",
-            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png",
-        )
-
+        # Add fields for bot information
         embed.add_field(
             name="Flagged Messages Logged",
             value=str(flagged_messages_count),
@@ -96,22 +91,6 @@ class InfoCog(commands.Cog):
             value=str(monitored_channels_count),
             inline=True,
         )
-
-        # Add a help message
-        embed.add_field(
-            name="Need Help?",
-            value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
-            inline=False,
-        )
-
-        # Add footer
-        embed.set_footer(
-            text="Developed by ThatSINEWAVE | CDA Project",
-            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
-        )
-
-        # Add Timestamp
-        embed.timestamp = datetime.utcnow()
 
         # Send the embed
         await interaction.response.send_message(embed=embed, ephemeral=True)
