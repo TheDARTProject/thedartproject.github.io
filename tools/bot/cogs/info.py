@@ -66,14 +66,14 @@ class InfoCog(commands.Cog):
             color=discord.Color.blue(),
         )
 
-        # Header image (Thumbnail)
+        # Header image
         embed.set_thumbnail(
-            url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+            url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
         )
 
         embed.set_author(
             name="CDA Monitor",
-            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
         )
 
         embed.add_field(
@@ -104,7 +104,7 @@ class InfoCog(commands.Cog):
         # Add footer
         embed.set_footer(
             text="Developed by ThatSINEWAVE | CDA Project",
-            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
         )
 
         # Add Timestamp

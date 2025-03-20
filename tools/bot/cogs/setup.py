@@ -79,12 +79,12 @@ class SetupCog(commands.Cog):
 
         # Header image (Thumbnail)
         setup_embed.set_thumbnail(
-            url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+            url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
         )
 
         setup_embed.set_author(
             name="CDA Monitor",
-            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
         )
 
         # Step 1: Channel Selection
@@ -104,7 +104,7 @@ class SetupCog(commands.Cog):
         # Add footer
         setup_embed.set_footer(
             text="Developed by ThatSINEWAVE | CDA Project",
-            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
         )
 
         # Add Timestamp
@@ -134,14 +134,14 @@ class SetupCog(commands.Cog):
                 color=discord.Color.blue(),
             )
 
-            # Header image (Thumbnail)
+            # Header image
             step2_embed.set_thumbnail(
-                url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
             )
 
             step2_embed.set_author(
                 name="CDA Monitor",
-                icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
             )
 
             step2_embed.add_field(
@@ -160,7 +160,7 @@ class SetupCog(commands.Cog):
             # Add footer
             step2_embed.set_footer(
                 text="Developed by ThatSINEWAVE | CDA Project",
-                icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+                icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
             )
 
             # Add Timestamp
@@ -182,14 +182,14 @@ class SetupCog(commands.Cog):
                         color=discord.Color.blue(),
                     )
 
-                    # Header image (Thumbnail)
+                    # Header image
                     update_embed.set_thumbnail(
-                        url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                        url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
                     )
 
                     update_embed.set_author(
                         name="CDA Monitor",
-                        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
                     )
 
                     update_embed.add_field(
@@ -206,7 +206,7 @@ class SetupCog(commands.Cog):
 
                     update_embed.set_footer(
                         text="Developed by ThatSINEWAVE | CDA Project",
-                        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+                        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
                     )
 
                     await button_interaction.response.edit_message(
@@ -220,14 +220,14 @@ class SetupCog(commands.Cog):
                     color=discord.Color.blue(),
                 )
 
-                # Header image (Thumbnail)
+                # Header image
                 finish_embed.set_thumbnail(
-                    url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                    url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
                 )
 
                 finish_embed.set_author(
                     name="CDA Monitor",
-                    icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                    icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
                 )
 
                 finish_embed.add_field(
@@ -244,7 +244,7 @@ class SetupCog(commands.Cog):
 
                 finish_embed.set_footer(
                     text="Developed by ThatSINEWAVE | CDA Project",
-                    icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+                    icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
                 )
 
                 await button_interaction.edit_original_response(embed=finish_embed)
