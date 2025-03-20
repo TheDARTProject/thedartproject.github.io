@@ -80,7 +80,25 @@ async def on_guild_join(guild):
     Adds the server to the servers.json configuration file.
     """
     global_logger.info(f"Bot joined server: {guild.name} (ID: {guild.id})")
-    add_server_to_config(guild)  # Add the server to the config
+
+    # Fetch the audit logs to find the inviter
+    inviter_id = None
+    try:
+        async for entry in guild.audit_logs(
+            action=discord.AuditLogAction.bot_add, limit=1
+        ):
+            inviter_id = entry.user.id
+    except discord.Forbidden:
+        global_logger.warning(
+            f"Missing permissions to fetch audit logs in guild: {guild.name} (ID: {guild.id})"
+        )
+    except discord.HTTPException as e:
+        global_logger.error(
+            f"Failed to fetch audit logs for guild {guild.name} (ID: {guild.id}): {e}"
+        )
+
+    # Add the server to the config with the inviter's ID
+    add_server_to_config(guild, inviter_id)
 
 
 # Bot event: on_guild_remove

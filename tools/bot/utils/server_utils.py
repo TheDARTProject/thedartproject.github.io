@@ -15,12 +15,13 @@ if not os.path.exists(SERVERS_FILE):
         json.dump({}, initial_file)  # Create an empty JSON object
 
 
-def add_server_to_config(guild):
+def add_server_to_config(guild, inviter_id=None):
     """
     Adds a server to the servers.json configuration file when the bot joins a new server.
 
     Args:
         guild (discord.Guild): The server (guild) the bot has joined.
+        inviter_id (int): The ID of the user who invited the bot to the server.
     """
     logger = configure_server_logging(guild.id)  # Initialize logger here
 
@@ -39,6 +40,7 @@ def add_server_to_config(guild):
             "Server Name": guild.name,
             "Member Count": guild.member_count,
             "Monitored Channels": [],  # Initialize with an empty list
+            "Inviter ID": inviter_id,  # Add the inviter's ID
         }
 
         with open(SERVERS_FILE, "w") as write_file:
