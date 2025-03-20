@@ -53,10 +53,10 @@ class InfoCog(commands.Cog):
 
         # Get the number of monitored channels
         server_settings = load_server_settings()
-        monitored_channels = []
+        monitored_channels_count = 0
         for server_key, server_data in server_settings.items():
             if server_data["Guild ID"] == interaction.guild.id:
-                monitored_channels = server_data["Monitored Channels"]
+                monitored_channels_count = len(server_data["Monitored Channels"])
                 break
 
         # Create an embed to display the information
@@ -73,7 +73,7 @@ class InfoCog(commands.Cog):
 
         embed.set_author(
             name="CDA Monitor",
-            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
+            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png",
         )
 
         embed.add_field(
@@ -87,11 +87,14 @@ class InfoCog(commands.Cog):
             inline=True,
         )
         embed.add_field(
-            name="Monitored Channels",
-            value=", ".join([channel["Channel Name"] for channel in monitored_channels])
-            if monitored_channels
-            else "No channels being monitored.",
-            inline=False,
+            name="Words Monitored",
+            value=str(len(self.word_list)),
+            inline=True,
+        )
+        embed.add_field(
+            name="Channels Monitored",
+            value=str(monitored_channels_count),
+            inline=True,
         )
 
         # Add a help message
