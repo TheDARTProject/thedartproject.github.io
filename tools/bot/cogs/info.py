@@ -66,12 +66,16 @@ class InfoCog(commands.Cog):
             color=discord.Color.blue(),
         )
 
-        # Add fields to the embed
-        embed.add_field(
-            name="Words Being Monitored",
-            value=", ".join(self.word_list) if self.word_list else "No words set.",
-            inline=False,
+        # Header image (Thumbnail)
+        embed.set_thumbnail(
+            url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
         )
+
+        embed.set_author(
+            name="CDA Monitor",
+            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+        )
+
         embed.add_field(
             name="Flagged Messages Logged",
             value=str(flagged_messages_count),
@@ -93,9 +97,18 @@ class InfoCog(commands.Cog):
         # Add a help message
         embed.add_field(
             name="Need Help?",
-            value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner: `sinewave_` (212020258402205697).",
+            value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
             inline=False,
         )
+
+        # Add footer
+        embed.set_footer(
+            text="Developed by ThatSINEWAVE | CDA Project",
+            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+        )
+
+        # Add Timestamp
+        embed.timestamp = datetime.utcnow()
 
         # Send the embed
         await interaction.response.send_message(embed=embed, ephemeral=True)

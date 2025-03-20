@@ -8,6 +8,7 @@ from discord.ui import Select, View
 from utils.logging import configure_server_logging
 from utils.config import load_server_settings, save_server_settings
 from utils.csv_handler import log_message_to_csv
+from datetime import datetime
 
 
 def save_server_config(guild, selected_channels):
@@ -76,12 +77,38 @@ class SetupCog(commands.Cog):
             color=discord.Color.blue(),
         )
 
+        # Header image (Thumbnail)
+        setup_embed.set_thumbnail(
+            url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+        )
+
+        setup_embed.set_author(
+            name="CDA Monitor",
+            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+        )
+
         # Step 1: Channel Selection
         setup_embed.add_field(
             name="Step 1: Channel Selection",
             value="Please select the channels you want to monitor from the dropdown below.",
             inline=False,
         )
+
+        # Add a help message
+        setup_embed.add_field(
+            name="Need Help?",
+            value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
+            inline=False,
+        )
+
+        # Add footer
+        setup_embed.set_footer(
+            text="Developed by ThatSINEWAVE | CDA Project",
+            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+        )
+
+        # Add Timestamp
+        setup_embed.timestamp = datetime.utcnow()
 
         # Create a dropdown menu for channel selection
         channel_options = [
@@ -106,11 +133,38 @@ class SetupCog(commands.Cog):
                 description="Welcome to the bot setup! Please follow the steps below.",
                 color=discord.Color.blue(),
             )
+
+            # Header image (Thumbnail)
+            step2_embed.set_thumbnail(
+                url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+            )
+
+            step2_embed.set_author(
+                name="CDA Monitor",
+                icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+            )
+
             step2_embed.add_field(
                 name="Step 2: Historical Scan",
                 value="Do you want to perform a full historical scan of the selected channels? React with ✅ for yes or ❌ for no.",
                 inline=False,
             )
+
+            # Add a help message
+            step2_embed.add_field(
+                name="Need Help?",
+                value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
+                inline=False,
+            )
+
+            # Add footer
+            step2_embed.set_footer(
+                text="Developed by ThatSINEWAVE | CDA Project",
+                icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+            )
+
+            # Add Timestamp
+            step2_embed.timestamp = datetime.utcnow()
 
             # Create buttons for yes/no
             yes_button = discord.ui.Button(
@@ -127,11 +181,34 @@ class SetupCog(commands.Cog):
                         description="Welcome to the bot setup! Please follow the steps below.",
                         color=discord.Color.blue(),
                     )
+
+                    # Header image (Thumbnail)
+                    update_embed.set_thumbnail(
+                        url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                    )
+
+                    update_embed.set_author(
+                        name="CDA Monitor",
+                        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                    )
+
                     update_embed.add_field(
                         name="Historical Scan",
                         value=f"Starting historical scan for channel {channel.name}...",
                         inline=False,
                     )
+
+                    update_embed.add_field(
+                        name="Need Help?",
+                        value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
+                        inline=False,
+                    )
+
+                    update_embed.set_footer(
+                        text="Developed by ThatSINEWAVE | CDA Project",
+                        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+                    )
+
                     await button_interaction.response.edit_message(
                         embed=update_embed, view=None
                     )
@@ -142,11 +219,34 @@ class SetupCog(commands.Cog):
                     description="Welcome to the bot setup! Please follow the steps below.",
                     color=discord.Color.blue(),
                 )
+
+                # Header image (Thumbnail)
+                finish_embed.set_thumbnail(
+                    url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                )
+
+                finish_embed.set_author(
+                    name="CDA Monitor",
+                    icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png"
+                )
+
                 finish_embed.add_field(
                     name="Setup Complete",
                     value="Monitoring has been set up successfully! The bot will now log messages containing the specified words.",
                     inline=False,
                 )
+
+                finish_embed.add_field(
+                    name="Need Help?",
+                    value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
+                    inline=False,
+                )
+
+                finish_embed.set_footer(
+                    text="Developed by ThatSINEWAVE | CDA Project",
+                    icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/CDA-Monitor-Embed-Image.png",
+                )
+
                 await button_interaction.edit_original_response(embed=finish_embed)
 
                 # Save the server settings
