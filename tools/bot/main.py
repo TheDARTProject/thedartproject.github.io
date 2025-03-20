@@ -11,7 +11,7 @@ from cogs.info import InfoCog
 from cogs.rich_presence import RichPresenceCog
 
 # Load environment variables
-load_dotenv("../.env")
+load_dotenv(".env")
 
 # Constants
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
@@ -19,6 +19,7 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 # Rate limit constants
 RATE_LIMIT = 50  # Discord's rate limit is 50 requests per second
 SAFE_LIMIT = RATE_LIMIT - 5  # Stay 5 requests below the limit
+
 
 # Load wordlist from wordlist.json
 def load_wordlist():
@@ -44,6 +45,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 global_logger = logging.getLogger("global")
 global_logger.setLevel(logging.INFO)
 global_logger.addHandler(logging.StreamHandler())
+
 
 # Load cogs
 async def load_cogs():
