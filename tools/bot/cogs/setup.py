@@ -1,6 +1,7 @@
 import os
 import json
 import discord
+import asyncio
 from discord.ext import commands
 from discord import app_commands
 from discord.ui import Select, View
@@ -45,9 +46,10 @@ def save_server_config(guild, selected_channels):
 
 
 class SetupCog(commands.Cog):
-    def __init__(self, bot, word_list):
+    def __init__(self, bot, word_list, safe_limit):
         self.bot = bot
         self.word_list = word_list  # Store WORD_LIST as an instance variable
+        self.safe_limit = safe_limit  # Store the safe limit for rate limiting
 
     @commands.Cog.listener()
     async def on_ready(self):
@@ -207,6 +209,8 @@ class SetupCog(commands.Cog):
         async for message in channel.history(limit=None, oldest_first=True):
             if any(word.lower() in message.content.lower() for word in self.word_list):
                 log_message_to_csv(message)
+            # Sleep to avoid hitting the rate limit
+            await asyncio.sleep(1 / self.safe_limit)
         logger.info(
             f"Historical scan completed for channel: {channel.name} (Server: {channel.guild.name})"
         )

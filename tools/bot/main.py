@@ -15,6 +15,10 @@ load_dotenv("../.env")
 # Constants
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
+# Rate limit constants
+RATE_LIMIT = 50  # Discord's rate limit is 50 requests per second
+SAFE_LIMIT = RATE_LIMIT - 5  # Stay 5 requests below the limit
+
 
 # Load wordlist from wordlist.json
 def load_wordlist():
@@ -28,6 +32,7 @@ def load_wordlist():
 
 
 WORD_LIST = load_wordlist()  # Load the wordlist
+
 
 # Initialize bot
 intents = discord.Intents.default()
@@ -44,15 +49,18 @@ global_logger.addHandler(logging.StreamHandler())
 
 # Load cogs
 async def load_cogs():
-    await bot.add_cog(SetupCog(bot, WORD_LIST))  # Pass WORD_LIST to SetupCog
-    await bot.add_cog(MonitorCog(bot, WORD_LIST))  # Pass WORD_LIST to MonitorCog
-    await bot.add_cog(InfoCog(bot, WORD_LIST))  # Pass WORD_LIST to InfoCog
+    await bot.add_cog(SetupCog(bot, WORD_LIST, SAFE_LIMIT))
+    await bot.add_cog(MonitorCog(bot, WORD_LIST))
+    await bot.add_cog(InfoCog(bot, WORD_LIST))
 
 
 # Bot event: on_ready
 @bot.event
 async def on_ready():
     global_logger.info(f"Logged in as {bot.user.name}")
+    global_logger.info(
+        f"Rate limit: {RATE_LIMIT} requests per second. Safe limit set to: {SAFE_LIMIT} requests per second."
+    )
     await load_cogs()
     await bot.tree.sync()  # Sync slash commands
     global_logger.info("Commands synced.")
