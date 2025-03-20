@@ -3,7 +3,6 @@ import json
 import logging
 import discord
 from discord.ext import commands
-from discord import app_commands
 from dotenv import load_dotenv
 from cogs.setup import SetupCog
 from cogs.monitor import MonitorCog
@@ -12,6 +11,7 @@ from cogs.reset import ResetCog
 from cogs.dump import DumpCog
 from cogs.rich_presence import RichPresenceCog
 from utils.server_utils import add_server_to_config, remove_server_from_config
+from tools.bot.cogs.announcer import AnnouncerCog  # Import the new AnnouncerCog
 
 # Load environment variables
 load_dotenv(".env")
@@ -58,6 +58,7 @@ async def load_cogs():
     await bot.add_cog(RichPresenceCog(bot))
     await bot.add_cog(ResetCog(bot))
     await bot.add_cog(DumpCog(bot))
+    await bot.add_cog(AnnouncerCog(bot))  # Load the new AnnouncerCog
 
 
 # Bot event: on_ready
@@ -80,25 +81,7 @@ async def on_guild_join(guild):
     Adds the server to the servers.json configuration file.
     """
     global_logger.info(f"Bot joined server: {guild.name} (ID: {guild.id})")
-
-    # Fetch the audit logs to find the inviter
-    inviter_id = None
-    try:
-        async for entry in guild.audit_logs(
-            action=discord.AuditLogAction.bot_add, limit=1
-        ):
-            inviter_id = entry.user.id
-    except discord.Forbidden:
-        global_logger.warning(
-            f"Missing permissions to fetch audit logs in guild: {guild.name} (ID: {guild.id})"
-        )
-    except discord.HTTPException as e:
-        global_logger.error(
-            f"Failed to fetch audit logs for guild {guild.name} (ID: {guild.id}): {e}"
-        )
-
-    # Add the server to the config with the inviter's ID
-    add_server_to_config(guild, inviter_id)
+    add_server_to_config(guild)  # Add the server to the config
 
 
 # Bot event: on_guild_remove
