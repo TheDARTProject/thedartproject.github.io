@@ -112,31 +112,62 @@ class SetupCog(commands.Cog):
         # Add common elements to the embed
         setup_embed = add_embed_elements(setup_embed)
 
-        # Step 1: Channel Selection
+        # Step 1: Ask if the user wants to monitor all channels or specific ones
         setup_embed.add_field(
-            name="Step 1: Channel Selection",
-            value="Please select the channels you want to monitor from the dropdown below.",
+            name="Step 1: Monitor All Channels or Specific Channels",
+            value="Do you want to monitor all channels or only specific ones? React with ✅ for all channels or ❌ for specific channels.",
             inline=False,
         )
 
-        # Create a dropdown menu for channel selection
-        channel_options = [
-            discord.SelectOption(label=channel.name, value=str(channel.id))
-            for channel in interaction.guild.text_channels
-        ]
+        # Create buttons for all/specific channels
+        all_channels_button = discord.ui.Button(
+            label="All Channels", style=discord.ButtonStyle.green, custom_id="all"
+        )
+        specific_channels_button = discord.ui.Button(
+            label="Specific Channels",
+            style=discord.ButtonStyle.red,
+            custom_id="specific",
+        )
 
-        # Store selected channels in a class variable
-        selected_channels = []
+        async def all_channels_callback(all_button_interaction):
+            # Defer the interaction to prevent the "interaction already responded" error
+            await all_button_interaction.response.defer()
 
-        async def select_callback(select_interaction):
-            nonlocal selected_channels
-            # Get the selected channel objects
-            selected_channels = [
-                interaction.guild.get_channel(int(channel_id))
-                for channel_id in select_interaction.data["values"]
-            ]
+            # Add all text channels to the monitored list
+            selected_channels = interaction.guild.text_channels
 
-            # Update the embed for Step 2: Historical Scan
+            # Save the server settings
+            save_server_config(interaction.guild, selected_channels)
+            logger.info(
+                f"Monitoring started for all channels in guild: {interaction.guild.name}"
+            )
+
+            # Create an embed to confirm the setup
+            finish_embed = discord.Embed(
+                title="Bot Setup",
+                description="Welcome to the bot setup! Please follow the steps below.",
+                color=discord.Color.blue(),
+            )
+
+            # Add common elements to the embed
+            finish_embed = add_embed_elements(finish_embed)
+
+            finish_embed.add_field(
+                name="Setup Complete",
+                value="Monitoring has been set up successfully for all channels! The bot will now log messages containing the specified words.",
+                inline=False,
+            )
+
+            # Edit the original message with the final embed and remove the view (buttons)
+            await all_button_interaction.edit_original_response(
+                embed=finish_embed, view=None
+            )
+
+        async def specific_channels_callback(specific_button_interaction):
+            # Defer the interaction to prevent the "interaction already responded" error
+            await specific_button_interaction.response.defer()
+
+            # Proceed to the channel selection step
             step2_embed = discord.Embed(
                 title="Bot Setup",
                 description="Welcome to the bot setup! Please follow the steps below.",
@@ -147,121 +178,167 @@ class SetupCog(commands.Cog):
             step2_embed = add_embed_elements(step2_embed)
 
             step2_embed.add_field(
-                name="Step 2: Historical Scan",
-                value="Do you want to perform a full historical scan of the selected channels? React with ✅ for yes or ❌ for no.",
+                name="Step 2: Channel Selection",
+                value="Please select the channels you want to monitor from the dropdown below.",
                 inline=False,
             )
 
-            # Create buttons for yes/no
-            yes_button = discord.ui.Button(
-                label="Yes", style=discord.ButtonStyle.green, custom_id="yes"
-            )
-            no_button = discord.ui.Button(
-                label="No", style=discord.ButtonStyle.red, custom_id="no"
-            )
+            # Create a dropdown menu for channel selection
+            channel_options = [
+                discord.SelectOption(label=channel.name, value=str(channel.id))
+                for channel in interaction.guild.text_channels
+            ]
 
-            async def yes_callback(button_interaction):
-                # Defer the interaction to prevent the "interaction already responded" error
-                await button_interaction.response.defer()
+            # Store selected channels in a class variable
+            selected_channels = []
 
-                for channel in selected_channels:
-                    update_embed = discord.Embed(
+            async def select_callback(select_interaction):
+                nonlocal selected_channels
+                # Get the selected channel objects
+                selected_channels = [
+                    interaction.guild.get_channel(int(channel_id))
+                    for channel_id in select_interaction.data["values"]
+                ]
+
+                # Update the embed for Step 3: Historical Scan
+                step3_embed = discord.Embed(
+                    title="Bot Setup",
+                    description="Welcome to the bot setup! Please follow the steps below.",
+                    color=discord.Color.blue(),
+                )
+
+                # Add common elements to the embed
+                step3_embed = add_embed_elements(step3_embed)
+
+                step3_embed.add_field(
+                    name="Step 3: Historical Scan",
+                    value="Do you want to perform a full historical scan of the selected channels? React with ✅ for yes or ❌ for no.",
+                    inline=False,
+                )
+
+                # Create buttons for yes/no
+                yes_button = discord.ui.Button(
+                    label="Yes", style=discord.ButtonStyle.green, custom_id="yes"
+                )
+                no_button = discord.ui.Button(
+                    label="No", style=discord.ButtonStyle.red, custom_id="no"
+                )
+
+                async def yes_callback(yes_button_interaction):
+                    # Defer the interaction to prevent the "interaction already responded" error
+                    await yes_button_interaction.response.defer()
+
+                    for channel in selected_channels:
+                        update_embed = discord.Embed(
+                            title="Bot Setup",
+                            description="Welcome to the bot setup! Please follow the steps below.",
+                            color=discord.Color.blue(),
+                        )
+
+                        # Add common elements to the embed
+                        update_embed = add_embed_elements(update_embed)
+
+                        update_embed.add_field(
+                            name="Historical Scan",
+                            value=f"Starting historical scan for channel {channel.name}...",
+                            inline=False,
+                        )
+
+                        # Edit the original message with the new embed and remove the view (buttons)
+                        await yes_button_interaction.edit_original_response(
+                            embed=update_embed, view=None
+                        )
+                        await self.historical_scan(channel)
+
+                    finish_embed = discord.Embed(
                         title="Bot Setup",
                         description="Welcome to the bot setup! Please follow the steps below.",
                         color=discord.Color.blue(),
                     )
 
                     # Add common elements to the embed
-                    update_embed = add_embed_elements(update_embed)
+                    finish_embed = add_embed_elements(finish_embed)
 
-                    update_embed.add_field(
-                        name="Historical Scan",
-                        value=f"Starting historical scan for channel {channel.name}...",
+                    finish_embed.add_field(
+                        name="Setup Complete",
+                        value="Monitoring has been set up successfully! The bot will now log messages containing the specified words.",
                         inline=False,
                     )
 
-                    # Edit the original message with the new embed and remove the view (buttons)
-                    await button_interaction.edit_original_response(
-                        embed=update_embed, view=None
+                    # Edit the original message with the final embed and remove the view (buttons)
+                    await yes_button_interaction.edit_original_response(
+                        embed=finish_embed, view=None
                     )
-                    await self.historical_scan(channel)
 
-                finish_embed = discord.Embed(
-                    title="Bot Setup",
-                    description="Welcome to the bot setup! Please follow the steps below.",
-                    color=discord.Color.blue(),
+                    # Save the server settings
+                    save_server_config(interaction.guild, selected_channels)
+                    logger.info(
+                        f"Monitoring started for guild: {interaction.guild.name}"
+                    )
+
+                async def no_callback(no_button_interaction):
+                    # Defer the interaction to prevent the "interaction already responded" error
+                    await no_button_interaction.response.defer()
+
+                    finish_embed = discord.Embed(
+                        title="Bot Setup",
+                        description="Welcome to the bot setup! Please follow the steps below.",
+                        color=discord.Color.blue(),
+                    )
+
+                    # Add common elements to the embed
+                    finish_embed = add_embed_elements(finish_embed)
+
+                    finish_embed.add_field(
+                        name="Setup Complete",
+                        value="Monitoring has been set up successfully without historical scan! The bot will now log messages containing the specified words.",
+                        inline=False,
+                    )
+
+                    # Edit the original message with the final embed and remove the view (buttons)
+                    await no_button_interaction.edit_original_response(
+                        embed=finish_embed, view=None
+                    )
+
+                    # Save the server settings
+                    save_server_config(interaction.guild, selected_channels)
+                    logger.info(
+                        f"Monitoring started for guild: {interaction.guild.name} (without historical scan)"
+                    )
+
+                yes_button.callback = yes_callback
+                no_button.callback = no_callback
+
+                step3_view = discord.ui.View()
+                step3_view.add_item(yes_button)
+                step3_view.add_item(no_button)
+
+                await select_interaction.response.edit_message(
+                    embed=step3_embed, view=step3_view
                 )
 
-                # Add common elements to the embed
-                finish_embed = add_embed_elements(finish_embed)
-
-                finish_embed.add_field(
-                    name="Setup Complete",
-                    value="Monitoring has been set up successfully! The bot will now log messages containing the specified words.",
-                    inline=False,
-                )
-
-                # Edit the original message with the final embed and remove the view (buttons)
-                await button_interaction.edit_original_response(
-                    embed=finish_embed, view=None
-                )
-
-                # Save the server settings
-                save_server_config(interaction.guild, selected_channels)
-                logger.info(f"Monitoring started for guild: {interaction.guild.name}")
-
-            async def no_callback(button_interaction):
-                # Defer the interaction to prevent the "interaction already responded" error
-                await button_interaction.response.defer()
-
-                finish_embed = discord.Embed(
-                    title="Bot Setup",
-                    description="Welcome to the bot setup! Please follow the steps below.",
-                    color=discord.Color.blue(),
-                )
-
-                # Add common elements to the embed
-                finish_embed = add_embed_elements(finish_embed)
-
-                finish_embed.add_field(
-                    name="Setup Complete",
-                    value="Monitoring has been set up successfully without historical scan! The bot will now log messages containing the specified words.",
-                    inline=False,
-                )
-
-                # Edit the original message with the final embed and remove the view (buttons)
-                await button_interaction.edit_original_response(
-                    embed=finish_embed, view=None
-                )
-
-                # Save the server settings
-                save_server_config(interaction.guild, selected_channels)
-                logger.info(
-                    f"Monitoring started for guild: {interaction.guild.name} (without historical scan)"
-                )
-
-            yes_button.callback = yes_callback
-            no_button.callback = no_callback
+            # Create the select menu
+            select = discord.ui.Select(
+                placeholder="Select channels to monitor...",
+                min_values=1,
+                max_values=len(channel_options),
+                options=channel_options,
+            )
+            select.callback = select_callback
 
             step2_view = discord.ui.View()
-            step2_view.add_item(yes_button)
-            step2_view.add_item(no_button)
+            step2_view.add_item(select)
 
-            await select_interaction.response.edit_message(
+            await specific_button_interaction.edit_original_response(
                 embed=step2_embed, view=step2_view
             )
 
-        # Create the select menu
-        select = discord.ui.Select(
-            placeholder="Select channels to monitor...",
-            min_values=1,
-            max_values=len(channel_options),
-            options=channel_options,
-        )
-        select.callback = select_callback
+        all_channels_button.callback = all_channels_callback
+        specific_channels_button.callback = specific_channels_callback
 
         setup_view = discord.ui.View()
-        setup_view.add_item(select)
+        setup_view.add_item(all_channels_button)
+        setup_view.add_item(specific_channels_button)
 
         await interaction.response.send_message(
             embed=setup_embed, view=setup_view, ephemeral=True
