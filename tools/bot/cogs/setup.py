@@ -46,6 +46,38 @@ def save_server_config(guild, selected_channels):
     save_server_settings(server_settings)
 
 
+def add_embed_elements(embed):
+    """Helper function to add common elements to an embed."""
+    # Header image (Thumbnail)
+    embed.set_thumbnail(
+        url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
+    )
+
+    # Author
+    embed.set_author(
+        name="CDA Monitor",
+        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png",
+    )
+
+    # Help message
+    embed.add_field(
+        name="Need Help?",
+        value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
+        inline=False,
+    )
+
+    # Footer
+    embed.set_footer(
+        text="Developed by ThatSINEWAVE | CDA Project",
+        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
+    )
+
+    # Timestamp
+    embed.timestamp = datetime.utcnow()
+
+    return embed
+
+
 class SetupCog(commands.Cog):
     def __init__(self, bot, word_list, safe_limit):
         self.bot = bot
@@ -77,15 +109,8 @@ class SetupCog(commands.Cog):
             color=discord.Color.blue(),
         )
 
-        # Header image (Thumbnail)
-        setup_embed.set_thumbnail(
-            url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
-        )
-
-        setup_embed.set_author(
-            name="CDA Monitor",
-            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
-        )
+        # Add common elements to the embed
+        setup_embed = add_embed_elements(setup_embed)
 
         # Step 1: Channel Selection
         setup_embed.add_field(
@@ -93,22 +118,6 @@ class SetupCog(commands.Cog):
             value="Please select the channels you want to monitor from the dropdown below.",
             inline=False,
         )
-
-        # Add a help message
-        setup_embed.add_field(
-            name="Need Help?",
-            value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
-            inline=False,
-        )
-
-        # Add footer
-        setup_embed.set_footer(
-            text="Developed by ThatSINEWAVE | CDA Project",
-            icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
-        )
-
-        # Add Timestamp
-        setup_embed.timestamp = datetime.utcnow()
 
         # Create a dropdown menu for channel selection
         channel_options = [
@@ -134,37 +143,14 @@ class SetupCog(commands.Cog):
                 color=discord.Color.blue(),
             )
 
-            # Header image
-            step2_embed.set_thumbnail(
-                url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
-            )
-
-            step2_embed.set_author(
-                name="CDA Monitor",
-                icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
-            )
+            # Add common elements to the embed
+            step2_embed = add_embed_elements(step2_embed)
 
             step2_embed.add_field(
                 name="Step 2: Historical Scan",
                 value="Do you want to perform a full historical scan of the selected channels? React with ✅ for yes or ❌ for no.",
                 inline=False,
             )
-
-            # Add a help message
-            step2_embed.add_field(
-                name="Need Help?",
-                value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
-                inline=False,
-            )
-
-            # Add footer
-            step2_embed.set_footer(
-                text="Developed by ThatSINEWAVE | CDA Project",
-                icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
-            )
-
-            # Add Timestamp
-            step2_embed.timestamp = datetime.utcnow()
 
             # Create buttons for yes/no
             yes_button = discord.ui.Button(
@@ -175,6 +161,9 @@ class SetupCog(commands.Cog):
             )
 
             async def yes_callback(button_interaction):
+                # Defer the interaction to prevent the "interaction already responded" error
+                await button_interaction.response.defer()
+
                 for channel in selected_channels:
                     update_embed = discord.Embed(
                         title="Bot Setup",
@@ -182,15 +171,8 @@ class SetupCog(commands.Cog):
                         color=discord.Color.blue(),
                     )
 
-                    # Header image
-                    update_embed.set_thumbnail(
-                        url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
-                    )
-
-                    update_embed.set_author(
-                        name="CDA Monitor",
-                        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
-                    )
+                    # Add common elements to the embed
+                    update_embed = add_embed_elements(update_embed)
 
                     update_embed.add_field(
                         name="Historical Scan",
@@ -198,18 +180,8 @@ class SetupCog(commands.Cog):
                         inline=False,
                     )
 
-                    update_embed.add_field(
-                        name="Need Help?",
-                        value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
-                        inline=False,
-                    )
-
-                    update_embed.set_footer(
-                        text="Developed by ThatSINEWAVE | CDA Project",
-                        icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
-                    )
-
-                    await button_interaction.response.edit_message(
+                    # Edit the original message with the new embed and remove the view (buttons)
+                    await button_interaction.edit_original_response(
                         embed=update_embed, view=None
                     )
                     await self.historical_scan(channel)
@@ -220,15 +192,8 @@ class SetupCog(commands.Cog):
                     color=discord.Color.blue(),
                 )
 
-                # Header image
-                finish_embed.set_thumbnail(
-                    url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Header.png"
-                )
-
-                finish_embed.set_author(
-                    name="CDA Monitor",
-                    icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Author.png"
-                )
+                # Add common elements to the embed
+                finish_embed = add_embed_elements(finish_embed)
 
                 finish_embed.add_field(
                     name="Setup Complete",
@@ -236,35 +201,36 @@ class SetupCog(commands.Cog):
                     inline=False,
                 )
 
-                finish_embed.add_field(
-                    name="Need Help?",
-                    value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
-                    inline=False,
+                # Edit the original message with the final embed and remove the view (buttons)
+                await button_interaction.edit_original_response(
+                    embed=finish_embed, view=None
                 )
-
-                finish_embed.set_footer(
-                    text="Developed by ThatSINEWAVE | CDA Project",
-                    icon_url="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/bot/images/embed/Embed-Footer.png",
-                )
-
-                await button_interaction.edit_original_response(embed=finish_embed)
 
                 # Save the server settings
                 save_server_config(interaction.guild, selected_channels)
                 logger.info(f"Monitoring started for guild: {interaction.guild.name}")
 
             async def no_callback(button_interaction):
+                # Defer the interaction to prevent the "interaction already responded" error
+                await button_interaction.response.defer()
+
                 finish_embed = discord.Embed(
                     title="Bot Setup",
                     description="Welcome to the bot setup! Please follow the steps below.",
                     color=discord.Color.blue(),
                 )
+
+                # Add common elements to the embed
+                finish_embed = add_embed_elements(finish_embed)
+
                 finish_embed.add_field(
                     name="Setup Complete",
                     value="Monitoring has been set up successfully without historical scan! The bot will now log messages containing the specified words.",
                     inline=False,
                 )
-                await button_interaction.response.edit_message(
+
+                # Edit the original message with the final embed and remove the view (buttons)
+                await button_interaction.edit_original_response(
                     embed=finish_embed, view=None
                 )
 
