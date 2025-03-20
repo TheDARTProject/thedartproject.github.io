@@ -7,8 +7,8 @@
     "orientation": "portrait",
     "lang": "en-US",
     "id": "/CDA-Project",
-    "theme_color": "#000000",
-    "background_color": "#000000",
+    "theme_color": "#4338ca",
+    "background_color": "#4338ca",
     "icons": [
         {
             "src": "/CDA-Project/images/android/android-chrome-192x192.png",
