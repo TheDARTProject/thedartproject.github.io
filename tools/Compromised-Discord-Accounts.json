@@ -16432,5 +16432,27 @@
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-19T01:09:23.123201"
+    },
+    "ACCOUNT_NUMBER_748": {
+        "CASE_NUMBER": "748",
+        "FOUND_ON": "2025-03-20",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "353584370562629634",
+        "USERNAME": "sani.it.is",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "NSFW Discord Invite",
+        "ATTACK_VECTOR": "Discord Servers",
+        "ATTACK_GOAL": "Discord Accounts",
+        "ATTACK_SURFACE": "Discord",
+        "SUSPECTED_REGION_OF_ORIGIN": "US",
+        "SURFACE_URL": "https://discord.gg/babylone",
+        "SURFACE_URL_DOMAIN": "discord.gg",
+        "SURFACE_URL_STATUS": "ACTIVE",
+        "FINAL_URL": "https://discord.com/invite/babylone",
+        "FINAL_URL_DOMAIN": "discord.com",
+        "FINAL_URL_STATUS": "ACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-20T08:28:38.723835"
     }
 }
