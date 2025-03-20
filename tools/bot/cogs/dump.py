@@ -57,7 +57,7 @@ class DumpCog(commands.Cog):
                 try:
                     with open(csv_file, "rb") as file:
                         await interaction.user.send(
-                            content=f"Here is the CSV file containing all flagged messages for the server **{interaction.guild.name}**:",
+                            content=f"Here is the CSV file you requested containing all flagged messages for the server **{interaction.guild.name}**:",
                             file=discord.File(file, filename="flagged_messages.csv"),
                         )
                     finish_embed = discord.Embed(
