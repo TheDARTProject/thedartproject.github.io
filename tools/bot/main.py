@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from cogs.setup import SetupCog
 from cogs.monitor import MonitorCog
 from cogs.info import InfoCog
+from cogs.reset import ResetCog
 from cogs.rich_presence import RichPresenceCog
 
 # Load environment variables
@@ -52,7 +53,8 @@ async def load_cogs():
     await bot.add_cog(SetupCog(bot, WORD_LIST, SAFE_LIMIT))
     await bot.add_cog(MonitorCog(bot, WORD_LIST))
     await bot.add_cog(InfoCog(bot, WORD_LIST))
-    await bot.add_cog(RichPresenceCog(bot))  # Add RichPresenceCog
+    await bot.add_cog(RichPresenceCog(bot))
+    await bot.add_cog(ResetCog(bot))
 
 
 # Bot event: on_ready
