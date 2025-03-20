@@ -12,3 +12,4 @@ tools/bot/utils/__pycache__/logging.cpython-39.pyc
 tools/bot/cogs/__pycache__/info.cpython-39.pyc
 tools/bot/config/wordlist.json
 tools/bot/cogs/__pycache__/rich_presence.cpython-39.pyc
+tools/bot/.env
