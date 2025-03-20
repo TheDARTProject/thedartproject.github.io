@@ -219,7 +219,9 @@
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">Data Retrieval (Coming Soon)</h5>
                 <p class="text-gray-600">Download CSV files containing flagged messages for further analysis.</p>
-                <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Data Retrieval Screenshot" class="mt-2 rounded-lg shadow-sm">
+                <div class="image-container">
+                  <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Data Retrieval Screenshot" class="mt-2 rounded-lg shadow-sm">
+                </div>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">Web Configurator (Coming Soon)</h5>
@@ -250,12 +252,12 @@
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">3. Monitor Messages</h5>
-                <p class="text-gray-600">After setup, the bot will automatically monitor the selected channels for messages containing the flagged words. Flagged messages will be logged and can be viewed using the <code>/info</code> command.</p>
+                <p class="text-gray-600">After setup, the bot will automatically monitor the selected channels for messages containing the flagged words. Flagged messages will be logged in the CSV dedicated for your server.</p>
                 <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Monitor Messages Screenshot" class="mt-2 rounded-lg shadow-sm">
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">4. Get Bot Information</h5>
-                <p class="text-gray-600">Use the <code>/info</code> command to get detailed information about the bot's activity, including the number of flagged messages, last scan date, and more.</p>
+                <p class="text-gray-600">Use the <code>/info</code> command to get detailed information about the bot's activity, including the number of flagged messages, last scan date, monitored channels, and the bot's status</p>
                 <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Info Command Screenshot" class="mt-2 rounded-lg shadow-sm">
               </div>
             </div>
@@ -269,7 +271,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">1. Prerequisites</h5>
-                <p class="text-gray-600">Ensure you have <b>Python 3.8 or higher</b> installed. You’ll also need a <b>Discord bot token</b> from the <a href="https://discord.com/developers/applications" class="text-indigo-600 hover:text-indigo-800" target="_blank">Discord Developer Portal</a>.</p>
+                <p class="text-gray-600">Ensure you have <b>Python 3.9 or higher</b> installed. You’ll also need a <b>Discord bot token</b> from the <a href="https://discord.com/developers/applications" class="text-indigo-600 hover:text-indigo-800" target="_blank">Discord Developer Portal</a>.</p>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">2. Install Dependencies</h5>
@@ -280,12 +282,13 @@
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">3. Configure the Bot</h5>
                 <p class="text-gray-600">Create a <code>.env</code> file in the root directory and add your Discord bot token:
-                  <code class="block bg-gray-200 p-2 rounded mt-2">DISCORD_TOKEN=your_token_here</code>
+                  <code class="block bg-gray-200 p-2 rounded mt-2">DISCORD_TOKEN=TOKEN</code>
+                  <code class="block bg-gray-200 p-2 rounded mt-2">CLIENT_ID=ID</code>
                 </p>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">4. Run the Bot</h5>
-                <p class="text-gray-600">Start the bot by running:
+                <p class="text-gray-600">Start the bot by running and monitor the console for the bot's activity:
                   <code class="block bg-gray-200 p-2 rounded mt-2">python main.py</code>
                 </p>
               </div>
