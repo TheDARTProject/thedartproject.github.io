@@ -15,3 +15,8 @@ tools/bot/cogs/__pycache__/rich_presence.cpython-39.pyc
 tools/bot/.env
 tools/bot/cogs/__pycache__/reset.cpython-39.pyc
 tools/bot/utils/__pycache__/embed_utils.cpython-39.pyc
+tools/bot/cogs/__pycache__/dump.cpython-39.pyc
+tools/bot/utils/__pycache__/server_utils.cpython-39.pyc
+tools/bot/cogs/__pycache__/announcer.cpython-39.pyc
+tools/bot/cogs/__pycache__/help.cpython-39.pyc
+tools/bot/cogs/__pycache__/support.cpython-39.pyc
