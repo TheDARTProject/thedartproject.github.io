@@ -46,7 +46,11 @@ class AnnouncerCog(commands.Cog):
         """
         with open(SERVERS_JSON, "r", encoding="utf-8") as file:
             servers = json.load(file)
-            return [server_data.get("Inviter ID") for server_data in servers.values() if server_data.get("Inviter ID")]
+            return [
+                server_data.get("Inviter ID")
+                for server_data in servers.values()
+                if server_data.get("Inviter ID")
+            ]
 
     async def send_announcement_to_inviters(self, content, inviter_ids):
         """
@@ -58,7 +62,9 @@ class AnnouncerCog(commands.Cog):
                 await user.send(content)
                 print(f"Sent announcement to inviter: {user.name} (ID: {inviter_id})")
             except discord.Forbidden:
-                print(f"Could not send DM to inviter (ID: {inviter_id}). User has DMs disabled.")
+                print(
+                    f"Could not send DM to inviter (ID: {inviter_id}). User has DMs disabled."
+                )
             except discord.NotFound:
                 print(f"Inviter (ID: {inviter_id}) not found.")
             except Exception as e:
@@ -79,17 +85,25 @@ class AnnouncerCog(commands.Cog):
 
                 # Compare date and time
                 if md_date != json_date or md_time != json_time:
-                    print("Announcement date or time has changed. Sending updates to inviters...")
+                    print(
+                        "Announcement date or time has changed. Sending updates to inviters..."
+                    )
                     content = self.read_announcement_md()
                     inviter_ids = self.read_servers_json()
                     await self.send_announcement_to_inviters(content, inviter_ids)
 
                     # Update the announcement.json with the new date and time
                     with open(ANNOUNCEMENT_JSON, "w", encoding="utf-8") as file:
-                        json.dump({"date": md_date, "time": md_time, "timezone": md_timezone}, file, indent=4)
+                        json.dump(
+                            {"date": md_date, "time": md_time, "timezone": md_timezone},
+                            file,
+                            indent=4,
+                        )
                     print("Updated announcement.json with the new date and time.")
                 else:
-                    print("Announcement date and time are the same. No updates to send.")
+                    print(
+                        "Announcement date and time are the same. No updates to send."
+                    )
 
             except FileNotFoundError as e:
                 print(f"Error: {e}. Ensure the file exists at the correct path.")
@@ -113,7 +127,11 @@ class AnnouncerCog(commands.Cog):
                     if ":" in line:
                         key, value = line.split(":", 1)
                         yaml_data[key.strip()] = value.strip().strip('"')
-                return yaml_data.get("date"), yaml_data.get("time"), yaml_data.get("timezone")
+                return (
+                    yaml_data.get("date"),
+                    yaml_data.get("time"),
+                    yaml_data.get("timezone"),
+                )
             return None, None, None
 
 

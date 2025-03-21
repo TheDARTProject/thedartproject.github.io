@@ -4,6 +4,7 @@ from discord import app_commands
 import os
 from utils.logging import configure_server_logging
 from utils.embed_utils import add_embed_elements
+from utils.decorators import is_inviter
 
 
 class DumpCog(commands.Cog):
@@ -14,6 +15,7 @@ class DumpCog(commands.Cog):
         name="dump",
         description="Download a CSV file with all flagged messages for this server.",
     )
+    @is_inviter()
     async def dump(self, interaction: discord.Interaction):
         logger = configure_server_logging(interaction.guild.id)
         logger.info(

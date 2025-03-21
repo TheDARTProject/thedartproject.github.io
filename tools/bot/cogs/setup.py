@@ -10,6 +10,7 @@ from utils.config import load_server_settings, save_server_settings
 from utils.csv_handler import log_message_to_csv
 from utils.embed_utils import add_embed_elements
 from datetime import datetime
+from utils.decorators import is_inviter
 
 
 def save_server_config(guild, selected_channels):
@@ -50,8 +51,8 @@ def save_server_config(guild, selected_channels):
 class SetupCog(commands.Cog):
     def __init__(self, bot, word_list, safe_limit):
         self.bot = bot
-        self.word_list = word_list  # Store WORD_LIST as an instance variable
-        self.safe_limit = safe_limit  # Store the safe limit for rate limiting
+        self.word_list = word_list
+        self.safe_limit = safe_limit
 
     @commands.Cog.listener()
     async def on_ready(self):
@@ -60,6 +61,7 @@ class SetupCog(commands.Cog):
     @app_commands.command(
         name="setup", description="Set up the bot to monitor specific channels."
     )
+    @is_inviter()
     async def setup(self, interaction: discord.Interaction):
         logger = configure_server_logging(interaction.guild.id)
         logger.info(
@@ -319,8 +321,38 @@ class SetupCog(commands.Cog):
             f"Starting historical scan for channel: {channel.name} (Server: {channel.guild.name})"
         )
         async for message in channel.history(limit=None, oldest_first=True):
-            if any(word.lower() in message.content.lower() for word in self.word_list):
+            # Check the message content for wordlist matches
+            message_contains_word = any(
+                word.lower() in message.content.lower() for word in self.word_list
+            )
+
+            # Check embedded messages for wordlist matches
+            embed_contains_word = False
+            for embed in message.embeds:
+                if embed.description and any(
+                    word.lower() in embed.description.lower() for word in self.word_list
+                ):
+                    embed_contains_word = True
+                if embed.title and any(
+                    word.lower() in embed.title.lower() for word in self.word_list
+                ):
+                    embed_contains_word = True
+                for field in embed.fields:
+                    if field.value and any(
+                        word.lower() in field.value.lower() for word in self.word_list
+                    ):
+                        embed_contains_word = True
+
+            # Log the message only if it contains a word from the wordlist
+            if message_contains_word or embed_contains_word:
+                logger.info(
+                    f"Logging message to CSV: {message.content} (Server: {channel.guild.name}, Channel: {channel.name})"
+                )
                 log_message_to_csv(message)
+            else:
+                # Debugging: Log that the message was skipped
+                logger.debug(f"Skipping message: {message.content} (No wordlist match)")
+
             # Sleep to avoid hitting the rate limit
             await asyncio.sleep(1 / self.safe_limit)
         logger.info(

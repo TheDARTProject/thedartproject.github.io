@@ -3,6 +3,7 @@ import json
 import logging
 import discord
 from discord.ext import commands
+from discord import app_commands
 from dotenv import load_dotenv
 from cogs.setup import SetupCog
 from cogs.monitor import MonitorCog
@@ -10,9 +11,12 @@ from cogs.info import InfoCog
 from cogs.reset import ResetCog
 from cogs.dump import DumpCog
 from cogs.rich_presence import RichPresenceCog
+from cogs.help import HelpCog
+from cogs.support import SupportCog
 from utils.server_utils import add_server_to_config, remove_server_from_config
 from tools.bot.cogs.announcer import AnnouncerCog
 from utils.config import load_server_settings
+from utils.decorators import InviterCheckFailure
 
 # Load environment variables
 load_dotenv(".env")
@@ -60,6 +64,8 @@ async def load_cogs():
     await bot.add_cog(ResetCog(bot))
     await bot.add_cog(DumpCog(bot))
     await bot.add_cog(AnnouncerCog(bot))
+    await bot.add_cog(HelpCog(bot))
+    await bot.add_cog(SupportCog(bot))
 
 
 # Bot event: on_ready
@@ -81,16 +87,24 @@ async def on_ready():
         if guild:
             monitored_channels = server_data.get("Monitored Channels", [])
             if monitored_channels:
-                global_logger.info(f"Starting monitoring for guild: {guild.name} (ID: {guild_id})")
+                global_logger.info(
+                    f"Starting monitoring for guild: {guild.name} (ID: {guild_id})"
+                )
                 for channel_data in monitored_channels:
                     channel_id = channel_data["Channel ID"]
                     channel = guild.get_channel(channel_id)
                     if channel:
-                        global_logger.info(f"Monitoring channel: {channel.name} (ID: {channel_id}) in guild: {guild.name}")
+                        global_logger.info(
+                            f"Monitoring channel: {channel.name} (ID: {channel_id}) in guild: {guild.name}"
+                        )
                     else:
-                        global_logger.warning(f"Channel ID {channel_id} not found in guild: {guild.name}")
+                        global_logger.warning(
+                            f"Channel ID {channel_id} not found in guild: {guild.name}"
+                        )
             else:
-                global_logger.info(f"No channels configured for monitoring in guild: {guild.name}")
+                global_logger.info(
+                    f"No channels configured for monitoring in guild: {guild.name}"
+                )
 
 
 # Bot event: on_guild_join
@@ -105,13 +119,17 @@ async def on_guild_join(guild):
     # Fetch the audit logs to find who added the bot
     inviter_id = None
     try:
-        async for entry in guild.audit_logs(action=discord.AuditLogAction.bot_add, limit=1):
+        async for entry in guild.audit_logs(
+            action=discord.AuditLogAction.bot_add, limit=1
+        ):
             if entry.target.id == bot.user.id:  # Check if the bot was the target
                 inviter_id = entry.user.id  # Get the user who added the bot
                 global_logger.info(f"Inviter ID found: {inviter_id}")
                 break
     except discord.Forbidden:
-        global_logger.warning(f"Bot does not have permission to view audit logs in guild: {guild.name}")
+        global_logger.warning(
+            f"Bot does not have permission to view audit logs in guild: {guild.name}"
+        )
     except Exception as e:
         global_logger.error(f"Error fetching audit logs for guild {guild.name}: {e}")
 
@@ -128,6 +146,35 @@ async def on_guild_remove(guild):
     """
     global_logger.info(f"Bot removed from server: {guild.name} (ID: {guild.id})")
     remove_server_from_config(guild.id)  # Remove the server from the config
+
+
+@bot.tree.error
+async def on_app_command_error(
+    interaction: discord.Interaction, error: app_commands.AppCommandError
+):
+    if isinstance(error, InviterCheckFailure):
+        # If we haven't responded yet
+        if not interaction.response.is_done():
+            await interaction.response.send_message(error.message, ephemeral=True)
+        else:
+            # If we've already sent an initial response
+            await interaction.followup.send(error.message, ephemeral=True)
+        return
+
+    # Handle other types of errors
+    global_logger.error(f"Error in {interaction.command.name} command: {error}")
+
+    # If we haven't responded yet
+    if not interaction.response.is_done():
+        await interaction.response.send_message(
+            "An error occurred while processing your command.", ephemeral=True
+        )
+    else:
+        # If we've already sent an initial response
+        await interaction.followup.send(
+            "An error occurred while processing your command.", ephemeral=True
+        )
+
 
 # Run the bot
 global_logger.info("Starting bot...")

@@ -3,7 +3,8 @@ from discord.ext import commands
 from discord import app_commands
 from utils.config import load_server_settings, save_server_settings
 from utils.logging import configure_server_logging
-from utils.embed_utils import add_embed_elements  # Import the function
+from utils.embed_utils import add_embed_elements
+from utils.decorators import is_inviter
 
 
 class ResetCog(commands.Cog):
@@ -13,6 +14,7 @@ class ResetCog(commands.Cog):
     @app_commands.command(
         name="reset", description="Reset the bot's configuration for this server."
     )
+    @is_inviter()
     async def reset(self, interaction: discord.Interaction):
         # Initialize the logger in the outer scope
         logger = configure_server_logging(interaction.guild.id)

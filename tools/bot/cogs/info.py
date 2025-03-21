@@ -6,6 +6,7 @@ from discord.ext import commands
 from discord import app_commands
 from utils.embed_utils import add_embed_elements
 from datetime import datetime
+from utils.decorators import is_inviter
 
 
 def load_server_settings():
@@ -21,7 +22,7 @@ def load_server_settings():
 class InfoCog(commands.Cog):
     def __init__(self, bot, word_list):
         self.bot = bot
-        self.word_list = word_list  # Store WORD_LIST as an instance variable
+        self.word_list = word_list
 
     @commands.Cog.listener()
     async def on_ready(self):
@@ -30,6 +31,7 @@ class InfoCog(commands.Cog):
     @app_commands.command(
         name="info", description="Get information about the bot and flagged messages."
     )
+    @is_inviter()
     async def info(self, interaction: discord.Interaction):
         # Ensure the command is used in a server
         if interaction.guild is None:
