@@ -912,7 +912,7 @@
         "ATTACK_METHOD": "Funpay Fraud",
         "ATTACK_VECTOR": "Funpay Offers",
         "ATTACK_GOAL": "Financial Gains",
-        "ATTACK_SURFACE": "Money",
+        "ATTACK_SURFACE": "Funpay",
         "SUSPECTED_REGION_OF_ORIGIN": "RU",
         "SURFACE_URL": "https://funpay.com/en/lots/offer?id=25436069",
         "SURFACE_URL_DOMAIN": "funpay.com",
