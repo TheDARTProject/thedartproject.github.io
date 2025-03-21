@@ -25,6 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         attackMethodFilter.addEventListener('change', filterData);
     }
 
+    // Add the server filter event listener here
+    const serverFilter = document.getElementById('serverFilter');
+    if (serverFilter) {
+        serverFilter.addEventListener('change', filterData);
+    }
+
     const dateFrom = document.getElementById('dateFrom');
     if (dateFrom) {
         dateFrom.addEventListener('change', filterData);
@@ -123,12 +129,16 @@ function processData() {
 // Populate filter dropdowns
 function populateFilters() {
     const attackMethods = new Set();
+    const servers = new Set();
     const attackMethodFilter = document.getElementById('attackMethodFilter');
+    const serverFilter = document.getElementById('serverFilter');
 
     attackMethodFilter.innerHTML = '<option value="">All Methods</option>';
+    serverFilter.innerHTML = '<option value="">All Servers</option>';
 
     Object.values(accountsData).forEach(account => {
         attackMethods.add(account.ATTACK_METHOD);
+        servers.add(account.FOUND_ON_SERVER);
     });
 
     attackMethods.forEach(method => {
@@ -136,6 +146,13 @@ function populateFilters() {
         option.value = method;
         option.textContent = method;
         attackMethodFilter.appendChild(option);
+    });
+
+    servers.forEach(server => {
+        const option = document.createElement('option');
+        option.value = server;
+        option.textContent = server;
+        serverFilter.appendChild(option);
     });
 
     const dates = Object.values(accountsData).map(account => new Date(account.FOUND_ON));
@@ -152,6 +169,7 @@ function populateFilters() {
 function filterData() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
     const attackMethod = document.getElementById('attackMethodFilter').value;
+    const server = document.getElementById('serverFilter').value;
     const dateFrom = new Date(document.getElementById('dateFrom').value);
     const dateTo = new Date(document.getElementById('dateTo').value);
     dateTo.setHours(23, 59, 59);
@@ -166,9 +184,10 @@ function filterData() {
             (account.DISCORD_ID && account.DISCORD_ID.includes(searchTerm));
 
         const matchesAttackMethod = !attackMethod || account.ATTACK_METHOD === attackMethod;
+        const matchesServer = !server || account.FOUND_ON_SERVER === server;
         const matchesDate = (!dateFrom || foundDate >= dateFrom) && (!dateTo || foundDate <= dateTo);
 
-        return matchesSearch && matchesAttackMethod && matchesDate;
+        return matchesSearch && matchesAttackMethod && matchesServer && matchesDate;
     });
 
     currentPage = 1;
