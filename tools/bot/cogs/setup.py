@@ -48,6 +48,125 @@ def save_server_config(guild, selected_channels):
     save_server_settings(server_settings)
 
 
+class ChannelSelectView(discord.ui.View):
+    def __init__(self, guild, page_size=20):
+        super().__init__()
+        self.guild = guild
+        self.page_size = page_size
+        self.current_page = 0
+        self.all_channels = guild.text_channels
+        self.total_pages = (
+            len(self.all_channels) + page_size - 1
+        ) // page_size  # Ceiling division
+        self.selected_channel_ids = []
+
+        # Add the initial select menu and navigation buttons
+        self.update_view()
+
+    def update_view(self):
+        # Clear all items first
+        self.clear_items()
+
+        # Add the select menu for the current page
+        start_idx = self.current_page * self.page_size
+        end_idx = min(start_idx + self.page_size, len(self.all_channels))
+        current_channels = self.all_channels[start_idx:end_idx]
+
+        # Create select options from the current page of channels
+        options = [
+            discord.SelectOption(
+                label=channel.name,
+                value=str(channel.id),
+                description=f"#{channel.name}",
+                default=str(channel.id) in self.selected_channel_ids,
+            )
+            for channel in current_channels
+        ]
+
+        select = discord.ui.Select(
+            placeholder=f"Select channels to monitor (Page {self.current_page + 1}/{self.total_pages})",
+            min_values=0,
+            max_values=len(options),
+            options=options,
+        )
+
+        async def select_callback(interaction):
+            # Update selected channels
+            for value in interaction.data["values"]:
+                if value not in self.selected_channel_ids:
+                    self.selected_channel_ids.append(value)
+
+            # Remove deselected channels
+            for option in options:
+                if (
+                    option.value not in interaction.data["values"]
+                    and option.value in self.selected_channel_ids
+                ):
+                    self.selected_channel_ids.remove(option.value)
+
+            # Update the view to reflect selections
+            self.update_view()
+            await interaction.response.edit_message(view=self)
+
+        select.callback = select_callback
+        self.add_item(select)
+
+        # Add navigation buttons if needed
+        if self.total_pages > 1:
+            # Back button
+            back_button = discord.ui.Button(
+                style=discord.ButtonStyle.secondary,
+                emoji="◀️",
+                disabled=self.current_page == 0,
+                row=1,
+            )
+
+            async def back_callback(interaction):
+                self.current_page = max(0, self.current_page - 1)
+                self.update_view()
+                await interaction.response.edit_message(view=self)
+
+            back_button.callback = back_callback
+            self.add_item(back_button)
+
+            # Page indicator
+            page_indicator = discord.ui.Button(
+                style=discord.ButtonStyle.secondary,
+                label=f"Page {self.current_page + 1}/{self.total_pages}",
+                disabled=True,
+                row=1,
+            )
+            self.add_item(page_indicator)
+
+            # Forward button
+            forward_button = discord.ui.Button(
+                style=discord.ButtonStyle.secondary,
+                emoji="▶️",
+                disabled=self.current_page >= self.total_pages - 1,
+                row=1,
+            )
+
+            async def forward_callback(interaction):
+                self.current_page = min(self.total_pages - 1, self.current_page + 1)
+                self.update_view()
+                await interaction.response.edit_message(view=self)
+
+            forward_button.callback = forward_callback
+            self.add_item(forward_button)
+
+        # Add a confirm button
+        confirm_button = discord.ui.Button(
+            style=discord.ButtonStyle.success, label="Confirm Selection", row=2
+        )
+
+        confirm_button.callback = self.confirm_callback
+        self.add_item(confirm_button)
+
+    async def confirm_callback(self, interaction):
+        # This will be overridden by the setup method
+        pass
+
+
 class SetupCog(commands.Cog):
     def __init__(self, bot, word_list, safe_limit):
         self.bot = bot
@@ -150,25 +269,18 @@ class SetupCog(commands.Cog):
 
             step2_embed.add_field(
                 name="Step 2: Channel Selection",
-                value="Please select the channels you want to monitor from the dropdown below.",
+                value="Please select the channels you want to monitor. Use the navigation buttons to browse through all channels if needed.",
                 inline=False,
             )
 
-            # Create a dropdown menu for channel selection
-            channel_options = [
-                discord.SelectOption(label=channel.name, value=str(channel.id))
-                for channel in interaction.guild.text_channels
-            ]
+            # Create a channel selection view with pagination
+            channel_select_view = ChannelSelectView(interaction.guild)
 
-            # Store selected channels in a class variable
-            selected_channels = []
-
-            async def select_callback(select_interaction):
-                nonlocal selected_channels
+            async def handle_channel_selection(select_interaction):
                 # Get the selected channel objects
                 selected_channels = [
                     interaction.guild.get_channel(int(channel_id))
-                    for channel_id in select_interaction.data["values"]
+                    for channel_id in channel_select_view.selected_channel_ids
                 ]
 
                 # Update the embed for Step 3: Historical Scan
@@ -288,20 +400,11 @@ class SetupCog(commands.Cog):
                     embed=step3_embed, view=step3_view
                 )
 
-            # Create the select menu
-            select = discord.ui.Select(
-                placeholder="Select channels to monitor...",
-                min_values=1,
-                max_values=len(channel_options),
-                options=channel_options,
-            )
-            select.callback = select_callback
-
-            step2_view = discord.ui.View()
-            step2_view.add_item(select)
+            # Set the callback for confirmation
+            channel_select_view.confirm_callback = handle_channel_selection
 
             await specific_button_interaction.edit_original_response(
-                embed=step2_embed, view=step2_view
+                embed=step2_embed, view=channel_select_view
             )
 
         all_channels_button.callback = all_channels_callback
