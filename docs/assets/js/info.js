@@ -60,7 +60,7 @@ async function fetchMemberCount(inviteLink) {
 
     try {
         const inviteCode = inviteLink.split('/').pop();
-        const response = await fetch(`https://discord.com/api/v9/invites/${inviteCode}?with_counts=true`);
+        const response = await fetch(`https://corsproxy.io/?https://discord.com/api/v9/invites/${inviteCode}?with_counts=true`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
