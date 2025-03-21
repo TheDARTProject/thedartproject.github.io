@@ -47,6 +47,8 @@ def add_server_to_config(guild, inviter_id=None):
             json.dump(servers, write_file, indent=4)
 
         logger.info(f"Server {guild.name} (ID: {guild.id}) added to servers.json.")
+        if inviter_id:
+            logger.info(f"Inviter ID: {inviter_id}")
 
     # Calculate total servers and combined member count
     total_servers = len(servers)
