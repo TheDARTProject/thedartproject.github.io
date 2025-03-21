@@ -15226,6 +15226,7 @@
     "ACCOUNT_NUMBER_693": {
         "CASE_NUMBER": "693",
         "FOUND_ON": "2025-02-23",
+        "FOUND_ON_SERVER": "ANONYMOUS_SERVER_1",
         "DISCORD_ID": "734730620688662529",
         "USERNAME": "springtrap6033",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -16391,6 +16392,7 @@
     "ACCOUNT_NUMBER_746": {
         "CASE_NUMBER": "746",
         "FOUND_ON": "2025-03-17",
+        "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1184983065534148718",
         "USERNAME": "fluck58",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -16478,6 +16480,7 @@
     "ACCOUNT_NUMBER_750": {
         "CASE_NUMBER": "750",
         "FOUND_ON": "2025-03-19",
+        "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1199469959714197617",
         "USERNAME": "fthes_63529",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -16521,6 +16524,7 @@
     "ACCOUNT_NUMBER_752": {
         "CASE_NUMBER": "752",
         "FOUND_ON": "2025-03-20",
+        "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "498079857578737685",
         "USERNAME": "azlayer90",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -16542,6 +16546,7 @@
     "ACCOUNT_NUMBER_753": {
         "CASE_NUMBER": "753",
         "FOUND_ON": "2025-03-20",
+        "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "917516388103503912",
         "USERNAME": "etraxe",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -16563,6 +16568,7 @@
     "ACCOUNT_NUMBER_754": {
         "CASE_NUMBER": "754",
         "FOUND_ON": "2025-03-25",
+        "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "196963902527897600",
         "USERNAME": "krocokxd",
         "ACCOUNT_STATUS": "COMPROMISED",
