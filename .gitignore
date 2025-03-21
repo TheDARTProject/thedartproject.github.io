@@ -20,3 +20,4 @@ tools/bot/utils/__pycache__/server_utils.cpython-39.pyc
 tools/bot/cogs/__pycache__/announcer.cpython-39.pyc
 tools/bot/cogs/__pycache__/help.cpython-39.pyc
 tools/bot/cogs/__pycache__/support.cpython-39.pyc
+tools/bot/bot_to_do_list.txt
