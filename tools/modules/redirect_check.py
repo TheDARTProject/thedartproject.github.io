@@ -837,7 +837,7 @@ def process_compromised_accounts(max_workers=10, batch_size=20, max_accounts=Non
         for account_key, updated_info in updated_batch.items():
             data[account_key] = updated_info
 
-        # Save incremental progress
+        # Save incremental progress after each batch
         save_data(data, "Compromised-Discord-Accounts")
 
         # Calculate and log timing information
