@@ -111,7 +111,7 @@ class AnnouncerCog(commands.Cog):
                 print(f"An error occurred: {e}")
 
             # Wait 5 minutes before checking again
-            await asyncio.sleep(10)  # 300 seconds = 5 minutes
+            await asyncio.sleep(300)  # 300 seconds = 5 minutes
 
     def read_announcement_md_yaml(self):
         """
