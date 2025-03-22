@@ -447,7 +447,7 @@ function createCharts() {
     createBehaviourChart();
     createVectorsChart();
     createStatusChart();
-    createStatusAccountsChart();
+    createAccountTypeChart();
     createGoalsChart();
     createMethodGoalChart();
     createServerCasesChart();
@@ -692,33 +692,30 @@ function createBehaviourChart() {
     });
 }
 
-// Account Status
-function createStatusAccountsChart() {
-    const canvas = document.getElementById('statusAccountsChart');
+// Account Type Distribution
+function createAccountTypeChart() {
+    const canvas = document.getElementById('AccountTypeChart');
     if (canvas.chart) canvas.chart.destroy();
 
-    let deletedCount = 0;
-    let activeCount = 0;
-
+    const accountTypeCounts = {};
     filteredData.forEach(account => {
-        if (account.USERNAME && account.USERNAME.toLowerCase().includes('deleted_user')) {
-            deletedCount++;
-        } else {
-            activeCount++;
-        }
+        const accountType = account.ACCOUNT_TYPE || 'Unknown';
+        accountTypeCounts[accountType] = (accountTypeCounts[accountType] || 0) + 1;
     });
+
+    const labels = Object.keys(accountTypeCounts);
+    const data = Object.values(accountTypeCounts);
 
     canvas.chart = new Chart(canvas, {
         type: 'pie',
         data: {
-            labels: ['Deleted Accounts', 'Active Accounts'],
+            labels: labels,
             datasets: [{
-                label: 'Account Status',
-                data: [deletedCount, activeCount],
-                backgroundColor: [
-                    'rgba(147, 51, 234, 0.8)',
-                    'rgba(16, 185, 129, 0.8)'
-                ],
+                label: 'Account Type Distribution',
+                data: data,
+                backgroundColor: labels.map((_, i) =>
+                    `hsl(${(i * 137) % 360}, 70%, 60%)`
+                ),
                 borderWidth: 1
             }]
         },
@@ -727,7 +724,7 @@ function createStatusAccountsChart() {
             maintainAspectRatio: false,
             plugins: {
                 legend: {
-                    position: 'top'
+                    position: 'top',
                 },
                 tooltip: {
                     callbacks: {
