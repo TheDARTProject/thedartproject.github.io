@@ -48,7 +48,7 @@
         "FOUND_ON": "2021-09-08",
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "622456419098165248",
-        "USERNAME": "NAME",
+        "USERNAME": "deleted_user_c258069dfb5d",
         "ACCOUNT_STATUS": "DELETED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
@@ -63,14 +63,14 @@
         "FINAL_URL_DOMAIN": "dlscord-nitro.click",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_4": {
         "CASE_NUMBER": "4",
         "FOUND_ON": "2021-09-15",
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "431078014202150912",
-        "USERNAME": "NAME",
+        "USERNAME": "deleted_user_9fe377f23829",
         "ACCOUNT_STATUS": "DELETED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
@@ -85,7 +85,7 @@
         "FINAL_URL_DOMAIN": "steamdlscord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_5": {
         "CASE_NUMBER": "5",
@@ -93,7 +93,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "706933261741326396",
         "USERNAME": "thesauc3",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -107,7 +107,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_6": {
         "CASE_NUMBER": "6",
@@ -115,7 +115,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "677680572121874453",
         "USERNAME": "edp4467",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -129,7 +129,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_7": {
         "CASE_NUMBER": "7",
@@ -137,7 +137,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "781937055193497650",
         "USERNAME": "ajithvishwakumar0776",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -151,7 +151,7 @@
         "FINAL_URL_DOMAIN": "discord-app.me",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_8": {
         "CASE_NUMBER": "8",
@@ -173,7 +173,7 @@
         "FINAL_URL_DOMAIN": "discordsteams.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_9": {
         "CASE_NUMBER": "9",
@@ -181,7 +181,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "547099376804298752",
         "USERNAME": "cesar077186",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -195,7 +195,7 @@
         "FINAL_URL_DOMAIN": "dlscordnitro.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_10": {
         "CASE_NUMBER": "10",
@@ -217,7 +217,7 @@
         "FINAL_URL_DOMAIN": "boostnltro.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_11": {
         "CASE_NUMBER": "11",
@@ -239,7 +239,7 @@
         "FINAL_URL_DOMAIN": "dliscordnltro.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_12": {
         "CASE_NUMBER": "12",
@@ -247,7 +247,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "556594849940242443",
         "USERNAME": "the_nightmare_765",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -261,7 +261,7 @@
         "FINAL_URL_DOMAIN": "dllscord.fun",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_13": {
         "CASE_NUMBER": "13",
@@ -283,7 +283,7 @@
         "FINAL_URL_DOMAIN": "discocrd-gift.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_14": {
         "CASE_NUMBER": "14",
@@ -305,7 +305,7 @@
         "FINAL_URL_DOMAIN": "discocrd-gift.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_15": {
         "CASE_NUMBER": "15",
@@ -357,7 +357,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "678717412895358976",
         "USERNAME": "mr.skully6884",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -371,7 +371,7 @@
         "FINAL_URL_DOMAIN": "disccord-apps.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_18": {
         "CASE_NUMBER": "18",
@@ -401,7 +401,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "212967907993452544",
         "USERNAME": "slawekns",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -415,7 +415,7 @@
         "FINAL_URL_DOMAIN": "diisccord-gift.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_20": {
         "CASE_NUMBER": "20",
@@ -423,7 +423,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "664299038761418785",
         "USERNAME": "b1g_cryptonic",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -437,7 +437,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_21": {
         "CASE_NUMBER": "21",
@@ -445,7 +445,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "265746103662542849",
         "USERNAME": "slvr_5155",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -459,7 +459,7 @@
         "FINAL_URL_DOMAIN": "diiscord-app.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_22": {
         "CASE_NUMBER": "22",
@@ -467,7 +467,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "314335344122396675",
         "USERNAME": "oak6073",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -481,7 +481,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_23": {
         "CASE_NUMBER": "23",
@@ -503,7 +503,7 @@
         "FINAL_URL_DOMAIN": "disccord-ap.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_24": {
         "CASE_NUMBER": "24",
@@ -511,7 +511,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "735177469664952462",
         "USERNAME": "ifeellikegod",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -525,7 +525,7 @@
         "FINAL_URL_DOMAIN": "discord-to.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_25": {
         "CASE_NUMBER": "25",
@@ -533,7 +533,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "776288402978242581",
         "USERNAME": "sussyboi69",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -547,7 +547,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_26": {
         "CASE_NUMBER": "26",
@@ -613,7 +613,7 @@
         "FINAL_URL_DOMAIN": "discord-go.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_29": {
         "CASE_NUMBER": "29",
@@ -621,7 +621,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "761072371162546176",
         "USERNAME": "onionx",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -635,7 +635,7 @@
         "FINAL_URL_DOMAIN": "discordll.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_30": {
         "CASE_NUMBER": "30",
@@ -643,7 +643,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "429811210674896899",
         "USERNAME": "shede1780",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -657,7 +657,7 @@
         "FINAL_URL_DOMAIN": "discord-go.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_31": {
         "CASE_NUMBER": "31",
@@ -679,7 +679,7 @@
         "FINAL_URL_DOMAIN": "nitrosteamf.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_32": {
         "CASE_NUMBER": "32",
@@ -687,7 +687,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "498144812680216577",
         "USERNAME": "katze2741",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -701,7 +701,7 @@
         "FINAL_URL_DOMAIN": "nitrosteamf.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_33": {
         "CASE_NUMBER": "33",
@@ -709,7 +709,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "838218520835522602",
         "USERNAME": "jaydenpolice449774",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -723,7 +723,7 @@
         "FINAL_URL_DOMAIN": "dlscrod-game.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_34": {
         "CASE_NUMBER": "34",
@@ -731,7 +731,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "618495193146064927",
         "USERNAME": "pangea808",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -745,7 +745,7 @@
         "FINAL_URL_DOMAIN": "steamidiscord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_35": {
         "CASE_NUMBER": "35",
@@ -753,7 +753,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "704765220379426866",
         "USERNAME": "dziri09",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -767,7 +767,7 @@
         "FINAL_URL_DOMAIN": "steamcommunltty.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_36": {
         "CASE_NUMBER": "36",
@@ -775,7 +775,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "900268151466500107",
         "USERNAME": "7he_c0n7ro11er",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -789,7 +789,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_37": {
         "CASE_NUMBER": "37",
@@ -797,7 +797,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "784061352430927872",
         "USERNAME": "long4499",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Session Hijacking",
@@ -811,7 +811,7 @@
         "FINAL_URL_DOMAIN": "dlscold-nilro.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_38": {
         "CASE_NUMBER": "38",
@@ -833,7 +833,7 @@
         "FINAL_URL_DOMAIN": "nitro-dlscold.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_39": {
         "CASE_NUMBER": "39",
@@ -841,7 +841,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "832845897166749737",
         "USERNAME": "mizuhaka",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -855,7 +855,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_40": {
         "CASE_NUMBER": "40",
@@ -877,7 +877,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_41": {
         "CASE_NUMBER": "41",
@@ -885,7 +885,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "876474476274008164",
         "USERNAME": "lafa_s1l3nced",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -899,7 +899,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_42": {
         "CASE_NUMBER": "42",
@@ -907,7 +907,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "520632518828097546",
         "USERNAME": "_everise_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -921,7 +921,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_43": {
         "CASE_NUMBER": "43",
@@ -929,7 +929,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "788440975482552330",
         "USERNAME": "hipperboxer448",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -943,7 +943,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_44": {
         "CASE_NUMBER": "44",
@@ -951,7 +951,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "429733532277932032",
         "USERNAME": "chino_75akapieterp",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -965,7 +965,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_45": {
         "CASE_NUMBER": "45",
@@ -973,7 +973,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "842103577988300862",
         "USERNAME": "maxim04ka.",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -987,7 +987,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_46": {
         "CASE_NUMBER": "46",
@@ -1009,7 +1009,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_47": {
         "CASE_NUMBER": "47",
@@ -1031,7 +1031,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_48": {
         "CASE_NUMBER": "48",
@@ -1039,7 +1039,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "312564300541722625",
         "USERNAME": "kush.089",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1053,7 +1053,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_49": {
         "CASE_NUMBER": "49",
@@ -1061,7 +1061,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "878436697031974982",
         "USERNAME": "seafaring41",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1075,7 +1075,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_50": {
         "CASE_NUMBER": "50",
@@ -1083,7 +1083,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "881102921209638932",
         "USERNAME": "locnguyenblitz1",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1097,7 +1097,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_51": {
         "CASE_NUMBER": "51",
@@ -1105,7 +1105,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "573119707729625088",
         "USERNAME": "andryy03",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1119,7 +1119,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_52": {
         "CASE_NUMBER": "52",
@@ -1127,7 +1127,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "789540005072338964",
         "USERNAME": "darthmaul8252",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1141,7 +1141,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_53": {
         "CASE_NUMBER": "53",
@@ -1149,7 +1149,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "723237872378970218",
         "USERNAME": "vardennologio",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1163,7 +1163,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_54": {
         "CASE_NUMBER": "54",
@@ -1185,7 +1185,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_55": {
         "CASE_NUMBER": "55",
@@ -1193,7 +1193,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "858596578343649281",
         "USERNAME": "superdreadnoob",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1207,7 +1207,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_56": {
         "CASE_NUMBER": "56",
@@ -1215,7 +1215,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "632803880354185219",
         "USERNAME": ".223_mongga",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1229,7 +1229,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_57": {
         "CASE_NUMBER": "57",
@@ -1237,7 +1237,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "408384949067055127",
         "USERNAME": "adogbyte",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1251,7 +1251,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_58": {
         "CASE_NUMBER": "58",
@@ -1259,7 +1259,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "783692398110572574",
         "USERNAME": "vlastimil8496",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1273,7 +1273,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_59": {
         "CASE_NUMBER": "59",
@@ -1281,7 +1281,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "433439169277198339",
         "USERNAME": "schwarzpanzer.",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1295,7 +1295,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_60": {
         "CASE_NUMBER": "60",
@@ -1303,7 +1303,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "603927950445772812",
         "USERNAME": "gangsta_pussy",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1317,7 +1317,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_61": {
         "CASE_NUMBER": "61",
@@ -1325,7 +1325,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "405583407410577419",
         "USERNAME": "rontsu9179",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1339,7 +1339,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_62": {
         "CASE_NUMBER": "62",
@@ -1347,7 +1347,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "824649087307612170",
         "USERNAME": "king_tiger_131",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1361,7 +1361,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_63": {
         "CASE_NUMBER": "63",
@@ -1369,7 +1369,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "692621246017568799",
         "USERNAME": "krokiet_0",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1383,7 +1383,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_64": {
         "CASE_NUMBER": "64",
@@ -1391,7 +1391,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "551090626939191307",
         "USERNAME": "___mystic___",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1405,7 +1405,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_65": {
         "CASE_NUMBER": "65",
@@ -1413,7 +1413,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "849866922774495242",
         "USERNAME": "kytekeno",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1427,7 +1427,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_66": {
         "CASE_NUMBER": "66",
@@ -1435,7 +1435,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "694162247265812521",
         "USERNAME": "ysm_sleepy",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1449,7 +1449,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_67": {
         "CASE_NUMBER": "67",
@@ -1457,7 +1457,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "702309548064636958",
         "USERNAME": "shiki1995",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1471,7 +1471,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_68": {
         "CASE_NUMBER": "68",
@@ -1493,7 +1493,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_69": {
         "CASE_NUMBER": "69",
@@ -1501,7 +1501,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "747516708071276728",
         "USERNAME": "krostitzer.88",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1515,7 +1515,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_70": {
         "CASE_NUMBER": "70",
@@ -1523,7 +1523,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "689106084928946218",
         "USERNAME": "p.ablito",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1537,7 +1537,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_71": {
         "CASE_NUMBER": "71",
@@ -1559,7 +1559,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_72": {
         "CASE_NUMBER": "72",
@@ -1567,7 +1567,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "715523521488486410",
         "USERNAME": "m4dnass",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1581,7 +1581,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_73": {
         "CASE_NUMBER": "73",
@@ -1589,7 +1589,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "837898673508581376",
         "USERNAME": "wahyu0308",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1603,7 +1603,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_74": {
         "CASE_NUMBER": "74",
@@ -1611,7 +1611,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "791836572869328968",
         "USERNAME": "panzer101_1",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1625,7 +1625,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_75": {
         "CASE_NUMBER": "75",
@@ -1633,7 +1633,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "612388462456209456",
         "USERNAME": "dexolino",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1647,7 +1647,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_76": {
         "CASE_NUMBER": "76",
@@ -1655,7 +1655,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "663489873864425485",
         "USERNAME": "mow_gliii",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1669,7 +1669,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_77": {
         "CASE_NUMBER": "77",
@@ -1677,7 +1677,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "812503619428548639",
         "USERNAME": "_fremm_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1691,7 +1691,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_78": {
         "CASE_NUMBER": "78",
@@ -1699,7 +1699,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "979358210215538689",
         "USERNAME": "daorang",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1713,7 +1713,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_79": {
         "CASE_NUMBER": "79",
@@ -1721,7 +1721,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "700276959694946354",
         "USERNAME": "idontknowhowtonamemyself0.0",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1735,7 +1735,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_80": {
         "CASE_NUMBER": "80",
@@ -1743,7 +1743,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "398879767207870485",
         "USERNAME": "pawelylol",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1757,7 +1757,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_81": {
         "CASE_NUMBER": "81",
@@ -1779,7 +1779,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_82": {
         "CASE_NUMBER": "82",
@@ -1801,7 +1801,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_83": {
         "CASE_NUMBER": "83",
@@ -1809,7 +1809,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "553465306408812544",
         "USERNAME": "aritroooooooo",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1823,7 +1823,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_84": {
         "CASE_NUMBER": "84",
@@ -1831,7 +1831,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "541347889901994024",
         "USERNAME": "mighty_gabe",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1845,7 +1845,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_85": {
         "CASE_NUMBER": "85",
@@ -1853,7 +1853,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "650232003068690478",
         "USERNAME": "havoc3319",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1867,7 +1867,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_86": {
         "CASE_NUMBER": "86",
@@ -1889,7 +1889,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_87": {
         "CASE_NUMBER": "87",
@@ -1897,7 +1897,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "780356114633064448",
         "USERNAME": "mrdejtucnakadoucha",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1911,7 +1911,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_88": {
         "CASE_NUMBER": "88",
@@ -1919,7 +1919,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "720628666895302666",
         "USERNAME": "megaultimatestupid",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1933,7 +1933,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_89": {
         "CASE_NUMBER": "89",
@@ -1941,7 +1941,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "697359212879151105",
         "USERNAME": "sauron7206",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1955,7 +1955,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_90": {
         "CASE_NUMBER": "90",
@@ -1963,7 +1963,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "666267741325361173",
         "USERNAME": "van_an",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1977,7 +1977,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_91": {
         "CASE_NUMBER": "91",
@@ -1985,7 +1985,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "908327280902828092",
         "USERNAME": "ziggi_balboa",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -1999,7 +1999,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_92": {
         "CASE_NUMBER": "92",
@@ -2021,7 +2021,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_93": {
         "CASE_NUMBER": "93",
@@ -2043,7 +2043,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_94": {
         "CASE_NUMBER": "94",
@@ -2065,7 +2065,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_95": {
         "CASE_NUMBER": "95",
@@ -2073,7 +2073,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "717012344105861231",
         "USERNAME": "sweetie_1340",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2087,7 +2087,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_96": {
         "CASE_NUMBER": "96",
@@ -2095,7 +2095,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "714133423094235216",
         "USERNAME": "iblis_tonic",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2109,7 +2109,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_97": {
         "CASE_NUMBER": "97",
@@ -2117,7 +2117,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "143409291024400385",
         "USERNAME": "alex28_2014ncpd",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2131,7 +2131,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_98": {
         "CASE_NUMBER": "98",
@@ -2139,7 +2139,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "776803156981055529",
         "USERNAME": "educated_idiot",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2153,7 +2153,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_99": {
         "CASE_NUMBER": "99",
@@ -2161,7 +2161,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "663732133482987530",
         "USERNAME": "_occho_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2175,7 +2175,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_100": {
         "CASE_NUMBER": "100",
@@ -2183,7 +2183,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "882830155091955742",
         "USERNAME": "botbvn",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2197,7 +2197,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_101": {
         "CASE_NUMBER": "101",
@@ -2205,7 +2205,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "733672881220747284",
         "USERNAME": "mraldziktm",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2219,7 +2219,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_102": {
         "CASE_NUMBER": "102",
@@ -2241,7 +2241,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_103": {
         "CASE_NUMBER": "103",
@@ -2249,7 +2249,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1001320902266474577",
         "USERNAME": "reformula",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2263,7 +2263,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_104": {
         "CASE_NUMBER": "104",
@@ -2285,7 +2285,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_105": {
         "CASE_NUMBER": "105",
@@ -2307,7 +2307,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_106": {
         "CASE_NUMBER": "106",
@@ -2337,7 +2337,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "886467428526215228",
         "USERNAME": "susdow",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2351,7 +2351,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_108": {
         "CASE_NUMBER": "108",
@@ -2359,7 +2359,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "596358440461402132",
         "USERNAME": "hanz_flammwerfer",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2373,7 +2373,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_109": {
         "CASE_NUMBER": "109",
@@ -2381,7 +2381,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "603523250487689216",
         "USERNAME": "_icarinae",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2395,7 +2395,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_110": {
         "CASE_NUMBER": "110",
@@ -2403,7 +2403,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "504385619426803735",
         "USERNAME": "jimmyc29_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2417,7 +2417,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_111": {
         "CASE_NUMBER": "111",
@@ -2425,7 +2425,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "321070338006056960",
         "USERNAME": "maggixx",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2439,7 +2439,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_112": {
         "CASE_NUMBER": "112",
@@ -2447,7 +2447,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "141136782757593088",
         "USERNAME": "mrt.a",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2461,7 +2461,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_113": {
         "CASE_NUMBER": "113",
@@ -2469,7 +2469,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "900349676283392012",
         "USERNAME": "ryuk_65",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2483,7 +2483,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_114": {
         "CASE_NUMBER": "114",
@@ -2491,7 +2491,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "726707983139995732",
         "USERNAME": "xdemonx9591",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2505,7 +2505,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_115": {
         "CASE_NUMBER": "115",
@@ -2535,7 +2535,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "721214606860746822",
         "USERNAME": "oikawa16",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2549,7 +2549,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_117": {
         "CASE_NUMBER": "117",
@@ -2557,7 +2557,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "906782969174310932",
         "USERNAME": "mmtg9z",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2571,7 +2571,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_118": {
         "CASE_NUMBER": "118",
@@ -2615,7 +2615,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_120": {
         "CASE_NUMBER": "120",
@@ -2623,7 +2623,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "394061876666826753",
         "USERNAME": "masheencar",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2637,7 +2637,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_121": {
         "CASE_NUMBER": "121",
@@ -2659,7 +2659,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_122": {
         "CASE_NUMBER": "122",
@@ -2667,7 +2667,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "403192732857794560",
         "USERNAME": "sultan2003123",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2681,7 +2681,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_123": {
         "CASE_NUMBER": "123",
@@ -2689,7 +2689,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1152619713143259166",
         "USERNAME": "robinson.0967",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -2703,7 +2703,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_124": {
         "CASE_NUMBER": "124",
@@ -2711,7 +2711,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1158065047671668848",
         "USERNAME": "cha642",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -2725,7 +2725,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_125": {
         "CASE_NUMBER": "125",
@@ -2769,7 +2769,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_127": {
         "CASE_NUMBER": "127",
@@ -2791,7 +2791,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_128": {
         "CASE_NUMBER": "128",
@@ -2799,7 +2799,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "596279246020935691",
         "USERNAME": "ava.avery",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2813,7 +2813,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_129": {
         "CASE_NUMBER": "129",
@@ -2835,7 +2835,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_130": {
         "CASE_NUMBER": "130",
@@ -2857,7 +2857,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_131": {
         "CASE_NUMBER": "131",
@@ -2865,7 +2865,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1178007076958654527",
         "USERNAME": "charlesbrown0825",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Unknown Method",
         "ATTACK_VECTOR": "Unknown Vector",
@@ -2879,7 +2879,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_132": {
         "CASE_NUMBER": "132",
@@ -2887,7 +2887,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "452468956884631563",
         "USERNAME": "ataturk_fedaisi",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2901,7 +2901,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_133": {
         "CASE_NUMBER": "133",
@@ -2909,7 +2909,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "541587584690683904",
         "USERNAME": "liteuaite1",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2923,7 +2923,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_134": {
         "CASE_NUMBER": "134",
@@ -2931,7 +2931,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "316296522230923264",
         "USERNAME": "blise518b",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2945,7 +2945,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_135": {
         "CASE_NUMBER": "135",
@@ -2953,7 +2953,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "802704063430918166",
         "USERNAME": "grossic",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -2967,7 +2967,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_136": {
         "CASE_NUMBER": "136",
@@ -2975,7 +2975,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "502175818928095237",
         "USERNAME": "matusik9489",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -2989,7 +2989,7 @@
         "FINAL_URL_DOMAIN": "kurl.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_137": {
         "CASE_NUMBER": "137",
@@ -2997,7 +2997,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "432614187730993152",
         "USERNAME": "puttamadremejakearon",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -3011,7 +3011,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_138": {
         "CASE_NUMBER": "138",
@@ -3033,7 +3033,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_139": {
         "CASE_NUMBER": "139",
@@ -3041,7 +3041,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1063395891505004586",
         "USERNAME": "little_fluffy_clouds",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -3055,7 +3055,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_140": {
         "CASE_NUMBER": "140",
@@ -3063,7 +3063,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "901651082986541087",
         "USERNAME": "regrets45_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -3077,7 +3077,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_141": {
         "CASE_NUMBER": "141",
@@ -3099,7 +3099,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_142": {
         "CASE_NUMBER": "142",
@@ -3107,7 +3107,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "789172909888766024",
         "USERNAME": "amaterasu_dark",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -3121,7 +3121,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_143": {
         "CASE_NUMBER": "143",
@@ -3129,7 +3129,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "578564656012984320",
         "USERNAME": "grille15_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -3143,7 +3143,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_144": {
         "CASE_NUMBER": "144",
@@ -3165,7 +3165,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_145": {
         "CASE_NUMBER": "145",
@@ -3187,7 +3187,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_146": {
         "CASE_NUMBER": "146",
@@ -3195,7 +3195,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "475053045097562136",
         "USERNAME": "mat_361",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -3209,7 +3209,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_147": {
         "CASE_NUMBER": "147",
@@ -3231,7 +3231,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_148": {
         "CASE_NUMBER": "148",
@@ -3253,7 +3253,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_149": {
         "CASE_NUMBER": "149",
@@ -3305,7 +3305,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "986973677583233085",
         "USERNAME": "cream1st",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -3319,7 +3319,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_152": {
         "CASE_NUMBER": "152",
@@ -3341,7 +3341,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_153": {
         "CASE_NUMBER": "153",
@@ -3349,7 +3349,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "743183344501522463",
         "USERNAME": "fred66",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -3363,7 +3363,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_154": {
         "CASE_NUMBER": "154",
@@ -3371,7 +3371,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "303936304272506882",
         "USERNAME": "dupka",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -3385,7 +3385,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_155": {
         "CASE_NUMBER": "155",
@@ -4067,7 +4067,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_186": {
         "CASE_NUMBER": "186",
@@ -4163,7 +4163,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1200077544645460065",
         "USERNAME": "dame47_43506",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -4177,7 +4177,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_191": {
         "CASE_NUMBER": "191",
@@ -4353,7 +4353,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_199": {
         "CASE_NUMBER": "199",
@@ -4375,7 +4375,7 @@
         "FINAL_URL_DOMAIN": "cutt.ly",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_200": {
         "CASE_NUMBER": "200",
@@ -4397,7 +4397,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_201": {
         "CASE_NUMBER": "201",
@@ -4427,7 +4427,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "869710149403697192",
         "USERNAME": "leolotus26",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -4441,7 +4441,7 @@
         "FINAL_URL_DOMAIN": "go-link.ru",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_203": {
         "CASE_NUMBER": "203",
@@ -4581,7 +4581,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1096801859148185710",
         "USERNAME": "hanss1053",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -4595,7 +4595,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_210": {
         "CASE_NUMBER": "210",
@@ -4735,7 +4735,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "704884168089272361",
         "USERNAME": "athf_05",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -4749,7 +4749,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_217": {
         "CASE_NUMBER": "217",
@@ -4823,7 +4823,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1037304325749358622",
         "USERNAME": "asahi_4040",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -4837,7 +4837,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_221": {
         "CASE_NUMBER": "221",
@@ -4859,7 +4859,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_222": {
         "CASE_NUMBER": "222",
@@ -5483,7 +5483,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "620907917977321502",
         "USERNAME": "the_benson_weapon",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -5497,7 +5497,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_251": {
         "CASE_NUMBER": "251",
@@ -5945,7 +5945,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "709174851927277619",
         "USERNAME": ".jamal_peron.",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -5959,7 +5959,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_272": {
         "CASE_NUMBER": "272",
@@ -6055,7 +6055,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1025003533310902282",
         "USERNAME": "your_local_ball_sniffer",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -6069,7 +6069,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_277": {
         "CASE_NUMBER": "277",
@@ -6231,7 +6231,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "773585806307754024",
         "USERNAME": "gabonathor11",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -6245,7 +6245,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_285": {
         "CASE_NUMBER": "285",
@@ -6267,7 +6267,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_286": {
         "CASE_NUMBER": "286",
@@ -6649,7 +6649,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "779718209498644524",
         "USERNAME": "_explicity_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -6663,7 +6663,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_304": {
         "CASE_NUMBER": "304",
@@ -6671,7 +6671,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "512843719196540928",
         "USERNAME": "renjiro69420",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -6685,7 +6685,7 @@
         "FINAL_URL_DOMAIN": "ww25.fast-trader.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_305": {
         "CASE_NUMBER": "305",
@@ -6693,7 +6693,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "385281983359614976",
         "USERNAME": "phatman9563",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -6707,7 +6707,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_306": {
         "CASE_NUMBER": "306",
@@ -6803,7 +6803,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "554426711123427328",
         "USERNAME": "b_alert",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -6817,7 +6817,7 @@
         "FINAL_URL_DOMAIN": "go-link.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_311": {
         "CASE_NUMBER": "311",
@@ -6839,7 +6839,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_312": {
         "CASE_NUMBER": "312",
@@ -6979,7 +6979,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "864618973106929724",
         "USERNAME": "deleted_account190873",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -6993,7 +6993,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_319": {
         "CASE_NUMBER": "319",
@@ -7111,7 +7111,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "835891246068662353",
         "USERNAME": "ofnmember",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -7125,7 +7125,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_325": {
         "CASE_NUMBER": "325",
@@ -7133,7 +7133,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "886278466327183362",
         "USERNAME": "pr1c3l3ss",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -7147,7 +7147,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_326": {
         "CASE_NUMBER": "326",
@@ -7331,7 +7331,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "772031627194007574",
         "USERNAME": "kuro_neko06",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -7345,7 +7345,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_335": {
         "CASE_NUMBER": "335",
@@ -7499,7 +7499,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_342": {
         "CASE_NUMBER": "342",
@@ -7507,7 +7507,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "953057345875894282",
         "USERNAME": "lumbago._",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -7521,7 +7521,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_343": {
         "CASE_NUMBER": "343",
@@ -7529,7 +7529,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "791233553433886730",
         "USERNAME": "ireturnedtomonke6584",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -7543,7 +7543,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_344": {
         "CASE_NUMBER": "344",
@@ -7551,7 +7551,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "316270264327602177",
         "USERNAME": "mass__geralt.von.riva",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -7565,7 +7565,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_345": {
         "CASE_NUMBER": "345",
@@ -7727,7 +7727,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "802226284390252563",
         "USERNAME": "eliasborja",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -7741,7 +7741,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_353": {
         "CASE_NUMBER": "353",
@@ -7749,7 +7749,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "980927896325591062",
         "USERNAME": "rayter28_pl",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -7763,7 +7763,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_354": {
         "CASE_NUMBER": "354",
@@ -8101,7 +8101,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "458394320974774283",
         "USERNAME": "ex79",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -8115,7 +8115,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_370": {
         "CASE_NUMBER": "370",
@@ -8233,7 +8233,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "347733360375889921",
         "USERNAME": "gabi655",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -8247,7 +8247,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_376": {
         "CASE_NUMBER": "376",
@@ -8255,7 +8255,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "214721338064109568",
         "USERNAME": "xxbarracudaxx_atr_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -8269,7 +8269,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_377": {
         "CASE_NUMBER": "377",
@@ -8277,7 +8277,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "270630583263035393",
         "USERNAME": "enzo4112",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -8291,7 +8291,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_378": {
         "CASE_NUMBER": "378",
@@ -8599,7 +8599,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_392": {
         "CASE_NUMBER": "392",
@@ -8607,7 +8607,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "690938174628954152",
         "USERNAME": "susmarun",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -8621,7 +8621,7 @@
         "FINAL_URL_DOMAIN": "go-link.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_393": {
         "CASE_NUMBER": "393",
@@ -8695,7 +8695,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1221152629317570640",
         "USERNAME": "dame617",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -8709,7 +8709,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_397": {
         "CASE_NUMBER": "397",
@@ -8717,7 +8717,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "973163050590953522",
         "USERNAME": "dinnerbog5989",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -8731,7 +8731,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_398": {
         "CASE_NUMBER": "398",
@@ -8753,7 +8753,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_399": {
         "CASE_NUMBER": "399",
@@ -8761,7 +8761,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "975330172356153394",
         "USERNAME": "chris050499",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -8775,7 +8775,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_400": {
         "CASE_NUMBER": "400",
@@ -8937,7 +8937,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "838641117829398558",
         "USERNAME": "hiromaoreiwa_principal",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -8951,7 +8951,7 @@
         "FINAL_URL_DOMAIN": "go-link.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_408": {
         "CASE_NUMBER": "408",
@@ -8959,7 +8959,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1166174160737816636",
         "USERNAME": "klikv",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -8973,7 +8973,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_409": {
         "CASE_NUMBER": "409",
@@ -9201,7 +9201,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1221757017392287815",
         "USERNAME": "knxcx_94394_94105",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9215,7 +9215,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_420": {
         "CASE_NUMBER": "420",
@@ -9237,7 +9237,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_421": {
         "CASE_NUMBER": "421",
@@ -9333,7 +9333,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "533420876918423553",
         "USERNAME": "fizzy8690",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9347,7 +9347,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_426": {
         "CASE_NUMBER": "426",
@@ -9355,7 +9355,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "987705529772159018",
         "USERNAME": "soudxlote",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9369,7 +9369,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_427": {
         "CASE_NUMBER": "427",
@@ -9531,7 +9531,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "805016131806429206",
         "USERNAME": "mufasa5992",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9545,7 +9545,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_435": {
         "CASE_NUMBER": "435",
@@ -9553,7 +9553,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "478395436982337537",
         "USERNAME": "grouchy_newsted",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9567,7 +9567,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_436": {
         "CASE_NUMBER": "436",
@@ -9589,7 +9589,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_437": {
         "CASE_NUMBER": "437",
@@ -9663,7 +9663,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "839773505331134494",
         "USERNAME": "jj_polska2k05",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9677,7 +9677,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_441": {
         "CASE_NUMBER": "441",
@@ -9685,7 +9685,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "734571140156096555",
         "USERNAME": "xxbatman13xx",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9699,7 +9699,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_442": {
         "CASE_NUMBER": "442",
@@ -9861,7 +9861,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "322824466964938762",
         "USERNAME": "x_night_guardian_angel_x",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9875,7 +9875,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_450": {
         "CASE_NUMBER": "450",
@@ -9905,7 +9905,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "643117169848352790",
         "USERNAME": "zzzzzzzzzzzzzzzzzzz325",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9919,7 +9919,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_452": {
         "CASE_NUMBER": "452",
@@ -9927,7 +9927,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1163027415317090380",
         "USERNAME": "1813138177360_67345",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -9941,7 +9941,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_453": {
         "CASE_NUMBER": "453",
@@ -10059,7 +10059,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "996427247286235186",
         "USERNAME": "sebastian_smokey",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -10073,7 +10073,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_459": {
         "CASE_NUMBER": "459",
@@ -10081,7 +10081,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "873841040166096916",
         "USERNAME": "cuentanousada1234",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -10095,7 +10095,7 @@
         "FINAL_URL_DOMAIN": "plhn.pw",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_460": {
         "CASE_NUMBER": "460",
@@ -10169,7 +10169,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "575302507165646850",
         "USERNAME": "mziahamid",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -10183,7 +10183,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_464": {
         "CASE_NUMBER": "464",
@@ -10191,7 +10191,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "802562006153822228",
         "USERNAME": "krk20165",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -10205,7 +10205,7 @@
         "FINAL_URL_DOMAIN": "qptr.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_465": {
         "CASE_NUMBER": "465",
@@ -10345,7 +10345,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "362330844389441536",
         "USERNAME": "welderlife125",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -10359,7 +10359,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_472": {
         "CASE_NUMBER": "472",
@@ -10609,7 +10609,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1220412162518941838",
         "USERNAME": "tilin04949",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Fake Nitro Gift",
         "ATTACK_VECTOR": "Discord Servers",
@@ -10623,7 +10623,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_484": {
         "CASE_NUMBER": "484",
@@ -10631,7 +10631,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "495813424442507264",
         "USERNAME": "summit_vision",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -10645,7 +10645,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_485": {
         "CASE_NUMBER": "485",
@@ -10983,7 +10983,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "462596643678846976",
         "USERNAME": "sentwelve",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -10997,7 +10997,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_501": {
         "CASE_NUMBER": "501",
@@ -11137,7 +11137,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "601317467955920926",
         "USERNAME": "wywyz96",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -11151,7 +11151,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_508": {
         "CASE_NUMBER": "508",
@@ -11393,7 +11393,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_519": {
         "CASE_NUMBER": "519",
@@ -11423,7 +11423,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "399430668083396618",
         "USERNAME": "duckyluckyz",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -11437,7 +11437,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_521": {
         "CASE_NUMBER": "521",
@@ -11577,7 +11577,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "710394561528070187",
         "USERNAME": "spinningpolishtoilette",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -11591,7 +11591,7 @@
         "FINAL_URL_DOMAIN": "sc.link",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_528": {
         "CASE_NUMBER": "528",
@@ -11665,7 +11665,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "339489196030951425",
         "USERNAME": "adrien5281",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -11679,7 +11679,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_532": {
         "CASE_NUMBER": "532",
@@ -11797,7 +11797,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1228050313727049819",
         "USERNAME": "loshad0159",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -11811,7 +11811,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_538": {
         "CASE_NUMBER": "538",
@@ -11841,7 +11841,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "959049263046869032",
         "USERNAME": "vipgucciciousvip",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -11855,7 +11855,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_540": {
         "CASE_NUMBER": "540",
@@ -11943,7 +11943,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_544": {
         "CASE_NUMBER": "544",
@@ -11965,7 +11965,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_545": {
         "CASE_NUMBER": "545",
@@ -12105,7 +12105,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "975214653036716053",
         "USERNAME": "kings8k_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -12119,7 +12119,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_552": {
         "CASE_NUMBER": "552",
@@ -12765,7 +12765,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "743407550510137366",
         "USERNAME": "widzplagiyt",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -12779,7 +12779,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_582": {
         "CASE_NUMBER": "582",
@@ -13029,7 +13029,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "638638521141428235",
         "USERNAME": "irnel",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -13043,7 +13043,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_594": {
         "CASE_NUMBER": "594",
@@ -13065,7 +13065,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_595": {
         "CASE_NUMBER": "595",
@@ -13073,7 +13073,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "924291508218257439",
         "USERNAME": "_.jonah._._._",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -13087,7 +13087,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_596": {
         "CASE_NUMBER": "596",
@@ -13359,7 +13359,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "723515152032464926",
         "USERNAME": "czolg_z_szafy",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -13373,7 +13373,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_609": {
         "CASE_NUMBER": "609",
@@ -13549,7 +13549,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_617": {
         "CASE_NUMBER": "617",
@@ -13579,7 +13579,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1203992284836794379",
         "USERNAME": "untrusteduser1",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -13593,7 +13593,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_619": {
         "CASE_NUMBER": "619",
@@ -14173,7 +14173,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1056203721220034570",
         "USERNAME": ".nico_ari",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -14187,7 +14187,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_646": {
         "CASE_NUMBER": "646",
@@ -14239,7 +14239,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "502476098337112075",
         "USERNAME": "theadyge",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -14253,7 +14253,7 @@
         "FINAL_URL_DOMAIN": "sc.link",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_649": {
         "CASE_NUMBER": "649",
@@ -14385,7 +14385,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_655": {
         "CASE_NUMBER": "655",
@@ -14539,7 +14539,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_662": {
         "CASE_NUMBER": "662",
@@ -14701,7 +14701,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "786551660045926450",
         "USERNAME": "pan_opimus_1",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -14715,7 +14715,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_670": {
         "CASE_NUMBER": "670",
@@ -14767,7 +14767,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1175116685200609281",
         "USERNAME": "yuriy3246",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -14781,7 +14781,7 @@
         "FINAL_URL_DOMAIN": "sc.link",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_673": {
         "CASE_NUMBER": "673",
@@ -14855,7 +14855,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "846264636877832202",
         "USERNAME": "raukie_alfonsy_jebator",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -14869,7 +14869,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_677": {
         "CASE_NUMBER": "677",
@@ -15177,7 +15177,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_691": {
         "CASE_NUMBER": "691",
@@ -15317,7 +15317,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "696319288939773993",
         "USERNAME": "__kaptur__",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -15331,7 +15331,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_698": {
         "CASE_NUMBER": "698",
@@ -15339,7 +15339,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "928172884684324884",
         "USERNAME": "blitzer_s.s.",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -15353,7 +15353,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_699": {
         "CASE_NUMBER": "699",
@@ -15441,7 +15441,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_703": {
         "CASE_NUMBER": "703",
@@ -15449,7 +15449,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "718049363527467029",
         "USERNAME": "tashagospell2401",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -15463,7 +15463,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_704": {
         "CASE_NUMBER": "704",
@@ -15471,7 +15471,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1035774141242024006",
         "USERNAME": "marhiro",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -15485,7 +15485,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_705": {
         "CASE_NUMBER": "705",
@@ -15691,7 +15691,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1049436636615819304",
         "USERNAME": "batata343",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -15705,7 +15705,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_715": {
         "CASE_NUMBER": "715",
@@ -15779,7 +15779,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "994794259838402610",
         "USERNAME": "wotb_10",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -15793,7 +15793,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_719": {
         "CASE_NUMBER": "719",
@@ -15815,7 +15815,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_720": {
         "CASE_NUMBER": "720",
@@ -15845,7 +15845,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "729439066088669254",
         "USERNAME": "enz0_trd",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -15859,7 +15859,7 @@
         "FINAL_URL_DOMAIN": "qptr.ru",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_722": {
         "CASE_NUMBER": "722",
@@ -16307,7 +16307,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "738882306156003348",
         "USERNAME": "fredyelmasculon",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -16321,7 +16321,7 @@
         "FINAL_URL_DOMAIN": "is.gd",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_743": {
         "CASE_NUMBER": "743",
@@ -16439,7 +16439,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "916359311821799465",
         "USERNAME": "mahdi1318",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -16453,7 +16453,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_749": {
         "CASE_NUMBER": "749",
@@ -16769,7 +16769,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "509847490640609280",
         "USERNAME": "_aether",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -16783,7 +16783,7 @@
         "FINAL_URL_DOMAIN": "sc.link",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_764": {
         "CASE_NUMBER": "764",
@@ -16791,7 +16791,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "889117686523637770",
         "USERNAME": "klaskurama",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -16805,7 +16805,7 @@
         "FINAL_URL_DOMAIN": "sc.link",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_765": {
         "CASE_NUMBER": "765",
@@ -16857,7 +16857,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "600267110312312873",
         "USERNAME": "antihype_guy",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -16871,7 +16871,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_768": {
         "CASE_NUMBER": "768",
@@ -16879,7 +16879,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "751526614608642181",
         "USERNAME": "laforafalamos",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -16893,7 +16893,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_769": {
         "CASE_NUMBER": "769",
@@ -16959,7 +16959,7 @@
         "FINAL_URL_DOMAIN": "bitly.cx",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_772": {
         "CASE_NUMBER": "772",
@@ -17143,7 +17143,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "834629587152404500",
         "USERNAME": "spirit8138",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -17157,7 +17157,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_781": {
         "CASE_NUMBER": "781",
@@ -17187,7 +17187,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1260229758801940510",
         "USERNAME": "florencejack0343",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -17201,7 +17201,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_783": {
         "CASE_NUMBER": "783",
@@ -17253,7 +17253,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "933425161208725534",
         "USERNAME": "r_2v",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -17267,7 +17267,7 @@
         "FINAL_URL_DOMAIN": "sc.link",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_786": {
         "CASE_NUMBER": "786",
@@ -17363,7 +17363,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "736612639937134634",
         "USERNAME": "guidoo27",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -17377,7 +17377,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_791": {
         "CASE_NUMBER": "791",
@@ -17517,7 +17517,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "955678314842968064",
         "USERNAME": ".38__special",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Malware Injectors",
@@ -17531,7 +17531,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_798": {
         "CASE_NUMBER": "798",
@@ -17583,7 +17583,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "897681538978824253",
         "USERNAME": "portgasd.ace3716",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -17597,7 +17597,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_801": {
         "CASE_NUMBER": "801",
@@ -17605,7 +17605,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "604697788114141190",
         "USERNAME": "yan97430",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "NSFW Discord Invite",
         "ATTACK_VECTOR": "Discord Servers",
@@ -17619,7 +17619,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_802": {
         "CASE_NUMBER": "802",
@@ -17803,7 +17803,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "832194146550022165",
         "USERNAME": "kispodi014181",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -17817,7 +17817,7 @@
         "FINAL_URL_DOMAIN": "sc.link",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_811": {
         "CASE_NUMBER": "811",
@@ -18023,7 +18023,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1273537622483927055",
         "USERNAME": "benjamincurry0278",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -18037,7 +18037,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_821": {
         "CASE_NUMBER": "821",
@@ -18067,7 +18067,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "720211753664905248",
         "USERNAME": "faqihalfaizi",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -18081,7 +18081,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_823": {
         "CASE_NUMBER": "823",
@@ -18199,7 +18199,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1275962560864194604",
         "USERNAME": "benjamincurry0627",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -18213,7 +18213,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_829": {
         "CASE_NUMBER": "829",
@@ -18323,7 +18323,7 @@
         "FINAL_URL_DOMAIN": "discord.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_834": {
         "CASE_NUMBER": "834",
@@ -18375,7 +18375,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "799260652207341578",
         "USERNAME": "france_guy1",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -18389,7 +18389,7 @@
         "FINAL_URL_DOMAIN": "t.ly",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_837": {
         "CASE_NUMBER": "837",
@@ -18485,7 +18485,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1129133543801499649",
         "USERNAME": "_t_a_n_i_s_h_q_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -18499,7 +18499,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_842": {
         "CASE_NUMBER": "842",
@@ -18507,7 +18507,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1016242704289644636",
         "USERNAME": "pahm_d",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -18521,7 +18521,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_843": {
         "CASE_NUMBER": "843",
@@ -18529,7 +18529,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1284978525962633296",
         "USERNAME": "rafaelpedro0505",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -18543,7 +18543,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_844": {
         "CASE_NUMBER": "844",
@@ -18749,7 +18749,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "626851851727274003",
         "USERNAME": "hanz8097",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -18763,7 +18763,7 @@
         "FINAL_URL_DOMAIN": "is.gd",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_854": {
         "CASE_NUMBER": "854",
@@ -18859,7 +18859,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1300443202830204959",
         "USERNAME": "charleswilliam0147",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -18873,7 +18873,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_859": {
         "CASE_NUMBER": "859",
@@ -18903,7 +18903,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "824342595391979551",
         "USERNAME": "allparo_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -18917,7 +18917,7 @@
         "FINAL_URL_DOMAIN": "is.gd",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_861": {
         "CASE_NUMBER": "861",
@@ -18991,7 +18991,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1308953672989937706",
         "USERNAME": "anderson_crypto99276",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -19005,7 +19005,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_865": {
         "CASE_NUMBER": "865",
@@ -19013,7 +19013,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1309151985508945974",
         "USERNAME": "owen86685",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -19027,7 +19027,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_866": {
         "CASE_NUMBER": "866",
@@ -19145,7 +19145,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1312621100076892272",
         "USERNAME": "anderson_bitcoin00780",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -19159,7 +19159,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_872": {
         "CASE_NUMBER": "872",
@@ -19189,7 +19189,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1315031729450520721",
         "USERNAME": "anderson_crypt00656",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -19203,7 +19203,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_874": {
         "CASE_NUMBER": "874",
@@ -19211,7 +19211,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "699630338871132212",
         "USERNAME": "tunc27_",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -19225,7 +19225,7 @@
         "FINAL_URL_DOMAIN": "is.gd",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_875": {
         "CASE_NUMBER": "875",
@@ -19255,7 +19255,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1315636447969022013",
         "USERNAME": "owen82827",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -19269,7 +19269,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_877": {
         "CASE_NUMBER": "877",
@@ -19299,7 +19299,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "520657163299848192",
         "USERNAME": "aersending",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -19313,7 +19313,7 @@
         "FINAL_URL_DOMAIN": "in.mt",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_879": {
         "CASE_NUMBER": "879",
@@ -19365,7 +19365,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1149304592153186354",
         "USERNAME": "shaneelahiii",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -19379,7 +19379,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_882": {
         "CASE_NUMBER": "882",
@@ -19541,7 +19541,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1319632381149184077",
         "USERNAME": "alessandra987",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -19555,7 +19555,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_890": {
         "CASE_NUMBER": "890",
@@ -19717,7 +19717,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "647329021046292491",
         "USERNAME": "nx.mt",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -19731,7 +19731,7 @@
         "FINAL_URL_DOMAIN": "is.gd",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_898": {
         "CASE_NUMBER": "898",
@@ -19893,7 +19893,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1065311664616001566",
         "USERNAME": "piug105",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -19907,7 +19907,7 @@
         "FINAL_URL_DOMAIN": "in.mt",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_906": {
         "CASE_NUMBER": "906",
@@ -19915,7 +19915,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "558570525514006529",
         "USERNAME": "501st3801",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -19929,7 +19929,7 @@
         "FINAL_URL_DOMAIN": "is.gd",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_907": {
         "CASE_NUMBER": "907",
@@ -19959,7 +19959,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "832270773539307543",
         "USERNAME": "trulyhico",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -19973,7 +19973,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_909": {
         "CASE_NUMBER": "909",
@@ -20047,7 +20047,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "927922055553351740",
         "USERNAME": "slayer1945",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -20061,7 +20061,7 @@
         "FINAL_URL_DOMAIN": "steamtickets100.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_913": {
         "CASE_NUMBER": "913",
@@ -20157,7 +20157,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "382261662188830732",
         "USERNAME": "kab06",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -20171,7 +20171,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_918": {
         "CASE_NUMBER": "918",
@@ -20245,7 +20245,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1333035331397615647",
         "USERNAME": "liam772775",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -20259,7 +20259,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_922": {
         "CASE_NUMBER": "922",
@@ -20333,7 +20333,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1055943403709407363",
         "USERNAME": "crazy_ivan2009",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -20347,7 +20347,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_926": {
         "CASE_NUMBER": "926",
@@ -20861,7 +20861,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "341601096277688324",
         "USERNAME": "thatonebounced0",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -20875,7 +20875,7 @@
         "FINAL_URL_DOMAIN": "steamuconmmunity.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_950": {
         "CASE_NUMBER": "950",
@@ -20883,7 +20883,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "808600220724101170",
         "USERNAME": "therussiantroops",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -20897,7 +20897,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_951": {
         "CASE_NUMBER": "951",
@@ -21785,7 +21785,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "628920300775538689",
         "USERNAME": "kezo1122",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -21799,7 +21799,7 @@
         "FINAL_URL_DOMAIN": "u.to",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_992": {
         "CASE_NUMBER": "992",
@@ -22489,7 +22489,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1279558588267761665",
         "USERNAME": "donaldcee001",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Potential Source of Message",
         "ATTACK_METHOD": "Telegram Fraud",
         "ATTACK_VECTOR": "Telegram Channels",
@@ -22503,7 +22503,7 @@
         "FINAL_URL_DOMAIN": "t.me",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_1024": {
         "CASE_NUMBER": "1024",
@@ -22533,7 +22533,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1078272494370295849",
         "USERNAME": "litenetwork_official",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -22547,7 +22547,7 @@
         "FINAL_URL_DOMAIN": "steanmcormmunity.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_1026": {
         "CASE_NUMBER": "1026",
@@ -22731,7 +22731,7 @@
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "291045824551452672",
         "USERNAME": "jordy3523",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "COMPROMISED",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
@@ -22745,7 +22745,7 @@
         "FINAL_URL_DOMAIN": "steanmecormmunity.com",
         "FINAL_URL_STATUS": "INACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
     "ACCOUNT_NUMBER_1035": {
         "CASE_NUMBER": "1035",
@@ -22899,6 +22899,6 @@
         "FINAL_URL_DOMAIN": "steanmecomrmunity.com",
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
-        "LAST_CHECK": ""
+        "LAST_CHECK": "2025-03-22T07:05:55.854035"
     }
 }
