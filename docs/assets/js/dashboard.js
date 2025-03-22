@@ -149,7 +149,20 @@ function populateFilters() {
         attackMethodFilter.appendChild(option);
     });
 
-    servers.forEach(server => {
+    // Convert the servers Set to an array and sort it alphabetically
+    const sortedServers = Array.from(servers).sort((a, b) => {
+        // Get the display names for comparison
+        const nameA = a.startsWith('ANONYMOUS_SERVER') ?
+            `Anonymous Server #${a.split('_').pop()}` :
+            serverNames[a] || a;
+        const nameB = b.startsWith('ANONYMOUS_SERVER') ?
+            `Anonymous Server #${b.split('_').pop()}` :
+            serverNames[b] || b;
+
+        return nameA.localeCompare(nameB);
+    });
+
+    sortedServers.forEach(server => {
         const option = document.createElement('option');
         option.value = server;
 
