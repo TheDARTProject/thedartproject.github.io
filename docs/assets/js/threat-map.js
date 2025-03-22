@@ -177,6 +177,11 @@ const countryCenters = {
         lat: 48.6690,
         lng: 19.6990,
         name: "Slovakia"
+    },
+    "SG": {
+        lat: 1.3521,
+        lng: 103.8198,
+        name: "Singapore"
     }
 };
 
