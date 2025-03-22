@@ -1,7 +1,8 @@
 // dashboard.js
 
 // Import serverNames from servers.js
-import serverNames from './servers.js';
+import servers from './servers.js';
+const serverNames = servers.serverNames;
 
 // Main data object
 let accountsData = {};
@@ -151,7 +152,18 @@ function populateFilters() {
     servers.forEach(server => {
         const option = document.createElement('option');
         option.value = server;
-        option.textContent = server;
+
+        // Check if the server is an anonymous server
+        if (server.startsWith('ANONYMOUS_SERVER')) {
+            // Extract the number from the server key (e.g., "ANONYMOUS_SERVER_1" -> "1")
+            const serverNumber = server.split('_').pop();
+            // Format the label as "Anonymous Server #1"
+            option.textContent = `Anonymous Server #${serverNumber}`;
+        } else {
+            // Use the nice name from serverNames
+            option.textContent = serverNames[server] || server;
+        }
+
         serverFilter.appendChild(option);
     });
 
@@ -477,7 +489,9 @@ function createServerCasesChart() {
         if (server.startsWith('ANONYMOUS_SERVER')) {
             anonymousServerCount += 1;
         } else {
-            serverCounts[server] = (serverCounts[server] || 0) + 1;
+            // Use the nice name from serverNames
+            const niceName = serverNames[server] || server;
+            serverCounts[niceName] = (serverCounts[niceName] || 0) + 1;
         }
     });
 
@@ -490,7 +504,7 @@ function createServerCasesChart() {
     }
 
     // Map server codes to their full names using serverNames
-    const labels = Object.keys(serverCounts).map(server => serverNames[server] || server);
+    const labels = Object.keys(serverCounts);
     const data = Object.values(serverCounts);
 
     // Create chart
