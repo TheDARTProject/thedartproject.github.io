@@ -110,7 +110,7 @@ body.bg-gray-900 #activeUrlsStatus:contains("Critical risk") {
 }
 
 .table-container {
-	max-height: 800px;
+	max-height: 1000px;
 	overflow-y: auto;
 	position: relative;
 	border-radius: 0.375rem;
