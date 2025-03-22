@@ -344,7 +344,7 @@ function updateTable() {
     });
 
     document.getElementById('tableInfo').textContent =
-        `Showing ${startIndex + 1}-${Math.min(endIndex, filteredData.length)} of ${filteredData.length} entries`;
+        `Showing ${startIndex + 1}-${Math.min(endIndex, filteredData.length)} of ${filteredData.length} cases`;
 
     document.getElementById('prevPage').disabled = currentPage === 1;
     document.getElementById('nextPage').disabled = endIndex >= filteredData.length;
