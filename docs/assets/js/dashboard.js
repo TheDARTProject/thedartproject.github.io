@@ -176,12 +176,16 @@ function filterData() {
 
     filteredData = Object.values(accountsData).filter(account => {
         const foundDate = new Date(account.FOUND_ON);
-        const matchesSearch =
-            (account.USERNAME && account.USERNAME.toLowerCase().includes(searchTerm)) ||
-            (account.BEHAVIOUR && account.BEHAVIOUR.toLowerCase().includes(searchTerm)) ||
-            (account.ATTACK_METHOD && account.ATTACK_METHOD.toLowerCase().includes(searchTerm)) ||
-            (account.ATTACK_VECTOR && account.ATTACK_VECTOR.toLowerCase().includes(searchTerm)) ||
-            (account.DISCORD_ID && account.DISCORD_ID.includes(searchTerm));
+
+        // Check if any field in the account matches the search term
+        const matchesSearch = Object.values(account).some(value => {
+            if (typeof value === 'string') {
+                return value.toLowerCase().includes(searchTerm);
+            } else if (typeof value === 'number' || typeof value === 'boolean') {
+                return value.toString().toLowerCase().includes(searchTerm);
+            }
+            return false;
+        });
 
         const matchesAttackMethod = !attackMethod || account.ATTACK_METHOD === attackMethod;
         const matchesServer = !server || account.FOUND_ON_SERVER === server;
