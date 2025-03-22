@@ -185,7 +185,7 @@
         </nav>
       </div>
     </div>
-    <!-- Filter Controls -->
+    <!-- Main Content -->
     <div class="container mx-auto px-4 py-8">
       <div class="bg-white p-6 rounded-lg shadow-lg">
         <h2 class="text-2xl font-bold text-indigo-700 mb-4">Filters</h2>
@@ -218,7 +218,7 @@
         <button id="applyFilters" class="mt-4 bg-indigo-700 hover:bg-indigo-600 text-white px-6 py-2 rounded-lg text-lg font-semibold transition-colors shadow-md hover:shadow-lg">Apply Filters</button>
       </div>
     </div>
-    <!-- Main Content -->
+    <!-- Statistics -->
     <div class="container mx-auto px-4 py-8">
       <div class="bg-white p-6 rounded-lg shadow-lg">
         <h2 class="text-3xl font-bold text-indigo-700 mb-6">Statistics Overview</h2>
@@ -229,10 +229,12 @@
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Total Accounts</h4>
               <p id="totalAccounts" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Total number of compromised accounts detected.</p>
             </div>
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Deleted Accounts</h4>
               <p id="deletedAccounts" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Accounts that have been deleted or deactivated.</p>
             </div>
           </div>
         </div>
@@ -243,14 +245,17 @@
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Most Common Method</h4>
               <p id="commonAttackMethod" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">The most frequently used attack method.</p>
             </div>
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Total Methods</h4>
               <p id="totalAttackMethods" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Total number of attack methods used.</p>
             </div>
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Unique Methods</h4>
               <p id="uniqueAttackMethods" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Number of unique attack methods detected.</p>
             </div>
           </div>
         </div>
@@ -261,14 +266,17 @@
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Most Targeted Surface</h4>
               <p id="mostTargetedSurface" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">The most commonly targeted platform or service.</p>
             </div>
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Total Surfaces</h4>
               <p id="totalAttackSurfaces" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Total number of attack surfaces targeted.</p>
             </div>
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Unique Surfaces</h4>
               <p id="uniqueAttackSurfaces" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Number of unique attack surfaces detected.</p>
             </div>
           </div>
         </div>
@@ -279,14 +287,17 @@
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Active URLs</h4>
               <p id="activeUrls" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Number of active malicious URLs.</p>
             </div>
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Inactive URLs</h4>
               <p id="inactiveUrls" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Number of inactive malicious URLs.</p>
             </div>
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Unknown URLs</h4>
               <p id="unknownUrls" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Number of URLs with unknown status.</p>
             </div>
           </div>
         </div>
@@ -297,14 +308,17 @@
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Most Common Region</h4>
               <p id="mostCommonRegion" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">The most common region of origin for attacks.</p>
             </div>
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Total Regions</h4>
               <p id="totalRegions" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Total number of regions detected.</p>
             </div>
             <div class="bg-gray-50 p-4 rounded-lg">
               <h4 class="text-lg font-semibold text-indigo-600 mb-2">Unique Regions</h4>
               <p id="uniqueRegions" class="text-gray-600">Loading...</p>
+              <p class="text-sm text-gray-500">Number of unique regions detected.</p>
             </div>
           </div>
         </div>

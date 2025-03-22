@@ -36,8 +36,16 @@ function populateFilters(accounts) {
         }
     });
 
-    // Populate server filter
+    // Clear existing options before populating
     const serverFilter = document.getElementById('serverFilter');
+    const yearFilter = document.getElementById('yearFilter');
+    const regionFilter = document.getElementById('regionFilter');
+
+    serverFilter.innerHTML = '<option value="ALL">All Servers</option>';
+    yearFilter.innerHTML = '<option value="ALL">All Years</option>';
+    regionFilter.innerHTML = '<option value="ALL">All Regions</option>';
+
+    // Populate server filter
     servers.forEach(server => {
         const option = document.createElement('option');
         option.value = server;
@@ -46,7 +54,6 @@ function populateFilters(accounts) {
     });
 
     // Populate year filter
-    const yearFilter = document.getElementById('yearFilter');
     years.forEach(year => {
         const option = document.createElement('option');
         option.value = year;
@@ -55,7 +62,6 @@ function populateFilters(accounts) {
     });
 
     // Populate region filter
-    const regionFilter = document.getElementById('regionFilter');
     regions.forEach(region => {
         const option = document.createElement('option');
         option.value = region;
