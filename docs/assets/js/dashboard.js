@@ -297,7 +297,11 @@ function updateStats() {
 
     const timestamps = filteredData
         .filter(account => account.LAST_CHECK)
-        .map(account => new Date(account.LAST_CHECK).getTime());
+        .map(account => {
+            // Convert UTC time to local time
+            const utcDate = new Date(account.LAST_CHECK);
+            return new Date(utcDate.getTime() - utcDate.getTimezoneOffset() * 60000).getTime();
+        });
 
     const latestTimestamp = timestamps.length > 0 ? Math.max(...timestamps) : null;
     const lastUpdatedElement = document.getElementById('lastUpdated');
