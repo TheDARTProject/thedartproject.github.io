@@ -81,13 +81,24 @@ function countCasesPerServer(data) {
         serverCounts[server] = 0;
     });
 
+    // Initialize a counter for anonymous servers
+    let anonymousServerCases = 0;
+
     // Count cases from the data
     Object.values(data).forEach(account => {
         const server = account.FOUND_ON_SERVER;
         if (server) {
-            serverCounts[server] = (serverCounts[server] || 0) + 1;
+            if (server.startsWith("ANONYMOUS_SERVER_")) {
+                // Aggregate cases from all anonymous servers
+                anonymousServerCases += 1;
+            } else if (serverCounts[server] !== undefined) {
+                serverCounts[server] = (serverCounts[server] || 0) + 1;
+            }
         }
     });
+
+    // Add the total anonymous server cases to the serverCounts object
+    serverCounts["ANONYMOUS_SERVERS"] = anonymousServerCases;
 
     return serverCounts;
 }
@@ -104,6 +115,16 @@ async function updateServerCards(serverCounts) {
         if (!titleElement) continue;
 
         const serverTitle = titleElement.textContent.trim();
+
+        // Check if this is the anonymous server card
+        if (serverTitle === "2 Anonymous Servers") {
+            // Update case count for anonymous servers
+            const caseCountElement = card.querySelector('.case-count');
+            if (caseCountElement) {
+                caseCountElement.textContent = `${serverCounts["ANONYMOUS_SERVERS"]} Cases Contributed`;
+            }
+            continue; // Skip the rest of the loop for anonymous servers
+        }
 
         // Find the corresponding server key
         const serverKey = Object.keys(serverNames).find(key =>
