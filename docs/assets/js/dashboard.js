@@ -429,6 +429,11 @@ function showAccountDetails(caseNumber) {
         return `https://www.ipqualityscore.com/threat-feeds/malicious-url-scanner/${encodeURIComponent(url)}`;
     };
 
+    // Calculate the time till compromise in days
+    const createdDate = new Date(account.ACCOUNT_CREATION);
+    const foundDate = new Date(account.FOUND_ON);
+    const timeTillCompromise = Math.floor((foundDate - createdDate) / (1000 * 60 * 60 * 24)); // Convert milliseconds to days
+
     modalContent.innerHTML = `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -439,7 +444,7 @@ function showAccountDetails(caseNumber) {
                 <p><span class="font-medium">Discord ID:</span> ${account.DISCORD_ID}</p>
                 <p><span class="font-medium">Username:</span> ${account.USERNAME}</p>
                 <p><span class="font-medium">Account Status:</span> ${account.ACCOUNT_STATUS}</p>
-                <p><span class="font-medium">Created on:</span> ${account.ACCOUNT_CREATION}</p>
+                <p><span class="font-medium">Created on:</span> ${formatDate(account.ACCOUNT_CREATION)}</p>
                 <p><span class="font-medium">Behaviour:</span> ${account.BEHAVIOUR}</p>
             </div>
             <div>
@@ -450,7 +455,7 @@ function showAccountDetails(caseNumber) {
                 <p><span class="font-medium">Attack Surface:</span> ${account.ATTACK_SURFACE}</p>
                 <p><span class="font-medium">Suspected Region of Origin:</span> ${account.SUSPECTED_REGION_OF_ORIGIN}</p>
                 <p><span class="font-medium">Last Check:</span> ${formatDate(account.LAST_CHECK)}</p>
-                <p><span class="font-medium">Time Till Compromise:</span> ${account.ACCOUNT_CREATION}</p>
+                <p><span class="font-medium">Time Till Compromise:</span> ${timeTillCompromise} days</p>
                 <p><span class="font-medium">Non-ASCII Username:</span> ${account.NON_ASCII_USERNAME ? 'Yes' : 'No'}</p>
             </div>
         </div>
