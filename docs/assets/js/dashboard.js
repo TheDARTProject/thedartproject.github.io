@@ -644,13 +644,15 @@ function createServerCasesChart() {
 
     // Create chart
     canvas.chart = new Chart(canvas, {
-        type: 'bar',
+        type: 'pie',
         data: {
             labels: labels,
             datasets: [{
                 label: 'Number of Cases',
                 data: data,
-                backgroundColor: 'rgba(99, 102, 241, 0.8)', // Indigo color
+                backgroundColor: labels.map((_, i) =>
+                    `hsl(${(i * 137) % 360}, 70%, 60%)` // Generate dynamic colors for each slice
+                ),
                 borderWidth: 1
             }]
         },
@@ -659,26 +661,17 @@ function createServerCasesChart() {
             maintainAspectRatio: false,
             plugins: {
                 legend: {
-                    display: false
+                    position: 'right', // Position legend on the right
                 },
                 tooltip: {
                     callbacks: {
                         label: (context) => {
-                            return `${context.label}: ${context.raw} cases`;
+                            const label = context.label || '';
+                            const value = context.raw || 0;
+                            const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                            const percentage = ((value / total) * 100).toFixed(1);
+                            return `${label}: ${value} (${percentage}%)`;
                         }
-                    }
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    ticks: {
-                        precision: 0
-                    }
-                },
-                x: {
-                    ticks: {
-                        autoSkip: false
                     }
                 }
             }
