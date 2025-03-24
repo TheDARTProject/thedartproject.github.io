@@ -517,6 +517,73 @@ function showAccountDetails(caseNumber) {
     modal.classList.remove('hidden');
 }
 
+// Create Final Domains Distribution Chart
+function createFinalDomainsChart() {
+    const canvas = document.getElementById('finalDomainsChart');
+
+    // Destroy existing chart if it exists
+    if (canvas.chart) {
+        canvas.chart.destroy();
+    }
+
+    const domainCounts = {};
+    filteredData.forEach(account => {
+        const domain = account.FINAL_URL_DOMAIN || 'Unknown';
+        domainCounts[domain] = (domainCounts[domain] || 0) + 1;
+    });
+
+    // Sort domains by count in descending order
+    const sortedDomains = Object.entries(domainCounts).sort((a, b) => b[1] - a[1]);
+
+    // Limit to top 10 domains for better visualization
+    const topDomains = sortedDomains.slice(0, 10);
+
+    const labels = topDomains.map(d => d[0]);
+    const data = topDomains.map(d => d[1]);
+
+    canvas.chart = new Chart(canvas, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Number of Cases',
+                data: data,
+                backgroundColor: 'rgba(255, 159, 64, 0.8)', // Orange color
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: (context) => {
+                            return `${context.label}: ${context.raw} cases`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        precision: 0
+                    }
+                },
+                x: {
+                    ticks: {
+                        autoSkip: false
+                    }
+                }
+            }
+        }
+    });
+}
+
 // Create all charts
 function createCharts() {
     createTimelineChart();
@@ -530,6 +597,7 @@ function createCharts() {
     createGoalsChart();
     createMethodGoalChart();
     createServerCasesChart();
+    createFinalDomainsChart();
 }
 
 // Create server cases chart
