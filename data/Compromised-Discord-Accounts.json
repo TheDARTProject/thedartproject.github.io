@@ -28334,5 +28334,28 @@
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-22T12:03:52.180057"
+    },
+    "ACCOUNT_NUMBER_1233": {
+        "CASE_NUMBER": "1233",
+        "FOUND_ON": "2025-03-22",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "369787755229872130",
+        "USERNAME": "mr.su.",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "ACCOUNT_TYPE": "User Accounts",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "RU",
+        "SURFACE_URL": "https://u.to/JEMyIg",
+        "SURFACE_URL_DOMAIN": "u.to",
+        "SURFACE_URL_STATUS": "ACTIVE",
+        "FINAL_URL": "https://stearncommunity.co/gift/id=1131341079",
+        "FINAL_URL_DOMAIN": "stearncommunity.co",
+        "FINAL_URL_STATUS": "ACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-24T01:46:45.571247"
     }
 }
