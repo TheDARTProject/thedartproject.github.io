@@ -277,7 +277,7 @@ function processThreatData() {
         let region = account.SUSPECTED_REGION_OF_ORIGIN;
 
         // Handle empty or unknown regions
-        if (!region || region === "UNKNOWN" || region === "") {
+        if (!region || region === "N/A" || region === "") {
             region = getRandomCountryCode();
         }
 
