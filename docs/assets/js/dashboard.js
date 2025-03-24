@@ -439,6 +439,7 @@ function showAccountDetails(caseNumber) {
                 <p><span class="font-medium">Discord ID:</span> ${account.DISCORD_ID}</p>
                 <p><span class="font-medium">Username:</span> ${account.USERNAME}</p>
                 <p><span class="font-medium">Account Status:</span> ${account.ACCOUNT_STATUS}</p>
+                <p><span class="font-medium">Created on:</span> ${account.ACCOUNT_CREATION}</p>
                 <p><span class="font-medium">Behaviour:</span> ${account.BEHAVIOUR}</p>
             </div>
             <div>
@@ -449,6 +450,7 @@ function showAccountDetails(caseNumber) {
                 <p><span class="font-medium">Attack Surface:</span> ${account.ATTACK_SURFACE}</p>
                 <p><span class="font-medium">Suspected Region of Origin:</span> ${account.SUSPECTED_REGION_OF_ORIGIN}</p>
                 <p><span class="font-medium">Last Check:</span> ${formatDate(account.LAST_CHECK)}</p>
+                <p><span class="font-medium">Time Till Compromise:</span> ${account.ACCOUNT_CREATION}</p>
                 <p><span class="font-medium">Non-ASCII Username:</span> ${account.NON_ASCII_USERNAME ? 'Yes' : 'No'}</p>
             </div>
         </div>
@@ -584,6 +586,84 @@ function createFinalDomainsChart() {
     });
 }
 
+// Create Average Time Till Compromise Chart
+function createAverageTimeChart() {
+    const canvas = document.getElementById('averageTimeChart');
+
+    // Destroy existing chart if it exists
+    if (canvas.chart) {
+        canvas.chart.destroy();
+    }
+
+    // Calculate the average time till compromise per year
+    const yearData = {};
+    Object.values(accountsData).forEach(account => {
+        const foundDate = new Date(account.FOUND_ON);
+        const creationDate = new Date(account.ACCOUNT_CREATION);
+        const year = foundDate.getFullYear();
+
+        if (!isNaN(foundDate) && !isNaN(creationDate)) {
+            const timeDiff = foundDate - creationDate; // Difference in milliseconds
+            const daysDiff = timeDiff / (1000 * 60 * 60 * 24); // Convert to days
+
+            if (!yearData[year]) {
+                yearData[year] = { totalDays: 0, count: 0 };
+            }
+            yearData[year].totalDays += daysDiff;
+            yearData[year].count += 1;
+        }
+    });
+
+    // Calculate the average days per year
+    const labels = Object.keys(yearData).sort();
+    const data = labels.map(year => (yearData[year].totalDays / yearData[year].count).toFixed(2));
+
+    // Create the chart
+    canvas.chart = new Chart(canvas, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Average Days Till Compromise',
+                data: data,
+                backgroundColor: 'rgba(75, 192, 192, 0.8)', // Teal color
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: (context) => {
+                            return `${context.label}: ${context.raw} days`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Average Days'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Year'
+                    }
+                }
+            }
+        }
+    });
+}
+
 // Create all charts
 function createCharts() {
     createTimelineChart();
@@ -598,6 +678,7 @@ function createCharts() {
     createMethodGoalChart();
     createServerCasesChart();
     createFinalDomainsChart();
+    createAverageTimeChart()
 }
 
 // Create server cases chart
