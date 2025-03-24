@@ -18,7 +18,7 @@ def add_embed_elements(embed):
     # Help message
     embed.add_field(
         name="Need Help?",
-        value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/discord-bot.html) or contact the project's owner <@212020258402205697>.",
+        value="For additional help, visit [the documentation](https://thatsinewave.github.io/CDA-Project/pages/cda-monitor-app.html) or contact the project's owner <@212020258402205697>.",
         inline=False,
     )
 
