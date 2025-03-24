@@ -394,6 +394,41 @@ function showAccountDetails(caseNumber) {
     const modal = document.getElementById('detailModal');
     const modalContent = document.getElementById('modalContent');
 
+    // Helper functions for URL testing defined inline
+    const virusTotalLink = function(url) {
+        const base64Url = btoa(url).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+        return `https://www.virustotal.com/gui/url/${base64Url}`;
+    };
+
+    const urlVoidLink = function(url) {
+        // Extract the domain from the URL
+        let domain = url;
+        try {
+            // Remove protocol (http://, https://, etc.)
+            if (domain.includes('://')) {
+                domain = domain.split('://')[1];
+            }
+            // Get just the domain part (remove paths, query params, etc.)
+            if (domain.includes('/')) {
+                domain = domain.split('/')[0];
+            }
+            // Remove any trailing slash
+            domain = domain.replace(/\/$/, '');
+            // Remove any www. prefix if present
+            domain = domain.replace(/^www\./, '');
+        } catch (e) {
+            // If any error occurs during parsing, use the original URL
+            console.error("Error extracting domain:", e);
+        }
+
+        return `https://www.urlvoid.com/scan/${domain}/`;
+    };
+
+    const ipQualityScoreLink = function(url) {
+        // For IPQualityScore, we encode the URL and append it to their scanner URL
+        return `https://www.ipqualityscore.com/threat-feeds/malicious-url-scanner/${encodeURIComponent(url)}`;
+    };
+
     modalContent.innerHTML = `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -460,6 +495,21 @@ function showAccountDetails(caseNumber) {
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+        <!-- Buttons for Testing URLs -->
+        <div class="mt-6 text-center">
+            <h3 class="font-medium text-lg mb-2 text-center">Test URLs</h3>
+            <div class="flex justify-center gap-2">
+                <button onclick="window.open('${virusTotalLink(account.FINAL_URL)}', '_blank')" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+                    VirusTotal
+                </button>
+                <button onclick="window.open('${ipQualityScoreLink(account.FINAL_URL)}', '_blank')" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">
+                    IPQualityScore
+                </button>
+                <button onclick="window.open('${urlVoidLink(account.FINAL_URL)}', '_blank')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
+                    URLVoid
+                </button>
             </div>
         </div>
     `;
