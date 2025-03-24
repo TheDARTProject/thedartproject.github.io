@@ -77,7 +77,7 @@
             <a href="/CDA-Project/pages/intelligence.html" class="sidebar-link hover:bg-indigo-600">Intel Reports</a>
           </li>
           <li>
-            <a href="#" class="sidebar-link hover:bg-indigo-600">Discord App (COMING SOON)</a>
+            <a href="/CDA-Project/pages/cda-monitor-app.html" class="sidebar-link hover:bg-indigo-600">Discord App</a>
           </li>
         </ul>
         <!-- Resources -->
@@ -191,129 +191,268 @@
     <!-- Main Content -->
     <div class="container mx-auto px-4 py-8">
       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <!-- How to Use Section -->
+        <!-- Introduction Section -->
         <div class="mb-8">
           <h2 class="text-3xl font-bold text-indigo-700 mb-6">CDA Monitor App</h2>
-          <p class="text-gray-600 mb-4">The <b>CDA Monitor App</b> is currently in <b>Alpha</b> and is not yet ready for production use. Features are still being developed, and the app may experience bugs or incomplete functionality. I appreciate your patience as I work to improve it!</p>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-4">How to Use the CDA Monitor App</h3>
-          <!-- Features Overview -->
+          <p class="text-gray-600 mb-4">Complete documentation on to use the public version of the app and also how to self-host it</p>
+          <p class="text-gray-600 mb-4">The <b>CDA Monitor App</b> is a powerful Discord moderation tool designed to help server administrators monitor and track messages containing specific keywords. It provides comprehensive logging, reporting, and alerting capabilities to help maintain server safety and compliance.</p>
+        </div>
+        <!-- Instalation -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold text-indigo-600 mb-2">Instalation</h4>
+          <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h5 class="text-lg font-semibold text-indigo-600 mb-2">How to install the CDA Monitor App</h5>
+              <p class="text-gray-600 mb-4">You can install the public version of the CDA Monitor App by visiting <a href="https://discord.com/api/oauth2/authorize?client_id=1351854272463241246&permissions=85120&scope=bot%20applications.commands" class="text-indigo-400 hover:text-indigo-100" target="_blank">this URL</a>. After you have finished installing the app inside your server, you can come back here and read about the various features of the CDA Monitor App!</p>
+            </div>
+          </div>
+        </div>
+        <!-- Notes -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold text-indigo-600 mb-2">Notes</h4>
+          <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h5 class="text-lg font-semibold text-indigo-600 mb-2">Additional notes about the CDA Monitor App.</h5>
+              <ul class="list-disc pl-5 mt-2">
+                <li>The official wordlist.json file will remain private to keep the app's detection ability safe.</li>
+                <li>Server Administrators can choose to let another staff member control the public app, for this please contact me on Discord at <b>sinewave_</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Features for Server Administrators -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Features for Server Administrators</h3>
+          <!-- Setup and Configuration -->
           <div class="mb-6">
-            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Features Overview</h4>
-            <p class="text-gray-600 mb-4">
-              The CDA Monitor App offers several powerful features to help you monitor and secure your Discord server:
-            </p>
+            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Setup and Configuration</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Monitor All Channels</h5>
-                <p class="text-gray-600">The app can monitor all text channels in your server for specific keywords.</p>
-                <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Monitor All Channels Screenshot" class="mt-2 rounded-lg shadow-sm">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">/setup Command</h5>
+                <p class="text-gray-600">Configure which channels the app should monitor in your server. Choose between monitoring all text channels or selecting specific ones, with an option to perform a historical scan of existing messages.</p>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Full Historical Scans</h5>
-                <p class="text-gray-600">Perform a full historical scan of selected channels to log past messages containing flagged words.</p>
-                <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Historical Scan Screenshot" class="mt-2 rounded-lg shadow-sm">
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Info Command</h5>
-                <p class="text-gray-600">Get detailed information about the app's activity, including the number of flagged messages, last scan date, and more.</p>
-                <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Info Command Screenshot" class="mt-2 rounded-lg shadow-sm">
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Data Retrieval (Coming Soon)</h5>
-                <p class="text-gray-600">Download CSV files containing flagged messages for further analysis.</p>
-                <div class="image-container">
-                  <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Data Retrieval Screenshot" class="mt-2 rounded-lg shadow-sm">
-                </div>
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Web Configurator (Coming Soon)</h5>
-                <p class="text-gray-600">Configure the app through a web interface for easier setup and management.</p>
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">User Verification (Coming Soon)</h5>
-                <p class="text-gray-600">Verify users who have been flagged by the app to reduce false positives.</p>
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">/reset Command</h5>
+                <p class="text-gray-600">Remove all monitoring configurations for your server with a two-step verification process to prevent accidental resets.</p>
               </div>
             </div>
           </div>
-          <!-- Using the App via Discord's App Discovery -->
+          <!-- Monitoring and Reporting -->
           <div class="mb-6">
-            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Using the app via Discord's App Discovery</h4>
-            <p class="text-gray-600 mb-4">
-              If you’ve added the app through Discord’s App Discovery or a direct installation link, follow these steps to get started:
-            </p>
+            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Monitoring and Reporting</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">1. Install the App to Your Server</h5>
-                <p class="text-gray-600">Click the installation link provided by the app's developer or find it in Discord's App Discovery. Select the server where you want to add the app and grant it the necessary permissions.</p>
-                <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Install App Screenshot" class="mt-2 rounded-lg shadow-sm">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Automatic Scanning</h5>
+                <p class="text-gray-600">The app automatically scans messages in monitored channels for keywords from its wordlist, checking both message content and embedded content.</p>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">2. Set Up the App</h5>
-                <p class="text-gray-600">Use the <code>/setup</code> command to configure the app. The app will guide you through the setup process, asking if you want to monitor all channels or specific ones. You’ll also have the option to perform a <b>full historical scan</b> of the selected channels.</p>
-                <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Setup Command Screenshot" class="mt-2 rounded-lg shadow-sm">
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">3. Monitor Messages</h5>
-                <p class="text-gray-600">After setup, the app will automatically monitor the selected channels for messages containing the flagged words. Flagged messages will be logged in the CSV dedicated for your server.</p>
-                <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Monitor Messages Screenshot" class="mt-2 rounded-lg shadow-sm">
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">4. Get App Information</h5>
-                <p class="text-gray-600">Use the <code>/info</code> command to get detailed information about the app's activity, including the number of flagged messages, last scan date, monitored channels, and the app's status</p>
-                <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/WORK-IN-PROGRESS.png" alt="Info Command Screenshot" class="mt-2 rounded-lg shadow-sm">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">CSV Logging</h5>
+                <p class="text-gray-600">Messages containing flagged words are logged to server-specific CSV files with detailed information including message content, author details, timestamps, and channel information.</p>
               </div>
             </div>
           </div>
-          <!-- Running the App Locally -->
+          <!-- Data Access -->
           <div class="mb-6">
-            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Running the App Locally</h4>
-            <p class="text-gray-600 mb-4">
-              If you want to run the app on your own machine, follow these steps:
-            </p>
+            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Data Access</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">/dump Command</h5>
+                <p class="text-gray-600">Download a CSV file containing all flagged messages for your server, sent directly to your DMs for privacy. Includes comprehensive message data with two-step verification for security.</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">/info Command</h5>
+                <p class="text-gray-600">View server-specific statistics including number of flagged messages, last scan date, number of monitored words, and number of monitored channels in an organized embed.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Support and Help -->
+          <div class="mb-6">
+            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Support and Help</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">/help Command</h5>
+                <p class="text-gray-600">Get a complete list of all available commands with descriptions in an easy-to-read embed format.</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">/support Command</h5>
+                <p class="text-gray-600">Contact the app's developer directly for assistance through a guided modal interface. Includes server context to help troubleshoot issues.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Features for Self-Hosters -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Features for Self-Hosters</h3>
+          <p class="text-gray-600 mb-4">You can download the source code of the CDA Monitor App by visiting <a href="https://github.com/ThatSINEWAVE/CDA-Project/tree/main/tools/bot" class="text-indigo-400 hover:text-indigo-100" target="_blank">this section of the GitHub Repository</a>.</p>
+          <!-- Configuration Files -->
+          <div class="mb-6">
+            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Configuration Files</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">servers.json</h5>
+                <p class="text-gray-600">Automatically tracks servers the app joins, storing server IDs, names, monitored channels, and inviter information.</p>
+                <pre class="bg-gray-200 p-2 rounded mt-2 text-xs overflow-x-auto">
+    {
+      "SERVER_NO_1": {
+        "Guild ID": 1234567890123456789,
+        "Server Name": "Example Server",
+        "Member Count": 100,
+        "Monitored Channels": [
+          {
+            "Channel ID": 9876543219876543210,
+            "Channel Name": "log-channel"
+          }
+        ],
+        "Inviter ID": "1234567890123456789"
+      }
+    }</pre>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">wordlist.json</h5>
+                <p class="text-gray-600">Contains the list of words/phrases to monitor. Customize this file to match your specific monitoring needs.</p>
+                <pre class="bg-gray-200 p-2 rounded mt-2 text-xs overflow-x-auto">
+    {
+      "words": [
+        "malicious words",
+        "are listed here",
+        "this file will",
+        "remain private",
+        // Additional words...
+      ]
+    }</pre>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">rich_presence.json</h5>
+                <p class="text-gray-600">Configure custom status messages for the app with multiple presences that rotate at set intervals.</p>
+                <pre class="bg-gray-200 p-2 rounded mt-2 text-xs overflow-x-auto">
+    {
+      "timer_interval": 20,
+      "message_sets": [
+        {
+          "name": "BOT_WATCHING",
+          "details": {
+            "text": "channels",
+            "enabled": true
+          },
+          // Additional presences...
+        }
+      ]
+    }</pre>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">owner.json</h5>
+                <p class="text-gray-600">Set the app owner's ID for support requests and system notifications. This should not be modified to maintain contact with the developer.</p>
+                <pre class="bg-gray-200 p-2 rounded mt-2 text-xs overflow-x-auto">
+    {
+      "owner_id": "212020258402205697"
+    }</pre>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">announcement.json</h5>
+                <p class="text-gray-600">Tracks the last announcement sent to server inviters to prevent duplicate messages.</p>
+                <pre class="bg-gray-200 p-2 rounded mt-2 text-xs overflow-x-auto">
+    {
+      "date": "2025-03-21",
+      "time": "14:35",
+      "timezone": "GMT+2"
+    }</pre>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">announcement.md</h5>
+                <p class="text-gray-600">Markdown file containing announcement content with YAML front matter for metadata.</p>
+                <pre class="bg-gray-200 p-2 rounded mt-2 text-xs overflow-x-auto">---
+    date: "2025-03-21"
+    time: "14:35"
+    timezone: "GMT+2"
+    ---
+
+    ## Announcement Test
+    This is a test for the announcement system</pre>
+              </div>
+            </div>
+          </div>
+          <!-- Installation and Setup -->
+          <div class="mb-6">
+            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Installation and Setup</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">1. Prerequisites</h5>
-                <p class="text-gray-600">Ensure you have <b>Python 3.9 or higher</b> installed. You’ll also need a <b>Discord app token</b> from the <a href="https://discord.com/developers/applications" class="text-indigo-600 hover:text-indigo-800" target="_blank">Discord Developer Portal</a>.</p>
+                <p class="text-gray-600">Python 3.8+ and a Discord app token from the <a href="https://discord.com/developers/applications" class="text-indigo-600 hover:text-indigo-800" target="_blank">Discord Developer Portal</a>.</p>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
                 <h5 class="text-lg font-semibold text-indigo-600 mb-2">2. Install Dependencies</h5>
-                <p class="text-gray-600">Clone the app's repository and install the required dependencies using:
-                  <code class="block bg-gray-200 p-2 rounded mt-2">pip install -r requirements.txt</code>
-                </p>
+                <p class="text-gray-600"><code class="bg-gray-200 p-1 rounded">pip install -r requirements.txt</code></p>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">3. Configure the App</h5>
-                <p class="text-gray-600">Create a <code>.env</code> file in the root directory and add your Discord app token:
-                  <code class="block bg-gray-200 p-2 rounded mt-2">DISCORD_TOKEN=TOKEN</code>
-                  <code class="block bg-gray-200 p-2 rounded mt-2">CLIENT_ID=ID</code>
-                </p>
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">3. Configuration</h5>
+                <p class="text-gray-600">Create a <code>.env</code> file with your Discord token and configure the JSON files as needed.</p>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">4. Run the App</h5>
-                <p class="text-gray-600">Start the app by running and monitor the console for the app's activity:
-                  <code class="block bg-gray-200 p-2 rounded mt-2">python main.py</code>
-                </p>
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">5. Set Up the App in Your Server</h5>
-                <p class="text-gray-600">Install the app to your server using the OAuth2 URL generated in the Discord Developer Portal. Use the <code>/setup</code> command to configure the app.</p>
-              </div>
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <h5 class="text-lg font-semibold text-indigo-600 mb-2">6. Monitor and Manage</h5>
-                <p class="text-gray-600">The app will now monitor the selected channels for flagged messages. Use the <code>/info</code> command to get detailed information about the app's activity.</p>
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">4. Running the App</h5>
+                <p class="text-gray-600"><code class="bg-gray-200 p-1 rounded">python main.py</code></p>
               </div>
             </div>
           </div>
-          <!-- Additional Notes -->
+          <!-- Key Features -->
           <div class="mb-6">
-            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Additional Notes</h4>
-            <p class="text-gray-600 mb-4">
-              - <b>Alpha Limitations:</b> Since the app is in Alpha, some features (like downloadable CSVs, web configurator, and user verification) are not yet available. These will be added in future updates.
-            </p>
-            <p class="text-gray-600 mb-4">
-              - <b>Feedback:</b> If you encounter any issues or have suggestions, please reach out to me (sinewave_ on Discord) or submit feedback through the app's support channels.
-            </p>
+            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Key Features for Self-Hosters</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Modular Cog System</h5>
+                <p class="text-gray-600">Each feature is organized into separate cogs for easy maintenance and extension.</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Rate Limiting</h5>
+                <p class="text-gray-600">Built-in protection against Discord API rate limits with configurable safe limits.</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Comprehensive Logging</h5>
+                <p class="text-gray-600">Server-specific logging with daily log rotation and detailed event tracking.</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="text-lg font-semibold text-indigo-600 mb-2">Announcement System</h5>
+                <p class="text-gray-600">Send updates to server inviters when announcements change, with automatic duplicate prevention.</p>
+              </div>
+            </div>
           </div>
+        </div>
+        <!-- Best Practices -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold text-indigo-600 mb-2">Best Practices for Self-Hosting</h4>
+          <ul class="list-disc pl-5 text-gray-600 space-y-2">
+            <li>Run the app in a secure environment with restricted access</li>
+            <li>Regularly back up your configuration files</li>
+            <li>Monitor the App's logs for any issues</li>
+            <li>Keep the app updated with the latest version</li>
+            <li>Respect Discord's Terms of Service and API guidelines</li>
+            <li>Do not modify the owner.json file to maintain support access</li>
+            <li>If you encounter any security flaw please contact me on Discord at <code>sinewave_</code></li>
+          </ul>
+        </div>
+        <!-- Support -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold text-indigo-600 mb-2">Support</h4>
+          <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h5 class="text-lg font-semibold text-indigo-600 mb-2">For additional help with using or self-hosting the app:</h5>
+              <ul class="list-disc pl-5 mt-2">
+                <li>Refer to the project documentation: <a href="https://thatsinewave.github.io/CDA-Project/" class="text-indigo-600 hover:text-indigo-800" target="_blank">CDA Project Docs</a></li>
+                <li>Contact the developer through the <code>/support</code> command or via DM at <code>sinewave_</code>.</li>
+                <li>Open issues on the GitHub repository for technical problems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Future Improvements -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold text-indigo-600 mb-2">Planned features to be implemented</h4>
+          <ul class="list-disc pl-5 text-gray-600 space-y-2">
+            <li>Automated live database updates and data validation.</li>
+            <li>User verification process for previously flagged users listed in the database.</li>
+            <li>Optional tools for moderation and prevention of malicious messages using existing data.</li>
+            <li>Simple web configurator page to make the setup process easier and faster.</li>
+            <li>More coming soon!</li>
+          </ul>
         </div>
       </div>
     </div>
