@@ -689,11 +689,7 @@ function createCharts() {
 // Create server cases chart
 function createServerCasesChart() {
     const canvas = document.getElementById('serverCasesChart');
-
-    // Destroy existing chart if it exists
-    if (canvas.chart) {
-        canvas.chart.destroy();
-    }
+    if (canvas.chart) canvas.chart.destroy();
 
     // Count cases by server
     const serverCounts = {};
@@ -724,9 +720,12 @@ function createServerCasesChart() {
         serverCounts[anonymousLabel] = anonymousServerCount;
     }
 
-    // Map server codes to their full names using serverNames
-    const labels = Object.keys(serverCounts);
-    const data = Object.values(serverCounts);
+    // Sort servers by count (descending)
+    const sortedServers = Object.entries(serverCounts)
+        .sort((a, b) => b[1] - a[1]);
+
+    const labels = sortedServers.map(s => s[0]);
+    const data = sortedServers.map(s => s[1]);
 
     // Create chart
     canvas.chart = new Chart(canvas, {
@@ -737,7 +736,7 @@ function createServerCasesChart() {
                 label: 'Number of Cases',
                 data: data,
                 backgroundColor: labels.map((_, i) =>
-                    `hsl(${(i * 137) % 360}, 70%, 60%)` // Generate dynamic colors for each slice
+                    `hsl(${(i * 137) % 360}, 70%, 60%)`
                 ),
                 borderWidth: 1
             }]
@@ -747,7 +746,7 @@ function createServerCasesChart() {
             maintainAspectRatio: false,
             plugins: {
                 legend: {
-                    position: 'right', // Position legend on the right
+                    position: 'right',
                 },
                 tooltip: {
                     callbacks: {
@@ -776,7 +775,9 @@ function createGoalsChart() {
         goalsCounts[goal] = (goalsCounts[goal] || 0) + 1;
     });
 
-    const sortedGoals = Object.entries(goalsCounts).sort((a, b) => b[1] - a[1]);
+    // Sort goals by count (descending)
+    const sortedGoals = Object.entries(goalsCounts)
+        .sort((a, b) => b[1] - a[1]);
 
     canvas.chart = new Chart(canvas, {
         type: 'doughnut',
@@ -887,13 +888,17 @@ function createBehaviourChart() {
         behaviourCounts[behaviour] = (behaviourCounts[behaviour] || 0) + 1;
     });
 
+    // Sort behaviours by count (descending)
+    const sortedBehaviours = Object.entries(behaviourCounts)
+        .sort((a, b) => b[1] - a[1]);
+
     canvas.chart = new Chart(canvas, {
         type: 'pie',
         data: {
-            labels: Object.keys(behaviourCounts),
+            labels: sortedBehaviours.map(b => b[0]),
             datasets: [{
-                data: Object.values(behaviourCounts),
-                backgroundColor: Object.keys(behaviourCounts).map((_, i) =>
+                data: sortedBehaviours.map(b => b[1]),
+                backgroundColor: sortedBehaviours.map((_, i) =>
                     `hsl(${(i * 197) % 360}, 70%, 60%)`
                 ),
                 borderWidth: 1
@@ -931,8 +936,12 @@ function createAccountTypeChart() {
         accountTypeCounts[accountType] = (accountTypeCounts[accountType] || 0) + 1;
     });
 
-    const labels = Object.keys(accountTypeCounts);
-    const data = Object.values(accountTypeCounts);
+    // Sort account types by count (descending)
+    const sortedTypes = Object.entries(accountTypeCounts)
+        .sort((a, b) => b[1] - a[1]);
+
+    const labels = sortedTypes.map(t => t[0]);
+    const data = sortedTypes.map(t => t[1]);
 
     canvas.chart = new Chart(canvas, {
         type: 'pie',
@@ -1148,10 +1157,7 @@ function createTimelineChart() {
 // Create attack methods chart
 function createMethodsChart() {
     const canvas = document.getElementById('methodsChart');
-
-    if (canvas.chart) {
-        canvas.chart.destroy();
-    }
+    if (canvas.chart) canvas.chart.destroy();
 
     const methodCounts = {};
     filteredData.forEach(account => {
@@ -1159,8 +1165,12 @@ function createMethodsChart() {
         methodCounts[method] = (methodCounts[method] || 0) + 1;
     });
 
-    const labels = Object.keys(methodCounts);
-    const data = Object.values(methodCounts);
+    // Sort methods by count (descending)
+    const sortedMethods = Object.entries(methodCounts)
+        .sort((a, b) => b[1] - a[1]);
+
+    const labels = sortedMethods.map(m => m[0]);
+    const data = sortedMethods.map(m => m[1]);
 
     const backgroundColors = labels.map((_, i) =>
         `hsl(${(i * 137) % 360}, 70%, 60%)`
@@ -1213,8 +1223,12 @@ function createSurfacesChart() {
         surfaceCounts[surface] = (surfaceCounts[surface] || 0) + 1;
     });
 
-    const labels = Object.keys(surfaceCounts);
-    const data = Object.values(surfaceCounts);
+    // Sort surfaces by count (descending)
+    const sortedSurfaces = Object.entries(surfaceCounts)
+        .sort((a, b) => b[1] - a[1]);
+
+    const labels = sortedSurfaces.map(s => s[0]);
+    const data = sortedSurfaces.map(s => s[1]);
 
     canvas.chart = new Chart(canvas, {
         type: 'bar',
@@ -1250,10 +1264,7 @@ function createSurfacesChart() {
 // Create regions chart
 function createRegionsChart() {
     const canvas = document.getElementById('regionsChart');
-
-    if (canvas.chart) {
-        canvas.chart.destroy();
-    }
+    if (canvas.chart) canvas.chart.destroy();
 
     const regionCounts = {};
     filteredData.forEach(account => {
@@ -1261,8 +1272,12 @@ function createRegionsChart() {
         regionCounts[region] = (regionCounts[region] || 0) + 1;
     });
 
-    const labels = Object.keys(regionCounts);
-    const data = Object.values(regionCounts);
+    // Sort regions by count (descending)
+    const sortedRegions = Object.entries(regionCounts)
+        .sort((a, b) => b[1] - a[1]);
+
+    const labels = sortedRegions.map(r => r[0]);
+    const data = sortedRegions.map(r => r[1]);
 
     const backgroundColors = labels.map((_, i) =>
         `hsl(${(i * 137 + 60) % 360}, 70%, 60%)`
