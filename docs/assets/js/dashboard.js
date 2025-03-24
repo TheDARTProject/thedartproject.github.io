@@ -387,6 +387,7 @@ function updateTable() {
 }
 
 // Show detailed information for a specific account
+// Show detailed information for a specific account
 function showAccountDetails(caseNumber) {
     const account = Object.values(accountsData).find(acc => acc.CASE_NUMBER === caseNumber);
     if (!account) return;
@@ -433,7 +434,7 @@ function showAccountDetails(caseNumber) {
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap">Surface URL</td>
                             <td class="px-6 py-4 url-cell">
-                                <a href="#" class="text-indigo-600 hover:text-indigo-900 break-all">${account.SURFACE_URL}</a>
+                                <span class="spoiler" onclick="this.classList.toggle('revealed')">${account.SURFACE_URL}</span>
                             </td>
                             <td class="px-6 py-4 domain-cell" title="${account.SURFACE_URL_DOMAIN}">${account.SURFACE_URL_DOMAIN}</td>
                             <td class="px-6 py-4 whitespace-nowrap">
@@ -447,7 +448,7 @@ function showAccountDetails(caseNumber) {
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap">Final URL</td>
                             <td class="px-6 py-4 url-cell">
-                                <a href="#" class="text-indigo-600 hover:text-indigo-900 break-all">${account.FINAL_URL}</a>
+                                <span class="spoiler" onclick="this.classList.toggle('revealed')">${account.FINAL_URL}</span>
                             </td>
                             <td class="px-6 py-4 domain-cell" title="${account.FINAL_URL_DOMAIN}">${account.FINAL_URL_DOMAIN}</td>
                             <td class="px-6 py-4 whitespace-nowrap">

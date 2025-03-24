@@ -24,6 +24,19 @@ body.bg-gray-900.texture::after {
 	background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30,10 L45,18 L45,42 L30,50 L15,42 L15,18 Z' stroke='rgb(99,102,241)' stroke-opacity='0.08' stroke-width='0.5' fill='none'/%3E%3C/svg%3E");
 }
 
+/* Spoiler Effect */
+.spoiler {
+	background-color: black;
+	color: black;
+	cursor: pointer;
+	user-select: none;
+}
+
+.spoiler.revealed {
+	background-color: transparent;
+	color: inherit;
+}
+
 /* Charts */
 .chart-container {
 	position: relative;
@@ -211,28 +224,28 @@ body.bg-gray-900 #activeUrlsStatus:contains("Critical risk") {
 
 /* Data Glossary & Explanations Section */
 #infoContent {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-    opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+	opacity: 0;
 }
 
 #infoHeader h3 {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 #infoContent.open {
-    max-height: 1000px;
-    opacity: 1;
+	max-height: 1000px;
+	opacity: 1;
 }
 
 #expandButton {
-    margin-top: 10px;
-    transition: transform 0.3s ease-out;
+	margin-top: 10px;
+	transition: transform 0.3s ease-out;
 }
 
 #expandButton.rotate-180 {
-    transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 /* Scrollbars */
