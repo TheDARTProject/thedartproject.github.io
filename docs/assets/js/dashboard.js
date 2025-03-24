@@ -387,7 +387,6 @@ function updateTable() {
 }
 
 // Show detailed information for a specific account
-// Show detailed information for a specific account
 function showAccountDetails(caseNumber) {
     const account = Object.values(accountsData).find(acc => acc.CASE_NUMBER === caseNumber);
     if (!account) return;
@@ -398,7 +397,7 @@ function showAccountDetails(caseNumber) {
     modalContent.innerHTML = `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-                <h3 class="font-medium text-lg mb-2">Account Information</h3>
+                <h3 class="font-medium text-lg mb-2">Case Information</h3>
                 <p><span class="font-medium">Case Number:</span> ${account.CASE_NUMBER}</p>
                 <p><span class="font-medium">Found On:</span> ${formatDate(account.FOUND_ON)}</p>
                 <p><span class="font-medium">Found On Server:</span> ${account.FOUND_ON_SERVER}</p>
@@ -406,7 +405,6 @@ function showAccountDetails(caseNumber) {
                 <p><span class="font-medium">Username:</span> ${account.USERNAME}</p>
                 <p><span class="font-medium">Account Status:</span> ${account.ACCOUNT_STATUS}</p>
                 <p><span class="font-medium">Behaviour:</span> ${account.BEHAVIOUR}</p>
-                <p><span class="font-medium">Non-ASCII Username:</span> ${account.NON_ASCII_USERNAME ? 'Yes' : 'No'}</p>
             </div>
             <div>
                 <h3 class="font-medium text-lg mb-2">Attack Details</h3>
@@ -416,6 +414,7 @@ function showAccountDetails(caseNumber) {
                 <p><span class="font-medium">Attack Surface:</span> ${account.ATTACK_SURFACE}</p>
                 <p><span class="font-medium">Suspected Region of Origin:</span> ${account.SUSPECTED_REGION_OF_ORIGIN}</p>
                 <p><span class="font-medium">Last Check:</span> ${formatDate(account.LAST_CHECK)}</p>
+                <p><span class="font-medium">Non-ASCII Username:</span> ${account.NON_ASCII_USERNAME ? 'Yes' : 'No'}</p>
             </div>
         </div>
         <div class="mt-4">
