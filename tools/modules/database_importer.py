@@ -39,6 +39,7 @@ for row_number, row in enumerate(
     (
         NOUMBER,
         FOUND_ON,
+        FOUND_ON_SERVER,
         DISCORD_ID,
         USERNAME,
         BEHAVIOUR,
@@ -80,9 +81,14 @@ for row_number, row in enumerate(
     account = {
         "CASE_NUMBER": f"{row_number}",
         "FOUND_ON": found_on_str,
+        "FOUND_ON_SERVER": str(FOUND_ON_SERVER)
+        if FOUND_ON_SERVER is not None
+        else "UNKNOWN",  # Added this line
         "DISCORD_ID": discord_id_str,
         "USERNAME": USERNAME if USERNAME is not None else "Unknown",
-        "ACCOUNT_STATUS": "",
+        "ACCOUNT_STATUS": "UNKNOWN",
+        "ACCOUNT_TYPE": "UNKNOWN",
+        "ACCOUNT_CREATION": "",
         "BEHAVIOUR": BEHAVIOUR if BEHAVIOUR is not None else "Unknown",
         "ATTACK_METHOD": TYPE if TYPE is not None else "Unknown",
         "ATTACK_VECTOR": METHOD if METHOD is not None else "Unknown",
@@ -96,7 +102,7 @@ for row_number, row in enumerate(
         "FINAL_URL_DOMAIN": "",
         "FINAL_URL_STATUS": "",
         "NON_ASCII_USERNAME": non_ascii_username,
-        "LAST_CHECK": "",
+        "LAST_CHECK": datetime.now().isoformat(),  # Updated to use current timestamp
     }
 
     data[f"ACCOUNT_NUMBER_{len(data) + 1}"] = account
