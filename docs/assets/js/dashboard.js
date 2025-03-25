@@ -1145,6 +1145,12 @@ function createTimelineChart() {
                     intersect: false,
                 },
                 zoom: {
+                    pan: {
+                        enabled: true,
+                        mode: 'x',
+                        threshold: 10,
+                        overScaleMode: 'x'
+                    },
                     zoom: {
                         wheel: {
                             enabled: true,
@@ -1152,10 +1158,6 @@ function createTimelineChart() {
                         pinch: {
                             enabled: true
                         },
-                        mode: 'x',
-                    },
-                    pan: {
-                        enabled: true,
                         mode: 'x',
                     }
                 }
@@ -1177,7 +1179,8 @@ function createTimelineChart() {
             },
             interaction: {
                 intersect: false,
-                mode: 'index'
+                mode: 'nearest',
+                axis: 'x'
             }
         }
     });
