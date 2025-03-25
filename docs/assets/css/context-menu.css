@@ -1,0 +1,180 @@
+/* context-menu.css */
+
+#custom-context-menu {
+    position: fixed;
+    z-index: 9999;
+    width: 220px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.875rem;
+    transform-origin: top left;
+    animation: fadeIn 0.1s ease-out;
+    overflow: hidden;
+}
+
+#custom-context-menu.hidden {
+    display: none;
+}
+
+.context-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    color: #374151;
+    position: relative;
+}
+
+.context-menu-item:hover {
+    background-color: #f3f4f6;
+}
+
+.context-menu-item:active {
+    background-color: #e5e7eb;
+}
+
+.context-menu-icon {
+    margin-right: 0.75rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+}
+
+.context-menu-label {
+    flex: 1;
+}
+
+.context-menu-arrow {
+    margin-left: 0.5rem;
+    color: #9ca3af;
+    font-size: 1.1em;
+}
+
+.context-menu-separator {
+    height: 1px;
+    background-color: #e5e7eb;
+    margin: 0.25rem 0;
+}
+
+/* Submenu Styles */
+.context-submenu {
+    position: absolute;
+    z-index: 10001;
+    width: 220px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    animation: fadeIn 0.1s ease-out;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.context-submenu.hidden {
+    display: none;
+}
+
+.context-menu-item.has-submenu {
+    position: relative;
+}
+
+.context-submenu-category {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: #6b7280;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+}
+
+.context-submenu-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    color: #374151;
+    font-size: 0.875rem;
+}
+
+.context-submenu-item:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+/* Dark Mode Styles */
+body.bg-gray-900 #custom-context-menu,
+body.bg-gray-900 .context-submenu {
+    background-color: #1f2937;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25),
+                0 2px 4px -1px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+body.bg-gray-900 .context-menu-item,
+body.bg-gray-900 .context-submenu-item {
+    color: #f3f4f6;
+}
+
+body.bg-gray-900 .context-menu-item:hover,
+body.bg-gray-900 .context-submenu-item:hover {
+    background-color: #374151;
+}
+
+body.bg-gray-900 .context-menu-item:active,
+body.bg-gray-900 .context-submenu-item:active {
+    background-color: #4b5563;
+}
+
+body.bg-gray-900 .context-menu-icon,
+body.bg-gray-900 .context-menu-arrow {
+    color: #9ca3af;
+}
+
+body.bg-gray-900 .context-menu-separator {
+    background-color: #374151;
+}
+
+body.bg-gray-900 .context-submenu-category {
+    color: #9ca3af;
+    border-bottom: 1px solid #374151;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Scrollbar for submenu */
+.context-submenu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.context-submenu::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+}
+
+.context-submenu::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+}
+
+body.bg-gray-900 .context-submenu::-webkit-scrollbar-thumb {
+    background: #4b5563;
+}
