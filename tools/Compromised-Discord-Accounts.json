@@ -29608,5 +29608,29 @@
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-24T06:49:23.537910"
+    },
+    "ACCOUNT_NUMBER_1235": {
+        "CASE_NUMBER": "1235",
+        "FOUND_ON": "2025-03-24",
+        "FOUND_ON_SERVER": "BLITZPOST",
+        "DISCORD_ID": "344616687833972737",
+        "USERNAME": "rkalashnikov",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "ACCOUNT_TYPE": "User Accounts",
+        "ACCOUNT_CREATION": "2017-08-08",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "NSFW Discord Invite",
+        "ATTACK_VECTOR": "Discord Servers",
+        "ATTACK_GOAL": "Discord Accounts",
+        "ATTACK_SURFACE": "Discord",
+        "SUSPECTED_REGION_OF_ORIGIN": "US",
+        "SURFACE_URL": "https://discord.gg/z3H5TXYF",
+        "SURFACE_URL_DOMAIN": "discord.gg",
+        "SURFACE_URL_STATUS": "ACTIVE",
+        "FINAL_URL": "https://discord.com/invite/z3H5TXYF",
+        "FINAL_URL_DOMAIN": "discord.com",
+        "FINAL_URL_STATUS": "ACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-25T09:45:42.866474"
     }
 }
