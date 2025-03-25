@@ -133,70 +133,251 @@ export function setupContextMenu() {
         return positions[canvasId] || 'top-left';
     }
 
-    // Function to add watermark to chart image
-    async function addWatermarkToChart(chart) {
+    // Function to create a high-resolution version of the chart
+    async function createHighResChart(chart) {
         return new Promise((resolve) => {
-            // Create a canvas for the final image
+            // Configuration - adjust these values as needed
+            const config = {
+                scaleFactor: 2,
+                borderSize: 100, // in 1x pixels (will be scaled)
+                watermark: {
+                    width: 130,    // in 1x pixels
+                    height: 70,   // in 1x pixels
+                    topPadding: -30, // in 1x pixels
+                    opacity: 1
+                },
+                chartName: {
+                    font: 'Arial',
+                    size: 24,         // Base font size (for first line)
+                    secondarySize: 20, // Font size for timestamp line
+                    color: '#ffffff',
+                    bottomPadding: 40, // Increased to accommodate two lines
+                    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+                    lineSpacing: 15    // Space between the two lines
+                }
+            };
+
+            // Get the original canvas
+            const sourceCanvas = chart.canvas;
+
+            // Scale configuration values
+            const scaled = {
+                border: config.borderSize * config.scaleFactor,
+                watermarkWidth: config.watermark.width * config.scaleFactor,
+                watermarkHeight: config.watermark.height * config.scaleFactor,
+                watermarkPadding: config.watermark.topPadding * config.scaleFactor,
+                fontSize: config.chartName.size * config.scaleFactor,
+                secondaryFontSize: config.chartName.secondarySize * config.scaleFactor,
+                namePadding: config.chartName.bottomPadding * config.scaleFactor,
+                lineSpacing: config.chartName.lineSpacing * config.scaleFactor
+            };
+
+            // Create a new canvas with scaled resolution plus borders
             const canvas = document.createElement('canvas');
+            canvas.width = (sourceCanvas.width * config.scaleFactor) + (scaled.border * 2);
+            canvas.height = (sourceCanvas.height * config.scaleFactor) + (scaled.border * 2);
             const ctx = canvas.getContext('2d');
 
-            // Set canvas dimensions to match the chart
-            canvas.width = chart.width;
-            canvas.height = chart.height;
+            // Fill entire canvas with solid background color
+            ctx.fillStyle = '#1e293b';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // Draw the original chart
-            ctx.drawImage(chart, 0, 0);
+            // Draw the original chart centered with border
+            ctx.save();
+            ctx.translate(scaled.border, scaled.border);
+            ctx.scale(config.scaleFactor, config.scaleFactor);
+            ctx.drawImage(sourceCanvas, 0, 0);
+            ctx.restore();
 
             const logo = new Image();
             logo.src = '../images/watermark/CDA-Project.png';
 
-            logo.onload = () => {
-                // Set global alpha for semi-transparent logo
-                ctx.globalAlpha = 0.5;
+            // Function to draw the two-line text
+            const drawChartText = () => {
+                const chartName = getChartName(chart.canvas.id);
+                const now = new Date();
+                const timeString = now.toLocaleTimeString('en-US', {
+                    timeZone: 'UTC',
+                    hour12: false,
+                    hour: '2-digit',
+                    minute: '2-digit',
+                });
+                const dateString = now.toLocaleDateString('en-GB'); // DD-MM-YYYY format
 
-                // Get watermark position based on chart ID
-                const position = getWatermarkPosition(chart.id);
-                const logoWidth = 40;
-                const logoHeight = 40;
-                const padding = 0;
+                // Set common text properties
+                ctx.fillStyle = config.chartName.color;
+                ctx.textAlign = 'center';
 
-                // Calculate position
-                let x, y;
-                switch (position) {
-                    case 'top-right':
-                        x = canvas.width - logoWidth - padding;
-                        y = padding;
-                        break;
-                    case 'top-left':
-                        x = padding;
-                        y = padding;
-                        break;
-                    case 'bottom-right':
-                        x = canvas.width - logoWidth - padding;
-                        y = canvas.height - logoHeight - padding;
-                        break;
-                    case 'bottom-left':
-                        x = padding;
-                        y = canvas.height - logoHeight - padding;
-                        break;
-                    default:
-                        x = padding;
-                        y = padding;
+                // Add text shadow if specified
+                if (config.chartName.textShadow) {
+                    ctx.shadowColor = config.chartName.textShadow.split(' ')[3];
+                    ctx.shadowOffsetX = parseInt(config.chartName.textShadow.split(' ')[0]);
+                    ctx.shadowOffsetY = parseInt(config.chartName.textShadow.split(' ')[1]);
+                    ctx.shadowBlur = parseInt(config.chartName.textShadow.split(' ')[2]);
                 }
 
+                // Calculate base Y position
+                const baseY = canvas.height - scaled.namePadding;
+
+                // First line: Chart name
+                const textFont = `bold ${scaled.fontSize}px ${config.chartName.font}`; ctx.font = textFont;
+                ctx.fillText(`${chartName} Chart`, canvas.width / 2, baseY - scaled.lineSpacing);
+
+                // Second line: Timestamp
+                ctx.font = textFont; // Re-use the same font definition
+                ctx.fillText(`Generated at ${timeString} UTC on ${dateString}`, canvas.width / 2, baseY + scaled.fontSize);
+
+                // Reset shadow
+                ctx.shadowColor = 'transparent';
+                ctx.shadowOffsetX = 0;
+                ctx.shadowOffsetY = 0;
+                ctx.shadowBlur = 0;
+            };
+
+            logo.onload = () => {
+                // Set global alpha for semi-transparent logo
+                ctx.globalAlpha = config.watermark.opacity;
+
+                // Position watermark at top center (accounting for border)
+                const watermarkX = (canvas.width / 2) - (scaled.watermarkWidth / 2);
+                const watermarkY = scaled.watermarkPadding + (scaled.border / 2);
+
                 // Draw the logo
-                ctx.drawImage(logo, x, y, logoWidth, logoHeight);
+                ctx.drawImage(logo, watermarkX, watermarkY, scaled.watermarkWidth, scaled.watermarkHeight);
 
                 // Reset global alpha
                 ctx.globalAlpha = 1.0;
 
-                resolve(canvas.toDataURL('image/png'));
+                // Draw the two-line chart text
+                drawChartText();
+
+                resolve(canvas);
             };
 
-            // If logo fails to load, just return the original chart
+            // If logo fails to load, still add the chart text
             logo.onerror = () => {
-                resolve(chart.toDataURL('image/png'));
+                // Draw the two-line chart text
+                drawChartText();
+
+                resolve(canvas);
             };
+        });
+    }
+
+    // Function to share chart
+    async function shareChart(chart) {
+        try {
+            // First try the Web Share API if available
+            if (navigator.share) {
+                const highResCanvas = await createHighResChart(chart);
+                const chartName = getChartName(chart.canvas.id);
+
+                // Convert canvas to blob
+                highResCanvas.toBlob(async (blob) => {
+                    const file = new File([blob], `${chartName}.png`, { type: 'image/png' });
+
+                    try {
+                        await navigator.share({
+                            title: `${chartName} Chart`,
+                            text: `Check out this ${chartName} chart from CDA Project`,
+                            files: [file]
+                        });
+                    } catch (shareError) {
+                        console.log('Web Share API failed, falling back to custom share', shareError);
+                        showCustomShareDialog(chart, highResCanvas);
+                    }
+                }, 'image/png', 1.0);
+            } else {
+                // Fallback to custom share dialog
+                const highResCanvas = await createHighResChart(chart);
+                showCustomShareDialog(chart, highResCanvas);
+            }
+        } catch (err) {
+            console.error('Error sharing chart:', err);
+            alert('Failed to share chart. Please try again or use the "Save Chart" option.');
+        }
+    }
+
+    // Function to show custom share dialog
+    function showCustomShareDialog(chart, canvas) {
+        const chartName = getChartName(chart.canvas.id);
+        const dataUrl = canvas.toDataURL('image/png');
+        const pageUrl = window.location.href.split('#')[0];
+
+        // Create share dialog
+        const shareDialog = document.createElement('div');
+        shareDialog.id = 'chart-share-dialog';
+        shareDialog.style.position = 'fixed';
+        shareDialog.style.top = '50%';
+        shareDialog.style.left = '50%';
+        shareDialog.style.transform = 'translate(-50%, -50%)';
+        shareDialog.style.backgroundColor = document.body.classList.contains('bg-gray-900') ? '#1f2937' : 'white';
+        shareDialog.style.padding = '20px';
+        shareDialog.style.borderRadius = '8px';
+        shareDialog.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        shareDialog.style.zIndex = '10000';
+        shareDialog.style.width = '300px';
+        shareDialog.style.maxWidth = '90%';
+
+        shareDialog.innerHTML = `
+            <h3 style="margin-top: 0; color: ${document.body.classList.contains('bg-gray-900') ? 'white' : 'black'}">Share ${chartName}</h3>
+            <div style="display: flex; justify-content: space-around; margin: 15px 0;">
+                <button class="share-option" data-platform="twitter" style="background: none; border: none; cursor: pointer;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </button>
+                <button class="share-option" data-platform="facebook" style="background: none; border: none; cursor: pointer;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#1877F2"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                </button>
+                <button class="share-option" data-platform="linkedin" style="background: none; border: none; cursor: pointer;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#0077B5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </button>
+                <button class="share-option" data-platform="copy" style="background: none; border: none; cursor: pointer;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#666"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                </button>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button id="cancel-share" style="flex: 1; padding: 8px; border: none; border-radius: 4px; background: #e5e7eb; cursor: pointer;">Cancel</button>
+            </div>
+        `;
+
+        document.body.appendChild(shareDialog);
+
+        // Add event listeners
+        document.querySelectorAll('.share-option').forEach(button => {
+            button.addEventListener('click', () => {
+                const platform = button.getAttribute('data-platform');
+                const text = `Check out this ${chartName} chart from CDA Project`;
+
+                switch (platform) {
+                    case 'twitter':
+                        window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(pageUrl)}`, '_blank');
+                        break;
+                    case 'facebook':
+                        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}&quote=${encodeURIComponent(text)}`, '_blank');
+                        break;
+                    case 'linkedin':
+                        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`, '_blank');
+                        break;
+                    case 'copy':
+                        navigator.clipboard.writeText(`${text}\n${pageUrl}`);
+                        alert('Link copied to clipboard!');
+                        break;
+                }
+
+                document.body.removeChild(shareDialog);
+            });
+        });
+
+        document.getElementById('cancel-share').addEventListener('click', () => {
+            document.body.removeChild(shareDialog);
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function handleOutsideClick(e) {
+            if (!shareDialog.contains(e.target)) {
+                document.body.removeChild(shareDialog);
+                document.removeEventListener('click', handleOutsideClick);
+            }
         });
     }
 
@@ -206,70 +387,101 @@ export function setupContextMenu() {
         icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
         action: async (chart) => {
             try {
-                // Add watermark to the chart
-                const watermarkedImage = await addWatermarkToChart(chart.canvas);
+                // Create high-resolution version of the chart
+                const highResCanvas = await createHighResChart(chart);
                 const chartName = getChartName(chart.canvas.id);
                 const filename = `${chartName.replace(/ /g, '-')}-${new Date().toISOString().slice(0, 10)}.png`;
 
                 // Create download link
                 const link = document.createElement('a');
                 link.download = filename;
-                link.href = watermarkedImage;
+                link.href = highResCanvas.toDataURL('image/png', 1.0); // Highest quality
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
             } catch (err) {
                 console.error('Error saving chart:', err);
-                // Fallback to original chart if watermark fails
+                // Fallback to original resolution with solid background
+                const fallbackCanvas = document.createElement('canvas');
+                fallbackCanvas.width = chart.canvas.width;
+                fallbackCanvas.height = chart.canvas.height;
+                const fallbackCtx = fallbackCanvas.getContext('2d');
+                fallbackCtx.fillStyle = '#1e293b';
+                fallbackCtx.fillRect(0, 0, fallbackCanvas.width, fallbackCanvas.height);
+                fallbackCtx.drawImage(chart.canvas, 0, 0);
+
                 const link = document.createElement('a');
                 link.download = 'chart.png';
-                link.href = chart.toBase64Image();
+                link.href = fallbackCanvas.toDataURL('image/png');
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
             }
         }
     },
-        {
-            label: 'Copy Chart',
-            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" /><path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" /></svg>',
-            action: async (chart) => {
-                try {
-                    // Add watermark to the chart
-                    const watermarkedImage = await addWatermarkToChart(chart.canvas);
+    {
+        label: 'Copy Chart',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" /><path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" /></svg>',
+        action: async (chart) => {
+            try {
+                // Create high-resolution version of the chart
+                const highResCanvas = await createHighResChart(chart);
 
-                    // Copy to clipboard
-                    const blob = await fetch(watermarkedImage).then(res => res.blob());
-                    await navigator.clipboard.write([
-                        new ClipboardItem({
-                            [blob.type]: blob
-                        })
-                    ]);
-                } catch (err) {
-                    console.error('Failed to copy image: ', err);
-
-                    // Fallback for browsers that don't support Clipboard API
+                // Convert to blob with highest quality
+                highResCanvas.toBlob(async (blob) => {
                     try {
-                        const watermarkedImage = await addWatermarkToChart(chart.canvas);
-                        const textArea = document.createElement('textarea');
-                        textArea.value = watermarkedImage;
-                        document.body.appendChild(textArea);
-                        textArea.select();
-                        document.execCommand('copy');
-                        document.body.removeChild(textArea);
-                    } catch (fallbackErr) {
-                        console.error('Fallback copy failed:', fallbackErr);
-                        // Final fallback - copy original chart without watermark
-                        const textArea = document.createElement('textarea');
-                        textArea.value = chart.toBase64Image();
-                        document.body.appendChild(textArea);
-                        textArea.select();
-                        document.execCommand('copy');
-                        document.body.removeChild(textArea);
+                        await navigator.clipboard.write([
+                            new ClipboardItem({
+                                'image/png': blob
+                            })
+                        ]);
+                    } catch (err) {
+                        console.error('Failed to copy image: ', err);
+                        throw err; // Trigger fallback
                     }
+                }, 'image/png', 1.0);
+            } catch (err) {
+                console.error('Failed to copy image: ', err);
+
+                // Fallback for browsers that don't support Clipboard API or high-res failed
+                try {
+                    const fallbackCanvas = await createHighResChart(chart);
+                    const dataUrl = fallbackCanvas.toDataURL('image/png');
+
+                    // Old-school copy method
+                    const textArea = document.createElement('textarea');
+                    textArea.value = dataUrl;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                } catch (fallbackErr) {
+                    console.error('Fallback copy failed:', fallbackErr);
+
+                    // Final fallback - original resolution with solid background
+                    const finalCanvas = document.createElement('canvas');
+                    finalCanvas.width = chart.canvas.width;
+                    finalCanvas.height = chart.canvas.height;
+                    const finalCtx = finalCanvas.getContext('2d');
+                    finalCtx.fillStyle = '#1e293b';
+                    finalCtx.fillRect(0, 0, finalCanvas.width, finalCanvas.height);
+                    finalCtx.drawImage(chart.canvas, 0, 0);
+
+                    const textArea = document.createElement('textarea');
+                    textArea.value = finalCanvas.toDataURL('image/png');
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
                 }
             }
-        },
+        }
+    },
+    {
+        label: 'Share Chart',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" /></svg>',
+        action: (chart) => shareChart(chart)
+    },
         {
             type: 'separator'
         }
@@ -315,7 +527,7 @@ export function setupContextMenu() {
                         submenuItemsContainer.appendChild(submenuItem);
                     });
 
-                    // Toggle submenu on click
+                    // Only open submenu on click, not hover
                     menuItem.addEventListener('click', (e) => {
                         e.stopPropagation();
 
@@ -328,6 +540,11 @@ export function setupContextMenu() {
 
                         // Toggle current submenu
                         menuItem.classList.toggle('open');
+
+                        // Position the submenu after it's opened
+                        if (menuItem.classList.contains('open')) {
+                            positionSubmenu(menuItem, submenuItemsContainer);
+                        }
                     });
 
                     // Insert the submenu items after the menu item
@@ -351,6 +568,38 @@ export function setupContextMenu() {
                 }
             }
         });
+    }
+
+    function positionSubmenu(menuItem, submenu) {
+        const menuItemRect = menuItem.getBoundingClientRect();
+        const contextMenuRect = contextMenu.getBoundingClientRect();
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        // Calculate available space
+        const spaceRight = windowWidth - menuItemRect.right;
+        const spaceLeft = menuItemRect.left;
+        const spaceBottom = windowHeight - menuItemRect.bottom;
+
+        // Default position (to the right)
+        let submenuLeft = menuItemRect.right - contextMenuRect.left;
+        let submenuTop = menuItemRect.top - contextMenuRect.top;
+
+        // Check if submenu would go off right edge
+        if (spaceRight < submenu.offsetWidth && spaceLeft >= submenu.offsetWidth) {
+            // Position to the left if there's more space there
+            submenuLeft = menuItemRect.left - contextMenuRect.left - submenu.offsetWidth;
+        }
+
+        // Check if submenu would go off bottom edge
+        if (spaceBottom < submenu.offsetHeight) {
+            // Position above if there's more space there
+            submenuTop = menuItemRect.bottom - contextMenuRect.top - submenu.offsetHeight;
+        }
+
+        // Apply the calculated position
+        submenu.style.left = `${submenuLeft}px`;
+        submenu.style.top = `${submenuTop}px`;
     }
 
     function createSubmenuItem(label, url) {
@@ -381,17 +630,33 @@ export function setupContextMenu() {
 
         const x = e.clientX;
         const y = e.clientY;
-        const menuWidth = 220;
-        const menuHeight = contextMenu.offsetHeight;
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
 
-        const adjustedX = x + menuWidth > windowWidth ? windowWidth - menuWidth - 5 : x;
-        const adjustedY = y + menuHeight > windowHeight ? windowHeight - menuHeight - 5 : y;
+        // First show the menu to get accurate measurements
+        contextMenu.classList.remove('hidden');
 
+        // Get the actual rendered height (now that it's visible)
+        const actualMenuHeight = contextMenu.offsetHeight;
+        const actualMenuWidth = contextMenu.offsetWidth;
+
+        // Calculate if we need to adjust position
+        let adjustedX = x;
+        let adjustedY = y;
+
+        // Check right edge
+        if (x + actualMenuWidth > windowWidth) {
+            adjustedX = windowWidth - actualMenuWidth - 5;
+        }
+
+        // Check bottom edge
+        if (y + actualMenuHeight > windowHeight) {
+            adjustedY = windowHeight - actualMenuHeight - 5;
+        }
+
+        // Apply the position
         contextMenu.style.left = `${adjustedX}px`;
         contextMenu.style.top = `${adjustedY}px`;
-        contextMenu.classList.remove('hidden');
     }
 
     function hideContextMenu() {
