@@ -23,8 +23,8 @@ export function setupContextMenu() {
         { label: 'Project Roadmap', url: '/CDA-Project/pages/roadmap.html' }
     ];
 
-    // Menu items configuration
-    const menuItems = [
+    // Base menu items configuration
+    const baseMenuItems = [
         {
             label: 'Back',
             icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>',
@@ -55,65 +55,264 @@ export function setupContextMenu() {
         }
     ];
 
-    // Build the menu items
-    menuItems.forEach(item => {
-        if (item.type === 'separator') {
-            const separator = document.createElement('div');
-            separator.classList.add('context-menu-separator');
-            contextMenu.appendChild(separator);
-        } else {
-            const menuItem = document.createElement('div');
-            menuItem.classList.add('context-menu-item');
+    // Function to get chart name from canvas ID
+    function getChartName(canvasId) {
+        const chartNames = {
+            'timelineChart': 'Attacks Over Time',
+            'methodsChart': 'Attack Methods Distribution',
+            'surfacesChart': 'Attack Surfaces',
+            'regionsChart': 'Suspected Regions of Origin',
+            'vectorsChart': 'Attack Vectors Analysis',
+            'statusChart': 'URL Status Comparison',
+            'behaviourChart': 'Behaviour Types Distribution',
+            'methodGoalChart': 'Method vs Goal Matrix',
+            'goalsChart': 'Attack Goal Distribution',
+            'AccountTypeChart': 'Account Type Distribution',
+            'finalDomainsChart': 'Final Domains Distribution',
+            'serverCasesChart': 'Cases by Server',
+            'averageTimeChart': 'Average Time Till Compromise'
+        };
+        return chartNames[canvasId] || 'Chart';
+    }
 
-            if (item.hasSubmenu) {
-                menuItem.classList.add('has-submenu');
-                menuItem.innerHTML = `
-                    <span class="context-menu-icon">${item.icon}</span>
-                    <span class="context-menu-label">${item.label}</span>
-                    <span class="context-menu-arrow">›</span>
-                `;
+    // Function to get watermark position based on chart ID
+    function getWatermarkPosition(canvasId) {
+        const positions = {
+            'timelineChart': 'top-right',
+            'methodsChart': 'top-left',
+            'surfacesChart': 'top-right',
+            'regionsChart': 'top-left',
+            'vectorsChart': 'top-right',
+            'statusChart': 'top-right',
+            'behaviourChart': 'top-left',
+            'methodGoalChart': 'top-left',
+            'goalsChart': 'top-left',
+            'AccountTypeChart': 'top-left',
+            'finalDomainsChart': 'top-right',
+            'serverCasesChart': 'top-left',
+            'averageTimeChart': 'top-right'
+        };
+        return positions[canvasId] || 'top-left';
+    }
 
-                // Create container for submenu items
-                const submenuItemsContainer = document.createElement('div');
-                submenuItemsContainer.classList.add('context-submenu-items');
+    // Function to add watermark to chart image
+    async function addWatermarkToChart(chart) {
+        return new Promise((resolve) => {
+            // Create a canvas for the final image
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
 
-                // Build submenu items (simple list without categories)
-                item.submenuItems.forEach(page => {
-                    const submenuItem = createSubmenuItem(page.label, page.url);
-                    submenuItemsContainer.appendChild(submenuItem);
-                });
+            // Set canvas dimensions to match the chart
+            canvas.width = chart.width;
+            canvas.height = chart.height;
 
-                // Toggle submenu on click
-                menuItem.addEventListener('click', (e) => {
-                    e.stopPropagation();
+            // Draw the original chart
+            ctx.drawImage(chart, 0, 0);
 
-                    // Close all other open submenus
-                    document.querySelectorAll('.context-menu-item.open').forEach(openItem => {
-                        if (openItem !== menuItem) {
-                            openItem.classList.remove('open');
-                        }
+            const logo = new Image();
+            logo.src = '../images/watermark/CDA-Project.png';
+
+            logo.onload = () => {
+                // Set global alpha for semi-transparent logo
+                ctx.globalAlpha = 0.5;
+
+                // Get watermark position based on chart ID
+                const position = getWatermarkPosition(chart.id);
+                const logoWidth = 40;
+                const logoHeight = 40;
+                const padding = 0;
+
+                // Calculate position
+                let x, y;
+                switch (position) {
+                    case 'top-right':
+                        x = canvas.width - logoWidth - padding;
+                        y = padding;
+                        break;
+                    case 'top-left':
+                        x = padding;
+                        y = padding;
+                        break;
+                    case 'bottom-right':
+                        x = canvas.width - logoWidth - padding;
+                        y = canvas.height - logoHeight - padding;
+                        break;
+                    case 'bottom-left':
+                        x = padding;
+                        y = canvas.height - logoHeight - padding;
+                        break;
+                    default:
+                        x = padding;
+                        y = padding;
+                }
+
+                // Draw the logo
+                ctx.drawImage(logo, x, y, logoWidth, logoHeight);
+
+                // Reset global alpha
+                ctx.globalAlpha = 1.0;
+
+                resolve(canvas.toDataURL('image/png'));
+            };
+
+            // If logo fails to load, just return the original chart
+            logo.onerror = () => {
+                resolve(chart.toDataURL('image/png'));
+            };
+        });
+    }
+
+    // Chart-specific menu items
+    const chartMenuItems = [
+        {
+            label: 'Save Chart As...',
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
+            action: async (chart) => {
+                try {
+                    // Add watermark to the chart
+                    const watermarkedImage = await addWatermarkToChart(chart.canvas);
+                    const chartName = getChartName(chart.canvas.id);
+                    const filename = `${chartName.replace(/ /g, '-')}-${new Date().toISOString().slice(0, 10)}.png`;
+
+                    // Create download link
+                    const link = document.createElement('a');
+                    link.download = filename;
+                    link.href = watermarkedImage;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } catch (err) {
+                    console.error('Error saving chart:', err);
+                    // Fallback to original chart if watermark fails
+                    const link = document.createElement('a');
+                    link.download = 'chart.png';
+                    link.href = chart.toBase64Image();
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            }
+        },
+        {
+            label: 'Copy Chart',
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" /><path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" /></svg>',
+            action: async (chart) => {
+                try {
+                    // Add watermark to the chart
+                    const watermarkedImage = await addWatermarkToChart(chart.canvas);
+
+                    // Copy to clipboard
+                    const blob = await fetch(watermarkedImage).then(res => res.blob());
+                    await navigator.clipboard.write([
+                        new ClipboardItem({
+                            [blob.type]: blob
+                        })
+                    ]);
+                } catch (err) {
+                    console.error('Failed to copy image: ', err);
+
+                    // Fallback for browsers that don't support Clipboard API
+                    try {
+                        const watermarkedImage = await addWatermarkToChart(chart.canvas);
+                        const textArea = document.createElement('textarea');
+                        textArea.value = watermarkedImage;
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                    } catch (fallbackErr) {
+                        console.error('Fallback copy failed:', fallbackErr);
+                        // Final fallback - copy original chart without watermark
+                        const textArea = document.createElement('textarea');
+                        textArea.value = chart.toBase64Image();
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                    }
+                }
+            }
+        },
+        { type: 'separator' }
+    ];
+
+    function buildMenuItems(target) {
+        // Clear previous menu items
+        contextMenu.innerHTML = '';
+
+        let menuItems = [...baseMenuItems];
+
+        // Check if the target is a chart canvas
+        if (target.tagName === 'CANVAS' && target.chart) {
+            // Add chart-specific items at the beginning
+            menuItems = [...chartMenuItems, ...menuItems];
+        }
+
+        // Build the menu items
+        menuItems.forEach(item => {
+            if (item.type === 'separator') {
+                const separator = document.createElement('div');
+                separator.classList.add('context-menu-separator');
+                contextMenu.appendChild(separator);
+            } else {
+                const menuItem = document.createElement('div');
+                menuItem.classList.add('context-menu-item');
+
+                if (item.hasSubmenu) {
+                    menuItem.classList.add('has-submenu');
+                    menuItem.innerHTML = `
+                        <span class="context-menu-icon">${item.icon}</span>
+                        <span class="context-menu-label">${item.label}</span>
+                        <span class="context-menu-arrow">›</span>
+                    `;
+
+                    // Create container for submenu items
+                    const submenuItemsContainer = document.createElement('div');
+                    submenuItemsContainer.classList.add('context-submenu-items');
+
+                    // Build submenu items (simple list without categories)
+                    item.submenuItems.forEach(page => {
+                        const submenuItem = createSubmenuItem(page.label, page.url);
+                        submenuItemsContainer.appendChild(submenuItem);
                     });
 
-                    // Toggle current submenu
-                    menuItem.classList.toggle('open');
-                });
+                    // Toggle submenu on click
+                    menuItem.addEventListener('click', (e) => {
+                        e.stopPropagation();
 
-                // Insert the submenu items after the menu item
-                contextMenu.appendChild(menuItem);
-                contextMenu.appendChild(submenuItemsContainer);
-            } else {
-                menuItem.innerHTML = `
-                    <span class="context-menu-icon">${item.icon}</span>
-                    <span class="context-menu-label">${item.label}</span>
-                `;
-                menuItem.addEventListener('click', () => {
-                    item.action();
-                    hideContextMenu();
-                });
-                contextMenu.appendChild(menuItem);
+                        // Close all other open submenus
+                        document.querySelectorAll('.context-menu-item.open').forEach(openItem => {
+                            if (openItem !== menuItem) {
+                                openItem.classList.remove('open');
+                            }
+                        });
+
+                        // Toggle current submenu
+                        menuItem.classList.toggle('open');
+                    });
+
+                    // Insert the submenu items after the menu item
+                    contextMenu.appendChild(menuItem);
+                    contextMenu.appendChild(submenuItemsContainer);
+                } else {
+                    menuItem.innerHTML = `
+                        <span class="context-menu-icon">${item.icon}</span>
+                        <span class="context-menu-label">${item.label}</span>
+                    `;
+                    menuItem.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        if (target.tagName === 'CANVAS' && target.chart && item.action) {
+                            item.action(target.chart);
+                        } else if (item.action) {
+                            item.action();
+                        }
+                        hideContextMenu();
+                    });
+                    contextMenu.appendChild(menuItem);
+                }
             }
-        }
-    });
+        });
+    }
 
     function createSubmenuItem(label, url) {
         const submenuItem = document.createElement('div');
@@ -137,6 +336,9 @@ export function setupContextMenu() {
         });
 
         hideContextMenu();
+
+        // Build menu items based on the target
+        buildMenuItems(e.target);
 
         const x = e.clientX;
         const y = e.clientY;
