@@ -29,6 +29,7 @@
     transition: all 0.15s ease;
     color: #374151;
     position: relative;
+    user-select: none;
 }
 
 .context-menu-item:hover {
@@ -57,6 +58,11 @@
     margin-left: 0.5rem;
     color: #9ca3af;
     font-size: 1.1em;
+    transition: transform 0.2s ease;
+}
+
+.context-menu-item.has-submenu.open .context-menu-arrow {
+    transform: rotate(90deg);
 }
 
 .context-menu-separator {
@@ -65,40 +71,20 @@
     margin: 0.25rem 0;
 }
 
-/* Submenu Styles */
-.context-submenu {
-    position: absolute;
-    z-index: 10001;
-    width: 220px;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 0;
-    animation: fadeIn 0.1s ease-out;
-    max-height: 80vh;
-    overflow-y: auto;
+/* Expanded submenu items */
+.context-submenu-items {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
-.context-submenu.hidden {
-    display: none;
-}
-
-.context-menu-item.has-submenu {
-    position: relative;
-}
-
-.context-submenu-category {
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    color: #6b7280;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-top: 0.25rem;
+.context-menu-item.open + .context-submenu-items {
+    max-height: 1000px; /* Adjust based on your content */
+    transition: max-height 0.4s ease-in;
 }
 
 .context-submenu-item {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1.75rem;
     cursor: pointer;
     transition: all 0.15s ease;
     color: #374151;
@@ -111,8 +97,7 @@
 }
 
 /* Dark Mode Styles */
-body.bg-gray-900 #custom-context-menu,
-body.bg-gray-900 .context-submenu {
+body.bg-gray-900 #custom-context-menu {
     background-color: #1f2937;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25),
                 0 2px 4px -1px rgba(0, 0, 0, 0.2),
@@ -143,12 +128,7 @@ body.bg-gray-900 .context-menu-separator {
     background-color: #374151;
 }
 
-body.bg-gray-900 .context-submenu-category {
-    color: #9ca3af;
-    border-bottom: 1px solid #374151;
-}
-
-/* Animation */
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -158,23 +138,4 @@ body.bg-gray-900 .context-submenu-category {
         opacity: 1;
         transform: scale(1);
     }
-}
-
-/* Scrollbar for submenu */
-.context-submenu::-webkit-scrollbar {
-    width: 6px;
-}
-
-.context-submenu::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 3px;
-}
-
-.context-submenu::-webkit-scrollbar-thumb {
-    background: #d1d5db;
-    border-radius: 3px;
-}
-
-body.bg-gray-900 .context-submenu::-webkit-scrollbar-thumb {
-    background: #4b5563;
 }

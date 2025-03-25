@@ -7,32 +7,21 @@ export function setupContextMenu() {
     contextMenu.classList.add('hidden');
     document.body.appendChild(contextMenu);
 
-    // Site pages structure
-    const sitePages = {
-        'Main': '/CDA-Project/index.html',
-        'Monitoring': {
-            'Dashboard': '/CDA-Project/pages/dashboard.html',
-            'Threat Map': '/CDA-Project/pages/threat-map.html',
-            'Intel Reports': '/CDA-Project/pages/intelligence.html',
-            'Discord App': '/CDA-Project/pages/cda-monitor-app.html'
-        },
-        'Resources': {
-            'Info Center': '/CDA-Project/pages/info.html',
-            'Resource Center': '/CDA-Project/pages/resources.html',
-            'Frequent Questions': '/CDA-Project/pages/faq.html',
-            'Latest News': '/CDA-Project/pages/news.html',
-            'Changelog': '/CDA-Project/pages/changelog.html'
-        },
-        'Planning': {
-            'Project Roadmap': '/CDA-Project/pages/roadmap.html'
-        },
-        'Legal': {
-            'License': '/CDA-Project/pages/license.html',
-            'Code of Conduct': '/CDA-Project/pages/code-of-conduct.html',
-            'Contributions': '/CDA-Project/pages/contributing.html',
-            'Security': '/CDA-Project/pages/security.html'
-        }
-    };
+    // Site pages structure - flattened without categories
+    const sitePages = [
+        { label: 'Home Page', url: '/CDA-Project/index.html' },
+        { label: 'Dashboard', url: '/CDA-Project/pages/dashboard.html' },
+        { label: 'Threat Map', url: '/CDA-Project/pages/threat-map.html' },
+        { label: 'Intel Reports', url: '/CDA-Project/pages/intelligence.html' },
+        { label: 'Discord App', url: '/CDA-Project/pages/cda-monitor-app.html' },
+        { label: 'Info Center', url: '/CDA-Project/pages/info.html' },
+        { label: 'Resource Center', url: '/CDA-Project/pages/resources.html' },
+        { label: 'Frequent Questions', url: '/CDA-Project/pages/faq.html' },
+        { label: 'Latest News', url: '/CDA-Project/pages/news.html' },
+        { label: 'Changelog', url: '/CDA-Project/pages/changelog.html' },
+        { label: 'Status', url: '/CDA-Project/pages/status.html' },
+        { label: 'Project Roadmap', url: '/CDA-Project/pages/roadmap.html' }
+    ];
 
     // Menu items configuration
     const menuItems = [
@@ -84,57 +73,34 @@ export function setupContextMenu() {
                     <span class="context-menu-arrow">›</span>
                 `;
 
-                // Create submenu
-                const submenu = document.createElement('div');
-                submenu.classList.add('context-submenu', 'hidden');
+                // Create container for submenu items
+                const submenuItemsContainer = document.createElement('div');
+                submenuItemsContainer.classList.add('context-submenu-items');
 
-                // Build submenu items
-                Object.entries(item.submenuItems).forEach(([category, pages]) => {
-                    if (typeof pages === 'object') {
-                        const categoryHeader = document.createElement('div');
-                        categoryHeader.classList.add('context-submenu-category');
-                        categoryHeader.textContent = category;
-                        submenu.appendChild(categoryHeader);
-
-                        Object.entries(pages).forEach(([pageName, pageUrl]) => {
-                            const submenuItem = createSubmenuItem(pageName, pageUrl);
-                            submenu.appendChild(submenuItem);
-                        });
-                    } else {
-                        const submenuItem = createSubmenuItem(category, pages);
-                        submenu.appendChild(submenuItem);
-                    }
+                // Build submenu items (simple list without categories)
+                item.submenuItems.forEach(page => {
+                    const submenuItem = createSubmenuItem(page.label, page.url);
+                    submenuItemsContainer.appendChild(submenuItem);
                 });
 
-                menuItem.appendChild(submenu);
-
-                // Show submenu on hover
-                menuItem.addEventListener('mouseenter', (e) => {
+                // Toggle submenu on click
+                menuItem.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    showSubmenu(menuItem, submenu);
-                });
 
-                // Hide submenu when leaving menu item
-                menuItem.addEventListener('mouseleave', (e) => {
-                    e.stopPropagation();
-                    setTimeout(() => {
-                        if (!submenu.matches(':hover') && !menuItem.matches(':hover')) {
-                            submenu.classList.add('hidden');
+                    // Close all other open submenus
+                    document.querySelectorAll('.context-menu-item.open').forEach(openItem => {
+                        if (openItem !== menuItem) {
+                            openItem.classList.remove('open');
                         }
-                    }, 100);
+                    });
+
+                    // Toggle current submenu
+                    menuItem.classList.toggle('open');
                 });
 
-                // Keep submenu visible when hovering over it
-                submenu.addEventListener('mouseenter', (e) => {
-                    e.stopPropagation();
-                    submenu.classList.remove('hidden');
-                });
-
-                // Hide submenu when leaving it
-                submenu.addEventListener('mouseleave', (e) => {
-                    e.stopPropagation();
-                    submenu.classList.add('hidden');
-                });
+                // Insert the submenu items after the menu item
+                contextMenu.appendChild(menuItem);
+                contextMenu.appendChild(submenuItemsContainer);
             } else {
                 menuItem.innerHTML = `
                     <span class="context-menu-icon">${item.icon}</span>
@@ -144,9 +110,8 @@ export function setupContextMenu() {
                     item.action();
                     hideContextMenu();
                 });
+                contextMenu.appendChild(menuItem);
             }
-
-            contextMenu.appendChild(menuItem);
         }
     });
 
@@ -154,45 +119,22 @@ export function setupContextMenu() {
         const submenuItem = document.createElement('div');
         submenuItem.classList.add('context-submenu-item');
         submenuItem.textContent = label;
-        submenuItem.addEventListener('click', () => {
+        submenuItem.addEventListener('click', (e) => {
+            e.stopPropagation();
             window.location.href = url;
             hideContextMenu();
         });
         return submenuItem;
     }
 
-    function showSubmenu(parentItem, submenu) {
-        // Hide any other visible submenus first
-        document.querySelectorAll('.context-submenu:not(.hidden)').forEach(menu => {
-            if (menu !== submenu) menu.classList.add('hidden');
-        });
-
-        // Position the submenu
-        const parentRect = parentItem.getBoundingClientRect();
-        const submenuWidth = 220;
-        const spaceRight = window.innerWidth - parentRect.right;
-
-        // Calculate position relative to viewport
-        let left = parentRect.right;
-        let top = parentRect.top;
-
-        // Adjust if submenu would go off screen
-        if (left + submenuWidth > window.innerWidth) {
-            left = parentRect.left - submenuWidth;
-        }
-
-        if (top + submenu.offsetHeight > window.innerHeight) {
-            top = window.innerHeight - submenu.offsetHeight;
-        }
-
-        submenu.style.left = `${left}px`;
-        submenu.style.top = `${top}px`;
-        submenu.classList.remove('hidden');
-    }
-
     function showContextMenu(e) {
         e.preventDefault();
         e.stopPropagation();
+
+        // Close any open submenus first
+        document.querySelectorAll('.context-menu-item.open').forEach(item => {
+            item.classList.remove('open');
+        });
 
         hideContextMenu();
 
@@ -213,9 +155,6 @@ export function setupContextMenu() {
 
     function hideContextMenu() {
         contextMenu.classList.add('hidden');
-        document.querySelectorAll('.context-submenu').forEach(menu => {
-            menu.classList.add('hidden');
-        });
     }
 
     // Event listeners
