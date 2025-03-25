@@ -680,7 +680,7 @@ function createCharts() {
     createStatusChart();
     createAccountTypeChart();
     createGoalsChart();
-    createMethodGoalChart();
+    createServerAttackTrendsChart();
     createServerCasesChart();
     createFinalDomainsChart();
     createAverageTimeChart()
@@ -812,38 +812,63 @@ function createGoalsChart() {
     });
 }
 
-// Attack Method vs Goal Matrix
-function createMethodGoalChart() {
-    const canvas = document.getElementById('methodGoalChart');
+// Create Server Attack Trends Chart
+function createServerAttackTrendsChart() {
+    const canvas = document.getElementById('serverAttackTrendsChart');
     if (canvas.chart) canvas.chart.destroy();
 
-    const methodGoalCounts = {};
-    const allMethods = new Set();
-    const allGoals = new Set();
+    const selectedServer = document.getElementById('serverFilter').value;
+
+    // Aggregate data
+    const serverGoalCounts = {};
+    const servers = new Set();
+    const goals = new Set();
 
     filteredData.forEach(account => {
-        const method = account.ATTACK_METHOD || 'Unknown';
+        const server = account.FOUND_ON_SERVER || 'Unknown';
         const goal = account.ATTACK_GOAL || 'Unknown';
 
-        allMethods.add(method);
-        allGoals.add(goal);
+        servers.add(server);
+        goals.add(goal);
 
-        if (!methodGoalCounts[method]) methodGoalCounts[method] = {};
-        methodGoalCounts[method][goal] = (methodGoalCounts[method][goal] || 0) + 1;
+        if (!serverGoalCounts[server]) serverGoalCounts[server] = {};
+        serverGoalCounts[server][goal] = (serverGoalCounts[server][goal] || 0) + 1;
     });
 
-    const methods = Array.from(allMethods);
-    const goals = Array.from(allGoals);
-    const datasets = goals.map(goal => ({
+    // Sort servers by total attacks
+    const sortedServers = Array.from(servers).sort((a, b) => {
+        const totalA = Object.values(serverGoalCounts[a] || {}).reduce((sum, count) => sum + count, 0);
+        const totalB = Object.values(serverGoalCounts[b] || {}).reduce((sum, count) => sum + count, 0);
+        return totalB - totalA;
+    });
+
+    // Sort goals by frequency
+    const sortedGoals = Array.from(goals).sort((a, b) => {
+        if (selectedServer) {
+            return (serverGoalCounts[selectedServer]?.[b] || 0) - (serverGoalCounts[selectedServer]?.[a] || 0);
+        }
+        return sortedServers.reduce((sum, server) => sum + (serverGoalCounts[server]?.[b] || 0), 0) -
+               sortedServers.reduce((sum, server) => sum + (serverGoalCounts[server]?.[a] || 0), 0);
+    });
+
+    const displayServers = selectedServer ? [selectedServer] : sortedServers.slice(0, 10);
+
+    // Prepare datasets
+    const datasets = sortedGoals.map(goal => ({
         label: goal,
-        data: methods.map(method => methodGoalCounts[method]?.[goal] || 0),
-        backgroundColor: `hsl(${(goals.indexOf(goal) * 137) % 360}, 70%, 60%)`
+        data: displayServers.map(server => serverGoalCounts[server]?.[goal] || 0),
+        backgroundColor: `hsl(${(sortedGoals.indexOf(goal) * 60 % 360)}, 70%, 60%)`,
+        borderWidth: 1
     }));
 
     canvas.chart = new Chart(canvas, {
         type: 'bar',
         data: {
-            labels: methods,
+            labels: displayServers.map(server =>
+                server.startsWith('ANONYMOUS_SERVER') ?
+                `Anonymous Server #${server.split('_').pop()}` :
+                serverNames[server] || server
+            ),
             datasets: datasets
         },
         options: {
@@ -852,26 +877,60 @@ function createMethodGoalChart() {
             scales: {
                 x: {
                     stacked: true,
-                    ticks: {
-                        autoSkip: false
-                    }
+                    title: { display: false },
+                    ticks: { autoSkip: false }
                 },
                 y: {
                     stacked: true,
                     beginAtZero: true,
-                    ticks: {
-                        precision: 0
-                    }
+                    title: { text: 'Number of Attacks', display: true },
+                    ticks: { precision: 0 }
                 }
             },
             plugins: {
-                legend: {
-                    position: 'top'
-                },
                 tooltip: {
-                    mode: 'index',
-                    intersect: false
+                    callbacks: {
+                        label: (context) => {
+                            const server = displayServers[context.dataIndex];
+                            const total = Object.values(serverGoalCounts[server] || {}).reduce((a, b) => a + b, 0);
+                            const value = context.raw || 0;
+                            const percentage = total > 0 ? Math.round((value / total) * 100) : 0;
+                            return `${context.dataset.label}: ${value} (${percentage}%)`;
+                        },
+                        footer: (context) => {
+                            if (!selectedServer && context.length > 0) {
+                                const server = displayServers[context[0].dataIndex];
+                                const total = Object.values(serverGoalCounts[server] || {}).reduce((a, b) => a + b, 0);
+                                return `Total: ${total} cases`;
+                            }
+                            return null;
+                        }
+                    },
+                    displayColors: true,
+                    backgroundColor: 'rgba(0,0,0,0.8)',
+                    bodyFont: { size: 12 },
+                    footerFont: { size: 12, weight: 'bold' }
+                },
+                legend: {
+                    position: 'top',
+                    onClick: (e, legendItem, legend) => {
+                        const index = legendItem.datasetIndex;
+                        const ci = legend.chart;
+                        const meta = ci.getDatasetMeta(index);
+                        meta.hidden = meta.hidden === null ? !ci.getDatasetMeta(index).hidden : null;
+                        ci.update();
+                    },
+                    labels: {
+                        sort: (a, b) => sortedGoals.indexOf(b.text) - sortedGoals.indexOf(a.text),
+                        padding: 20,
+                        font: { size: 11 }
+                    }
                 }
+            },
+            interaction: {
+                mode: 'nearest',
+                axis: 'x',
+                intersect: false
             }
         }
     });
