@@ -48,12 +48,28 @@ body.bg-gray-900.texture::after {
 	border-radius: 0.5rem;
 }
 
+/* Timeline */
+.timeline-container {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.5rem;
+}
+
 /* Dark Mode Adjustments for Dashboard Cards */
 body.bg-gray-900 .dashboard-card h3 {
 	color: var(--gray-300);
 }
 
 body.bg-gray-900 .chart-container {
+	background: #1e293b;
+	border-color: #334155;
+}
+
+body.bg-gray-900 .timeline-container {
 	background: #1e293b;
 	border-color: #334155;
 }

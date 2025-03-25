@@ -1116,6 +1116,7 @@ function createTimelineChart() {
 
     const sortedDates = Object.keys(dateGroups).sort();
 
+    // Create the chart with zoom/pan options
     canvas.chart = new Chart(canvas, {
         type: 'line',
         data: {
@@ -1127,7 +1128,9 @@ function createTimelineChart() {
                 borderColor: 'rgba(99, 102, 241, 1)',
                 borderWidth: 2,
                 tension: 0.3,
-                fill: true
+                fill: true,
+                pointRadius: 4,
+                pointHoverRadius: 6
             }]
         },
         options: {
@@ -1140,6 +1143,21 @@ function createTimelineChart() {
                 tooltip: {
                     mode: 'index',
                     intersect: false,
+                },
+                zoom: {
+                    zoom: {
+                        wheel: {
+                            enabled: true,
+                        },
+                        pinch: {
+                            enabled: true
+                        },
+                        mode: 'x',
+                    },
+                    pan: {
+                        enabled: true,
+                        mode: 'x',
+                    }
                 }
             },
             scales: {
@@ -1148,10 +1166,29 @@ function createTimelineChart() {
                     ticks: {
                         precision: 0
                     }
+                },
+                x: {
+                    ticks: {
+                        autoSkip: true,
+                        maxRotation: 45,
+                        minRotation: 45
+                    }
                 }
+            },
+            interaction: {
+                intersect: false,
+                mode: 'index'
             }
         }
     });
+
+    // Add reset zoom on right-click
+    canvas.oncontextmenu = (e) => {
+        e.preventDefault();
+        if (canvas.chart) {
+            canvas.chart.resetZoom();
+        }
+    };
 }
 
 // Create attack methods chart

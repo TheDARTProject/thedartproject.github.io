@@ -434,8 +434,8 @@
           <!-- timelineChart Chart -->
           <div class="bg-white p-4 rounded-lg shadow">
             <h2 class="text-lg font-semibold mb-4">Attacks Over Time</h2>
-            <p>Hover over a point to see exact data</p>
-            <div class="chart-container">
+            <p>Hover over a point to see exact data. Click and drag to zoom, right-click to reset.</p>
+            <div class="timeline-container">
               <canvas id="timelineChart"></canvas>
             </div>
           </div>
@@ -671,9 +671,11 @@
     <script src="../assets/js/utils.js" type="module"></script>
     <!-- Announcements Script -->
     <script src="../assets/js/announcements.js" type="module"></script>
-    <!-- Local Chart.js Copy -->
-    <script src="../assets/js/chart.min.js"></script>
     <!-- Local Day.js Copy -->
     <script src="../assets/js/dayjs.min.js"></script>
+    <!-- Load Chart.js Copy -->
+    <script src="../assets/js/chart.js"></script>
+    <!-- Load Chart.js Zoom Plugin Copy -->
+    <script src="../assets/js/chartjs-plugin-zoom.js"></script>
   </body>
 </html>
