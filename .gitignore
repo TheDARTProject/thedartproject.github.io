@@ -22,3 +22,7 @@ tools/bot/cogs/__pycache__/help.cpython-39.pyc
 tools/bot/cogs/__pycache__/support.cpython-39.pyc
 tools/bot/bot_to_do_list.txt
 tools/bot/utils/__pycache__/decorators.cpython-39.pyc
+tools/monitor_app/.env
+tools/monitor_app/bot_to_do_list.txt
+tools/monitor_app/config/wordlist.json
+tools/statistics_app/.env
