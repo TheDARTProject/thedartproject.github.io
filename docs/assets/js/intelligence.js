@@ -1,7 +1,10 @@
 // intelligence.js
 
 // Import necessary functions from utils.js
-import { fetchData, formatDate } from './utils.js';
+import {
+    fetchData,
+    formatDate
+} from './utils.js';
 
 // Main data object
 let accountsData = {};
@@ -36,7 +39,9 @@ function processIntelligenceData(data) {
     Object.values(data).forEach(account => {
         const date = new Date(account.FOUND_ON);
         const year = date.getFullYear();
-        const month = date.toLocaleString('default', { month: 'long' });
+        const month = date.toLocaleString('default', {
+            month: 'long'
+        });
         const yearMonth = `${year}-${date.getMonth() + 1}`;
 
         if (!monthlyReports[yearMonth]) {

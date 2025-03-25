@@ -8,41 +8,79 @@ export function setupContextMenu() {
     document.body.appendChild(contextMenu);
 
     // Site pages structure - flattened without categories
-    const sitePages = [
-        { label: 'Home Page', url: '/CDA-Project/index.html' },
-        { label: 'Dashboard', url: '/CDA-Project/pages/dashboard.html' },
-        { label: 'Threat Map', url: '/CDA-Project/pages/threat-map.html' },
-        { label: 'Intel Reports', url: '/CDA-Project/pages/intelligence.html' },
-        { label: 'Discord App', url: '/CDA-Project/pages/cda-monitor-app.html' },
-        { label: 'Info Center', url: '/CDA-Project/pages/info.html' },
-        { label: 'Resource Center', url: '/CDA-Project/pages/resources.html' },
-        { label: 'Frequent Questions', url: '/CDA-Project/pages/faq.html' },
-        { label: 'Latest News', url: '/CDA-Project/pages/news.html' },
-        { label: 'Changelog', url: '/CDA-Project/pages/changelog.html' },
-        { label: 'Status', url: '/CDA-Project/pages/status.html' },
-        { label: 'Project Roadmap', url: '/CDA-Project/pages/roadmap.html' }
+    const sitePages = [{
+        label: 'Home Page',
+        url: '/CDA-Project/index.html'
+    },
+        {
+            label: 'Dashboard',
+            url: '/CDA-Project/pages/dashboard.html'
+        },
+        {
+            label: 'Threat Map',
+            url: '/CDA-Project/pages/threat-map.html'
+        },
+        {
+            label: 'Intel Reports',
+            url: '/CDA-Project/pages/intelligence.html'
+        },
+        {
+            label: 'Discord App',
+            url: '/CDA-Project/pages/cda-monitor-app.html'
+        },
+        {
+            label: 'Info Center',
+            url: '/CDA-Project/pages/info.html'
+        },
+        {
+            label: 'Resource Center',
+            url: '/CDA-Project/pages/resources.html'
+        },
+        {
+            label: 'Frequent Questions',
+            url: '/CDA-Project/pages/faq.html'
+        },
+        {
+            label: 'Latest News',
+            url: '/CDA-Project/pages/news.html'
+        },
+        {
+            label: 'Changelog',
+            url: '/CDA-Project/pages/changelog.html'
+        },
+        {
+            label: 'Status',
+            url: '/CDA-Project/pages/status.html'
+        },
+        {
+            label: 'Project Roadmap',
+            url: '/CDA-Project/pages/roadmap.html'
+        }
     ];
 
     // Base menu items configuration
-    const baseMenuItems = [
-        {
-            label: 'Back',
-            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>',
-            action: () => window.history.back()
-        },
+    const baseMenuItems = [{
+        label: 'Back',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>',
+        action: () => window.history.back()
+    },
         {
             label: 'Forward',
             icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
             action: () => window.history.forward()
         },
-        { type: 'separator' },
+        {
+            type: 'separator'
+        },
         {
             label: 'Site Navigation',
             icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" /></svg>',
             hasSubmenu: true,
             submenuItems: sitePages
         },
-        { type: 'separator' },
+        {
+            type: 'separator'
+        },
         {
             label: 'Refresh',
             icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" /></svg>',
@@ -163,36 +201,35 @@ export function setupContextMenu() {
     }
 
     // Chart-specific menu items
-    const chartMenuItems = [
-        {
-            label: 'Save Chart As...',
-            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
-            action: async (chart) => {
-                try {
-                    // Add watermark to the chart
-                    const watermarkedImage = await addWatermarkToChart(chart.canvas);
-                    const chartName = getChartName(chart.canvas.id);
-                    const filename = `${chartName.replace(/ /g, '-')}-${new Date().toISOString().slice(0, 10)}.png`;
+    const chartMenuItems = [{
+        label: 'Save Chart As...',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
+        action: async (chart) => {
+            try {
+                // Add watermark to the chart
+                const watermarkedImage = await addWatermarkToChart(chart.canvas);
+                const chartName = getChartName(chart.canvas.id);
+                const filename = `${chartName.replace(/ /g, '-')}-${new Date().toISOString().slice(0, 10)}.png`;
 
-                    // Create download link
-                    const link = document.createElement('a');
-                    link.download = filename;
-                    link.href = watermarkedImage;
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                } catch (err) {
-                    console.error('Error saving chart:', err);
-                    // Fallback to original chart if watermark fails
-                    const link = document.createElement('a');
-                    link.download = 'chart.png';
-                    link.href = chart.toBase64Image();
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                }
+                // Create download link
+                const link = document.createElement('a');
+                link.download = filename;
+                link.href = watermarkedImage;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } catch (err) {
+                console.error('Error saving chart:', err);
+                // Fallback to original chart if watermark fails
+                const link = document.createElement('a');
+                link.download = 'chart.png';
+                link.href = chart.toBase64Image();
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
             }
-        },
+        }
+    },
         {
             label: 'Copy Chart',
             icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" /><path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" /></svg>',
@@ -233,7 +270,9 @@ export function setupContextMenu() {
                 }
             }
         },
-        { type: 'separator' }
+        {
+            type: 'separator'
+        }
     ];
 
     function buildMenuItems(target) {

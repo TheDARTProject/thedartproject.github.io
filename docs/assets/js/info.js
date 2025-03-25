@@ -8,7 +8,10 @@ import {
 import servers from './servers.js';
 
 // Destructure serverNames and serverInvites from the default export
-const { serverNames, serverInvites } = servers;
+const {
+    serverNames,
+    serverInvites
+} = servers;
 
 // Initialize theme when the page loads
 document.addEventListener('DOMContentLoaded', () => {

@@ -480,8 +480,8 @@ function showAccountDetails(caseNumber) {
                             <td class="px-6 py-4 domain-cell" title="${account.SURFACE_URL_DOMAIN}">${account.SURFACE_URL_DOMAIN}</td>
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                                    account.SURFACE_URL_STATUS === 'ACTIVE' ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800'
-                                }">
+        account.SURFACE_URL_STATUS === 'ACTIVE' ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800'
+    }">
                                     ${account.SURFACE_URL_STATUS}
                                 </span>
                             </td>
@@ -494,8 +494,8 @@ function showAccountDetails(caseNumber) {
                             <td class="px-6 py-4 domain-cell" title="${account.FINAL_URL_DOMAIN}">${account.FINAL_URL_DOMAIN}</td>
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                                    account.FINAL_URL_STATUS === 'ACTIVE' ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800'
-                                }">
+        account.FINAL_URL_STATUS === 'ACTIVE' ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800'
+    }">
                                     ${account.FINAL_URL_STATUS}
                                 </span>
                             </td>
@@ -612,7 +612,10 @@ function createAverageTimeChart() {
             const daysDiff = timeDiff / (1000 * 60 * 60 * 24); // Convert to days
 
             if (!yearData[year]) {
-                yearData[year] = { totalDays: 0, count: 0 };
+                yearData[year] = {
+                    totalDays: 0,
+                    count: 0
+                };
             }
             yearData[year].totalDays += daysDiff;
             yearData[year].count += 1;
@@ -848,7 +851,7 @@ function createServerAttackTrendsChart() {
             return (serverGoalCounts[selectedServer]?.[b] || 0) - (serverGoalCounts[selectedServer]?.[a] || 0);
         }
         return sortedServers.reduce((sum, server) => sum + (serverGoalCounts[server]?.[b] || 0), 0) -
-               sortedServers.reduce((sum, server) => sum + (serverGoalCounts[server]?.[a] || 0), 0);
+            sortedServers.reduce((sum, server) => sum + (serverGoalCounts[server]?.[a] || 0), 0);
     });
 
     const displayServers = selectedServer ? [selectedServer] : sortedServers.slice(0, 10);
@@ -866,8 +869,8 @@ function createServerAttackTrendsChart() {
         data: {
             labels: displayServers.map(server =>
                 server.startsWith('ANONYMOUS_SERVER') ?
-                `Anonymous Server #${server.split('_').pop()}` :
-                serverNames[server] || server
+                    `Anonymous Server #${server.split('_').pop()}` :
+                    serverNames[server] || server
             ),
             datasets: datasets
         },
@@ -877,14 +880,23 @@ function createServerAttackTrendsChart() {
             scales: {
                 x: {
                     stacked: true,
-                    title: { display: false },
-                    ticks: { autoSkip: false }
+                    title: {
+                        display: false
+                    },
+                    ticks: {
+                        autoSkip: false
+                    }
                 },
                 y: {
                     stacked: true,
                     beginAtZero: true,
-                    title: { text: 'Number of Attacks', display: true },
-                    ticks: { precision: 0 }
+                    title: {
+                        text: 'Number of Attacks',
+                        display: true
+                    },
+                    ticks: {
+                        precision: 0
+                    }
                 }
             },
             plugins: {
@@ -908,8 +920,13 @@ function createServerAttackTrendsChart() {
                     },
                     displayColors: true,
                     backgroundColor: 'rgba(0,0,0,0.8)',
-                    bodyFont: { size: 12 },
-                    footerFont: { size: 12, weight: 'bold' }
+                    bodyFont: {
+                        size: 12
+                    },
+                    footerFont: {
+                        size: 12,
+                        weight: 'bold'
+                    }
                 },
                 legend: {
                     position: 'top',
@@ -923,7 +940,9 @@ function createServerAttackTrendsChart() {
                     labels: {
                         sort: (a, b) => sortedGoals.indexOf(b.text) - sortedGoals.indexOf(a.text),
                         padding: 20,
-                        font: { size: 11 }
+                        font: {
+                            size: 11
+                        }
                     }
                 }
             },
@@ -1116,10 +1135,10 @@ function createStatusChart() {
         data: {
             labels: ['Surface URLs', 'Final URLs'],
             datasets: [{
-                    label: 'Active',
-                    data: [statusCounts.surfaceActive, statusCounts.finalActive],
-                    backgroundColor: 'rgba(239, 68, 68, 0.8)'
-                },
+                label: 'Active',
+                data: [statusCounts.surfaceActive, statusCounts.finalActive],
+                backgroundColor: 'rgba(239, 68, 68, 0.8)'
+            },
                 {
                     label: 'Inactive',
                     data: [statusCounts.surfaceInactive, statusCounts.finalInactive],

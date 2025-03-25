@@ -194,9 +194,9 @@
             var n = this._events[t];
             n || (n = [], this._events[t] = n), e === this && (e = void 0);
             for (var o = {
-                    fn: i,
-                    ctx: e
-                }, s = n, r = 0, a = s.length; r < a; r++)
+                fn: i,
+                ctx: e
+            }, s = n, r = 0, a = s.length; r < a; r++)
                 if (s[r].fn === i && s[r].ctx === e) return;
             s.push(o)
         },
@@ -1140,11 +1140,11 @@
             },
             setView: function(t, i, e) {
                 if ((i = void 0 === i ? this._zoom : this._limitZoom(i), t = this._limitCenter(j(t), i, this.options.maxBounds), e = e || {}, this._stop(), this._loaded && !e.reset && !0 !== e) && (void 0 !== e.animate && (e.zoom = h({
-                        animate: e.animate
-                    }, e.zoom), e.pan = h({
-                        animate: e.animate,
-                        duration: e.duration
-                    }, e.pan)), this._zoom !== i ? this._tryAnimatedZoom && this._tryAnimatedZoom(t, i, e.zoom) : this._tryAnimatedPan(t, e.pan))) return clearTimeout(this._sizeTimer), this;
+                    animate: e.animate
+                }, e.zoom), e.pan = h({
+                    animate: e.animate,
+                    duration: e.duration
+                }, e.pan)), this._zoom !== i ? this._tryAnimatedZoom && this._tryAnimatedZoom(t, i, e.zoom) : this._tryAnimatedPan(t, e.pan))) return clearTimeout(this._sizeTimer), this;
                 return this._resetView(t, i), this
             },
             setZoom: function(t, i) {
@@ -1308,9 +1308,9 @@
             },
             locate: function(t) {
                 if (t = this._locateOptions = h({
-                        timeout: 1e4,
-                        watch: !1
-                    }, t), !("geolocation" in navigator)) return this._handleGeolocationError({
+                    timeout: 1e4,
+                    watch: !1
+                }, t), !("geolocation" in navigator)) return this._handleGeolocationError({
                     code: 0,
                     message: "Geolocation not supported."
                 }), this;
@@ -2714,8 +2714,8 @@
     var Ie = Ae.extend({
         initialize: function(t, i, e) {
             if ("number" == typeof i && (i = h({}, e, {
-                    radius: i
-                })), c(this, i), this._latlng = j(t), isNaN(this.options.radius)) throw new Error("Circle radius cannot be NaN");
+                radius: i
+            })), c(this, i), this._latlng = j(t), isNaN(this.options.radius)) throw new Error("Circle radius cannot be NaN");
             this._mRadius = this.options.radius
         },
         setRadius: function(t) {
@@ -3699,8 +3699,8 @@
                                 p.z = this._tileZoom, this._isValidTile(p) && ((d = this._tiles[this._tileCoordsToKey(p)]) ? d.current = !0 : r.push(p))
                             }
                         if (r.sort(function(t, i) {
-                                return t.distanceTo(s) - i.distanceTo(s)
-                            }), 0 !== r.length) {
+                            return t.distanceTo(s) - i.distanceTo(s)
+                        }), 0 !== r.length) {
                             this._loading || (this._loading = !0, this.fire("loading"));
                             for (var m = document.createDocumentFragment(), _ = 0; _ < r.length; _++) this._addTile(r[_], m);
                             this._level.el.appendChild(m)

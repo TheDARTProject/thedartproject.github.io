@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Get current page path
         const currentPath = window.location.pathname;
         const isIndexOr404 = currentPath.endsWith('index.html') ||
-                            currentPath.endsWith('404.html') ||
-                            currentPath === '/'; // Root path
+            currentPath.endsWith('404.html') ||
+            currentPath === '/'; // Root path
 
         // Set appropriate paths based on current page
         const infoPath = isIndexOr404 ? 'pages/info.html' : 'info.html';
