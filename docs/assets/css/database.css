@@ -1,0 +1,253 @@
+/* database.css */
+
+/* Table Styles */
+.table-container {
+	overflow-y: auto;
+	position: relative;
+	border-radius: 0.375rem;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table-container table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.table-container th {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: #f9fafb;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-container th,
+.table-container td {
+	padding: 0.75rem 1rem;
+	text-align: left;
+	border-bottom: 1px solid #e5e7eb;
+	font-size: 0.875rem;
+}
+
+.table-container td {
+	color: #4b5563;
+	vertical-align: top;
+}
+
+.table-container tr:hover {
+	background-color: #f9fafb;
+}
+
+/* Truncate tooltip */
+.truncate-tooltip {
+	display: inline-block;
+	max-width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+}
+
+.truncate-tooltip:hover::after {
+	content: attr(title);
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	z-index: 100;
+	margin-top: -2.5rem;
+	margin-left: -0.5rem;
+	max-width: 300px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+/* Status badges */
+.bg-red-100 {
+	background-color: #fee2e2;
+	color: #b91c1c;
+}
+
+.bg-yellow-100 {
+	background-color: #fef3c7;
+	color: #92400e;
+}
+
+.bg-green-100 {
+	background-color: #d1fae5;
+	color: #065f46;
+}
+
+.bg-orange-100 {
+	background-color: #ffedd5;
+	color: #9a3412;
+}
+
+/* Pagination controls */
+.pagination-controls {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.pagination-controls button {
+	background-color: #f3f4f6;
+	color: #4b5563;
+	padding: 0.5rem 1rem;
+	border-radius: 0.375rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	transition: all 0.2s ease;
+	border: 1px solid #e5e7eb;
+	cursor: pointer;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+	background-color: #e5e7eb;
+}
+
+.pagination-controls button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+/* Spoiler effect */
+.spoiler {
+	background-color: black;
+	color: black;
+	cursor: pointer;
+	user-select: none;
+}
+
+.spoiler.revealed {
+	background-color: transparent;
+	color: inherit;
+}
+
+/* Counters Section */
+.counter-container {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+}
+
+.counter-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem 1.5rem;
+	border-radius: 0.5rem;
+	min-width: 120px;
+	transition: all 0.3s ease;
+}
+
+.counter-value {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.counter-label {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	opacity: 0.8;
+	margin-top: 0.25rem;
+}
+
+/* Filter grid layout */
+.flex.flex-wrap.gap-4.mb-4,
+.flex.flex-wrap.gap-4 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+	gap: 1rem;
+	align-items: end;
+}
+
+/* Reset Filters Button */
+#resetFilters {
+	transition: all 0.2s ease;
+	height: 42px;
+}
+
+/* Dark mode adjustments */
+body.bg-gray-900 {
+	.table-container {
+		background-color: #1f2937;
+
+		th {
+			background-color: #374151;
+			color: #f3f4f6;
+		}
+
+		td {
+			color: #d1d5db;
+			border-color: #4b5563;
+		}
+
+		tr:hover {
+			background-color: #374151;
+		}
+	}
+
+	.bg-red-100 {
+		background-color: #7f1d1d;
+		color: #fecaca;
+	}
+
+	.bg-yellow-100 {
+		background-color: #78350f;
+		color: #fde68a;
+	}
+
+	.bg-green-100 {
+		background-color: #064e3b;
+		color: #a7f3d0;
+	}
+
+	.bg-orange-100 {
+		background-color: #7c2d12;
+		color: #fdba74;
+	}
+
+	/* Updated Total Cases counter in dark mode */
+	.counter-item.bg-indigo-100 {
+		background-color: rgba(255, 255, 255, 0.05);
+		color: #f3f4f6;
+		/* Light text for better contrast */
+	}
+
+	.pagination-controls button {
+		background-color: #374151;
+		color: #d1d5db;
+		border-color: #4b5563;
+
+		&:hover:not(:disabled) {
+			background-color: #4b5563;
+		}
+	}
+
+	#resetFilters {
+		background-color: #374151;
+		color: #d1d5db;
+		border-color: #4b5563;
+
+		&:hover {
+			background-color: #4b5563;
+		}
+	}
+
+	.counter-item:not(.bg-indigo-100) {
+		background-color: rgba(255, 255, 255, 0.05);
+	}
+}
+
+/* White card styling */
+.bg-white.p-6.rounded-lg.shadow.mb-6 {
+	padding: 1.5rem;
+}
