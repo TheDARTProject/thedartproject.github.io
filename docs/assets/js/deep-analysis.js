@@ -10,7 +10,7 @@ let filteredData = [];
 
 // Event listeners for deep analysis page
 document.addEventListener('DOMContentLoaded', () => {
-    if (window.location.pathname.includes('deep_analysis.html')) {
+    if (window.location.pathname.includes('deep-analysis.html')) {
         fetchData();
     }
 
