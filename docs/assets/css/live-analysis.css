@@ -1,0 +1,66 @@
+/* Live Analysis Page Styles */
+.chart-container {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.series-config {
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.series-config:hover {
+  background-color: #f3f4f6;
+}
+
+.remove-series {
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.remove-series:hover {
+  opacity: 1;
+}
+
+/* Dark Mode Adjustments */
+body.bg-gray-900 .chart-container {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.bg-gray-900 .series-config {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+body.bg-gray-900 .series-config:hover {
+  background-color: #1e293b;
+}
+
+/* Loader Styles */
+.loader {
+  border: 4px solid #f3f4f6;
+  border-top: 4px solid #6366F1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .chart-container {
+    height: 400px;
+  }
+}
