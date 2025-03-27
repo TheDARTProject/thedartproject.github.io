@@ -53,15 +53,28 @@ def main():
             log_message(f"Skipping account {account_number}: No DISCORD_ID found.")
             continue
 
-        creation_date = get_account_creation_date(discord_id)
-        if creation_date and "ACCOUNT_CREATION" not in account_data:
-            ordered_data = {}
-            for key, value in account_data.items():
-                ordered_data[key] = value
-                if key == "ACCOUNT_TYPE":
-                    ordered_data["ACCOUNT_CREATION"] = creation_date
-            data[account_number] = ordered_data
-            accounts_updated += 1
+        account_creation = account_data.get("ACCOUNT_CREATION")
+        if (account_creation is None or
+                account_creation == "" or
+                str(account_creation).strip() == ""):
+
+            creation_date = get_account_creation_date(discord_id)
+            if creation_date:
+                updated_account_data = account_data.copy()
+
+                keys = list(updated_account_data.keys())
+                account_type_index = keys.index("ACCOUNT_TYPE") if "ACCOUNT_TYPE" in keys else -1
+
+                if account_type_index != -1:
+                    keys.insert(account_type_index + 1, "ACCOUNT_CREATION")
+                else:
+                    keys.append("ACCOUNT_CREATION")
+
+                reordered_data = {k: updated_account_data[k] for k in keys if k in updated_account_data}
+                reordered_data["ACCOUNT_CREATION"] = creation_date
+
+                data[account_number] = reordered_data
+                accounts_updated += 1
 
     if accounts_updated > 0:
         update_json_file(file_path, data)
