@@ -108,29 +108,10 @@ export function setupContextMenu() {
             'AccountTypeChart': 'Account Type Distribution',
             'finalDomainsChart': 'Final Domains Distribution',
             'serverCasesChart': 'Cases by Server',
-            'averageTimeChart': 'Average Time Till Compromise'
+            'averageTimeChart': 'Average Time Till Compromise',
+            'temporalPatternChart': 'Temporal Attack Pattern Analysis'
         };
         return chartNames[canvasId] || 'Chart';
-    }
-
-    // Function to get watermark position based on chart ID
-    function getWatermarkPosition(canvasId) {
-        const positions = {
-            'timelineChart': 'top-right',
-            'methodsChart': 'top-left',
-            'surfacesChart': 'top-right',
-            'regionsChart': 'top-left',
-            'vectorsChart': 'top-right',
-            'statusChart': 'top-right',
-            'behaviourChart': 'top-left',
-            'serverAttackTrendsChart': 'top-right',
-            'goalsChart': 'top-left',
-            'AccountTypeChart': 'top-left',
-            'finalDomainsChart': 'top-right',
-            'serverCasesChart': 'top-left',
-            'averageTimeChart': 'top-right'
-        };
-        return positions[canvasId] || 'top-left';
     }
 
     // Function to create a high-resolution version of the chart
