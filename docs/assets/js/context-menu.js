@@ -119,7 +119,7 @@ export function setupContextMenu() {
         return new Promise((resolve) => {
             // Configuration - adjust these values as needed
             const config = {
-                scaleFactor: 2,
+                scaleFactor: 4,
                 borderSize: 100, // in 1x pixels (will be scaled)
                 watermark: {
                     width: 130,    // in 1x pixels
