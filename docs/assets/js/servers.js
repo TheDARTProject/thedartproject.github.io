@@ -1,6 +1,7 @@
 // servers.js
 
 const serverNames = {
+    DIRECT_MESSAGES: "Direct Messages",
     PROJECT_CW: "Project CW",
     BLITZHUB_EU: "BlitzHUB EU",
     SINEWAVE_DEVELOPMENT: "SINEWAVE Development",
@@ -10,6 +11,7 @@ const serverNames = {
 };
 
 const serverInvites = {
+    DIRECT_MESSAGES: "",
     PROJECT_CW: "https://discord.gg/projectcw",
     BLITZHUB_EU: "https://discord.gg/WKz7RJvtUK",
     SINEWAVE_DEVELOPMENT: "https://discord.gg/2nHHHBWNDw",

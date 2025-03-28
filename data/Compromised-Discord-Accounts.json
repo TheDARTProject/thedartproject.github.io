@@ -2,7 +2,7 @@
     "ACCOUNT_NUMBER_1": {
         "CASE_NUMBER": "1",
         "FOUND_ON": "2017-11-21",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "320827994375585793",
         "USERNAME": "uhorky",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -50,7 +50,7 @@
     "ACCOUNT_NUMBER_3": {
         "CASE_NUMBER": "3",
         "FOUND_ON": "2021-04-22",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "834501393225220166",
         "USERNAME": "deleted_user_315d61978d8f",
         "ACCOUNT_STATUS": "DELETED",
@@ -98,7 +98,7 @@
     "ACCOUNT_NUMBER_5": {
         "CASE_NUMBER": "5",
         "FOUND_ON": "2021-05-17",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "727344210642075688",
         "USERNAME": "deleted_user_0a4d7bdd9fde",
         "ACCOUNT_STATUS": "DELETED",
@@ -122,7 +122,7 @@
     "ACCOUNT_NUMBER_6": {
         "CASE_NUMBER": "6",
         "FOUND_ON": "2021-05-21",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "845274636244746250",
         "USERNAME": "masti_with_vihaan",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -146,7 +146,7 @@
     "ACCOUNT_NUMBER_7": {
         "CASE_NUMBER": "7",
         "FOUND_ON": "2021-05-24",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "844947282537349150",
         "USERNAME": "deleted_user_f160bf4963da",
         "ACCOUNT_STATUS": "DELETED",
@@ -170,7 +170,7 @@
     "ACCOUNT_NUMBER_8": {
         "CASE_NUMBER": "8",
         "FOUND_ON": "2021-07-02",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "824412015959080980",
         "USERNAME": "avon5828",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -194,7 +194,7 @@
     "ACCOUNT_NUMBER_9": {
         "CASE_NUMBER": "9",
         "FOUND_ON": "2021-07-12",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "863881703227523082",
         "USERNAME": "deleted_user_b9ae4be6c80e",
         "ACCOUNT_STATUS": "DELETED",
@@ -218,7 +218,7 @@
     "ACCOUNT_NUMBER_10": {
         "CASE_NUMBER": "10",
         "FOUND_ON": "2021-07-20",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "631893694747901989",
         "USERNAME": "deleted_user_764c68a87634",
         "ACCOUNT_STATUS": "DELETED",
@@ -242,7 +242,7 @@
     "ACCOUNT_NUMBER_11": {
         "CASE_NUMBER": "11",
         "FOUND_ON": "2021-07-27",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "869609744770420746",
         "USERNAME": "deleted_user_171ace7cb26a",
         "ACCOUNT_STATUS": "DELETED",
@@ -266,7 +266,7 @@
     "ACCOUNT_NUMBER_12": {
         "CASE_NUMBER": "12",
         "FOUND_ON": "2021-07-28",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "869981518381072385",
         "USERNAME": "deleted_user_bf9414d56e70",
         "ACCOUNT_STATUS": "DELETED",
@@ -1274,7 +1274,7 @@
     "ACCOUNT_NUMBER_54": {
         "CASE_NUMBER": "54",
         "FOUND_ON": "2021-11-29",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "914805643762876426",
         "USERNAME": "5t4n4",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -5786,7 +5786,7 @@
     "ACCOUNT_NUMBER_242": {
         "CASE_NUMBER": "242",
         "FOUND_ON": "2023-11-15",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "456226577798135808",
         "USERNAME": "deleted_user_16c5689b258e",
         "ACCOUNT_STATUS": "DELETED",
@@ -17714,7 +17714,7 @@
     "ACCOUNT_NUMBER_739": {
         "CASE_NUMBER": "739",
         "FOUND_ON": "2024-04-24",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1226839529168568331",
         "USERNAME": "junior032870",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -18074,7 +18074,7 @@
     "ACCOUNT_NUMBER_754": {
         "CASE_NUMBER": "754",
         "FOUND_ON": "2024-04-29",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1121110065944993792",
         "USERNAME": "erikssonsebbe0859",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -18242,7 +18242,7 @@
     "ACCOUNT_NUMBER_761": {
         "CASE_NUMBER": "761",
         "FOUND_ON": "2024-04-30",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "895126879504314409",
         "USERNAME": "deleted_user_3709699f43d1",
         "ACCOUNT_STATUS": "DELETED",
@@ -18914,7 +18914,7 @@
     "ACCOUNT_NUMBER_789": {
         "CASE_NUMBER": "789",
         "FOUND_ON": "2024-05-09",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1102666934471901244",
         "USERNAME": "marie_benjamin321",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -20786,7 +20786,7 @@
     "ACCOUNT_NUMBER_867": {
         "CASE_NUMBER": "867",
         "FOUND_ON": "2024-05-26",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1018596334967730236",
         "USERNAME": "deleted_user_8b795cd2d08f",
         "ACCOUNT_STATUS": "DELETED",
@@ -21506,7 +21506,7 @@
     "ACCOUNT_NUMBER_897": {
         "CASE_NUMBER": "897",
         "FOUND_ON": "2024-06-05",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1236060522487746716",
         "USERNAME": "tahliapowlett",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -22154,7 +22154,7 @@
     "ACCOUNT_NUMBER_924": {
         "CASE_NUMBER": "924",
         "FOUND_ON": "2024-06-17",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "956212917794144296",
         "USERNAME": "pwimpyumpyumpyulhpwilgpyumpyutye",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -22250,7 +22250,7 @@
     "ACCOUNT_NUMBER_928": {
         "CASE_NUMBER": "928",
         "FOUND_ON": "2024-06-18",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "848216061890265088",
         "USERNAME": "exchangesupport7520",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -24722,7 +24722,7 @@
     "ACCOUNT_NUMBER_1031": {
         "CASE_NUMBER": "1031",
         "FOUND_ON": "2024-07-14",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "780287569900208139",
         "USERNAME": "maroof02",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -25418,7 +25418,7 @@
     "ACCOUNT_NUMBER_1060": {
         "CASE_NUMBER": "1060",
         "FOUND_ON": "2024-07-29",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1082470192728264745",
         "USERNAME": "deleted_user_fe78243e0d18",
         "ACCOUNT_STATUS": "DELETED",
@@ -25634,7 +25634,7 @@
     "ACCOUNT_NUMBER_1069": {
         "CASE_NUMBER": "1069",
         "FOUND_ON": "2024-08-12",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1031541309908987984",
         "USERNAME": "deleted_user_5368ab49bd50",
         "ACCOUNT_STATUS": "DELETED",
@@ -25849,7 +25849,7 @@
     "ACCOUNT_NUMBER_1078": {
         "CASE_NUMBER": "1078",
         "FOUND_ON": "2024-08-21",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1200583517139116032",
         "USERNAME": "charlottejhon",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -25992,7 +25992,7 @@
     "ACCOUNT_NUMBER_1084": {
         "CASE_NUMBER": "1084",
         "FOUND_ON": "2024-08-25",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "739217878728966154",
         "USERNAME": "aureliahicks",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -26688,7 +26688,7 @@
     "ACCOUNT_NUMBER_1113": {
         "CASE_NUMBER": "1113",
         "FOUND_ON": "2024-09-09",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "975461837275557948",
         "USERNAME": "deleted_user_c9b932c8f362",
         "ACCOUNT_STATUS": "DELETED",
@@ -26760,7 +26760,7 @@
     "ACCOUNT_NUMBER_1116": {
         "CASE_NUMBER": "1116",
         "FOUND_ON": "2024-09-22",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "845309152393297970",
         "USERNAME": "deleted_user_9de48425ef88",
         "ACCOUNT_STATUS": "DELETED",
@@ -26880,7 +26880,7 @@
     "ACCOUNT_NUMBER_1121": {
         "CASE_NUMBER": "1121",
         "FOUND_ON": "2024-10-02",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1291061077257486336",
         "USERNAME": "celakyvo",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -27024,7 +27024,7 @@
     "ACCOUNT_NUMBER_1127": {
         "CASE_NUMBER": "1127",
         "FOUND_ON": "2024-10-10",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1105646174309990421",
         "USERNAME": "mrantoniomann",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -27072,7 +27072,7 @@
     "ACCOUNT_NUMBER_1129": {
         "CASE_NUMBER": "1129",
         "FOUND_ON": "2024-10-19",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1227295644373356554",
         "USERNAME": "wallstreet.bets",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -27311,7 +27311,7 @@
     "ACCOUNT_NUMBER_1139": {
         "CASE_NUMBER": "1139",
         "FOUND_ON": "2024-11-07",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "534428833281998850",
         "USERNAME": "georgetheman.",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -27479,7 +27479,7 @@
     "ACCOUNT_NUMBER_1146": {
         "CASE_NUMBER": "1146",
         "FOUND_ON": "2024-11-27",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1050210111387336745",
         "USERNAME": "zealous_star_36694",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -27503,7 +27503,7 @@
     "ACCOUNT_NUMBER_1147": {
         "CASE_NUMBER": "1147",
         "FOUND_ON": "2024-11-28",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "863922209931264042",
         "USERNAME": "8bitfunkyness",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -27599,7 +27599,7 @@
     "ACCOUNT_NUMBER_1151": {
         "CASE_NUMBER": "1151",
         "FOUND_ON": "2024-11-30",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1219375381149384844",
         "USERNAME": "tiajulia_rushi",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -27695,7 +27695,7 @@
     "ACCOUNT_NUMBER_1155": {
         "CASE_NUMBER": "1155",
         "FOUND_ON": "2024-12-04",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "791564313650790400",
         "USERNAME": "limonieum.",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -27983,7 +27983,7 @@
     "ACCOUNT_NUMBER_1167": {
         "CASE_NUMBER": "1167",
         "FOUND_ON": "2024-12-20",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "878464100210966588",
         "USERNAME": "celestial_hummingbird_13085",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -28079,7 +28079,7 @@
     "ACCOUNT_NUMBER_1171": {
         "CASE_NUMBER": "1171",
         "FOUND_ON": "2024-12-27",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1245661182006788148",
         "USERNAME": "liliys.here_",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -28247,7 +28247,7 @@
     "ACCOUNT_NUMBER_1178": {
         "CASE_NUMBER": "1178",
         "FOUND_ON": "2025-01-03",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "752795642316980245",
         "USERNAME": "colin_142",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -28295,7 +28295,7 @@
     "ACCOUNT_NUMBER_1180": {
         "CASE_NUMBER": "1180",
         "FOUND_ON": "2025-01-06",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1179841438675124299",
         "USERNAME": "whimsical_hare_19479",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -28607,7 +28607,7 @@
     "ACCOUNT_NUMBER_1193": {
         "CASE_NUMBER": "1193",
         "FOUND_ON": "2025-01-16",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1329515864533368927",
         "USERNAME": "medeline90",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -30236,7 +30236,7 @@
     "ACCOUNT_NUMBER_1261": {
         "CASE_NUMBER": "1261",
         "FOUND_ON": "2025-02-19",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "514195298369798190",
         "USERNAME": "bojanjanevski",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -32228,7 +32228,7 @@
     "ACCOUNT_NUMBER_1344": {
         "CASE_NUMBER": "1344",
         "FOUND_ON": "2025-03-20",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1351616700243640380",
         "USERNAME": "marine008305",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -32540,7 +32540,7 @@
     "ACCOUNT_NUMBER_1357": {
         "CASE_NUMBER": "1357",
         "FOUND_ON": "2025-03-28",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1324301673748893709",
         "USERNAME": "elga_72",
         "ACCOUNT_STATUS": "COMPROMISED",
@@ -32564,7 +32564,7 @@
     "ACCOUNT_NUMBER_1358": {
         "CASE_NUMBER": "1358",
         "FOUND_ON": "2025-03-28",
-        "FOUND_ON_SERVER": "Direct Messages",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "1260075800355410014",
         "USERNAME": "dzheicjhxf",
         "ACCOUNT_STATUS": "COMPROMISED",
