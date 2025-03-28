@@ -32584,5 +32584,29 @@
         "FINAL_URL_STATUS": "UNKNOWN",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-28T03:12:04.709170"
+    },
+    "ACCOUNT_NUMBER_1359": {
+        "CASE_NUMBER": "1359",
+        "FOUND_ON": "2025-03-28",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "427009349454659584",
+        "USERNAME": "peruya",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "ACCOUNT_TYPE": "User Accounts",
+        "ACCOUNT_CREATION": "2018-03-24",
+        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "US",
+        "SURFACE_URL": "https://tinyurl.com/3s67dxdf",
+        "SURFACE_URL_DOMAIN": "tinyurl.com",
+        "SURFACE_URL_STATUS": "ACTIVE",
+        "FINAL_URL": "https://steanconmmunitv.com/gifn/id=169364",
+        "FINAL_URL_DOMAIN": "steanconmmunitv.com",
+        "FINAL_URL_STATUS": "ACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-28T15:25:13.905638"
     }
 }
