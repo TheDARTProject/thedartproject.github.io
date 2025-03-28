@@ -10,8 +10,8 @@
 
 .table-container table {
 	width: 100%;
+	min-width: 768px;
 	border-collapse: collapse;
-	table-layout: fixed;
 }
 
 .table-container th {
@@ -250,4 +250,56 @@ body.bg-gray-900 {
 /* White card styling */
 .bg-white.p-6.rounded-lg.shadow.mb-6 {
 	padding: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+	/* Make filters stack vertically */
+	.grid.grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 {
+		grid-template-columns: 1fr !important;
+	}
+
+	/* Adjust counter items for mobile */
+	.counter-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.counter-item {
+		width: 100%;
+		max-width: 200px;
+	}
+
+	/* Adjust pagination controls */
+	.pagination-controls {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	/* Make modal more compact */
+	#detailModal>div {
+		width: 95%;
+		max-height: 85vh;
+	}
+
+	/* Stack modal columns on mobile */
+	.grid.grid-cols-1.md\:grid-cols-2 {
+		grid-template-columns: 1fr !important;
+	}
+
+	/* Adjust table cell padding for mobile */
+	.table-container th,
+	.table-container td {
+		padding: 0.5rem 0.25rem;
+		font-size: 0.8125rem;
+	}
+
+	/* Make URLs more manageable in modal */
+	.url-cell,
+	.domain-cell {
+		max-width: 120px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
