@@ -32618,7 +32618,7 @@
         "ACCOUNT_STATUS": "COMPROMISED",
         "ACCOUNT_TYPE": "User Accounts",
         "ACCOUNT_CREATION": "2022-03-01",
-        "BEHAVIOUR": "Markdown URL Obfuscation",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Phishing Website",
         "ATTACK_VECTOR": "Cloned Steam Pages",
         "ATTACK_GOAL": "Steam Accounts",
@@ -32656,5 +32656,29 @@
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-28T19:54:40.234319"
+    },
+    "ACCOUNT_NUMBER_1362": {
+        "CASE_NUMBER": "1362",
+        "FOUND_ON": "2025-03-28",
+        "FOUND_ON_SERVER": "PROJECT_CW",
+        "DISCORD_ID": "1207185433860243476",
+        "USERNAME": "8866_39073",
+        "ACCOUNT_STATUS": "COMPROMISED",
+        "ACCOUNT_TYPE": "User Accounts",
+        "ACCOUNT_CREATION": "2024-02-14",
+        "BEHAVIOUR": "Automated Messaging Campaigns",
+        "ATTACK_METHOD": "Phishing Website",
+        "ATTACK_VECTOR": "Cloned Steam Pages",
+        "ATTACK_GOAL": "Steam Accounts",
+        "ATTACK_SURFACE": "Steam",
+        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SURFACE_URL": "https://steamticket-50.com/1053904196",
+        "SURFACE_URL_DOMAIN": "steamticket-50.com",
+        "SURFACE_URL_STATUS": "ACTIVE",
+        "FINAL_URL": "https://steamticket-50.com/1053904196",
+        "FINAL_URL_DOMAIN": "steamticket-50.com",
+        "FINAL_URL_STATUS": "ACTIVE",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-28T20:49:24.235465"
     }
 }
