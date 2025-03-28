@@ -211,8 +211,8 @@ async function initializeServerCounts() {
     const accountsData = await fetchAccountData();
     const serverCounts = countCasesPerServer(accountsData);
 
-    // Get the total number of servers directly from serverNames
-    const numberOfServers = Object.keys(serverNames).length;
+    // Get the total number of servers from serverNames, excluding DIRECT_MESSAGES
+    const numberOfServers = Object.keys(serverNames).filter(server => server !== "DIRECT_MESSAGES").length;
 
     // Update server cards and get the total member count
     const totalMemberCount = await updateServerCards(serverCounts);
