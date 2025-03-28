@@ -32623,7 +32623,7 @@
         "ATTACK_VECTOR": "Cloned Steam Pages",
         "ATTACK_GOAL": "Steam Accounts",
         "ATTACK_SURFACE": "Steam",
-        "SUSPECTED_REGION_OF_ORIGIN": "UNKNOWN",
+        "SUSPECTED_REGION_OF_ORIGIN": "N/A",
         "SURFACE_URL": "https://steam-ticket50.com/8320521963",
         "SURFACE_URL_DOMAIN": "steam-ticket50.com",
         "SURFACE_URL_STATUS": "ACTIVE",
