@@ -17,6 +17,10 @@ export function setupContextMenu() {
             url: '/CDA-Project/pages/dashboard.html'
         },
         {
+            label: 'Database',
+            url: '/CDA-Project/pages/database.html'
+        },
+        {
             label: 'Threat Map',
             url: '/CDA-Project/pages/threat-map.html'
         },
