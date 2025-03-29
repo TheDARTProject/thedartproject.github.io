@@ -331,8 +331,8 @@ function updateTable() {
 
         // Determine status color
         let statusClass = '';
-        if (account.ACCOUNT_STATUS === 'COMPROMISED') {
-            statusClass = 'bg-red-100 text-red-800';
+        if (account.ACCOUNT_STATUS === 'COMPROMISED' || account.ACCOUNT_STATUS === 'OPERATIONAL') {
+            statusClass = 'bg-red-100 text-red-900';
         } else if (account.ACCOUNT_STATUS === 'SUSPICIOUS') {
             statusClass = 'bg-yellow-100 text-yellow-800';
         } else if (account.ACCOUNT_STATUS === 'SECURE' || account.ACCOUNT_STATUS === 'RECOVERED') {
