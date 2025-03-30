@@ -32800,5 +32800,29 @@
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-29T22:29:54.228745"
+    },
+    "ACCOUNT_NUMBER_1368": {
+        "CASE_NUMBER": "1368",
+        "FOUND_ON": "2025-03-30",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
+        "DISCORD_ID": "990142044133523476",
+        "USERNAME": ".akiz13a",
+        "ACCOUNT_STATUS": "OPERATIONAL",
+        "ACCOUNT_TYPE": "Burner Accounts",
+        "ACCOUNT_CREATION": "2022-06-25",
+        "BEHAVIOUR": "Direct Messages",
+        "ATTACK_METHOD": "Emotional Manipulation",
+        "ATTACK_VECTOR": "Romance Scam",
+        "ATTACK_GOAL": "Financial Gains",
+        "ATTACK_SURFACE": "Discord",
+        "SUSPECTED_REGION_OF_ORIGIN": "N/A",
+        "SURFACE_URL": "No URL Sent",
+        "SURFACE_URL_DOMAIN": "No URL Sent",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "No URL Sent",
+        "FINAL_URL_DOMAIN": "No URL Sent",
+        "FINAL_URL_STATUS": "UNKNOWN",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-30T15:06:22.343416"
     }
 }
