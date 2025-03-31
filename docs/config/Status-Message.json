@@ -1,5 +1,5 @@
 {
-  "CurrentStatus": 1,
+  "CurrentStatus": 2,
   "Statuses": [
     {
       "id": 1,
@@ -8,8 +8,8 @@
     },
     {
       "id": 2,
-      "name": "Database maintenance is complete!",
-      "description": "All data has been tested and validated, and all systems are operating smoothly."
+      "name": "Database maintenance is in progress!",
+      "description": "The database will undergo a revalidation process, which may continue until at least April 3, 2025, to enhance data accuracy. If you encounter any errors, please contact SINEWAVE_ via Discord DMs, thanks for understanding!"
     }
   ]
 }

@@ -6129,7 +6129,7 @@
         "ACCOUNT_TYPE": "Deleted Accounts",
         "ACCOUNT_CREATION": "2019-04-17",
         "BEHAVIOUR": "Potential Source of Message",
-        "ATTACK_METHOD": "Unknown Method",
+        "ATTACK_METHOD": "Rogue Developers",
         "ATTACK_VECTOR": "Malware Injectors",
         "ATTACK_GOAL": "Various Accounts",
         "ATTACK_SURFACE": "Computers",
@@ -6753,10 +6753,10 @@
         "ACCOUNT_TYPE": "Burner Accounts",
         "ACCOUNT_CREATION": "2023-11-25",
         "BEHAVIOUR": "Automated Messaging Campaigns",
-        "ATTACK_METHOD": "Unknown Method",
-        "ATTACK_VECTOR": "Unknown Vector",
-        "ATTACK_GOAL": "Unknown Goal",
-        "ATTACK_SURFACE": "Unknown",
+        "ATTACK_METHOD": "Telegram Fraud",
+        "ATTACK_VECTOR": "Telegram Channels",
+        "ATTACK_GOAL": "Financial Gains",
+        "ATTACK_SURFACE": "Telegram",
         "SUSPECTED_REGION_OF_ORIGIN": "US",
         "SURFACE_URL": "https://t.me/Mrs_Lydiafx",
         "SURFACE_URL_DOMAIN": "t.me",
@@ -10449,7 +10449,7 @@
         "ACCOUNT_TYPE": "User Accounts",
         "ACCOUNT_CREATION": "2018-11-27",
         "BEHAVIOUR": "Profile-Based Link Concealment",
-        "ATTACK_METHOD": "Unknown Method",
+        "ATTACK_METHOD": "Rogue Developers",
         "ATTACK_VECTOR": "Session Hijacking",
         "ATTACK_GOAL": "Various Accounts",
         "ATTACK_SURFACE": "Crypto",
@@ -10809,7 +10809,7 @@
         "ACCOUNT_TYPE": "User Accounts",
         "ACCOUNT_CREATION": "2019-01-20",
         "BEHAVIOUR": "Potential Source of Message",
-        "ATTACK_METHOD": "Unknown Method",
+        "ATTACK_METHOD": "Rogue Developers",
         "ATTACK_VECTOR": "Malware Injectors",
         "ATTACK_GOAL": "Various Accounts",
         "ATTACK_SURFACE": "Computers",
@@ -21730,8 +21730,8 @@
         "ACCOUNT_CREATION": "2020-12-21",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Game Cheat Invite",
-        "ATTACK_VECTOR": "Unknown Vector",
-        "ATTACK_GOAL": "Unknown Goal",
+        "ATTACK_VECTOR": "Malware Injectors",
+        "ATTACK_GOAL": "Various Accounts",
         "ATTACK_SURFACE": "Discord",
         "SUSPECTED_REGION_OF_ORIGIN": "US",
         "SURFACE_URL": "https://discord.gg/aquacheats",
@@ -21898,8 +21898,8 @@
         "ACCOUNT_CREATION": "2019-12-21",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Game Cheat Invite",
-        "ATTACK_VECTOR": "Unknown Vector",
-        "ATTACK_GOAL": "Unknown Goal",
+        "ATTACK_VECTOR": "Malware Injectors",
+        "ATTACK_GOAL": "Various Accounts",
         "ATTACK_SURFACE": "Discord",
         "SUSPECTED_REGION_OF_ORIGIN": "US",
         "SURFACE_URL": "https://discord.gg/XYeawwJwky",
@@ -26049,7 +26049,7 @@
         "ACCOUNT_TYPE": "User Accounts",
         "ACCOUNT_CREATION": "2020-04-26",
         "BEHAVIOUR": "Profile-Based Link Concealment",
-        "ATTACK_METHOD": "Unknown Method",
+        "ATTACK_METHOD": "Crypto Fraud",
         "ATTACK_VECTOR": "Session Hijacking",
         "ATTACK_GOAL": "Various Accounts",
         "ATTACK_SURFACE": "Crypto",
@@ -29454,8 +29454,8 @@
         "ACCOUNT_CREATION": "2022-07-15",
         "BEHAVIOUR": "Markdown URL Obfuscation",
         "ATTACK_METHOD": "Phishing Website",
-        "ATTACK_VECTOR": "Unknown Vector",
-        "ATTACK_GOAL": "Unknown Goal",
+        "ATTACK_VECTOR": "Discord Servers",
+        "ATTACK_GOAL": "Financial Gains",
         "ATTACK_SURFACE": "Discord",
         "SUSPECTED_REGION_OF_ORIGIN": "N/A",
         "SURFACE_URL": "http://stakes.Financial.Gains/auth/register?promo=em4fh4bj65",
@@ -32092,8 +32092,8 @@
         "ACCOUNT_CREATION": "2021-05-12",
         "BEHAVIOUR": "Automated Messaging Campaigns",
         "ATTACK_METHOD": "Game Cheat Invite",
-        "ATTACK_VECTOR": "Unknown Vector",
-        "ATTACK_GOAL": "Unknown Goal",
+        "ATTACK_VECTOR": "Malware Injectors",
+        "ATTACK_GOAL": "Various Accounts",
         "ATTACK_SURFACE": "Discord",
         "SUSPECTED_REGION_OF_ORIGIN": "US",
         "SURFACE_URL": "https://discord.gg/AK7ecx6wRf",
@@ -32299,6 +32299,30 @@
     },
     "ACCOUNT_NUMBER_1347": {
         "CASE_NUMBER": "1347",
+        "FOUND_ON": "2025-03-19",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
+        "DISCORD_ID": "1345088434418618398",
+        "USERNAME": "dignity_18162",
+        "ACCOUNT_STATUS": "OPERATIONAL",
+        "ACCOUNT_TYPE": "Burner Accounts",
+        "ACCOUNT_CREATION": "2025-02-28",
+        "BEHAVIOUR": "Direct Messages",
+        "ATTACK_METHOD": "Rogue Developers",
+        "ATTACK_VECTOR": "Developer Impersonation",
+        "ATTACK_GOAL": "Various Accounts",
+        "ATTACK_SURFACE": "Discord",
+        "SUSPECTED_REGION_OF_ORIGIN": "N/A",
+        "SURFACE_URL": "No URL Sent",
+        "SURFACE_URL_DOMAIN": "No URL Sent",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "No URL Sent",
+        "FINAL_URL_DOMAIN": "No URL Sent",
+        "FINAL_URL_STATUS": "UNKNOWN",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-31T17:13:34.020773"
+    },
+    "ACCOUNT_NUMBER_1348": {
+        "CASE_NUMBER": "1348",
         "FOUND_ON": "2025-03-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "353584370562629634",
@@ -32321,8 +32345,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-20T08:28:38.723835"
     },
-    "ACCOUNT_NUMBER_1348": {
-        "CASE_NUMBER": "1348",
+    "ACCOUNT_NUMBER_1349": {
+        "CASE_NUMBER": "1349",
         "FOUND_ON": "2025-03-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "498079857578737685",
@@ -32345,8 +32369,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-21T06:07:30.243565"
     },
-    "ACCOUNT_NUMBER_1349": {
-        "CASE_NUMBER": "1349",
+    "ACCOUNT_NUMBER_1350": {
+        "CASE_NUMBER": "1350",
         "FOUND_ON": "2025-03-20",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "917516388103503912",
@@ -32369,8 +32393,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-21T06:07:30.243565"
     },
-    "ACCOUNT_NUMBER_1350": {
-        "CASE_NUMBER": "1350",
+    "ACCOUNT_NUMBER_1351": {
+        "CASE_NUMBER": "1351",
         "FOUND_ON": "2025-03-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "196963902527897600",
@@ -32393,8 +32417,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-21T06:07:30.243565"
     },
-    "ACCOUNT_NUMBER_1351": {
-        "CASE_NUMBER": "1351",
+    "ACCOUNT_NUMBER_1352": {
+        "CASE_NUMBER": "1352",
         "FOUND_ON": "2025-03-21",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1058516942522155008",
@@ -32417,8 +32441,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-22T07:05:55.854035"
     },
-    "ACCOUNT_NUMBER_1352": {
-        "CASE_NUMBER": "1352",
+    "ACCOUNT_NUMBER_1353": {
+        "CASE_NUMBER": "1353",
         "FOUND_ON": "2025-03-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "585063230393810945",
@@ -32441,8 +32465,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-22T12:03:52.180057"
     },
-    "ACCOUNT_NUMBER_1353": {
-        "CASE_NUMBER": "1353",
+    "ACCOUNT_NUMBER_1354": {
+        "CASE_NUMBER": "1354",
         "FOUND_ON": "2025-03-22",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "369787755229872130",
@@ -32465,8 +32489,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-24T01:46:45.571247"
     },
-    "ACCOUNT_NUMBER_1354": {
-        "CASE_NUMBER": "1354",
+    "ACCOUNT_NUMBER_1355": {
+        "CASE_NUMBER": "1355",
         "FOUND_ON": "2025-03-24",
         "FOUND_ON_SERVER": "ANONYMOUS_SERVER_2",
         "DISCORD_ID": "953701527091044352",
@@ -32489,8 +32513,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-24T06:49:23.537910"
     },
-    "ACCOUNT_NUMBER_1355": {
-        "CASE_NUMBER": "1355",
+    "ACCOUNT_NUMBER_1356": {
+        "CASE_NUMBER": "1356",
         "FOUND_ON": "2025-03-24",
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "344616687833972737",
@@ -32513,8 +32537,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-25T09:45:42.866474"
     },
-    "ACCOUNT_NUMBER_1356": {
-        "CASE_NUMBER": "1356",
+    "ACCOUNT_NUMBER_1357": {
+        "CASE_NUMBER": "1357",
         "FOUND_ON": "2025-03-25",
         "FOUND_ON_SERVER": "ANONYMOUS_SERVER_2",
         "DISCORD_ID": "1309269979857682524",
@@ -32537,8 +32561,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-27T16:25:10.828116"
     },
-    "ACCOUNT_NUMBER_1357": {
-        "CASE_NUMBER": "1357",
+    "ACCOUNT_NUMBER_1358": {
+        "CASE_NUMBER": "1358",
         "FOUND_ON": "2025-03-25",
         "FOUND_ON_SERVER": "ANONYMOUS_SERVER_2",
         "DISCORD_ID": "711406146702802964",
@@ -32561,8 +32585,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-27T16:25:10.828116"
     },
-    "ACCOUNT_NUMBER_1358": {
-        "CASE_NUMBER": "1358",
+    "ACCOUNT_NUMBER_1359": {
+        "CASE_NUMBER": "1359",
         "FOUND_ON": "2025-03-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "549155842629566484",
@@ -32585,8 +32609,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-27T16:25:10.828116"
     },
-    "ACCOUNT_NUMBER_1359": {
-        "CASE_NUMBER": "1359",
+    "ACCOUNT_NUMBER_1360": {
+        "CASE_NUMBER": "1360",
         "FOUND_ON": "2025-03-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "599586174624989201",
@@ -32609,8 +32633,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-27T17:42:31.255056"
     },
-    "ACCOUNT_NUMBER_1360": {
-        "CASE_NUMBER": "1360",
+    "ACCOUNT_NUMBER_1361": {
+        "CASE_NUMBER": "1361",
         "FOUND_ON": "2025-03-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1167531407850082349",
@@ -32633,8 +32657,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-28T01:14:29.274768"
     },
-    "ACCOUNT_NUMBER_1361": {
-        "CASE_NUMBER": "1361",
+    "ACCOUNT_NUMBER_1362": {
+        "CASE_NUMBER": "1362",
         "FOUND_ON": "2025-03-27",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1060236290118910032",
@@ -32657,8 +32681,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-28T01:14:29.274768"
     },
-    "ACCOUNT_NUMBER_1362": {
-        "CASE_NUMBER": "1362",
+    "ACCOUNT_NUMBER_1363": {
+        "CASE_NUMBER": "1363",
         "FOUND_ON": "2025-03-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "427009349454659584",
@@ -32681,8 +32705,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-28T15:25:13.905638"
     },
-    "ACCOUNT_NUMBER_1363": {
-        "CASE_NUMBER": "1363",
+    "ACCOUNT_NUMBER_1364": {
+        "CASE_NUMBER": "1364",
         "FOUND_ON": "2025-03-28",
         "FOUND_ON_SERVER": "BLITZHUB_EU",
         "DISCORD_ID": "948244172358451210",
@@ -32705,8 +32729,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-28T19:54:40.234319"
     },
-    "ACCOUNT_NUMBER_1364": {
-        "CASE_NUMBER": "1364",
+    "ACCOUNT_NUMBER_1365": {
+        "CASE_NUMBER": "1365",
         "FOUND_ON": "2025-03-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "1207185433860243476",
@@ -32729,8 +32753,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-28T20:49:24.235465"
     },
-    "ACCOUNT_NUMBER_1365": {
-        "CASE_NUMBER": "1365",
+    "ACCOUNT_NUMBER_1366": {
+        "CASE_NUMBER": "1366",
         "FOUND_ON": "2025-03-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "257215896144052244",
@@ -32753,8 +32777,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-28T23:48:53.309131"
     },
-    "ACCOUNT_NUMBER_1366": {
-        "CASE_NUMBER": "1366",
+    "ACCOUNT_NUMBER_1367": {
+        "CASE_NUMBER": "1367",
         "FOUND_ON": "2025-03-28",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "710903998705696860",
@@ -32777,8 +32801,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-28T23:48:53.309131"
     },
-    "ACCOUNT_NUMBER_1367": {
-        "CASE_NUMBER": "1367",
+    "ACCOUNT_NUMBER_1368": {
+        "CASE_NUMBER": "1368",
         "FOUND_ON": "2025-03-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "797091759766765598",
@@ -32801,8 +32825,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-29T11:01:21.703337"
     },
-    "ACCOUNT_NUMBER_1368": {
-        "CASE_NUMBER": "1368",
+    "ACCOUNT_NUMBER_1369": {
+        "CASE_NUMBER": "1369",
         "FOUND_ON": "2025-03-29",
         "FOUND_ON_SERVER": "PROJECT_CW",
         "DISCORD_ID": "735582933280096300",
@@ -32825,8 +32849,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-29T22:29:54.228745"
     },
-    "ACCOUNT_NUMBER_1369": {
-        "CASE_NUMBER": "1369",
+    "ACCOUNT_NUMBER_1370": {
+        "CASE_NUMBER": "1370",
         "FOUND_ON": "2025-03-30",
         "FOUND_ON_SERVER": "DIRECT_MESSAGES",
         "DISCORD_ID": "990142044133523476",
@@ -32849,8 +32873,8 @@
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-30T15:06:22.343416"
     },
-    "ACCOUNT_NUMBER_1370": {
-        "CASE_NUMBER": "1370",
+    "ACCOUNT_NUMBER_1371": {
+        "CASE_NUMBER": "1371",
         "FOUND_ON": "2025-03-30",
         "FOUND_ON_SERVER": "BLITZPOST",
         "DISCORD_ID": "1355348218539544608",
@@ -32872,5 +32896,29 @@
         "FINAL_URL_STATUS": "ACTIVE",
         "NON_ASCII_USERNAME": false,
         "LAST_CHECK": "2025-03-30T17:35:29.996180"
+    },
+    "ACCOUNT_NUMBER_1372": {
+        "CASE_NUMBER": "1372",
+        "FOUND_ON": "2025-03-31",
+        "FOUND_ON_SERVER": "DIRECT_MESSAGES",
+        "DISCORD_ID": "1339912829096165376",
+        "USERNAME": "edelweiss0101",
+        "ACCOUNT_STATUS": "OPERATIONAL",
+        "ACCOUNT_TYPE": "Burner Accounts",
+        "ACCOUNT_CREATION": "2025-02-14",
+        "BEHAVIOUR": "Direct Messages",
+        "ATTACK_METHOD": "Rogue Developers",
+        "ATTACK_VECTOR": "Developer Impersonation",
+        "ATTACK_GOAL": "Various Accounts",
+        "ATTACK_SURFACE": "Discord",
+        "SUSPECTED_REGION_OF_ORIGIN": "N/A",
+        "SURFACE_URL": "No URL Sent",
+        "SURFACE_URL_DOMAIN": "No URL Sent",
+        "SURFACE_URL_STATUS": "UNKNOWN",
+        "FINAL_URL": "No URL Sent",
+        "FINAL_URL_DOMAIN": "No URL Sent",
+        "FINAL_URL_STATUS": "UNKNOWN",
+        "NON_ASCII_USERNAME": false,
+        "LAST_CHECK": "2025-03-31T17:13:34.020773"
     }
 }
