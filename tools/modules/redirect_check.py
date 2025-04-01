@@ -124,7 +124,7 @@ def load_excluded_domains():
             for line in env_file:
                 if line.startswith("EXCLUDED_DOMAINS"):
                     domains = line.strip().split("=")[1].strip("\"'").split(",")
-                    excluded_domains = [domain.strip() for domain in domains]
+                    excluded_domains = [domain.strip().lower() for domain in domains]
                     logger.info(f"Excluded domains loaded: {excluded_domains}")
                     break
     except FileNotFoundError:
@@ -590,22 +590,21 @@ def get_final_url_multi_method(url, proxy_rotator=None, rate_limiter=None):
 
 # Process a single account
 def process_account(
-    account_key, account_info, excluded_domains, proxy_rotator, rate_limiter
+        account_key, account_info, excluded_domains, proxy_rotator, rate_limiter
 ):
     """
     Process a single account and return the updated account info.
+    Leaves accounts with excluded domains completely untouched.
     """
     surface_url = account_info.get("SURFACE_URL", "")
 
     # Skip if "No URL Sent" or "UNKNOWN" is in the surface URL (case-insensitive)
     if "No URL Sent" in surface_url or "unknown" in surface_url.lower():
         logger.info(f"Skipping account {account_key} - Invalid URL: {surface_url}")
-        account_info["SURFACE_URL_STATUS"] = "UNKNOWN"
         return account_key, account_info
 
     if not surface_url:
         logger.warning(f"No surface URL found for account {account_key}, skipping...")
-        account_info["SURFACE_URL_STATUS"] = "UNKNOWN"
         return account_key, account_info
 
     # Clean the URL
@@ -615,14 +614,12 @@ def process_account(
     surface_domain = get_domain(surface_url)
     if not surface_domain:
         logger.warning(f"Could not parse domain from {surface_url}, skipping...")
-        account_info["SURFACE_URL_STATUS"] = "UNKNOWN"
         return account_key, account_info
 
     if surface_domain in excluded_domains:
         logger.info(
-            f"Surface URL domain {surface_domain} is excluded. Skipping account {account_key}..."
+            f"Surface URL domain {surface_domain} is excluded. Leaving account {account_key} untouched..."
         )
-        account_info["SURFACE_URL_STATUS"] = "UNKNOWN"
         return account_key, account_info
 
     # Try to get the final URL after redirection
@@ -632,6 +629,14 @@ def process_account(
 
     if final_url_result:
         final_domain = get_domain(final_url_result)
+
+        # Check if final domain is in excluded domains
+        if final_domain in excluded_domains:
+            logger.info(
+                f"Final URL domain {final_domain} is excluded. Leaving account {account_key} untouched..."
+            )
+            return account_key, account_info
+
         # Update the account with the final URL and domain
         logger.info(
             f"Updating account {account_key} with final URL: {final_url_result} and domain: {final_domain}"
@@ -703,7 +708,7 @@ def save_data(data, filename, backup=False):
         os.makedirs(backup_dir, exist_ok=True)
 
         # Set target file paths
-        suffix = ".backup" if backup else ""
+        suffix = "-Backup" if backup else ""
         target_file = os.path.join(backup_dir, f"{filename}{suffix}.json")
 
         logger.info(f"Saving data to {target_file}...")
