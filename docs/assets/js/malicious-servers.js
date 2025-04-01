@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', async function() {
                             <div class="blur-container relative overflow-hidden rounded-lg mb-4">
                                 <img src="https://cdn.discordapp.com/banners/${server.GUILD_ID}/${server.BANNER}.png?size=1024"
                                       alt="Server banner"
-                                      class="w-full h-48 object-cover rounded-lg blur-lg transition-all duration-300"
+                                      class="w-full h-48 object-cover rounded-lg blur-xl transition-all duration-300"
                                       data-blurred="true"
-                                      onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png'; this.classList.remove('blur-lg'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                                      onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
                                 <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-4 text-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -74,9 +74,9 @@ document.addEventListener('DOMContentLoaded', async function() {
                                 <div class="blur-container relative overflow-hidden rounded-full">
                                     <img src="https://cdn.discordapp.com/icons/${server.GUILD_ID}/${server.ICON}.png?size=256"
                                           alt="Server icon"
-                                          class="w-16 h-16 rounded-full blur-lg transition-all duration-300"
+                                          class="w-16 h-16 rounded-full blur-xl transition-all duration-300"
                                           data-blurred="true"
-                                          onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png'; this.classList.remove('blur-lg'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                                          onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
                                     <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-2 text-center rounded-full">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -105,9 +105,9 @@ document.addEventListener('DOMContentLoaded', async function() {
                                 <div class="blur-container relative overflow-hidden rounded-lg">
                                     <img src="https://cdn.discordapp.com/splashes/${server.GUILD_ID}/${server.SPLASH}.png?size=1024"
                                           alt="Server splash"
-                                          class="w-full h-48 object-cover rounded-lg blur-lg transition-all duration-300"
+                                          class="w-full h-48 object-cover rounded-lg blur-xl transition-all duration-300"
                                           data-blurred="true"
-                                          onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png'; this.classList.remove('blur-lg'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                                          onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
                                     <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-4 text-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -191,9 +191,9 @@ document.addEventListener('DOMContentLoaded', async function() {
                                     <div class="blur-container relative overflow-hidden rounded-full">
                                         <img src="https://cdn.discordapp.com/avatars/${server.INVITE_CREATOR.USER_ID}/${server.INVITE_CREATOR.AVATAR}.png?size=256"
                                               alt="Creator avatar"
-                                              class="w-10 h-10 rounded-full blur-lg transition-all duration-300"
+                                              class="w-10 h-10 rounded-full blur-xl transition-all duration-300"
                                               data-blurred="true"
-                                              onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png'; this.classList.remove('blur-lg'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                                              onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
                                         <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-1 text-center rounded-full">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -251,11 +251,11 @@ document.addEventListener('DOMContentLoaded', async function() {
             const isBlurred = img.getAttribute('data-blurred') === 'true';
 
             if (isBlurred) {
-                img.classList.remove('blur-lg');
+                img.classList.remove('blur-xl');
                 img.setAttribute('data-blurred', 'false');
                 if (warning) warning.classList.add('hidden');
             } else {
-                img.classList.add('blur-lg');
+                img.classList.add('blur-xl');
                 img.setAttribute('data-blurred', 'true');
                 if (warning) warning.classList.remove('hidden');
             }
