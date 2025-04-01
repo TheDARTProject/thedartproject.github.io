@@ -30,211 +30,223 @@ document.addEventListener('DOMContentLoaded', async function() {
     for (const serverKey in serversData) {
         const server = serversData[serverKey];
 
-        // Determine status badge color
+        // Determine status badge color and text
         let statusBadgeClass = '';
+        let statusText = server.SERVER_STATUS;
         if (server.SERVER_STATUS === 'ACTIVE') {
-            statusBadgeClass = 'bg-green-100 text-green-800';
-        } else {
             statusBadgeClass = 'bg-red-100 text-red-800';
+            statusText = 'ACTIVE THREAT';
+        } else {
+            statusBadgeClass = 'bg-green-100 text-green-800';
+            statusText = 'TAKEN DOWN';
         }
 
-        // Create server card
+        // Create server card container
         const serverCard = document.createElement('div');
         serverCard.className = 'bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow';
+
+        // Create card content
         serverCard.innerHTML = `
-            <div class="flex flex-col md:flex-row gap-6">
-                <!-- Server Banner (if available) -->
-                <div class="w-full md:w-1/3">
-                    ${server.BANNER ?
-                        `<div class="relative">
-                            <div class="blur-container relative overflow-hidden rounded-lg mb-4">
-                                <img src="https://cdn.discordapp.com/banners/${server.GUILD_ID}/${server.BANNER}.png?size=1024"
-                                      alt="Server banner"
-                                      class="w-full h-48 object-cover rounded-lg blur-xl transition-all duration-300"
-                                      data-blurred="true"
-                                      onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
-                                <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-4 text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                                    </svg>
-                                    <p class="font-bold">NSFW Warning</p>
-                                    <p class="text-sm">This image may contain sensitive content</p>
-                                    <p class="text-xs mt-2">Click to view</p>
-                                </div>
+            <div class="flex flex-col gap-6">
+                <!-- Server Header -->
+                <div class="flex items-center gap-4">
+                    ${server.ICON ? `
+                    <div class="relative flex-shrink-0">
+                        <div class="blur-container relative overflow-hidden rounded-full">
+                            <img src="https://cdn.discordapp.com/icons/${server.GUILD_ID}/${server.ICON}.png?size=256"
+                                  alt="Server icon"
+                                  class="w-28 h-28 rounded-full blur-xl transition-all duration-300"
+                                  data-blurred="true"
+                                  onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                            <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-2 text-center rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                </svg>
                             </div>
-                        </div>` :
-                        `<img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png"
-                              alt="No banner"
-                              class="w-full h-48 object-cover rounded-lg mb-4">`}
+                        </div>
+                    </div>` : `
+                    <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png"
+                          alt="No icon"
+                          class="w-16 h-16 rounded-full flex-shrink-0">`}
 
-                    <!-- Server Icon -->
-                    <div class="flex items-center gap-4">
-                        ${server.ICON ?
-                            `<div class="relative">
-                                <div class="blur-container relative overflow-hidden rounded-full">
-                                    <img src="https://cdn.discordapp.com/icons/${server.GUILD_ID}/${server.ICON}.png?size=256"
-                                          alt="Server icon"
-                                          class="w-16 h-16 rounded-full blur-xl transition-all duration-300"
-                                          data-blurred="true"
-                                          onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
-                                    <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-2 text-center rounded-full">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>` :
-                            `<img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png"
-                                  alt="No icon"
-                                  class="w-16 h-16 rounded-full">`}
-
-                        <div>
-                            <h3 class="text-xl font-bold text-indigo-700">${server.GUILD_NAME || 'Unknown Server'}</h3>
-                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${statusBadgeClass}">
-                                ${server.SERVER_STATUS}
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-xl font-bold text-indigo-700 truncate">${server.GUILD_NAME || 'Unknown Server'}</h3>
+                        <div class="flex flex-wrap items-center gap-2 mt-1">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${statusBadgeClass}">
+                                ${statusText}
                             </span>
-                            <p class="text-gray-600 text-sm">Seen ${server.SEEN_COUNT} time(s)</p>
+                            <span class="text-xs text-gray-500">Seen ${server.SEEN_COUNT} time(s)</span>
                         </div>
                     </div>
-
-                    <!-- Server Splash (if available) -->
-                    ${server.SPLASH ?
-                        `<div class="mt-4">
-                            <h4 class="text-sm font-medium text-gray-500 mb-2">Server Splash</h4>
-                            <div class="relative">
-                                <div class="blur-container relative overflow-hidden rounded-lg">
-                                    <img src="https://cdn.discordapp.com/splashes/${server.GUILD_ID}/${server.SPLASH}.png?size=1024"
-                                          alt="Server splash"
-                                          class="w-full h-48 object-cover rounded-lg blur-xl transition-all duration-300"
-                                          data-blurred="true"
-                                          onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
-                                    <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-4 text-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                                        </svg>
-                                        <p class="font-bold">NSFW Warning</p>
-                                        <p class="text-sm">This image may contain sensitive content</p>
-                                        <p class="text-xs mt-2">Click to view</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>` : ''}
                 </div>
 
-                <!-- Server Details -->
-                <div class="w-full md:w-2/3">
+                <!-- Server Banner (if available) -->
+                <h4 class="text-sm font-medium text-gray-500 mb-2">Server Banner</h4>
+                <div class="relative rounded-lg overflow-hidden">
+                    ${server.BANNER ? `
+                    <div class="blur-container relative aspect-[16/9]">
+                        <img src="https://cdn.discordapp.com/banners/${server.GUILD_ID}/${server.BANNER}.png?size=1024"
+                              alt="Server banner"
+                              class="w-full h-full object-contain blur-xl transition-all duration-300"
+                              data-blurred="true"
+                              onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                        <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-4 text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <p class="font-bold">NSFW Warning</p>
+                            <p class="text-sm">This image may contain sensitive content</p>
+                            <p class="text-xs mt-2">Click to view</p>
+                        </div>
+                    </div>` : `
+                    <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png"
+                          alt="No banner"
+                          class="w-full h-auto object-contain">`}
+                </div>
+
+                <!-- Server Splash (if available) -->
+                ${server.SPLASH ? `
+                <h4 class="text-sm font-medium text-gray-500 mb-2">Server Splash</h4>
+                <div class="relative rounded-lg overflow-hidden">
+                    <div class="blur-container relative aspect-[16/9]">
+                        <img src="https://cdn.discordapp.com/splashes/${server.GUILD_ID}/${server.SPLASH}.png?size=1024"
+                              alt="Server splash"
+                              class="w-full h-full object-contain blur-xl transition-all duration-300"
+                              data-blurred="true"
+                              onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                        <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-4 text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <p class="font-bold">NSFW Warning</p>
+                            <p class="text-sm">This image may contain sensitive content</p>
+                            <p class="text-xs mt-2">Click to view</p>
+                        </div>
+                    </div>
+                </div>` : `
+                <h4 class="text-sm font-medium text-gray-500 mb-2">Server Splash</h4>
+                <div class="relative rounded-lg overflow-hidden">
+                    <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/NOT-FOUND.png"
+                          alt="No splash"
+                          class="w-full h-auto object-contain">
+                </div>`}
+
+                <!-- Server Details Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Basic Info -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <h4 class="text-sm font-medium text-gray-500">Server ID</h4>
-                            <p class="text-gray-800 font-mono">${server.GUILD_ID}</p>
+                    <div class="bg-gray-50 p-3 rounded-lg">
+                        <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">Server ID</h4>
+                        <p class="text-gray-800 font-mono text-sm">${server.GUILD_ID}</p>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded-lg">
+                        <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">Created On</h4>
+                        <p class="text-gray-800 text-sm">${server.GUILD_CREATION || 'Unknown'}</p>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded-lg">
+                        <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">Members</h4>
+                        <p class="text-gray-800 text-sm">${server.MEMBER_COUNT?.toLocaleString() || 'Unknown'} (${server.ONLINE_MEMBER_COUNT?.toLocaleString() || 'Unknown'} online)</p>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded-lg">
+                        <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">Boost Level</h4>
+                        <p class="text-gray-800 text-sm">Tier ${server.PREMIUM_TIER || '0'} (${server.PREMIUM_SUBSCRIPTION_COUNT || '0'} boosts)</p>
+                    </div>
+                </div>
+
+                <!-- Security Info -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-3 rounded-lg">
+                        <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">Verification Level</h4>
+                        <p class="text-gray-800 text-sm">${getVerificationLevelName(server.VERIFICATION_LEVEL)}</p>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded-lg">
+                        <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">NSFW Level</h4>
+                        <p class="text-gray-800 text-sm">${getNSFWLevelName(server.NSFW_LEVEL)}</p>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                ${server.GUILD_DESCRIPTION ? `
+                <div class="bg-gray-50 p-3 rounded-lg">
+                    <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">Description</h4>
+                    <p class="text-gray-800 text-sm">${server.GUILD_DESCRIPTION}</p>
+                </div>` : ''}
+
+                <!-- Invite Info -->
+                <div class="bg-gray-50 p-3 rounded-lg">
+                    <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-2">Invite Information</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div>
+                            <h5 class="text-xs text-gray-500">Invite Code</h5>
+                            <p class="text-gray-800 font-mono text-sm">${server.INVITE_CODE || 'None'}</p>
                         </div>
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <h4 class="text-sm font-medium text-gray-500">Created On</h4>
-                            <p class="text-gray-800">${server.GUILD_CREATION || 'Unknown'}</p>
+                        <div>
+                            <h5 class="text-xs text-gray-500">Vanity URL</h5>
+                            <p class="text-gray-800 text-sm">${server.VANITY_URL_CODE ? `discord.gg/${server.VANITY_URL_CODE}` : 'None'}</p>
                         </div>
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <h4 class="text-sm font-medium text-gray-500">Members</h4>
-                            <p class="text-gray-800">${server.MEMBER_COUNT?.toLocaleString() || 'Unknown'} (${server.ONLINE_MEMBER_COUNT?.toLocaleString() || 'Unknown'} online)</p>
+                        <div>
+                            <h5 class="text-xs text-gray-500">Channel</h5>
+                            <p class="text-gray-800 text-sm">${server.CHANNEL?.CHANNEL_NAME || 'Unknown'} (${server.CHANNEL?.CHANNEL_ID || 'Unknown'})</p>
                         </div>
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <h4 class="text-sm font-medium text-gray-500">Boost Level</h4>
-                            <p class="text-gray-800">Tier ${server.PREMIUM_TIER || '0'} (${server.PREMIUM_SUBSCRIPTION_COUNT || '0'} boosts)</p>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <h4 class="text-sm font-medium text-gray-500">Verification Level</h4>
-                            <p class="text-gray-800">${getVerificationLevelName(server.VERIFICATION_LEVEL)}</p>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <h4 class="text-sm font-medium text-gray-500">NSFW Level</h4>
-                            <p class="text-gray-800">${getNSFWLevelName(server.NSFW_LEVEL)}</p>
+                        <div>
+                            <h5 class="text-xs text-gray-500">Last Checked</h5>
+                            <p class="text-gray-800 text-sm">${formatDate(server.LAST_CHECK)}</p>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Description -->
-                    ${server.GUILD_DESCRIPTION ? `
-                        <div class="mb-6">
-                            <h4 class="text-sm font-medium text-gray-500 mb-1">Description</h4>
-                            <p class="text-gray-800">${server.GUILD_DESCRIPTION}</p>
-                        </div>
-                    ` : ''}
+                <!-- Invite Creator -->
+                ${server.INVITE_CREATOR ? `
+                <div class="bg-gray-50 p-3 rounded-lg">
+                    <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-2">Invite Creator</h4>
+                    <div class="flex items-center gap-3">
+                        ${server.INVITE_CREATOR?.AVATAR && server.INVITE_CREATOR?.AVATAR !== 'UNKNOWN' ? `
+                        <div class="relative flex-shrink-0">
+                            <div class="blur-container relative overflow-hidden rounded-full">
+                                <img src="https://cdn.discordapp.com/avatars/${server.INVITE_CREATOR.USER_ID}/${server.INVITE_CREATOR.AVATAR}.png?size=256"
+                                      alt="Creator avatar"
+                                      class="w-14 h-14 rounded-full blur-xl transition-all duration-300"
+                                      data-blurred="true"
+                                      onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                                <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-1 text-center rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>` : `
+                        <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png"
+                              alt="No avatar"
+                              class="w-10 h-10 rounded-full flex-shrink-0">`}
 
-                    <!-- Invite Info -->
-                    <div class="mb-6">
-                        <h4 class="text-sm font-medium text-gray-500 mb-2">Invite Information</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="bg-gray-50 p-3 rounded-lg">
-                                <h5 class="text-xs font-medium text-gray-500">Invite Code</h5>
-                                <p class="text-gray-800 font-mono">${server.INVITE_CODE || 'None'}</p>
-                            </div>
-                            <div class="bg-gray-50 p-3 rounded-lg">
-                                <h5 class="text-xs font-medium text-gray-500">Vanity URL</h5>
-                                <p class="text-gray-800">${server.VANITY_URL_CODE ? `discord.gg/${server.VANITY_URL_CODE}` : 'None'}</p>
-                            </div>
-                            <div class="bg-gray-50 p-3 rounded-lg">
-                                <h5 class="text-xs font-medium text-gray-500">Channel</h5>
-                                <p class="text-gray-800">${server.CHANNEL?.CHANNEL_NAME || 'Unknown'} (${server.CHANNEL?.CHANNEL_ID || 'Unknown'})</p>
-                            </div>
-                            <div class="bg-gray-50 p-3 rounded-lg">
-                                <h5 class="text-xs font-medium text-gray-500">Last Checked</h5>
-                                <p class="text-gray-800">${formatDate(server.LAST_CHECK)}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Invite Creator -->
-                    <div class="mb-6">
-                        <h4 class="text-sm font-medium text-gray-500 mb-2">Invite Creator</h4>
-                        <div class="flex items-center gap-3 bg-gray-50 p-3 rounded-lg">
-                            ${server.INVITE_CREATOR?.AVATAR && server.INVITE_CREATOR?.AVATAR !== 'UNKNOWN' ?
-                                `<div class="relative">
-                                    <div class="blur-container relative overflow-hidden rounded-full">
-                                        <img src="https://cdn.discordapp.com/avatars/${server.INVITE_CREATOR.USER_ID}/${server.INVITE_CREATOR.AVATAR}.png?size=256"
-                                              alt="Creator avatar"
-                                              class="w-10 h-10 rounded-full blur-xl transition-all duration-300"
-                                              data-blurred="true"
-                                              onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
-                                        <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-1 text-center rounded-full">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>` :
-                                `<img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SQUARE-NOT-FOUND.png"
-                                      alt="No avatar"
-                                      class="w-10 h-10 rounded-full">`}
-
-                            <div>
-                                <p class="text-gray-800 font-medium">
-                                    ${server.INVITE_CREATOR?.USERNAME !== 'UNKNOWN' ?
-                                        `${server.INVITE_CREATOR.USERNAME}#${server.INVITE_CREATOR.DISCRIMINATOR}` :
-                                        'Unknown User'}
-                                </p>
-                                <p class="text-gray-600 text-sm">
-                                    ${server.INVITE_CREATOR?.USER_ID !== 'UNKNOWN' ?
-                                        `ID: ${server.INVITE_CREATOR.USER_ID}` : ''}
-                                </p>
-                                <p class="text-gray-600 text-sm">
-                                    ${server.INVITE_CREATOR?.ACCOUNT_CREATION !== 'UNKNOWN' ?
-                                        `Created: ${formatDate(server.INVITE_CREATOR.ACCOUNT_CREATION)}` : ''}
-                                </p>
-                            </div>
+                        <div class="min-w-0">
+                            <p class="text-gray-800 font-medium text-sm truncate">
+                                ${server.INVITE_CREATOR?.USERNAME !== 'UNKNOWN' ?
+                                    `${server.INVITE_CREATOR.USERNAME}#${server.INVITE_CREATOR.DISCRIMINATOR}` :
+                                    'Unknown User'}
+                            </p>
+                            <p class="text-gray-600 text-xs truncate">
+                                ${server.INVITE_CREATOR?.USER_ID !== 'UNKNOWN' ?
+                                    `ID: ${server.INVITE_CREATOR.USER_ID}` : ''}
+                            </p>
+                            <p class="text-gray-600 text-xs">
+                                ${server.INVITE_CREATOR?.ACCOUNT_CREATION !== 'UNKNOWN' ?
+                                    `Created: ${formatDate(server.INVITE_CREATOR.ACCOUNT_CREATION)}` : ''}
+                            </p>
                         </div>
                     </div>
+                </div>` : ''}
 
-                    <!-- Features -->
-                    <div>
-                        <h4 class="text-sm font-medium text-gray-500 mb-2">Server Features</h4>
-                        <div class="flex flex-wrap gap-2">
-                            ${server.FEATURES?.length > 0 ?
-                                server.FEATURES.map(feature =>
-                                    `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
-                                        ${formatFeatureName(feature)}
-                                    </span>`
-                                ).join('') :
-                                '<p class="text-gray-600">No special features</p>'}
-                        </div>
+                <!-- Features -->
+                <div class="bg-gray-50 p-3 rounded-lg">
+                    <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-2">Server Features</h4>
+                    <div class="flex flex-wrap gap-2">
+                        ${server.FEATURES?.length > 0 ?
+                            server.FEATURES.map(feature => `
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
+                                    ${formatFeatureName(feature)}
+                                </span>`
+                            ).join('') :
+                            '<p class="text-gray-600 text-sm">No special features</p>'}
                     </div>
                 </div>
             </div>
