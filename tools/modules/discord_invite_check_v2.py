@@ -85,6 +85,34 @@ def check_invite(invite_code):
         return False, f"https://discord.com/invite/{invite_code}"
 
 
+def get_starting_point(total_accounts):
+    """Ask user whether to do full scan or start from specific account number"""
+    while True:
+        print("\n" + "=" * 50)
+        print(f"Total accounts in file: {total_accounts}")
+        print("1. Full scan (process all accounts)")
+        print("2. Start from specific account number")
+        print("=" * 50)
+
+        choice = input("Enter your choice (1 or 2): ").strip()
+
+        if choice == "1":
+            return 0  # Start from beginning
+        elif choice == "2":
+            while True:
+                try:
+                    start_num = int(
+                        input(f"Enter starting account number (1-{total_accounts}): ")
+                    )
+                    if 1 <= start_num <= total_accounts:
+                        return start_num - 1  # Convert to 0-based index
+                    print(f"Please enter a number between 1 and {total_accounts}")
+                except ValueError:
+                    print("Please enter a valid number")
+        else:
+            print("Invalid choice. Please enter 1 or 2")
+
+
 def process_accounts():
     """Process all accounts in the JSON file"""
     try:
@@ -98,14 +126,33 @@ def process_accounts():
         return
 
     total_accounts = len(data)
+    if total_accounts == 0:
+        print("No accounts found in the JSON file.")
+        return
+
+    # Get user's choice for scanning
+    start_index = get_starting_point(total_accounts)
+
     processed = 0
     updated_accounts = 0
     skipped_accounts = 0
-    rate_limit_counter = 0
 
-    print(f"Starting processing of {total_accounts} accounts...")
+    # Calculate delay between requests to evenly distribute them
+    if RATE_LIMIT > 0:
+        request_delay = 60.0 / RATE_LIMIT  # Spread requests evenly over a minute
+    else:
+        request_delay = 0
 
-    for account_id, account_data in data.items():
+    print(f"\nStarting processing of accounts...")
+    print(f"Starting from account number: {start_index + 1}")
+    print(f"Rate limit configured: {RATE_LIMIT} requests/minute")
+    print(f"Request delay: {request_delay:.2f} seconds between requests")
+
+    # Convert dict to list of items for easier slicing
+    accounts_items = list(data.items())
+
+    for i in range(start_index, total_accounts):
+        account_id, account_data = accounts_items[i]
         processed += 1
         surface_url = account_data.get("SURFACE_URL", "")
         surface_domain = account_data.get("SURFACE_URL_DOMAIN", "")
@@ -116,7 +163,7 @@ def process_accounts():
             and surface_url.startswith(("http://", "https://"))
         ):
             print(
-                f"[{processed}/{total_accounts}] Skipping {account_id}: Not a Discord invite URL"
+                f"[{i+1}/{total_accounts}] Skipping {account_id}: Not a Discord invite URL"
             )
             skipped_accounts += 1
             continue
@@ -124,26 +171,18 @@ def process_accounts():
         invite_code = extract_invite_code(surface_url)
         if not invite_code:
             print(
-                f"[{processed}/{total_accounts}] Skipping {account_id}: Could not extract invite code from URL"
+                f"[{i+1}/{total_accounts}] Skipping {account_id}: Could not extract invite code from URL"
             )
             skipped_accounts += 1
             continue
 
         print(
-            f"[{processed}/{total_accounts}] Processing {account_id}: Checking invite {invite_code}"
+            f"[{i+1}/{total_accounts}] Processing {account_id}: Checking invite {invite_code}"
         )
 
-        # Check rate limit
-        if rate_limit_counter >= RATE_LIMIT:
-            print(
-                f"Rate limit reached ({RATE_LIMIT} requests/min). Waiting 60 seconds..."
-            )
-            time.sleep(60)
-            rate_limit_counter = 0
-
         # Check invite status
+        start_time = time.time()
         is_active, final_url = check_invite(invite_code)
-        rate_limit_counter += 1
 
         # Update account data
         status = "ACTIVE" if is_active else "INACTIVE"
@@ -163,6 +202,13 @@ def process_accounts():
             print("Changes saved to file")
         except Exception as e:
             print(f"Error saving changes to file: {str(e)}")
+
+        # Calculate time taken for the request and adjust delay
+        request_time = time.time() - start_time
+        remaining_delay = max(0, request_delay - request_time)
+        if remaining_delay > 0:
+            print(f"Waiting {remaining_delay:.2f} seconds to maintain rate limit...")
+            time.sleep(remaining_delay)
 
     print(f"\nProcessing complete!")
     print(f"Total accounts: {total_accounts}")
