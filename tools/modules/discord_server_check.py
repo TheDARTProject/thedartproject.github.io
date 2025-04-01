@@ -148,6 +148,12 @@ def main():
     processed_count = 0
     server_count = len(active_servers)
 
+    # First count how many times each server appears in this run
+    invite_code_counts = {}
+    for invite in discord_invites:
+        invite_code = invite["invite_code"]
+        invite_code_counts[invite_code] = invite_code_counts.get(invite_code, 0) + 1
+
     for invite in discord_invites:
         processed_count += 1
         invite_code = invite["invite_code"]
@@ -172,10 +178,16 @@ def main():
             if existing_server_key:
                 server_key = existing_server_key
                 print(f"Updating existing server {server_key}")
+                # Get the current seen count if it exists, otherwise start with 0
+                current_seen_count = active_servers[server_key].get("SEEN_COUNT", 0)
+                # Update seen count with the new count from this run
+                new_seen_count = current_seen_count + invite_code_counts[invite_code]
             else:
                 server_count += 1
                 server_key = f"SERVER_NUMBER_{server_count}"
                 print(f"Adding new server as {server_key}")
+                # For new servers, set seen count to the count from this run
+                new_seen_count = invite_code_counts[invite_code]
 
             # Extract server details
             guild_data = server_info.get("guild", {})
@@ -197,6 +209,7 @@ def main():
             # Create server entry
             active_servers[server_key] = {
                 "SERVER_STATUS": "ACTIVE",
+                "SEEN_COUNT": new_seen_count,
                 "GUILD_ID": server_info.get(
                     "guild_id", guild_data.get("id", "UNKNOWN")
                 ),
@@ -244,6 +257,7 @@ def main():
             )
             print(f"Invite creator account created on: {created_on}")
             print(f"Guild created on: {guild_created_on}")
+            print(f"Server seen count: {new_seen_count}")
         else:
             # If server info couldn't be retrieved, but we have an existing entry, mark it as INACTIVE
             if existing_server_key:
