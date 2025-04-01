@@ -50,10 +50,6 @@ select {
 	appearance: none;
 }
 
-.blur-xl {
-    filter: blur(20px);
-}
-
 /* ======================= */
 /* Layout Components       */
 /* ======================= */

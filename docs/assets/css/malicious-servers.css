@@ -1,0 +1,5 @@
+/* main.css */
+
+.blur-xl {
+    filter: blur(20px);
+}
