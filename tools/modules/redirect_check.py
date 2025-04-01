@@ -595,7 +595,13 @@ def process_account(
     """
     Process a single account and return the updated account info.
     """
-    surface_url = account_info.get("SURFACE_URL")
+    surface_url = account_info.get("SURFACE_URL", "")
+
+    # Skip if "No URL Sent" or "UNKNOWN" is in the surface URL (case-insensitive)
+    if "No URL Sent" in surface_url or "unknown" in surface_url.lower():
+        logger.info(f"Skipping account {account_key} - Invalid URL: {surface_url}")
+        account_info["SURFACE_URL_STATUS"] = "UNKNOWN"
+        return account_key, account_info
 
     if not surface_url:
         logger.warning(f"No surface URL found for account {account_key}, skipping...")
@@ -638,14 +644,12 @@ def process_account(
         if normalized_surface != final_url_result:
             account_info["SURFACE_URL_STATUS"] = "ACTIVE"
             account_info["FINAL_URL_STATUS"] = "ACTIVE"
-            account_info["REDIRECT_DETECTED"] = "TRUE"
             logger.info(
                 f"FINAL_URL differs from SURFACE_URL. Set statuses to ACTIVE for account {account_key}."
             )
         else:
             account_info["SURFACE_URL_STATUS"] = "INACTIVE"
             account_info["FINAL_URL_STATUS"] = "INACTIVE"
-            account_info["REDIRECT_DETECTED"] = "FALSE"
             logger.info(
                 f"FINAL_URL same as SURFACE_URL. Set statuses to INACTIVE for account {account_key}."
             )
@@ -670,15 +674,6 @@ def process_batch(batch, excluded_domains, proxy_rotator, rate_limiter, results)
             account_key, updated_info = process_account(
                 account_key, account_info, excluded_domains, proxy_rotator, rate_limiter
             )
-
-            # Determine the status based on the updated_info
-            if "FINAL_URL" in updated_info:
-                if updated_info.get("REDIRECT_DETECTED") == "TRUE":
-                    results["updated"] += 1
-                else:
-                    results["skipped"] += 1
-            else:
-                results["failed"] += 1
 
             # Add to processed results
             processed_results.append((account_key, updated_info))
