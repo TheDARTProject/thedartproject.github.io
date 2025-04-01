@@ -4,7 +4,7 @@ import time
 from dotenv import load_dotenv
 import os
 from datetime import datetime
-import socket  # Import the socket library
+import socket
 
 # Load API key and rate limit from .env file
 load_dotenv("../.env")
@@ -16,8 +16,16 @@ INPUT_FILE = "../Compromised-Discord-Accounts.json"
 IPINFO_URL = "https://ipinfo.io/"
 
 # Domains that should be automatically set to US
-AUTO_US_DOMAINS = {"discord.com", "discord.gg", "steamcommunity.com", "funpay.com", "mediafire.com", "t.me",
-                   "telegram.com", "telegra.ph"}
+AUTO_US_DOMAINS = {
+    "discord.com",
+    "discord.gg",
+    "steamcommunity.com",
+    "funpay.com",
+    "mediafire.com",
+    "t.me",
+    "telegram.com",
+    "telegra.ph",
+}
 
 
 def log(message):
@@ -44,18 +52,20 @@ def get_geolocation(domain):
     # Resolve the domain to an IP address
     ip_address = resolve_ip(domain)
     if not ip_address:
-        return "UNKNOWN"  # Skip to the next domain if IP resolution fails
+        return "N/A"  # Skip to the next domain if IP resolution fails
 
     try:
         log(f"Querying ipinfo.io for IP: {ip_address}")
-        response = requests.get(f"{IPINFO_URL}{ip_address}/json", params={"token": API_KEY})
+        response = requests.get(
+            f"{IPINFO_URL}{ip_address}/json", params={"token": API_KEY}
+        )
         data = response.json()
-        country = data.get("country", "UNKNOWN")
+        country = data.get("country", "N/A")
         log(f"Received response for {domain} (IP: {ip_address}): {country}")
         return country
     except requests.RequestException as e:
         log(f"Error querying {domain} (IP: {ip_address}): {e}")
-        return "UNKNOWN"
+        return "N/A"
 
 
 def count_urls_to_check():
@@ -80,12 +90,17 @@ def count_urls_to_check():
 
 def update_auto_us_domains(accounts):
     updated_count = 0
+    current_time = datetime.utcnow().isoformat()
+
     for account_id, details in accounts.items():
         final_url_domain = details.get("FINAL_URL_DOMAIN", "")
         if final_url_domain in AUTO_US_DOMAINS:
             accounts[account_id]["SUSPECTED_REGION_OF_ORIGIN"] = "US"
+            accounts[account_id]["LAST_CHECK"] = current_time
             updated_count += 1
-            log(f"Updated {account_id}: {final_url_domain} -> US")
+            log(
+                f"Updated {account_id}: {final_url_domain} -> US | Last Check: {current_time}"
+            )
 
     if updated_count > 0:
         with open(INPUT_FILE, "w", encoding="utf-8") as file:
@@ -113,42 +128,57 @@ def update_compromised_accounts(start_from=0):
         if i < start_from:
             continue
 
+        current_time = datetime.utcnow().isoformat()
         final_url_domain = details.get("FINAL_URL_DOMAIN", "")
+
         if final_url_domain and final_url_domain not in AUTO_US_DOMAINS:
             country = get_geolocation(final_url_domain)
             accounts[account_id]["SUSPECTED_REGION_OF_ORIGIN"] = country
+            accounts[account_id]["LAST_CHECK"] = current_time
 
             if country == "US":
                 skipped_count += 1
-            elif country == "UNKNOWN":
+            elif country == "N/A":
                 unknown_count += 1
             else:
                 updated_count += 1
 
-            log(f"Updated {account_id}: {final_url_domain} -> {country}")
+            log(
+                f"Updated {account_id}: {final_url_domain} -> {country} | Last Check: {current_time}"
+            )
 
             # Save progress after each update
             with open(INPUT_FILE, "w", encoding="utf-8") as file:
                 json.dump(accounts, file, indent=4)
 
             # Only increment the request counter and apply rate limiting if we actually queried the API
-            if country != "UNKNOWN":
+            if country != "N/A":
                 request_counter += 1
                 if request_counter >= RATE_LIMIT:
-                    log(f"Reached API rate limit ({RATE_LIMIT} per minute), sleeping for 60 seconds...")
+                    log(
+                        f"Reached API rate limit ({RATE_LIMIT} per minute), sleeping for 60 seconds..."
+                    )
                     time.sleep(60)
                     request_counter = 0
                 else:
                     time.sleep(60 / RATE_LIMIT)  # Distribute requests evenly
 
-    log(f"Update complete: {updated_count} updated, {unknown_count} set to UNKNOWN, {skipped_count} auto-set to US")
+    log(
+        f"Update complete: {updated_count} updated, {unknown_count} set to N/A, {skipped_count} auto-set to US"
+    )
 
 
 if __name__ == "__main__":
     count_urls_to_check()  # Print the count before starting the update
 
     # Ask the user if they want to process the full file or start from a specific case number
-    user_input = input("Do you want to process the full file (F) or start from a specific case number (S)? ").strip().lower()
+    user_input = (
+        input(
+            "Do you want to process the full file (F) or start from a specific case number (S)? "
+        )
+        .strip()
+        .lower()
+    )
     if user_input == "s":
         start_from = int(input("Enter the case number to start from: "))
         update_compromised_accounts(start_from)
