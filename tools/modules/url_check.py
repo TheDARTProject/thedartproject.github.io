@@ -6,8 +6,8 @@ from urllib.parse import urlparse
 # Function to validate URLs
 def is_valid_url(url):
     # Check if the URL is "UNKNOWN"
-    if url == "UNKNOWN":
-        return "Invalid URL: Must be a valid URL, not 'UNKNOWN'"
+    if url == "No URL Sent":
+        return "Invalid URL: Must be a valid URL, not 'No URL Sent'"
 
     # Check if URL starts with http:// or https://
     if not url.startswith(("http://", "https://")):
