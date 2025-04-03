@@ -1,0 +1,147 @@
+{
+  "updates": [
+    {
+      "date": "04.04.2025",
+      "added": [
+        "4 New Cases: Added 4 new cases from 2 servers"
+      ],
+      "updated": [
+        "Changelog Page: Switched to dynamic content loading from previous hard coded method."
+      ],
+      "removed": [],
+      "notes": ""
+    },
+    {
+      "date": "03.04.2025",
+      "added": [
+        "8 New Cases: Added 8 new cases from 2 servers",
+        "Context Menu Options: Added Save and Copy Image options in Custom context menu options"
+      ],
+      "updated": [
+        "Database Values: Finished revalidation process",
+        "Discord Server Checker: Fixed issue causing the seen count to be incorrect",
+        "Active Discord Servers: Updated dataset with the correct seen counts"
+      ],
+      "removed": [],
+      "notes": ""
+    },
+    {
+      "date": "01.04.2025",
+      "added": [
+        "2 New Cases: Added 2 new cases from private sources",
+        "Discord Invite Checker: Added new invite checker tool (v2) for better analysis and renamed old tool to v1",
+        "New Discord Server Checker: Added new server checker tool to analyze malicious / flagged discord servers",
+        "Malicious Servers Page: Added experimental version of the [Malicious Servers](/CDA-Project/pages/malicious-servers.html), this page is in active development and is only accessible from here"
+      ],
+      "updated": [
+        "Database Values: Tweaked the structure of the database to remove unknown values",
+        "Announcement: Added Announcement for 02.04.2025",
+        "Mislabelled servers: Fixed an issue with some Discord Invite related cases having the incorrect URL",
+        "Account Types: Fixed an issue with account types being mislabelled as User Accounts instead of Deleted Accounts",
+        "Telegram Checker: Completely remade the telegram checker tool",
+        "IPInfo Checker: Updated IPInfo API checker to use the new naming scheme and also update timestamps",
+        "URL Checker: Updated URL Checker to skip cases with the new naming scheme"
+      ],
+      "removed": [],
+      "notes": ""
+    },
+    {
+      "date": "30.03.2025",
+      "added": [
+        "4 New Cases: Added 4 new cases"
+      ],
+      "updated": [
+        "Changelog Page: Tweaked the structure of the changelog page",
+        "Easter Egg Hunt: Fixed a workaround allowing users to instantly find all Easter Eggs"
+      ],
+      "removed": [],
+      "notes": ""
+    },
+    {
+      "date": "29.03.2025",
+      "added": [
+        "2 New Cases: Added 2 new cases"
+      ],
+      "updated": [
+        "Timestamps in Database: Updated timestamps for Burner Accounts in database",
+        "Account Statuses: Added dedicated statuses for Burner Accounts",
+        "Context Menu: Updated custom context menu with missing pages",
+        "Database Page: Fixed issue causing the custom context menu to not work on the [Database](/CDA-Project/pages/database.html) page"
+      ],
+      "removed": [],
+      "notes": ""
+    },
+    {
+      "date": "28.03.2025",
+      "added": [
+        "129 New Cases: Added 129 new cases from multiple servers after rescanning for new common words and included DM scam attempts",
+        "New Database Page: Added new [Database](/CDA-Project/pages/database.html) page for easy data visualisation",
+        "Database Inspector Tool: Added custom tool for quick inspection of the database file",
+        "3 Test pages: Added 2 new test pages, [Live Analysis](/CDA-Project/pages/live-analysis.html) and [Deep Analysis](/CDA-Project/pages/deep-analysis.html), these new pages can only be viewed from these hyperlinks till development is completed"
+      ],
+      "updated": [
+        "Saved chart resolution: Updated the scaling resolution of saved charts from 2x to 4x",
+        "Discord Creation Date Tool: Tweaked the method used in the account creation date checker tool",
+        "Changelog page: Fixed an issue causing the Dashboard hyperlink listed in all Patch Notes send users to the wrong page",
+        "Info Page: Updated server counter on [Info](/CDA-Project/pages/info.html) page to not count Direct Messages as a server",
+        "Home Page Buttons: Fixed an issue causing header buttons on info page to give a 404 error",
+        "Database Page: Fixed table styles on mobile devices",
+        "Project Roadmap Page: Updated the [Project Roadmap](/CDA-Project/pages/roadmap.html) page with better styles and more functionality"
+      ],
+      "removed": [],
+      "notes": ""
+    },
+    {
+      "date": "25.03.2025",
+      "added": [
+        "Zoom Functionality: Added Zoom functionality on Dashboard in the Attacks Over Time Chart",
+        "Reverser Tool: Added Database Reverser tool for quick updates",
+        "Custom Context Menu: Added custom context menu on all pages",
+        "Copy & Save Displayed Charts: Added Copy & Share buttons in the custom context menu for easy chart sharing",
+        "Custom Watermark: Added custom watermark on saved or copied charts",
+        "New Chart: Added Server-Specific Attack Trends in place of the old Attack Method vs Goal Matrix Chart",
+        "New Stats App: Added a private statistics app used in the private server for contributors",
+        "Social Sharing: Added social sharing feature in the custom context menu",
+        "1 New Case: Added 1 new case from the Blitz Post server"
+      ],
+      "updated": [
+        "Importer tool: URLs are no longer clickable",
+        "Excel Sheet: Updated Sheet to include missing fields",
+        "Charts.js: Changed version from min to full for future updates",
+        "Database Importer: Restructured the importing process to skip manual checks"
+      ],
+      "removed": [
+        "Temp Tool 1: Removed Temp Tool 1 since all functionality from it has been built in the Database Importer tool",
+        "Attack Method vs Goal Matrix: Removed and replaced with Server-Specific Attack Trends Chart"
+      ],
+      "notes": "Visit the Dashboard to see the latest changes and additions. The new context menu is available on all pages and the new tools can be found in the tools folder inside the GitHub Repository."
+    },
+    {
+      "date": "24.03.2025",
+      "added": [
+        "Spoiler effect in Detailed View on Dashboard: URLs are now hidden as spoilers by default",
+        "Safe URL Scanners & Testers: Added buttons for testing tools in Detailed View on Dashboard to easily test malicious URLs",
+        "Final Domain Distribution Chart: Added chart for easier visualization of the domains used by threat actors",
+        "Average Time Till Compromise Chart: Added chart to showcase the average time between the creation date and the date when the account was compromised",
+        "Account Creation Checker: Added tool to check the creation date of compromised accounts",
+        "Database Validator: Added tool to validate the JSON format of the database to avoid errors",
+        "New fields in Detailed View on Dashboard: Added Created On and Time Till Compromise fields in Detailed View on Dashboard",
+        "2 New Cases: Added latest cases from the Project CW server",
+        "CDA Monitor App: Added documentation for the Discord App",
+        "Easter Eggs: Added 5 Easter eggs all over the site, good luck[.](https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/easter-eggs/xy0a5zw12felmdlba78vdbudaf02ehsr.png)"
+      ],
+      "updated": [
+        "URL Section in Detailed View on Dashboard: URLs are no longer clickable",
+        "Layout in Detailed View on Dashboard: Reformatted the layout to better fit small screens",
+        "Region of Origin wording: Changed from UNKNOWN to N/A for better readability",
+        "Cases by Server Chart: Changed to pie chart for better readability",
+        "Datapoints in Database: Updated cases with account creation date based on Snowflake ID",
+        "Chart lists: Updated charts to be sorted from highest to lowest",
+        "Screenshots for PWA App: Outdated screenshots were changed to represent the new UI",
+        "PWA App Settings: All display orientations are now supported and theme colors were changed to represent the new UI"
+      ],
+      "removed": [],
+      "notes": "Visit the Dashboard to see the latest changes and additions!"
+    }
+  ]
+}
