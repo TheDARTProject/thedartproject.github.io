@@ -9,9 +9,9 @@ export function setupContextMenu() {
 
     // Site pages structure - flattened without categories
     const sitePages = [{
-        label: 'Home Page',
-        url: '/CDA-Project/index.html'
-    },
+            label: 'Home Page',
+            url: '/CDA-Project/index.html'
+        },
         {
             label: 'Dashboard',
             url: '/CDA-Project/pages/dashboard.html'
@@ -64,10 +64,10 @@ export function setupContextMenu() {
 
     // Base menu items configuration
     const baseMenuItems = [{
-        label: 'Back',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>',
-        action: () => window.history.back()
-    },
+            label: 'Back',
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>',
+            action: () => window.history.back()
+        },
         {
             label: 'Forward',
             icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
@@ -126,19 +126,19 @@ export function setupContextMenu() {
                 scaleFactor: 4,
                 borderSize: 100, // in 1x pixels (will be scaled)
                 watermark: {
-                    width: 130,    // in 1x pixels
-                    height: 70,   // in 1x pixels
+                    width: 130, // in 1x pixels
+                    height: 70, // in 1x pixels
                     topPadding: -30, // in 1x pixels
                     opacity: 1
                 },
                 chartName: {
                     font: 'Arial',
-                    size: 24,         // Base font size (for first line)
+                    size: 24, // Base font size (for first line)
                     secondarySize: 20, // Font size for timestamp line
                     color: '#ffffff',
                     bottomPadding: 40, // Increased to accommodate two lines
                     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-                    lineSpacing: 15    // Space between the two lines
+                    lineSpacing: 15 // Space between the two lines
                 }
             };
 
@@ -205,7 +205,8 @@ export function setupContextMenu() {
                 const baseY = canvas.height - scaled.namePadding;
 
                 // First line: Chart name
-                const textFont = `bold ${scaled.fontSize}px ${config.chartName.font}`; ctx.font = textFont;
+                const textFont = `bold ${scaled.fontSize}px ${config.chartName.font}`;
+                ctx.font = textFont;
                 ctx.fillText(`${chartName} Chart`, canvas.width / 2, baseY - scaled.lineSpacing);
 
                 // Second line: Timestamp
@@ -259,7 +260,9 @@ export function setupContextMenu() {
 
                 // Convert canvas to blob
                 highResCanvas.toBlob(async (blob) => {
-                    const file = new File([blob], `${chartName}.png`, { type: 'image/png' });
+                    const file = new File([blob], `${chartName}.png`, {
+                        type: 'image/png'
+                    });
 
                     try {
                         await navigator.share({
@@ -368,105 +371,167 @@ export function setupContextMenu() {
 
     // Chart-specific menu items
     const chartMenuItems = [{
-        label: 'Save Chart As...',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
-        action: async (chart) => {
-            try {
-                // Create high-resolution version of the chart
-                const highResCanvas = await createHighResChart(chart);
-                const chartName = getChartName(chart.canvas.id);
-                const filename = `${chartName.replace(/ /g, '-')}-${new Date().toISOString().slice(0, 10)}.png`;
-
-                // Create download link
-                const link = document.createElement('a');
-                link.download = filename;
-                link.href = highResCanvas.toDataURL('image/png', 1.0); // Highest quality
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            } catch (err) {
-                console.error('Error saving chart:', err);
-                // Fallback to original resolution with solid background
-                const fallbackCanvas = document.createElement('canvas');
-                fallbackCanvas.width = chart.canvas.width;
-                fallbackCanvas.height = chart.canvas.height;
-                const fallbackCtx = fallbackCanvas.getContext('2d');
-                fallbackCtx.fillStyle = '#1e293b';
-                fallbackCtx.fillRect(0, 0, fallbackCanvas.width, fallbackCanvas.height);
-                fallbackCtx.drawImage(chart.canvas, 0, 0);
-
-                const link = document.createElement('a');
-                link.download = 'chart.png';
-                link.href = fallbackCanvas.toDataURL('image/png');
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            }
-        }
-    },
-    {
-        label: 'Copy Chart',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" /><path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" /></svg>',
-        action: async (chart) => {
-            try {
-                // Create high-resolution version of the chart
-                const highResCanvas = await createHighResChart(chart);
-
-                // Convert to blob with highest quality
-                highResCanvas.toBlob(async (blob) => {
-                    try {
-                        await navigator.clipboard.write([
-                            new ClipboardItem({
-                                'image/png': blob
-                            })
-                        ]);
-                    } catch (err) {
-                        console.error('Failed to copy image: ', err);
-                        throw err; // Trigger fallback
-                    }
-                }, 'image/png', 1.0);
-            } catch (err) {
-                console.error('Failed to copy image: ', err);
-
-                // Fallback for browsers that don't support Clipboard API or high-res failed
+            label: 'Save Chart As...',
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
+            action: async (chart) => {
                 try {
-                    const fallbackCanvas = await createHighResChart(chart);
-                    const dataUrl = fallbackCanvas.toDataURL('image/png');
+                    // Create high-resolution version of the chart
+                    const highResCanvas = await createHighResChart(chart);
+                    const chartName = getChartName(chart.canvas.id);
+                    const filename = `${chartName.replace(/ /g, '-')}-${new Date().toISOString().slice(0, 10)}.png`;
 
-                    // Old-school copy method
-                    const textArea = document.createElement('textarea');
-                    textArea.value = dataUrl;
-                    document.body.appendChild(textArea);
-                    textArea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textArea);
-                } catch (fallbackErr) {
-                    console.error('Fallback copy failed:', fallbackErr);
+                    // Create download link
+                    const link = document.createElement('a');
+                    link.download = filename;
+                    link.href = highResCanvas.toDataURL('image/png', 1.0); // Highest quality
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } catch (err) {
+                    console.error('Error saving chart:', err);
+                    // Fallback to original resolution with solid background
+                    const fallbackCanvas = document.createElement('canvas');
+                    fallbackCanvas.width = chart.canvas.width;
+                    fallbackCanvas.height = chart.canvas.height;
+                    const fallbackCtx = fallbackCanvas.getContext('2d');
+                    fallbackCtx.fillStyle = '#1e293b';
+                    fallbackCtx.fillRect(0, 0, fallbackCanvas.width, fallbackCanvas.height);
+                    fallbackCtx.drawImage(chart.canvas, 0, 0);
 
-                    // Final fallback - original resolution with solid background
-                    const finalCanvas = document.createElement('canvas');
-                    finalCanvas.width = chart.canvas.width;
-                    finalCanvas.height = chart.canvas.height;
-                    const finalCtx = finalCanvas.getContext('2d');
-                    finalCtx.fillStyle = '#1e293b';
-                    finalCtx.fillRect(0, 0, finalCanvas.width, finalCanvas.height);
-                    finalCtx.drawImage(chart.canvas, 0, 0);
-
-                    const textArea = document.createElement('textarea');
-                    textArea.value = finalCanvas.toDataURL('image/png');
-                    document.body.appendChild(textArea);
-                    textArea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textArea);
+                    const link = document.createElement('a');
+                    link.download = 'chart.png';
+                    link.href = fallbackCanvas.toDataURL('image/png');
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
                 }
             }
+        },
+        {
+            label: 'Copy Chart',
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" /><path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" /></svg>',
+            action: async (chart) => {
+                try {
+                    // Create high-resolution version of the chart
+                    const highResCanvas = await createHighResChart(chart);
+
+                    // Convert to blob with highest quality
+                    highResCanvas.toBlob(async (blob) => {
+                        try {
+                            await navigator.clipboard.write([
+                                new ClipboardItem({
+                                    'image/png': blob
+                                })
+                            ]);
+                        } catch (err) {
+                            console.error('Failed to copy image: ', err);
+                            throw err; // Trigger fallback
+                        }
+                    }, 'image/png', 1.0);
+                } catch (err) {
+                    console.error('Failed to copy image: ', err);
+
+                    // Fallback for browsers that don't support Clipboard API or high-res failed
+                    try {
+                        const fallbackCanvas = await createHighResChart(chart);
+                        const dataUrl = fallbackCanvas.toDataURL('image/png');
+
+                        // Old-school copy method
+                        const textArea = document.createElement('textarea');
+                        textArea.value = dataUrl;
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                    } catch (fallbackErr) {
+                        console.error('Fallback copy failed:', fallbackErr);
+
+                        // Final fallback - original resolution with solid background
+                        const finalCanvas = document.createElement('canvas');
+                        finalCanvas.width = chart.canvas.width;
+                        finalCanvas.height = chart.canvas.height;
+                        const finalCtx = finalCanvas.getContext('2d');
+                        finalCtx.fillStyle = '#1e293b';
+                        finalCtx.fillRect(0, 0, finalCanvas.width, finalCanvas.height);
+                        finalCtx.drawImage(chart.canvas, 0, 0);
+
+                        const textArea = document.createElement('textarea');
+                        textArea.value = finalCanvas.toDataURL('image/png');
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                    }
+                }
+            }
+        },
+        {
+            label: 'Share Chart',
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" /></svg>',
+            action: (chart) => shareChart(chart)
+        },
+        {
+            type: 'separator'
         }
-    },
-    {
-        label: 'Share Chart',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" /></svg>',
-        action: (chart) => shareChart(chart)
-    },
+    ];
+
+    // Image-specific menu items
+    const imageMenuItems = [{
+            label: 'Save Image As...',
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
+            action: (img) => {
+                try {
+                    // Create download link
+                    const link = document.createElement('a');
+                    const url = img.src;
+                    const filename = url.substring(url.lastIndexOf('/') + 1).split('?')[0].split('#')[0];
+                    link.download = filename || 'image.png';
+                    link.href = url;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } catch (err) {
+                    console.error('Error saving image:', err);
+                    alert('Failed to save image. Please try again.');
+                }
+            }
+        },
+        {
+            label: 'Copy Image',
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" /><path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" /></svg>',
+            action: async (img) => {
+                try {
+                    // First try the modern Clipboard API
+                    if (navigator.clipboard && navigator.clipboard.write) {
+                        const response = await fetch(img.src);
+                        const blob = await response.blob();
+                        await navigator.clipboard.write([
+                            new ClipboardItem({
+                                [blob.type]: blob
+                            })
+                        ]);
+                    } else {
+                        // Fallback for older browsers
+                        const canvas = document.createElement('canvas');
+                        canvas.width = img.naturalWidth || img.width;
+                        canvas.height = img.naturalHeight || img.height;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0);
+
+                        // Create a temporary textarea with the data URL
+                        const textArea = document.createElement('textarea');
+                        textArea.value = canvas.toDataURL('image/png');
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                    }
+                } catch (err) {
+                    console.error('Failed to copy image:', err);
+                    alert('Failed to copy image. Please try again or use the "Save Image" option.');
+                }
+            }
+        },
         {
             type: 'separator'
         }
@@ -482,6 +547,11 @@ export function setupContextMenu() {
         if (target.tagName === 'CANVAS' && target.chart) {
             // Add chart-specific items at the beginning
             menuItems = [...chartMenuItems, ...menuItems];
+        }
+        // Check if the target is an image
+        else if (target.tagName === 'IMG') {
+            // Add image-specific items at the beginning
+            menuItems = [...imageMenuItems, ...menuItems];
         }
 
         // Build the menu items
@@ -544,6 +614,8 @@ export function setupContextMenu() {
                         e.stopPropagation();
                         if (target.tagName === 'CANVAS' && target.chart && item.action) {
                             item.action(target.chart);
+                        } else if (target.tagName === 'IMG' && item.action) {
+                            item.action(target);
                         } else if (item.action) {
                             item.action();
                         }
