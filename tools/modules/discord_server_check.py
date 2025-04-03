@@ -125,20 +125,20 @@ def main():
     # Find Discord invite URLs in the compromised accounts data
     discord_invites = []
     for account_key, account_data in compromised_accounts.items():
-        surface_url = account_data.get("SURFACE_URL", "")
-        surface_url_status = account_data.get("SURFACE_URL_STATUS", "")
+        final_url = account_data.get("FINAL_URL", "")
+        final_url_status = account_data.get("FINAL_URL_STATUS", "")
 
         # Check if the URL is a Discord URL and is ACTIVE
         if (
-            "discord.gg" in surface_url or "discord.com" in surface_url
-        ) and surface_url_status == "ACTIVE":
-            invite_code = extract_invite_code(surface_url)
+            "discord.gg" in final_url or "discord.com" in final_url
+        ) and final_url_status == "ACTIVE":
+            invite_code = extract_invite_code(final_url)
             if invite_code:
                 discord_invites.append(
                     {
                         "account_key": account_key,
                         "invite_code": invite_code,
-                        "url": surface_url,
+                        "url": final_url,
                     }
                 )
 
@@ -178,10 +178,8 @@ def main():
             if existing_server_key:
                 server_key = existing_server_key
                 print(f"Updating existing server {server_key}")
-                # Get the current seen count if it exists, otherwise start with 0
-                current_seen_count = active_servers[server_key].get("SEEN_COUNT", 0)
-                # Update seen count with the new count from this run
-                new_seen_count = current_seen_count + invite_code_counts[invite_code]
+                # MODIFIED: Use only the current count instead of adding to previous value
+                new_seen_count = invite_code_counts[invite_code]
             else:
                 server_count += 1
                 server_key = f"SERVER_NUMBER_{server_count}"
