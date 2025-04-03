@@ -7,6 +7,7 @@ const serverNames = {
     SINEWAVE_DEVELOPMENT: "SINEWAVE Development",
     ANONYMOUS_SERVER_1: "Anonymous Server #1",
     ANONYMOUS_SERVER_2: "Anonymous Server #2",
+    ANONYMOUS_SERVER_3: "Anonymous Server #3",
     BLITZPOST: "Blitz Post"
 };
 
@@ -17,7 +18,8 @@ const serverInvites = {
     SINEWAVE_DEVELOPMENT: "https://discord.gg/2nHHHBWNDw",
     BLITZPOST: "https://discord.com/invite/q82WM4E",
     ANONYMOUS_SERVER_1: "",
-    ANONYMOUS_SERVER_2: ""
+    ANONYMOUS_SERVER_2: "",
+    ANONYMOUS_SERVER_3: ""
 };
 
 export default {
