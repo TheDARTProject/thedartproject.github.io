@@ -1,7 +1,7 @@
 {
     "SERVER_NUMBER_1": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "816928321501003776",
         "GUILD_NAME": "[PHN1X]",
         "GUILD_DESCRIPTION": null,
@@ -10,20 +10,20 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 2,
         "MEMBER_COUNT": 367,
-        "ONLINE_MEMBER_COUNT": 35,
+        "ONLINE_MEMBER_COUNT": 33,
         "PREMIUM_SUBSCRIPTION_COUNT": 0,
         "PREMIUM_TIER": 0,
         "FEATURES": [
-            "PREVIEW_ENABLED",
-            "TEXT_IN_VOICE_ENABLED",
-            "COMMUNITY",
-            "NEWS",
-            "MEMBER_VERIFICATION_GATE_ENABLED",
             "CHANNEL_ICON_EMOJIS_GENERATED",
-            "THREADS_ENABLED",
-            "AUTO_MODERATION",
             "NEW_THREAD_PERMISSIONS",
-            "SOUNDBOARD"
+            "SOUNDBOARD",
+            "PREVIEW_ENABLED",
+            "MEMBER_VERIFICATION_GATE_ENABLED",
+            "COMMUNITY",
+            "TEXT_IN_VOICE_ENABLED",
+            "THREADS_ENABLED",
+            "NEWS",
+            "AUTO_MODERATION"
         ],
         "BANNER": "2338d80f9b61cf4ed194930a65d00cd7",
         "ICON": "587e1875d82b45e76097910bcd9db6c3",
@@ -44,11 +44,11 @@
             "AVATAR": "81e77fe9cb22ee557200e7b9b156cb9e",
             "ACCOUNT_CREATION": "2017-11-12"
         },
-        "LAST_CHECK": "2025-04-03T08:20:05.770176"
+        "LAST_CHECK": "2025-04-03T08:47:19.480961"
     },
     "SERVER_NUMBER_2": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 8,
+        "SEEN_COUNT": 12,
         "GUILD_ID": "1184340957429243975",
         "GUILD_NAME": "Assthetics",
         "GUILD_DESCRIPTION": null,
@@ -56,25 +56,25 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 2,
-        "MEMBER_COUNT": 14634,
-        "ONLINE_MEMBER_COUNT": 1134,
+        "MEMBER_COUNT": 14635,
+        "ONLINE_MEMBER_COUNT": 1093,
         "PREMIUM_SUBSCRIPTION_COUNT": 47,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "INVITE_SPLASH",
-            "ANIMATED_BANNER",
-            "MEMBER_PROFILES",
-            "ROLE_ICONS",
-            "ANIMATED_ICON",
+            "NON_COMMUNITY_RAID_ALERTS",
             "CHANNEL_ICON_EMOJIS_GENERATED",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "VANITY_URL",
+            "ROLE_ICONS",
             "ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY",
+            "INVITE_SPLASH",
+            "BANNER",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "MEMBER_PROFILES",
+            "VANITY_URL",
+            "ANIMATED_ICON",
             "AUTO_MODERATION",
             "PRIVATE_THREADS",
-            "BANNER",
-            "NON_COMMUNITY_RAID_ALERTS",
-            "SEVEN_DAY_THREAD_ARCHIVE"
+            "ANIMATED_BANNER"
         ],
         "BANNER": "e8b9c9da1908fb5dcbdbcf64b1a0a558",
         "ICON": "a_61692f899954e7f3ae02e366744ca55b",
@@ -95,11 +95,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:20:13.157231"
+        "LAST_CHECK": "2025-04-03T08:47:26.931583"
     },
     "SERVER_NUMBER_3": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 18,
+        "SEEN_COUNT": 27,
         "GUILD_ID": "1220869675404099728",
         "GUILD_NAME": "/nuddes",
         "GUILD_DESCRIPTION": null,
@@ -107,23 +107,23 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
-        "MEMBER_COUNT": 4503,
-        "ONLINE_MEMBER_COUNT": 142,
+        "MEMBER_COUNT": 4501,
+        "ONLINE_MEMBER_COUNT": 140,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
             "PRIVATE_THREADS",
+            "INVITE_SPLASH",
+            "NEWS",
+            "VANITY_URL",
             "SEVEN_DAY_THREAD_ARCHIVE",
             "COMMUNITY",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "ROLE_ICONS",
-            "INVITE_SPLASH",
-            "BANNER",
             "MEMBER_PROFILES",
-            "VANITY_URL",
-            "NEWS",
+            "ANIMATED_BANNER",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "BANNER",
             "ANIMATED_ICON",
-            "ANIMATED_BANNER"
+            "ROLE_ICONS"
         ],
         "BANNER": "1deff1436df539badfcc2b9bb4c32efa",
         "ICON": "d825d5cc0eed7fae73133d6e6670c433",
@@ -144,11 +144,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:20:35.747007"
+        "LAST_CHECK": "2025-04-03T08:47:49.538621"
     },
     "SERVER_NUMBER_4": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 18,
+        "SEEN_COUNT": 27,
         "GUILD_ID": "1339652717483786241",
         "GUILD_NAME": "T \u0130 K T O K",
         "GUILD_DESCRIPTION": null,
@@ -157,20 +157,20 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
         "MEMBER_COUNT": 819,
-        "ONLINE_MEMBER_COUNT": 27,
+        "ONLINE_MEMBER_COUNT": 32,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "MEMBER_PROFILES",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "THREE_DAY_THREAD_ARCHIVE",
             "BANNER",
-            "VANITY_URL",
             "INVITE_SPLASH",
-            "PRIVATE_THREADS",
-            "ROLE_ICONS",
             "ANIMATED_BANNER",
-            "ANIMATED_ICON"
+            "MEMBER_PROFILES",
+            "ROLE_ICONS",
+            "ANIMATED_ICON",
+            "PRIVATE_THREADS",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "VANITY_URL"
         ],
         "BANNER": null,
         "ICON": "060b85a36ef8a9a221b727c9cca791f2",
@@ -191,11 +191,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:20:32.186996"
+        "LAST_CHECK": "2025-04-03T08:47:45.989868"
     },
     "SERVER_NUMBER_5": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 72,
+        "SEEN_COUNT": 108,
         "GUILD_ID": "1339551079494320209",
         "GUILD_NAME": "leaks 6",
         "GUILD_DESCRIPTION": null,
@@ -203,21 +203,21 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
-        "MEMBER_COUNT": 292,
-        "ONLINE_MEMBER_COUNT": 9,
+        "MEMBER_COUNT": 291,
+        "ONLINE_MEMBER_COUNT": 7,
         "PREMIUM_SUBSCRIPTION_COUNT": 28,
         "PREMIUM_TIER": 3,
         "FEATURES": [
+            "THREE_DAY_THREAD_ARCHIVE",
             "MEMBER_PROFILES",
-            "ANIMATED_BANNER",
-            "SEVEN_DAY_THREAD_ARCHIVE",
+            "BANNER",
             "INVITE_SPLASH",
             "ANIMATED_ICON",
-            "PRIVATE_THREADS",
-            "THREE_DAY_THREAD_ARCHIVE",
             "ROLE_ICONS",
+            "PRIVATE_THREADS",
+            "SEVEN_DAY_THREAD_ARCHIVE",
             "VANITY_URL",
-            "BANNER"
+            "ANIMATED_BANNER"
         ],
         "BANNER": null,
         "ICON": "e193093bdb2704c75f2bcb9f292e8146",
@@ -238,11 +238,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:20:58.899727"
+        "LAST_CHECK": "2025-04-03T08:48:12.325776"
     },
     "SERVER_NUMBER_6": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1126961726991114341",
         "GUILD_NAME": "chilly | nsfw + nxdes",
         "GUILD_DESCRIPTION": null,
@@ -251,27 +251,27 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
         "MEMBER_COUNT": 22398,
-        "ONLINE_MEMBER_COUNT": 508,
+        "ONLINE_MEMBER_COUNT": 362,
         "PREMIUM_SUBSCRIPTION_COUNT": 21,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "CHANNEL_ICON_EMOJIS_GENERATED",
-            "BANNER",
-            "ANIMATED_BANNER",
             "ANIMATED_ICON",
+            "BANNER",
+            "CHANNEL_ICON_EMOJIS_GENERATED",
             "THREE_DAY_THREAD_ARCHIVE",
-            "INVITE_SPLASH",
-            "MEMBER_PROFILES",
-            "NEWS",
-            "SOUNDBOARD",
-            "PRIVATE_THREADS",
-            "COMMUNITY",
-            "ENABLED_DISCOVERABLE_BEFORE",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "AUTO_MODERATION",
             "VANITY_URL",
+            "ENABLED_DISCOVERABLE_BEFORE",
+            "COMMUNITY",
+            "SOUNDBOARD",
             "GUILD_WEB_PAGE_VANITY_URL",
+            "INVITE_SPLASH",
+            "ANIMATED_BANNER",
+            "NEWS",
             "ROLE_ICONS",
-            "AUTO_MODERATION"
+            "MEMBER_PROFILES",
+            "PRIVATE_THREADS"
         ],
         "BANNER": "af75bcaa04aae3eeeaa98299dccb625f",
         "ICON": "a_381662218862fbd8cf953e736da4a3d5",
@@ -292,11 +292,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:02.656789"
+        "LAST_CHECK": "2025-04-03T08:48:16.108860"
     },
     "SERVER_NUMBER_7": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1290259098658668584",
         "GUILD_NAME": "onlynudes #NSFW",
         "GUILD_DESCRIPTION": null,
@@ -305,23 +305,23 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
         "MEMBER_COUNT": 1701,
-        "ONLINE_MEMBER_COUNT": 70,
+        "ONLINE_MEMBER_COUNT": 74,
         "PREMIUM_SUBSCRIPTION_COUNT": 17,
         "PREMIUM_TIER": 3,
         "FEATURES": [
             "MEMBER_PROFILES",
+            "SOUNDBOARD",
+            "NEWS",
             "VANITY_URL",
             "ROLE_ICONS",
-            "INVITE_SPLASH",
             "THREE_DAY_THREAD_ARCHIVE",
-            "SOUNDBOARD",
-            "COMMUNITY",
             "BANNER",
-            "PRIVATE_THREADS",
             "SEVEN_DAY_THREAD_ARCHIVE",
-            "ANIMATED_BANNER",
+            "COMMUNITY",
+            "INVITE_SPLASH",
             "ANIMATED_ICON",
-            "NEWS"
+            "ANIMATED_BANNER",
+            "PRIVATE_THREADS"
         ],
         "BANNER": "a_f2dca9c262a4927a7fefb4c0c5dfa7e0",
         "ICON": "a_9f5a47db0ceafd65914fc8f80e042a23",
@@ -342,11 +342,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:06.483541"
+        "LAST_CHECK": "2025-04-03T08:48:23.622873"
     },
     "SERVER_NUMBER_8": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1238821905616736349",
         "GUILD_NAME": "vkeaks 13",
         "GUILD_DESCRIPTION": null,
@@ -355,19 +355,19 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
         "MEMBER_COUNT": 690,
-        "ONLINE_MEMBER_COUNT": 18,
+        "ONLINE_MEMBER_COUNT": 16,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "MEMBER_PROFILES",
-            "ANIMATED_BANNER",
-            "SEVEN_DAY_THREAD_ARCHIVE",
+            "ROLE_ICONS",
             "INVITE_SPLASH",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
+            "ANIMATED_BANNER",
+            "MEMBER_PROFILES",
             "ANIMATED_ICON",
             "PRIVATE_THREADS",
             "THREE_DAY_THREAD_ARCHIVE",
-            "ROLE_ICONS",
-            "VANITY_URL",
             "BANNER"
         ],
         "BANNER": "a_ea9a76ad437f8ae1d34776e50d2e1929",
@@ -389,11 +389,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:10.250082"
+        "LAST_CHECK": "2025-04-03T08:48:27.398628"
     },
     "SERVER_NUMBER_9": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1205898017329258526",
         "GUILD_NAME": "Marina\ud83d\udd1e+ nudes",
         "GUILD_DESCRIPTION": null,
@@ -427,11 +427,11 @@
             "AVATAR": "5e64bbb0f0b2417c3dc9e6d3b6dbb527",
             "ACCOUNT_CREATION": "2024-02-10"
         },
-        "LAST_CHECK": "2025-04-03T08:21:14.104859"
+        "LAST_CHECK": "2025-04-03T08:48:31.188473"
     },
     "SERVER_NUMBER_10": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1335646513015160983",
         "GUILD_NAME": "\ud83d\udcb8\ud83d\ude08\ud83d\udd1e\ud83c\udf51",
         "GUILD_DESCRIPTION": null,
@@ -439,21 +439,21 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
-        "MEMBER_COUNT": 1124,
-        "ONLINE_MEMBER_COUNT": 39,
+        "MEMBER_COUNT": 1127,
+        "ONLINE_MEMBER_COUNT": 40,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "VANITY_URL",
-            "ANIMATED_BANNER",
-            "PRIVATE_THREADS",
-            "MEMBER_PROFILES",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "THREE_DAY_THREAD_ARCHIVE",
             "ANIMATED_ICON",
+            "MEMBER_PROFILES",
+            "BANNER",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
             "INVITE_SPLASH",
+            "ANIMATED_BANNER",
             "ROLE_ICONS",
-            "BANNER"
+            "PRIVATE_THREADS"
         ],
         "BANNER": null,
         "ICON": "1925e5539e818ea8a72606c8e3645bd1",
@@ -474,11 +474,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:17.834872"
+        "LAST_CHECK": "2025-04-03T08:48:35.264836"
     },
     "SERVER_NUMBER_11": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1127936395181297756",
         "GUILD_NAME": "NSFW +18 \ud83c\udf51\ud83d\udd1e",
         "GUILD_DESCRIPTION": null,
@@ -486,22 +486,22 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
-        "MEMBER_COUNT": 29760,
-        "ONLINE_MEMBER_COUNT": 985,
+        "MEMBER_COUNT": 29656,
+        "ONLINE_MEMBER_COUNT": 742,
         "PREMIUM_SUBSCRIPTION_COUNT": 29,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "VANITY_URL",
-            "THREE_DAY_THREAD_ARCHIVE",
+            "MEMBER_PROFILES",
+            "INVITE_SPLASH",
             "ACTIVITY_FEED_DISABLED_BY_USER",
-            "ANIMATED_ICON",
-            "BANNER",
             "PRIVATE_THREADS",
             "ANIMATED_BANNER",
-            "INVITE_SPLASH",
+            "BANNER",
             "ROLE_ICONS",
-            "MEMBER_PROFILES",
-            "SEVEN_DAY_THREAD_ARCHIVE"
+            "THREE_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "ANIMATED_ICON"
         ],
         "BANNER": null,
         "ICON": "c3327920980b2b80fac3c1b8453a0414",
@@ -522,11 +522,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:21.801893"
+        "LAST_CHECK": "2025-04-03T08:48:39.133916"
     },
     "SERVER_NUMBER_12": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 8,
+        "SEEN_COUNT": 12,
         "GUILD_ID": "1347947413649883167",
         "GUILD_NAME": "NSFW +18",
         "GUILD_DESCRIPTION": null,
@@ -534,21 +534,21 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
-        "MEMBER_COUNT": 1048,
-        "ONLINE_MEMBER_COUNT": 32,
+        "MEMBER_COUNT": 1049,
+        "ONLINE_MEMBER_COUNT": 30,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "PRIVATE_THREADS",
-            "ROLE_ICONS",
-            "ANIMATED_BANNER",
-            "THREE_DAY_THREAD_ARCHIVE",
             "MEMBER_PROFILES",
-            "VANITY_URL",
+            "ROLE_ICONS",
             "ANIMATED_ICON",
-            "SEVEN_DAY_THREAD_ARCHIVE",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
+            "ANIMATED_BANNER",
+            "PRIVATE_THREADS",
+            "BANNER",
             "INVITE_SPLASH",
-            "BANNER"
+            "SEVEN_DAY_THREAD_ARCHIVE"
         ],
         "BANNER": null,
         "ICON": "8f8b71a13688e8c8dad8b58e7b71e4c0",
@@ -569,11 +569,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:29.366949"
+        "LAST_CHECK": "2025-04-03T08:48:46.687126"
     },
     "SERVER_NUMBER_13": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1345965247638274048",
         "GUILD_NAME": "October",
         "GUILD_DESCRIPTION": null,
@@ -582,21 +582,21 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
         "MEMBER_COUNT": 70,
-        "ONLINE_MEMBER_COUNT": 8,
+        "ONLINE_MEMBER_COUNT": 11,
         "PREMIUM_SUBSCRIPTION_COUNT": 17,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "THREE_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
+            "ANIMATED_BANNER",
+            "PRIVATE_THREADS",
+            "MEMBER_PROFILES",
             "SEVEN_DAY_THREAD_ARCHIVE",
+            "SOUNDBOARD",
+            "THREE_DAY_THREAD_ARCHIVE",
             "ANIMATED_ICON",
             "INVITE_SPLASH",
-            "VANITY_URL",
-            "BANNER",
             "ROLE_ICONS",
-            "ANIMATED_BANNER",
-            "MEMBER_PROFILES",
-            "PRIVATE_THREADS",
-            "SOUNDBOARD"
+            "BANNER"
         ],
         "BANNER": "940e40dbe7dc1916d8eb4c1de240e923",
         "ICON": "f57c60df7eea0b6cfdd239fda49f2e82",
@@ -617,11 +617,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:33.075991"
+        "LAST_CHECK": "2025-04-03T08:48:50.412903"
     },
     "SERVER_NUMBER_14": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1210525168032550922",
         "GUILD_NAME": "booty \ud83c\udf51\ufe52nudes\ufe52nsfw\ufe5218+ \u2661",
         "GUILD_DESCRIPTION": null,
@@ -630,13 +630,13 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
         "MEMBER_COUNT": 3417,
-        "ONLINE_MEMBER_COUNT": 25,
+        "ONLINE_MEMBER_COUNT": 24,
         "PREMIUM_SUBSCRIPTION_COUNT": 0,
         "PREMIUM_TIER": 0,
         "FEATURES": [
+            "CHANNEL_ICON_EMOJIS_GENERATED",
             "NEWS",
-            "COMMUNITY",
-            "CHANNEL_ICON_EMOJIS_GENERATED"
+            "COMMUNITY"
         ],
         "BANNER": null,
         "ICON": "e0ecc4d6e8d339ea57e476b4136e0ad1",
@@ -657,11 +657,11 @@
             "AVATAR": null,
             "ACCOUNT_CREATION": "2023-05-25"
         },
-        "LAST_CHECK": "2025-04-03T08:21:36.871341"
+        "LAST_CHECK": "2025-04-03T08:48:54.120838"
     },
     "SERVER_NUMBER_15": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 8,
+        "SEEN_COUNT": 12,
         "GUILD_ID": "1346976868502474862",
         "GUILD_NAME": "egirls /twerking on cam \ud83d\udca6",
         "GUILD_DESCRIPTION": null,
@@ -669,21 +669,21 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
-        "MEMBER_COUNT": 1373,
-        "ONLINE_MEMBER_COUNT": 15,
+        "MEMBER_COUNT": 1374,
+        "ONLINE_MEMBER_COUNT": 16,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "VANITY_URL",
-            "ANIMATED_BANNER",
-            "PRIVATE_THREADS",
-            "MEMBER_PROFILES",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "ANIMATED_ICON",
             "INVITE_SPLASH",
             "ROLE_ICONS",
+            "MEMBER_PROFILES",
             "BANNER",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "ANIMATED_BANNER",
+            "ANIMATED_ICON",
+            "PRIVATE_THREADS",
             "ACTIVITY_FEED_DISABLED_BY_USER"
         ],
         "BANNER": "a_44ad7e7bde3e6b02eaf08a3fc19bcb1f",
@@ -705,11 +705,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:48.195654"
+        "LAST_CHECK": "2025-04-03T08:49:05.391824"
     },
     "SERVER_NUMBER_16": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1318618281942192239",
         "GUILD_NAME": "/get",
         "GUILD_DESCRIPTION": null,
@@ -718,23 +718,23 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
         "MEMBER_COUNT": 164,
-        "ONLINE_MEMBER_COUNT": 4,
+        "ONLINE_MEMBER_COUNT": 5,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "MEMBER_PROFILES",
             "ANIMATED_BANNER",
-            "SEVEN_DAY_THREAD_ARCHIVE",
+            "MEMBER_PROFILES",
+            "MEMBER_VERIFICATION_GATE_ENABLED",
+            "INVITE_SPLASH",
             "VANITY_URL",
-            "PRIVATE_THREADS",
-            "ANIMATED_ICON",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "SEVEN_DAY_THREAD_ARCHIVE",
             "BANNER",
             "MEMBER_VERIFICATION_MANUAL_APPROVAL",
-            "INVITE_SPLASH",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "ROLE_ICONS",
-            "MEMBER_VERIFICATION_GATE_ENABLED",
-            "ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY"
+            "ANIMATED_ICON",
+            "PRIVATE_THREADS",
+            "ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY",
+            "ROLE_ICONS"
         ],
         "BANNER": "2612bb727af9ab3134f696979ccc9e4e",
         "ICON": "90a2943e844b890564bff6844d80a784",
@@ -755,11 +755,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:44.459414"
+        "LAST_CHECK": "2025-04-03T08:49:01.846990"
     },
     "SERVER_NUMBER_17": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 8,
+        "SEEN_COUNT": 12,
         "GUILD_ID": "697732415707152505",
         "GUILD_NAME": "NSFW + NITRO + CHATTING \ud83c\udf51\ud83c\udf52",
         "GUILD_DESCRIPTION": null,
@@ -768,7 +768,7 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
         "MEMBER_COUNT": 5534,
-        "ONLINE_MEMBER_COUNT": 62,
+        "ONLINE_MEMBER_COUNT": 58,
         "PREMIUM_SUBSCRIPTION_COUNT": 0,
         "PREMIUM_TIER": 0,
         "FEATURES": [],
@@ -791,11 +791,11 @@
             "AVATAR": null,
             "ACCOUNT_CREATION": "2020-01-10"
         },
-        "LAST_CHECK": "2025-04-03T08:21:59.241555"
+        "LAST_CHECK": "2025-04-03T08:49:16.539626"
     },
     "SERVER_NUMBER_18": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1318666259533135902",
         "GUILD_NAME": "\ud83e\udd24\ud83d\udc8e",
         "GUILD_DESCRIPTION": null,
@@ -804,19 +804,19 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
         "MEMBER_COUNT": 728,
-        "ONLINE_MEMBER_COUNT": 19,
+        "ONLINE_MEMBER_COUNT": 17,
         "PREMIUM_SUBSCRIPTION_COUNT": 24,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "THREE_DAY_THREAD_ARCHIVE",
             "VANITY_URL",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "ANIMATED_ICON",
+            "BANNER",
+            "PRIVATE_THREADS",
             "INVITE_SPLASH",
             "ROLE_ICONS",
             "MEMBER_PROFILES",
-            "BANNER",
-            "ANIMATED_ICON",
-            "PRIVATE_THREADS",
-            "SEVEN_DAY_THREAD_ARCHIVE",
             "ANIMATED_BANNER"
         ],
         "BANNER": null,
@@ -838,11 +838,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:21:55.683095"
+        "LAST_CHECK": "2025-04-03T08:49:12.950025"
     },
     "SERVER_NUMBER_19": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 8,
+        "SEEN_COUNT": 12,
         "GUILD_ID": "1264898547900481537",
         "GUILD_NAME": "TG Leaks",
         "GUILD_DESCRIPTION": null,
@@ -851,20 +851,20 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
         "MEMBER_COUNT": 2449,
-        "ONLINE_MEMBER_COUNT": 60,
+        "ONLINE_MEMBER_COUNT": 64,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "PRIVATE_THREADS",
             "ROLE_ICONS",
-            "ANIMATED_BANNER",
             "MEMBER_PROFILES",
+            "PRIVATE_THREADS",
+            "SEVEN_DAY_THREAD_ARCHIVE",
             "THREE_DAY_THREAD_ARCHIVE",
+            "BANNER",
             "VANITY_URL",
             "ANIMATED_ICON",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "INVITE_SPLASH",
-            "BANNER"
+            "ANIMATED_BANNER",
+            "INVITE_SPLASH"
         ],
         "BANNER": null,
         "ICON": "3c1793c920d69049cf3e823677ee6dbb",
@@ -885,11 +885,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:22:06.544725"
+        "LAST_CHECK": "2025-04-03T08:49:23.728909"
     },
     "SERVER_NUMBER_20": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 8,
+        "SEEN_COUNT": 12,
         "GUILD_ID": "1238438119745781902",
         "GUILD_NAME": "Best L3aks +18 #NoVerify",
         "GUILD_DESCRIPTION": null,
@@ -898,24 +898,24 @@
         "NSFW_LEVEL": 3,
         "VERIFICATION_LEVEL": 1,
         "MEMBER_COUNT": 8441,
-        "ONLINE_MEMBER_COUNT": 208,
+        "ONLINE_MEMBER_COUNT": 201,
         "PREMIUM_SUBSCRIPTION_COUNT": 19,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "MEMBER_PROFILES",
-            "ANIMATED_ICON",
-            "ANIMATED_BANNER",
-            "INVITE_SPLASH",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "COMMUNITY",
-            "ROLE_ICONS",
-            "BANNER",
             "PRIVATE_THREADS",
+            "INVITE_SPLASH",
             "NEWS",
             "VANITY_URL",
+            "SEVEN_DAY_THREAD_ARCHIVE",
             "AUTO_MODERATION",
-            "SOUNDBOARD"
+            "COMMUNITY",
+            "MEMBER_PROFILES",
+            "ANIMATED_BANNER",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "BANNER",
+            "ANIMATED_ICON",
+            "SOUNDBOARD",
+            "ROLE_ICONS"
         ],
         "BANNER": "c5450421dab00563d1c1365dfb616eb5",
         "ICON": "64b05160180aca9612d1daa03a5af50c",
@@ -936,11 +936,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:22:14.036428"
+        "LAST_CHECK": "2025-04-03T08:49:31.124885"
     },
     "SERVER_NUMBER_21": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 18,
+        "SEEN_COUNT": 27,
         "GUILD_ID": "1283405741222527026",
         "GUILD_NAME": "leaks 2",
         "GUILD_DESCRIPTION": null,
@@ -953,16 +953,16 @@
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "BANNER",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "VANITY_URL",
-            "MEMBER_PROFILES",
-            "ROLE_ICONS",
             "PRIVATE_THREADS",
             "INVITE_SPLASH",
+            "VANITY_URL",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "MEMBER_PROFILES",
+            "ANIMATED_BANNER",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "BANNER",
             "ANIMATED_ICON",
-            "ANIMATED_BANNER"
+            "ROLE_ICONS"
         ],
         "BANNER": null,
         "ICON": null,
@@ -983,11 +983,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:22:33.289401"
+        "LAST_CHECK": "2025-04-03T08:49:53.674646"
     },
     "SERVER_NUMBER_22": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 18,
+        "SEEN_COUNT": 27,
         "GUILD_ID": "1264367397398380678",
         "GUILD_NAME": "TG Leaks",
         "GUILD_DESCRIPTION": null,
@@ -1000,14 +1000,14 @@
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "VANITY_URL",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "ANIMATED_ICON",
-            "BANNER",
-            "PRIVATE_THREADS",
             "INVITE_SPLASH",
+            "BANNER",
+            "ANIMATED_ICON",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
             "ROLE_ICONS",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "PRIVATE_THREADS",
             "MEMBER_PROFILES",
             "ANIMATED_BANNER"
         ],
@@ -1030,11 +1030,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:22:40.624181"
+        "LAST_CHECK": "2025-04-03T08:50:01.087626"
     },
     "SERVER_NUMBER_23": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1304368439531540500",
         "GUILD_NAME": "NSFWPORN \ud83d\udd1e",
         "GUILD_DESCRIPTION": null,
@@ -1043,20 +1043,20 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
         "MEMBER_COUNT": 1892,
-        "ONLINE_MEMBER_COUNT": 17,
+        "ONLINE_MEMBER_COUNT": 18,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
             "INVITE_SPLASH",
-            "VANITY_URL",
-            "MEMBER_PROFILES",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "BANNER",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "ROLE_ICONS",
-            "PRIVATE_THREADS",
             "ANIMATED_ICON",
-            "ANIMATED_BANNER"
+            "THREE_DAY_THREAD_ARCHIVE",
+            "MEMBER_PROFILES",
+            "VANITY_URL",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "ANIMATED_BANNER",
+            "BANNER",
+            "ROLE_ICONS",
+            "PRIVATE_THREADS"
         ],
         "BANNER": "a802ee6687df119cdf89026065757e68",
         "ICON": "3e8b54e5f94ad8824af3814614b0de36",
@@ -1077,11 +1077,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:22:36.989944"
+        "LAST_CHECK": "2025-04-03T08:49:57.393691"
     },
     "SERVER_NUMBER_24": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 8,
+        "SEEN_COUNT": 12,
         "GUILD_ID": "1225451671077916793",
         "GUILD_NAME": "vleaks 6",
         "GUILD_DESCRIPTION": null,
@@ -1094,16 +1094,16 @@
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "ANIMATED_ICON",
-            "PRIVATE_THREADS",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "BANNER",
-            "VANITY_URL",
-            "ROLE_ICONS",
-            "MEMBER_PROFILES",
             "THREE_DAY_THREAD_ARCHIVE",
             "ANIMATED_BANNER",
-            "INVITE_SPLASH"
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
+            "BANNER",
+            "MEMBER_PROFILES",
+            "PRIVATE_THREADS",
+            "INVITE_SPLASH",
+            "ANIMATED_ICON",
+            "ROLE_ICONS"
         ],
         "BANNER": "a_ea9a76ad437f8ae1d34776e50d2e1929",
         "ICON": "a_f8e485f0e3b9a52f2f6cfe38ab1c388c",
@@ -1124,11 +1124,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:22:48.182141"
+        "LAST_CHECK": "2025-04-03T08:50:08.409838"
     },
     "SERVER_NUMBER_25": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1238827150857994340",
         "GUILD_NAME": "vkeaks 15",
         "GUILD_DESCRIPTION": null,
@@ -1141,16 +1141,16 @@
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "SEVEN_DAY_THREAD_ARCHIVE",
+            "INVITE_SPLASH",
             "BANNER",
-            "ANIMATED_BANNER",
             "ANIMATED_ICON",
             "THREE_DAY_THREAD_ARCHIVE",
-            "INVITE_SPLASH",
+            "ROLE_ICONS",
             "MEMBER_PROFILES",
-            "PRIVATE_THREADS",
+            "SEVEN_DAY_THREAD_ARCHIVE",
             "VANITY_URL",
-            "ROLE_ICONS"
+            "ANIMATED_BANNER",
+            "PRIVATE_THREADS"
         ],
         "BANNER": "a_727090980cf05ce7ba83dcc71f691c45",
         "ICON": "a_f8e485f0e3b9a52f2f6cfe38ab1c388c",
@@ -1171,11 +1171,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:22:51.888407"
+        "LAST_CHECK": "2025-04-03T08:50:12.165338"
     },
     "SERVER_NUMBER_26": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "836363311884795925",
         "GUILD_NAME": "\ud83d\udc8e Exclusive #18+",
         "GUILD_DESCRIPTION": null,
@@ -1184,21 +1184,21 @@
         "NSFW_LEVEL": 3,
         "VERIFICATION_LEVEL": 0,
         "MEMBER_COUNT": 34069,
-        "ONLINE_MEMBER_COUNT": 202,
+        "ONLINE_MEMBER_COUNT": 182,
         "PREMIUM_SUBSCRIPTION_COUNT": 19,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "THREE_DAY_THREAD_ARCHIVE",
             "ROLE_ICONS",
-            "ANIMATED_BANNER",
-            "ANIMATED_ICON",
-            "BANNER",
-            "MEMBER_PROFILES",
-            "VANITY_URL",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "INVITE_SPLASH",
             "PRIVATE_THREADS",
-            "ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY"
+            "BANNER",
+            "VANITY_URL",
+            "ANIMATED_ICON",
+            "INVITE_SPLASH",
+            "ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY",
+            "MEMBER_PROFILES",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "ANIMATED_BANNER"
         ],
         "BANNER": "c686db74a17a03834877329d25d708e4",
         "ICON": "a_47254ad93b8ee5470238ec25a617f113",
@@ -1219,11 +1219,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:22:55.603118"
+        "LAST_CHECK": "2025-04-03T08:50:23.180880"
     },
     "SERVER_NUMBER_27": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "885425488301023282",
         "GUILD_NAME": "\ud83c\udfaf NSFW Spot",
         "GUILD_DESCRIPTION": null,
@@ -1231,22 +1231,22 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
-        "MEMBER_COUNT": 33777,
-        "ONLINE_MEMBER_COUNT": 190,
+        "MEMBER_COUNT": 33778,
+        "ONLINE_MEMBER_COUNT": 175,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "ANIMATED_BANNER",
-            "ROLE_ICONS",
-            "MEMBER_PROFILES",
-            "INVITE_SPLASH",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "ANIMATED_ICON",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "BANNER",
             "PRIVATE_THREADS",
+            "INVITE_SPLASH",
             "VANITY_URL",
-            "ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY"
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "MEMBER_PROFILES",
+            "ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY",
+            "ANIMATED_BANNER",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "BANNER",
+            "ANIMATED_ICON",
+            "ROLE_ICONS"
         ],
         "BANNER": null,
         "ICON": "a_aee7516b8d03f8a2595122befefd06f5",
@@ -1267,11 +1267,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:22:59.300105"
+        "LAST_CHECK": "2025-04-03T08:50:26.900322"
     },
     "SERVER_NUMBER_28": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1337805485323194408",
         "GUILD_NAME": "Paradise \ud83d\udd1e",
         "GUILD_DESCRIPTION": null,
@@ -1279,21 +1279,21 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
-        "MEMBER_COUNT": 530,
-        "ONLINE_MEMBER_COUNT": 18,
+        "MEMBER_COUNT": 529,
+        "ONLINE_MEMBER_COUNT": 19,
         "PREMIUM_SUBSCRIPTION_COUNT": 26,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "BANNER",
-            "ANIMATED_BANNER",
-            "MEMBER_PROFILES",
-            "SEVEN_DAY_THREAD_ARCHIVE",
             "ANIMATED_ICON",
-            "VANITY_URL",
-            "INVITE_SPLASH",
             "PRIVATE_THREADS",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "BANNER",
+            "VANITY_URL",
+            "ROLE_ICONS",
+            "MEMBER_PROFILES",
             "THREE_DAY_THREAD_ARCHIVE",
-            "ROLE_ICONS"
+            "ANIMATED_BANNER",
+            "INVITE_SPLASH"
         ],
         "BANNER": null,
         "ICON": "96167e095c6027eb12917289daecfad4",
@@ -1314,11 +1314,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:23:03.048947"
+        "LAST_CHECK": "2025-04-03T08:50:30.664234"
     },
     "SERVER_NUMBER_29": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1218994105439485984",
         "GUILD_NAME": "bj",
         "GUILD_DESCRIPTION": null,
@@ -1327,19 +1327,19 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
         "MEMBER_COUNT": 6949,
-        "ONLINE_MEMBER_COUNT": 73,
+        "ONLINE_MEMBER_COUNT": 75,
         "PREMIUM_SUBSCRIPTION_COUNT": 14,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "BANNER",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "VANITY_URL",
             "MEMBER_PROFILES",
-            "ROLE_ICONS",
-            "PRIVATE_THREADS",
             "INVITE_SPLASH",
             "ANIMATED_ICON",
+            "VANITY_URL",
+            "ROLE_ICONS",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "PRIVATE_THREADS",
+            "BANNER",
             "ANIMATED_BANNER"
         ],
         "BANNER": null,
@@ -1361,11 +1361,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:23:06.864250"
+        "LAST_CHECK": "2025-04-03T08:50:34.427410"
     },
     "SERVER_NUMBER_30": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1198598237251178606",
         "GUILD_NAME": "wf",
         "GUILD_DESCRIPTION": null,
@@ -1373,22 +1373,22 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
-        "MEMBER_COUNT": 11291,
-        "ONLINE_MEMBER_COUNT": 158,
+        "MEMBER_COUNT": 11292,
+        "ONLINE_MEMBER_COUNT": 152,
         "PREMIUM_SUBSCRIPTION_COUNT": 20,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "ANIMATED_ICON",
-            "ANIMATED_BANNER",
-            "INVITE_SPLASH",
+            "PRIVATE_THREADS",
             "SEVEN_DAY_THREAD_ARCHIVE",
             "THREE_DAY_THREAD_ARCHIVE",
-            "CHANNEL_ICON_EMOJIS_GENERATED",
             "ROLE_ICONS",
+            "INVITE_SPLASH",
             "BANNER",
-            "PRIVATE_THREADS",
+            "MEMBER_PROFILES",
             "VANITY_URL",
-            "MEMBER_PROFILES"
+            "CHANNEL_ICON_EMOJIS_GENERATED",
+            "ANIMATED_ICON",
+            "ANIMATED_BANNER"
         ],
         "BANNER": null,
         "ICON": "a_da1254a9f5fcc6089d6038ee41054ce9",
@@ -1409,11 +1409,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:23:10.634719"
+        "LAST_CHECK": "2025-04-03T08:50:38.164551"
     },
     "SERVER_NUMBER_31": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1309961612987465879",
         "GUILD_NAME": "FREEWAVE",
         "GUILD_DESCRIPTION": "Freewave Productions is a roleplay group on Roblox, our current game taking place during the Vietnam War.",
@@ -1422,29 +1422,29 @@
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 3,
         "MEMBER_COUNT": 1384,
-        "ONLINE_MEMBER_COUNT": 268,
+        "ONLINE_MEMBER_COUNT": 263,
         "PREMIUM_SUBSCRIPTION_COUNT": 25,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "PRIVATE_THREADS",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "COMMUNITY",
-            "ROLE_ICONS",
-            "INVITE_SPLASH",
-            "VANITY_URL",
-            "ANIMATED_ICON",
-            "SOUNDBOARD",
             "ANIMATED_BANNER",
-            "DISCOVERABLE",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "BANNER",
             "MEMBER_PROFILES",
-            "ENABLED_DISCOVERABLE_BEFORE",
-            "GUILD_WEB_PAGE_VANITY_URL",
-            "AUTO_MODERATION",
+            "MEMBER_VERIFICATION_GATE_ENABLED",
+            "INVITE_SPLASH",
             "NEWS",
+            "ENABLED_DISCOVERABLE_BEFORE",
             "PREVIEW_ENABLED",
-            "MEMBER_VERIFICATION_GATE_ENABLED"
+            "THREE_DAY_THREAD_ARCHIVE",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "GUILD_WEB_PAGE_VANITY_URL",
+            "ANIMATED_ICON",
+            "PRIVATE_THREADS",
+            "AUTO_MODERATION",
+            "SOUNDBOARD",
+            "VANITY_URL",
+            "DISCOVERABLE",
+            "BANNER",
+            "COMMUNITY",
+            "ROLE_ICONS"
         ],
         "BANNER": "e78dc620432bf93bf01ba6f059eb6b6d",
         "ICON": "0e41f5b9c8ebecf8528024628967ea03",
@@ -1465,11 +1465,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:23:14.293097"
+        "LAST_CHECK": "2025-04-03T08:50:41.842295"
     },
     "SERVER_NUMBER_32": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 8,
+        "SEEN_COUNT": 12,
         "GUILD_ID": "1001619645339549707",
         "GUILD_NAME": "Polish Nsfw Hub \ud83c\uddf5\ud83c\uddf1",
         "GUILD_DESCRIPTION": null,
@@ -1477,8 +1477,8 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
-        "MEMBER_COUNT": 63564,
-        "ONLINE_MEMBER_COUNT": 855,
+        "MEMBER_COUNT": 63566,
+        "ONLINE_MEMBER_COUNT": 790,
         "PREMIUM_SUBSCRIPTION_COUNT": 0,
         "PREMIUM_TIER": 0,
         "FEATURES": [],
@@ -1501,11 +1501,11 @@
             "AVATAR": null,
             "ACCOUNT_CREATION": "2025-01-05"
         },
-        "LAST_CHECK": "2025-04-03T08:23:25.339348"
+        "LAST_CHECK": "2025-04-03T08:50:52.797907"
     },
     "SERVER_NUMBER_33": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1314662620783050843",
         "GUILD_NAME": "LuaShark | Script Hub",
         "GUILD_DESCRIPTION": null,
@@ -1518,9 +1518,9 @@
         "PREMIUM_SUBSCRIPTION_COUNT": 0,
         "PREMIUM_TIER": 0,
         "FEATURES": [
+            "NEWS",
             "SOUNDBOARD",
-            "COMMUNITY",
-            "NEWS"
+            "COMMUNITY"
         ],
         "BANNER": null,
         "ICON": "d70797503c752c96584f52be806ffe00",
@@ -1541,11 +1541,11 @@
             "AVATAR": "969346da07dbf945b52eb95c07e7ec72",
             "ACCOUNT_CREATION": "2021-05-12"
         },
-        "LAST_CHECK": "2025-04-03T08:23:21.760077"
+        "LAST_CHECK": "2025-04-03T08:50:49.194690"
     },
     "SERVER_NUMBER_34": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1224381110855794802",
         "GUILD_NAME": "Babylone \ud83c\udf89 #1an",
         "GUILD_DESCRIPTION": "Futur Top 1 FR !",
@@ -1553,32 +1553,32 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
-        "MEMBER_COUNT": 36998,
-        "ONLINE_MEMBER_COUNT": 2093,
+        "MEMBER_COUNT": 36999,
+        "ONLINE_MEMBER_COUNT": 2130,
         "PREMIUM_SUBSCRIPTION_COUNT": 128,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "ANIMATED_ICON",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "MEMBER_PROFILES",
-            "GUILD_ONBOARDING_HAS_PROMPTS",
-            "AUTO_MODERATION",
-            "GUILD_ONBOARDING_EVER_ENABLED",
-            "ANIMATED_BANNER",
-            "BANNER",
-            "GUILD_WEB_PAGE_VANITY_URL",
-            "ENABLED_DISCOVERABLE_BEFORE",
-            "GUILD_ONBOARDING",
-            "ROLE_ICONS",
-            "PRIVATE_THREADS",
-            "NEWS",
-            "INVITE_SPLASH",
-            "VANITY_URL",
-            "SEVEN_DAY_THREAD_ARCHIVE",
             "COMMUNITY",
-            "PREVIEW_ENABLED",
+            "AUTO_MODERATION",
+            "GUILD_ONBOARDING",
+            "SOUNDBOARD",
+            "VANITY_URL",
+            "ANIMATED_ICON",
+            "NEWS",
+            "PRIVATE_THREADS",
             "DISCOVERABLE",
-            "SOUNDBOARD"
+            "MEMBER_PROFILES",
+            "PREVIEW_ENABLED",
+            "ENABLED_DISCOVERABLE_BEFORE",
+            "GUILD_ONBOARDING_EVER_ENABLED",
+            "ROLE_ICONS",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "INVITE_SPLASH",
+            "GUILD_ONBOARDING_HAS_PROMPTS",
+            "ANIMATED_BANNER",
+            "GUILD_WEB_PAGE_VANITY_URL",
+            "BANNER",
+            "THREE_DAY_THREAD_ARCHIVE"
         ],
         "BANNER": "a_91e261cdbfc8f37ddc15688b2ae25d39",
         "ICON": "feac96ce495a9b48154cb804a3a166b9",
@@ -1599,11 +1599,11 @@
             "AVATAR": "UNKNOWN",
             "ACCOUNT_CREATION": "UNKNOWN"
         },
-        "LAST_CHECK": "2025-04-03T08:23:29.154627"
+        "LAST_CHECK": "2025-04-03T08:50:56.436673"
     },
     "SERVER_NUMBER_35": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 2,
+        "SEEN_COUNT": 3,
         "GUILD_ID": "1334043017404878868",
         "GUILD_NAME": "\ud83c\udf52 bella's 18+ private server",
         "GUILD_DESCRIPTION": null,
@@ -1611,23 +1611,23 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
-        "MEMBER_COUNT": 24668,
-        "ONLINE_MEMBER_COUNT": 1751,
+        "MEMBER_COUNT": 24682,
+        "ONLINE_MEMBER_COUNT": 1707,
         "PREMIUM_SUBSCRIPTION_COUNT": 15,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "NEWS",
-            "ROLE_ICONS",
             "INVITE_SPLASH",
-            "VANITY_URL",
-            "ANIMATED_BANNER",
-            "ANIMATED_ICON",
+            "ROLE_ICONS",
             "COMMUNITY",
-            "PRIVATE_THREADS",
-            "SEVEN_DAY_THREAD_ARCHIVE",
-            "MEMBER_PROFILES",
             "BANNER",
-            "THREE_DAY_THREAD_ARCHIVE"
+            "NEWS",
+            "PRIVATE_THREADS",
+            "ANIMATED_BANNER",
+            "MEMBER_PROFILES",
+            "VANITY_URL",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "ANIMATED_ICON"
         ],
         "BANNER": null,
         "ICON": "8b462c4621990fc166a21e62f5fc85bc",
@@ -1648,11 +1648,11 @@
             "AVATAR": "c94bb5f16d9e458c808424695cdba895",
             "ACCOUNT_CREATION": "2023-10-24"
         },
-        "LAST_CHECK": "2025-04-03T08:23:32.999265"
+        "LAST_CHECK": "2025-04-03T08:51:00.057747"
     },
     "SERVER_NUMBER_36": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 1,
+        "SEEN_COUNT": 2,
         "GUILD_ID": "793564456948334613",
         "GUILD_NAME": "teen hangout 18+",
         "GUILD_DESCRIPTION": null,
@@ -1660,13 +1660,13 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 0,
-        "MEMBER_COUNT": 10973,
-        "ONLINE_MEMBER_COUNT": 565,
+        "MEMBER_COUNT": 10965,
+        "ONLINE_MEMBER_COUNT": 526,
         "PREMIUM_SUBSCRIPTION_COUNT": 6,
         "PREMIUM_TIER": 1,
         "FEATURES": [
-            "THREE_DAY_THREAD_ARCHIVE",
             "INVITE_SPLASH",
+            "THREE_DAY_THREAD_ARCHIVE",
             "ANIMATED_ICON"
         ],
         "BANNER": null,
@@ -1688,11 +1688,11 @@
             "AVATAR": "84d1b0953b66a243e1f9aa0268c40c80",
             "ACCOUNT_CREATION": "2023-06-30"
         },
-        "LAST_CHECK": "2025-04-03T08:23:36.766037"
+        "LAST_CHECK": "2025-04-03T08:51:03.659627"
     },
     "SERVER_NUMBER_37": {
         "SERVER_STATUS": "ACTIVE",
-        "SEEN_COUNT": 9,
+        "SEEN_COUNT": 18,
         "GUILD_ID": "1295466857507061821",
         "GUILD_NAME": "MILEX FREE CHEATS",
         "GUILD_DESCRIPTION": "The best distribution of Private cheats is MILLEX",
@@ -1700,26 +1700,26 @@
         "NSFW": false,
         "NSFW_LEVEL": 0,
         "VERIFICATION_LEVEL": 1,
-        "MEMBER_COUNT": 11117,
-        "ONLINE_MEMBER_COUNT": 1724,
+        "MEMBER_COUNT": 11214,
+        "ONLINE_MEMBER_COUNT": 1834,
         "PREMIUM_SUBSCRIPTION_COUNT": 24,
         "PREMIUM_TIER": 3,
         "FEATURES": [
-            "COMMUNITY",
-            "ANIMATED_BANNER",
-            "VANITY_URL",
-            "ACTIVITY_FEED_ENABLED_BY_USER",
-            "THREE_DAY_THREAD_ARCHIVE",
-            "PRIVATE_THREADS",
             "SEVEN_DAY_THREAD_ARCHIVE",
-            "INVITE_SPLASH",
-            "MEMBER_PROFILES",
-            "RAID_ALERTS_DISABLED",
-            "BANNER",
-            "NEWS",
             "AUTO_MODERATION",
+            "BANNER",
+            "ANIMATED_ICON",
+            "PRIVATE_THREADS",
+            "ANIMATED_BANNER",
+            "ACTIVITY_FEED_ENABLED_BY_USER",
+            "MEMBER_PROFILES",
+            "COMMUNITY",
             "ROLE_ICONS",
-            "ANIMATED_ICON"
+            "NEWS",
+            "INVITE_SPLASH",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
+            "RAID_ALERTS_DISABLED"
         ],
         "BANNER": "738a84eda27bbdd2f985504cdbf33ec2",
         "ICON": "c693335b0df06c7538d2ac43d22f25e6",
@@ -1740,6 +1740,150 @@
             "AVATAR": "0c9b7539b8ee8ebc68669fbc9a5527e5",
             "ACCOUNT_CREATION": "2021-12-08"
         },
-        "LAST_CHECK": "2025-04-03T08:23:47.991676"
+        "LAST_CHECK": "2025-04-03T08:51:14.481679"
+    },
+    "SERVER_NUMBER_38": {
+        "SERVER_STATUS": "ACTIVE",
+        "SEEN_COUNT": 1,
+        "GUILD_ID": "1310624524282368010",
+        "GUILD_NAME": "leaks 4",
+        "GUILD_DESCRIPTION": null,
+        "GUILD_CREATION": "2024-11-25",
+        "NSFW": false,
+        "NSFW_LEVEL": 0,
+        "VERIFICATION_LEVEL": 0,
+        "MEMBER_COUNT": 143,
+        "ONLINE_MEMBER_COUNT": 4,
+        "PREMIUM_SUBSCRIPTION_COUNT": 28,
+        "PREMIUM_TIER": 3,
+        "FEATURES": [
+            "PRIVATE_THREADS",
+            "INVITE_SPLASH",
+            "VANITY_URL",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "MEMBER_PROFILES",
+            "ANIMATED_BANNER",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "BANNER",
+            "ANIMATED_ICON",
+            "ROLE_ICONS"
+        ],
+        "BANNER": null,
+        "ICON": "e193093bdb2704c75f2bcb9f292e8146",
+        "SPLASH": null,
+        "VANITY_URL_CODE": "leaksforu",
+        "INVITE_CODE": "leaksforu",
+        "INVITE_EXPIRES_AT": null,
+        "CHANNEL": {
+            "CHANNEL_ID": "1310624524282368012",
+            "CHANNEL_NAME": "general",
+            "CHANNEL_TYPE": 0
+        },
+        "INVITE_CREATOR": {
+            "USER_ID": "UNKNOWN",
+            "USERNAME": "UNKNOWN",
+            "DISCRIMINATOR": "UNKNOWN",
+            "GLOBAL_NAME": "UNKNOWN",
+            "AVATAR": "UNKNOWN",
+            "ACCOUNT_CREATION": "UNKNOWN"
+        },
+        "LAST_CHECK": "2025-04-03T08:48:19.832186"
+    },
+    "SERVER_NUMBER_39": {
+        "SERVER_STATUS": "ACTIVE",
+        "SEEN_COUNT": 1,
+        "GUILD_ID": "1250894906793398362",
+        "GUILD_NAME": "Move's Little Harem",
+        "GUILD_DESCRIPTION": null,
+        "GUILD_CREATION": "2024-06-13",
+        "NSFW": false,
+        "NSFW_LEVEL": 0,
+        "VERIFICATION_LEVEL": 0,
+        "MEMBER_COUNT": 2497,
+        "ONLINE_MEMBER_COUNT": 256,
+        "PREMIUM_SUBSCRIPTION_COUNT": 27,
+        "PREMIUM_TIER": 3,
+        "FEATURES": [
+            "SOUNDBOARD",
+            "INVITE_SPLASH",
+            "ROLE_ICONS",
+            "MEMBER_PROFILES",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "VANITY_URL",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "ANIMATED_BANNER",
+            "ANIMATED_ICON",
+            "PRIVATE_THREADS",
+            "AUTO_MODERATION",
+            "BANNER"
+        ],
+        "BANNER": null,
+        "ICON": "a_682fe4ef6be733e814d630c928e960bf",
+        "SPLASH": null,
+        "VANITY_URL_CODE": "nitrox",
+        "INVITE_CODE": "nitrox",
+        "INVITE_EXPIRES_AT": null,
+        "CHANNEL": {
+            "CHANNEL_ID": "1348664721175220376",
+            "CHANNEL_NAME": "announcement",
+            "CHANNEL_TYPE": 0
+        },
+        "INVITE_CREATOR": {
+            "USER_ID": "UNKNOWN",
+            "USERNAME": "UNKNOWN",
+            "DISCRIMINATOR": "UNKNOWN",
+            "GLOBAL_NAME": "UNKNOWN",
+            "AVATAR": "UNKNOWN",
+            "ACCOUNT_CREATION": "UNKNOWN"
+        },
+        "LAST_CHECK": "2025-04-03T08:49:34.789894"
+    },
+    "SERVER_NUMBER_40": {
+        "SERVER_STATUS": "ACTIVE",
+        "SEEN_COUNT": 4,
+        "GUILD_ID": "1198215407597785128",
+        "GUILD_NAME": "gh",
+        "GUILD_DESCRIPTION": null,
+        "GUILD_CREATION": "2024-01-20",
+        "NSFW": false,
+        "NSFW_LEVEL": 0,
+        "VERIFICATION_LEVEL": 0,
+        "MEMBER_COUNT": 5758,
+        "ONLINE_MEMBER_COUNT": 54,
+        "PREMIUM_SUBSCRIPTION_COUNT": 20,
+        "PREMIUM_TIER": 3,
+        "FEATURES": [
+            "VANITY_URL",
+            "ANIMATED_BANNER",
+            "PRIVATE_THREADS",
+            "MEMBER_PROFILES",
+            "SEVEN_DAY_THREAD_ARCHIVE",
+            "THREE_DAY_THREAD_ARCHIVE",
+            "CHANNEL_ICON_EMOJIS_GENERATED",
+            "ANIMATED_ICON",
+            "INVITE_SPLASH",
+            "ROLE_ICONS",
+            "BANNER"
+        ],
+        "BANNER": null,
+        "ICON": "a_da1254a9f5fcc6089d6038ee41054ce9",
+        "SPLASH": null,
+        "VANITY_URL_CODE": "h0tg1rls",
+        "INVITE_CODE": "h0tg1rls",
+        "INVITE_EXPIRES_AT": null,
+        "CHANNEL": {
+            "CHANNEL_ID": "1198215408449224867",
+            "CHANNEL_NAME": "general",
+            "CHANNEL_TYPE": 0
+        },
+        "INVITE_CREATOR": {
+            "USER_ID": "UNKNOWN",
+            "USERNAME": "UNKNOWN",
+            "DISCRIMINATOR": "UNKNOWN",
+            "GLOBAL_NAME": "UNKNOWN",
+            "AVATAR": "UNKNOWN",
+            "ACCOUNT_CREATION": "UNKNOWN"
+        },
+        "LAST_CHECK": "2025-04-03T08:50:19.480386"
     }
 }
