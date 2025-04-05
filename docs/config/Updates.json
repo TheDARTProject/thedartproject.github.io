@@ -7,7 +7,8 @@
         "4 New Cases: Added 4 new cases from 2 servers"
       ],
       "updated": [
-        "Dashboard Stat Cards: Updated logic for Dashboard stat cards to only count active cases."
+        "Dashboard Stat Cards: Updated logic for Dashboard stat cards to only count active cases.",
+        "Tweaked Chart Sizes: Updated chart sizes to fit the new data."
       ],
       "removed": [],
       "notes": ""
