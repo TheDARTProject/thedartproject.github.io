@@ -260,8 +260,13 @@ function updateStats() {
 
     statusElement.textContent = statusText;
 
+    // Count attack methods only for active URLs
+    const activeAccounts = filteredData.filter(account =>
+        account.FINAL_URL_STATUS === 'ACTIVE'
+    );
+
     const attackCounts = {};
-    filteredData.forEach(account => {
+    activeAccounts.forEach(account => {
         attackCounts[account.ATTACK_METHOD] = (attackCounts[account.ATTACK_METHOD] || 0) + 1;
     });
 
@@ -275,8 +280,9 @@ function updateStats() {
     }
     document.getElementById('commonAttack').textContent = commonAttack || 'N/A';
 
+    // Count platforms only for active URLs
     const platformCounts = {};
-    filteredData.forEach(account => {
+    activeAccounts.forEach(account => {
         platformCounts[account.ATTACK_SURFACE] = (platformCounts[account.ATTACK_SURFACE] || 0) + 1;
     });
 
@@ -869,8 +875,8 @@ function createServerAttackTrendsChart() {
         data: {
             labels: displayServers.map(server =>
                 server.startsWith('ANONYMOUS_SERVER') ?
-                    `Anonymous Server #${server.split('_').pop()}` :
-                    serverNames[server] || server
+                `Anonymous Server #${server.split('_').pop()}` :
+                serverNames[server] || server
             ),
             datasets: datasets
         },
@@ -1135,10 +1141,10 @@ function createStatusChart() {
         data: {
             labels: ['Surface URLs', 'Final URLs'],
             datasets: [{
-                label: 'Active',
-                data: [statusCounts.surfaceActive, statusCounts.finalActive],
-                backgroundColor: 'rgba(239, 68, 68, 0.8)'
-            },
+                    label: 'Active',
+                    data: [statusCounts.surfaceActive, statusCounts.finalActive],
+                    backgroundColor: 'rgba(239, 68, 68, 0.8)'
+                },
                 {
                     label: 'Inactive',
                     data: [statusCounts.surfaceInactive, statusCounts.finalInactive],
