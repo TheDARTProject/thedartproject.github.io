@@ -23,8 +23,9 @@ AUTO_US_DOMAINS = {
     "funpay.com",
     "mediafire.com",
     "t.me",
-    "telegram.com",
+    "t.co",
     "telegra.ph",
+    "telegram.com",
 }
 
 
