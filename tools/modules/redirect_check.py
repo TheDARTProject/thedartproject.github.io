@@ -594,13 +594,15 @@ def process_account(
 ):
     """
     Process a single account and return the updated account info.
-    Leaves accounts with excluded domains completely untouched.
+    Leaves accounts with excluded domains or "No URL Detected" completely untouched.
     """
     surface_url = account_info.get("SURFACE_URL", "")
 
-    # Skip if "No URL Sent" or "UNKNOWN" is in the surface URL (case-insensitive)
-    if "No URL Sent" in surface_url or "unknown" in surface_url.lower():
-        logger.info(f"Skipping account {account_key} - Invalid URL: {surface_url}")
+    # Skip if "No URL Detected" or "No URL Sent" or "UNKNOWN" is in the surface URL (case-insensitive)
+    if ("No URL Detected" in surface_url or
+            "No URL Sent" in surface_url or
+            "unknown" in surface_url.lower()):
+        logger.info(f"Skipping account {account_key} - No URL Detected: {surface_url}")
         return account_key, account_info
 
     if not surface_url:
@@ -675,6 +677,16 @@ def process_batch(batch, excluded_domains, proxy_rotator, rate_limiter, results)
 
     for account_key, account_info in batch.items():
         try:
+            surface_url = account_info.get("SURFACE_URL", "")
+
+            # Skip if "No URL Detected" or similar
+            if ("No URL Detected" in surface_url or
+                    "No URL Sent" in surface_url or
+                    "unknown" in surface_url.lower()):
+                results["skipped"] += 1
+                processed_results.append((account_key, account_info))
+                continue
+
             # Call process_account and get only account_key and updated_info
             account_key, updated_info = process_account(
                 account_key, account_info, excluded_domains, proxy_rotator, rate_limiter
@@ -682,6 +694,12 @@ def process_batch(batch, excluded_domains, proxy_rotator, rate_limiter, results)
 
             # Add to processed results
             processed_results.append((account_key, updated_info))
+
+            # Update results based on whether we found a final URL
+            if "FINAL_URL" in updated_info:
+                results["updated"] += 1
+            else:
+                results["failed"] += 1
 
         except Exception as ex:
             logger.error(f"Error processing account {account_key}: {ex}")
