@@ -120,7 +120,7 @@ async function updateServerCards(serverCounts) {
         const serverTitle = titleElement.textContent.trim();
 
         // Check if this is the anonymous server card
-        if (serverTitle === "4 Anonymous Servers") {
+        if (serverTitle === "3 Anonymous Servers") {
             // Update case count for anonymous servers
             const caseCountElement = card.querySelector('.case-count');
             if (caseCountElement) {
