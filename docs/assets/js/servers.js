@@ -5,6 +5,7 @@ const serverNames = {
     PROJECT_CW: "Project CW",
     BLITZHUB_EU: "BlitzHUB EU",
     SINEWAVE_DEVELOPMENT: "SINEWAVE Development",
+    SPYPET: "Spy.pet",
     ANONYMOUS_SERVER_1: "Anonymous Server #1",
     ANONYMOUS_SERVER_2: "Anonymous Server #2",
     ANONYMOUS_SERVER_3: "Anonymous Server #3",
@@ -21,6 +22,7 @@ const serverInvites = {
     BLITZPOST: "https://discord.com/invite/q82WM4E",
     PROJECT_OWL: "https://discord.com/invite/projectowl",
     CRYPTOCURRENCY: "https://discord.com/invite/cryptocurrencyofficial",
+    SPYPET: "",
     ANONYMOUS_SERVER_1: "",
     ANONYMOUS_SERVER_2: "",
     ANONYMOUS_SERVER_3: ""
