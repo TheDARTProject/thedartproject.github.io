@@ -2,15 +2,20 @@
 
   "updates": [
     {
-      "date": "06.04.2025",
+      "date": "07.04.2025",
       "added": [
-        "4 New Cases: Added 4 new cases from 2 servers"
+        "4 New Cases: Added 4 new cases from 2 servers",
+        "Migration Process: Started Migration Process to a dedicated GitHub Organization and improved structure"
       ],
       "updated": [
         "Dashboard Stat Cards: Updated logic for Dashboard stat cards to only count active cases.",
         "Tweaked Chart Sizes: Updated chart sizes to fit the new data."
       ],
-      "removed": [],
+      "removed": [
+        "Migration Process: Moved Discord Apps from the <code>/tools</code> folder and migrated them to the dedicated [Discord-Apps](https://github.com/TheDARTProject/Discord-Apps) repository.",
+        "Migration Process: Moved Modules from the <code>/tools</code> folder and migrated them to the dedicated [Database-Tools](https://github.com/TheDARTProject/Database-Tools) repository.",
+        "Migration Process: Moved JSONs from the data and <code>tools/backup</code> folders and migrated them to the dedicated [Database-Files](https://github.com/TheDARTProject/Database-Files) repository."
+      ],
       "notes": ""
     },
     {
