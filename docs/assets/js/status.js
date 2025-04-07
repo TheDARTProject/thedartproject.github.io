@@ -76,7 +76,7 @@ export async function fetchDatabaseStatus() {
         );
 
         await checkDatabaseFile(
-            'https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/modules/backup/Compromised-Discord-Accounts.backup.json',
+            'https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/modules/backup/Compromised-Discord-Accounts-Backup.json',
             'backupDatabaseStatus'
         );
 
