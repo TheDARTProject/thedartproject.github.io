@@ -26,3 +26,4 @@ tools/monitor_app/.env
 tools/monitor_app/bot_to_do_list.txt
 tools/monitor_app/config/wordlist.json
 tools/statistics_app/.env
+docs/redirect.html
