@@ -42,6 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
         dateTo.addEventListener('change', filterData);
     }
 
+    const timeRangeFilter = document.getElementById('timeRangeFilter');
+    if (timeRangeFilter) {
+      timeRangeFilter.addEventListener('change', filterData);
+    }
+
+    const displayByFilter = document.getElementById('displayByFilter');
+    if (displayByFilter) {
+      displayByFilter.addEventListener('change', filterData);
+    }
+
     const prevPage = document.getElementById('prevPage');
     if (prevPage) {
         prevPage.addEventListener('click', () => {
@@ -149,9 +159,7 @@ function populateFilters() {
         attackMethodFilter.appendChild(option);
     });
 
-    // Convert the servers Set to an array and sort it alphabetically
     const sortedServers = Array.from(servers).sort((a, b) => {
-        // Get the display names for comparison
         const nameA = a.startsWith('ANONYMOUS_SERVER') ?
             `Anonymous Server #${a.split('_').pop()}` :
             serverNames[a] || a;
@@ -166,20 +174,17 @@ function populateFilters() {
         const option = document.createElement('option');
         option.value = server;
 
-        // Check if the server is an anonymous server
         if (server.startsWith('ANONYMOUS_SERVER')) {
-            // Extract the number from the server key (e.g., "ANONYMOUS_SERVER_1" -> "1")
             const serverNumber = server.split('_').pop();
-            // Format the label as "Anonymous Server #1"
             option.textContent = `Anonymous Server #${serverNumber}`;
         } else {
-            // Use the nice name from serverNames
             option.textContent = serverNames[server] || server;
         }
 
         serverFilter.appendChild(option);
     });
 
+    // Set initial date range for "All Time"
     const dates = Object.values(accountsData).map(account => new Date(account.FOUND_ON));
     if (dates.length > 0) {
         const minDate = new Date(Math.min(...dates));
@@ -195,14 +200,43 @@ function filterData() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
     const attackMethod = document.getElementById('attackMethodFilter').value;
     const server = document.getElementById('serverFilter').value;
-    const dateFrom = new Date(document.getElementById('dateFrom').value);
-    const dateTo = new Date(document.getElementById('dateTo').value);
+    const timeRange = document.getElementById('timeRangeFilter').value;
+    const displayBy = document.getElementById('displayByFilter').value;
+
+    let dateFrom = new Date(document.getElementById('dateFrom').value);
+    let dateTo = new Date(document.getElementById('dateTo').value);
+
+    if (timeRange !== 'all') {
+        // Apply predefined time range
+        const months = parseInt(timeRange);
+        dateFrom = new Date();
+        dateFrom.setMonth(dateFrom.getMonth() - months);
+        dateTo = new Date();
+
+        // Update the date inputs to reflect the selected time range
+        document.getElementById('dateFrom').value = dateFrom.toISOString().split('T')[0];
+        document.getElementById('dateTo').value = dateTo.toISOString().split('T')[0];
+    } else {
+        // Reset to full date range when "All Time" is selected
+        const dates = Object.values(accountsData).map(account => new Date(account.FOUND_ON));
+        if (dates.length > 0) {
+            const minDate = new Date(Math.min(...dates));
+            const maxDate = new Date(Math.max(...dates));
+
+            dateFrom = minDate;
+            dateTo = maxDate;
+
+            // Update the date inputs to show full range
+            document.getElementById('dateFrom').value = minDate.toISOString().split('T')[0];
+            document.getElementById('dateTo').value = maxDate.toISOString().split('T')[0];
+        }
+    }
+
     dateTo.setHours(23, 59, 59);
 
     filteredData = Object.values(accountsData).filter(account => {
         const foundDate = new Date(account.FOUND_ON);
 
-        // Check if any field in the account matches the search term
         const matchesSearch = Object.values(account).some(value => {
             if (typeof value === 'string') {
                 return value.toLowerCase().includes(searchTerm);
@@ -1187,27 +1221,68 @@ function createStatusChart() {
 // Create timeline chart
 function createTimelineChart() {
     const canvas = document.getElementById('timelineChart');
-
     if (canvas.chart) {
         canvas.chart.destroy();
     }
 
+    const displayBy = document.getElementById('displayByFilter').value;
     const dateGroups = {};
+
     filteredData.forEach(account => {
-        const date = account.FOUND_ON;
-        dateGroups[date] = (dateGroups[date] || 0) + 1;
+        const date = new Date(account.FOUND_ON);
+        let groupKey;
+
+        switch(displayBy) {
+            case 'weekly':
+                // Group by week (year + week number)
+                const week = getWeek(date);
+                groupKey = `${date.getFullYear()}-W${week}`;
+                break;
+            case 'monthly':
+                // Group by month (year + month)
+                groupKey = `${date.getFullYear()}-${date.getMonth() + 1}`;
+                break;
+            case 'yearly':
+                // Group by year
+                groupKey = date.getFullYear().toString();
+                break;
+            default: // daily
+                groupKey = account.FOUND_ON; // Use the original date string
+        }
+
+        dateGroups[groupKey] = (dateGroups[groupKey] || 0) + 1;
     });
 
-    const sortedDates = Object.keys(dateGroups).sort();
+    // Convert to array and sort
+    const sortedGroups = Object.entries(dateGroups).sort((a, b) => {
+        return new Date(a[0]) - new Date(b[0]);
+    });
+
+    // Format labels based on displayBy
+    const labels = sortedGroups.map(([dateKey]) => {
+        if (displayBy === 'weekly') {
+            const [year, week] = dateKey.split('-W');
+            return `Week ${week}, ${year}`;
+        } else if (displayBy === 'monthly') {
+            const [year, month] = dateKey.split('-');
+            return new Date(year, month - 1).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+        } else if (displayBy === 'yearly') {
+            return dateKey;
+        } else {
+            return formatDate(dateKey);
+        }
+    });
+
+    const data = sortedGroups.map(([_, count]) => count);
 
     // Create the chart with zoom/pan options
     canvas.chart = new Chart(canvas, {
         type: 'line',
         data: {
-            labels: sortedDates.map(date => formatDate(date)),
+            labels: labels,
             datasets: [{
                 label: 'Compromised Accounts',
-                data: sortedDates.map(date => dateGroups[date]),
+                data: data,
                 backgroundColor: 'rgba(99, 102, 241, 0.2)',
                 borderColor: 'rgba(99, 102, 241, 1)',
                 borderWidth: 2,
@@ -1227,6 +1302,14 @@ function createTimelineChart() {
                 tooltip: {
                     mode: 'index',
                     intersect: false,
+                    callbacks: {
+                        label: function(context) {
+                            return `${context.dataset.label}: ${context.raw}`;
+                        },
+                        title: function(context) {
+                            return context[0].label;
+                        }
+                    }
                 },
                 zoom: {
                     pan: {
@@ -1276,6 +1359,13 @@ function createTimelineChart() {
             canvas.chart.resetZoom();
         }
     };
+}
+
+// Helper function to get week number
+function getWeek(date) {
+    const firstDayOfYear = new Date(date.getFullYear(), 0, 1);
+    const pastDaysOfYear = (date - firstDayOfYear) / 86400000;
+    return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
 }
 
 // Create attack methods chart
