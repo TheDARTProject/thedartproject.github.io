@@ -66,17 +66,17 @@ export async function fetchDatabaseStatus() {
 
         // Check individual database files
         await checkDatabaseFile(
-            'https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Compromised-Discord-Accounts.json',
+            'https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Main-Database/Compromised-Discord-Accounts.json',
             'mainDatabaseStatus'
         );
 
         await checkDatabaseFile(
-            'https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/Compromised-Discord-Accounts.json',
+            'https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Edit-Database/Compromised-Discord-Accounts.json',
             'editDatabaseStatus'
         );
 
         await checkDatabaseFile(
-            'https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/tools/modules/backup/Compromised-Discord-Accounts-Backup.json',
+            'https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Backup-Database/Compromised-Discord-Accounts-Backup.json',
             'backupDatabaseStatus'
         );
 
