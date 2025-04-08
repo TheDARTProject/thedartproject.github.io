@@ -76,7 +76,7 @@ export async function fetchDatabaseStatus() {
         );
 
         await checkDatabaseFile(
-            'https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Backup-Database/Compromised-Discord-Accounts-Backup.json',
+            'https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Backup-Database/Compromised-Discord-Accounts.json',
             'backupDatabaseStatus'
         );
 
