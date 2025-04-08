@@ -30,7 +30,7 @@ export function setupContextMenu() {
         },
         {
             label: 'Discord App',
-            url: '/CDA-Project/pages/cda-monitor-app.html'
+            url: '/CDA-Project/pages/monitor-app.html'
         },
         {
             label: 'Info Center',
