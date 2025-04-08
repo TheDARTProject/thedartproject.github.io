@@ -1,6 +1,0 @@
-2025-03-19 15:12:30,978 - INFO - Setup command invoked by staff_member_1 (Server: Example Server)
-2025-03-19 15:12:37,360 - INFO - Starting historical scan for channel: log-channel (Server: Example Server)
-2025-03-19 15:12:37,699 - INFO - Logging message to CSV: Free nitro, click here [discord.com/123456789](https://www.example.com) (Server: Example Server, Channel: log-channel)
-2025-03-19 15:12:37,700 - INFO - Logging message to CSV: 50$ gift from steam [steamcommunity.com/123456789](https://www.example.com) (Server: Example Server, Channel: log-channel)
-2025-03-19 15:12:37,702 - INFO - Historical scan completed for channel: log-channel (Server: Example Server)
-2025-03-19 15:12:37,992 - INFO - Monitoring started for guild: Example Server
