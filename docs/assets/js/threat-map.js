@@ -260,7 +260,7 @@ async function initThreatMap() {
 
 // Fetch threat data from GitHub repository
 async function fetchThreatData() {
-    const response = await fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Compromised-Discord-Accounts.json');
+    const response = await fetch('https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Main-Database/Compromised-Discord-Accounts.json');
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }

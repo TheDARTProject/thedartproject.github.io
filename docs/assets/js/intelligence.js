@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to fetch and process data for the intelligence page
 async function fetchIntelligenceData() {
     try {
-        const response = await fetchData('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Compromised-Discord-Accounts.json');
+        const response = await fetchData('https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Main-Database/Compromised-Discord-Accounts.json');
         if (!response) {
             throw new Error('Failed to fetch intelligence data');
         }

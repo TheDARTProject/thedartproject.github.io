@@ -1,7 +1,7 @@
 // Malicious Servers Page Script
 document.addEventListener('DOMContentLoaded', async function() {
     // Load the servers data
-    const response = await fetch('https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/data/Active-Discord-Servers.json');
+    const response = await fetch('https://github.com/TheDARTProject/Database-Files/blob/main/Main-Database/Active-Discord-Servers.json');
     const serversData = await response.json();
 
     // Count stats
