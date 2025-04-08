@@ -13,7 +13,7 @@
   Leaflet Fullscreen Plugin: https://github.com/Leaflet/Leaflet.fullscreen
 
 /* SITE */
-  Last update: 2025/03/16
+  Last update: 2025/04/08
   Language: English
   Doctype: HTML5
   IDE: WebStorm
