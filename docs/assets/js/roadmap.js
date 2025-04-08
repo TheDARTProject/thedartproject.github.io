@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentFilter = 'all';
 
     // Fetch roadmap data
-    fetch('../config/Roadmap.json')
+    fetch('https://raw.githubusercontent.com/TheDARTProject/Website-Configs/refs/heads/main/Roadmap.json')
         .then(response => response.json())
         .then(data => {
             roadmapData = data.roadmap;

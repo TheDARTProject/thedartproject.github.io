@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function() {
     try {
-        const response = await fetch('../config/Updates.json');
+        const response = await fetch('https://raw.githubusercontent.com/TheDARTProject/Website-Configs/refs/heads/main/Updates.json');
         if (!response.ok) {
             throw new Error('Failed to load updates data');
         }

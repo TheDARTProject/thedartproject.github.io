@@ -7,7 +7,7 @@ import {
 // Function to fetch and update developer messages
 export async function fetchDeveloperMessages() {
     try {
-        const messageData = await fetchData('../config/Status-Message.json');
+        const messageData = await fetchData('https://raw.githubusercontent.com/TheDARTProject/Website-Configs/refs/heads/main/Status-Message.json');
         if (!messageData) {
             throw new Error('Failed to fetch developer messages');
         }
@@ -45,7 +45,7 @@ export async function fetchDeveloperMessages() {
 // Function to fetch and update the database status
 export async function fetchDatabaseStatus() {
     try {
-        const statusData = await fetchData('../config/Database-Status.json');
+        const statusData = await fetchData('https://raw.githubusercontent.com/TheDARTProject/Website-Configs/refs/heads/main/Database-Status.json');
         if (!statusData) {
             throw new Error('Failed to fetch database status');
         }
