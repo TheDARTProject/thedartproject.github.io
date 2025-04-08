@@ -175,7 +175,7 @@ export function setupContextMenu() {
             ctx.restore();
 
             const logo = new Image();
-            logo.src = '../images/watermark/CDA-Project.png';
+            logo.src = '../images/watermark/Watermark-Logo.png';
 
             // Function to draw the two-line text
             const drawChartText = () => {
