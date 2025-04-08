@@ -1,6 +1,6 @@
 <div align="center">
 
-# [CDA - Compromised Discord Accounts Project](https://thatsinewave.github.io/CDA-Project/)
+# [CDA - Compromised Discord Accounts Project](https://thatsinewave.github.io/DART-Project/)
 
 ![Banner](https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/.github/SCREENSHOTS/CDA-Project.png)
 
