@@ -46,13 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (infoButton || faqButton) {
         // Get current page path
         const currentPath = window.location.pathname;
-        const isIndexOr404 = currentPath.endsWith('index.html') ||
-            currentPath.endsWith('404.html') ||
-            currentPath === '/'; // Root path
+        const isRootPage = currentPath.endsWith('index.html') ||
+                          currentPath.endsWith('404.html') ||
+                          currentPath === '/'; // Root path
+        const isLegalPage = currentPath.includes('/legal/');
 
-        // Set appropriate paths based on current page
-        const infoPath = isIndexOr404 ? 'pages/info.html' : 'info.html';
-        const faqPath = isIndexOr404 ? 'pages/faq.html' : 'faq.html';
+        // Always use root-relative paths
+        const infoPath = isRootPage ? '/pages/info.html' : '/pages/info.html';
+        const faqPath = isRootPage ? '/pages/faq.html' : '/pages/faq.html';
 
         if (infoButton) {
             infoButton.addEventListener('click', () => {
