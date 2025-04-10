@@ -9,5 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => {
             card.classList.add('bg-gray-800', 'text-white');
         });
+        // Switch to dark image
+        const dashboardImage = document.getElementById('dashboard-image');
+        if (dashboardImage) {
+            dashboardImage.src = "https://raw.githubusercontent.com/TheDARTProject/Website-Images/main/site-images/HOME-IMAGE-DARK.png";
+        }
     }
 });
+
+// Add this function to handle theme toggles
+export function toggleThemeImage(isDarkMode) {
+    const dashboardImage = document.getElementById('dashboard-image');
+    if (!dashboardImage) return;
+
+    if (isDarkMode) {
+        dashboardImage.src = "https://raw.githubusercontent.com/TheDARTProject/Website-Images/main/site-images/HOME-IMAGE-DARK.png";
+    } else {
+        dashboardImage.src = "https://raw.githubusercontent.com/TheDARTProject/Website-Images/main/site-images/HOME-IMAGE-LIGHT.png";
+    }
+}
