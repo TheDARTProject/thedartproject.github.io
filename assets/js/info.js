@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to fetch account data for server cards
 async function fetchAccountData() {
     try {
-        const response = await fetch('../data/Compromised-Discord-Accounts.json');
+        const response = await fetch('https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Main-Database/Compromised-Discord-Accounts.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
