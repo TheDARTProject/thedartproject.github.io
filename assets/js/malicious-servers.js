@@ -1,7 +1,7 @@
 // Malicious Servers Page Script
 document.addEventListener('DOMContentLoaded', async function() {
     // Load the servers data
-    const response = await fetch('https://github.com/TheDARTProject/Database-Files/blob/main/Main-Database/Active-Discord-Servers.json');
+    const response = await fetch('https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Main-Database/Active-Discord-Servers.json');
     const serversData = await response.json();
 
     // Count stats
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                                   alt="Server icon"
                                   class="w-20 h-20 rounded-full blur-xl transition-all duration-300"
                                   data-blurred="true"
-                                  onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SERVER-WITHOUT-ICON.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                                  onerror="this.src='https://raw.githubusercontent.com/TheDARTProject/Website-Images/refs/heads/main/site-images/SERVER-WITHOUT-ICON.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
                             <div class="nsfw-warning absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-2 text-center rounded-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                             </div>
                         </div>
                     </div>` : `
-                    <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SERVER-WITHOUT-ICON.png"
+                    <img src="https://raw.githubusercontent.com/TheDARTProject/Website-Images/refs/heads/main/site-images/SERVER-WITHOUT-ICON.png"
                           alt="No icon"
                           class="w-16 h-16 rounded-full flex-shrink-0">`}
 
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                               alt="Server banner"
                               class="server-image blur-xl"
                               data-blurred="true"
-                              onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SERVER-WITHOUT-BANNER.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                              onerror="this.src='https://raw.githubusercontent.com/TheDARTProject/Website-Images/refs/heads/main/site-images/SERVER-WITHOUT-BANNER.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
                         <div class="nsfw-warning">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                             <p class="text-xs mt-1">Click to view</p>
                         </div>
                     </div>` : `
-                    <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SERVER-WITHOUT-BANNER.png"
+                    <img src="https://raw.githubusercontent.com/TheDARTProject/Website-Images/refs/heads/main/site-images/SERVER-WITHOUT-BANNER.png"
                           alt="No banner"
                           class="server-image">`}
                 </div>
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                               alt="Server splash"
                               class="server-image blur-xl"
                               data-blurred="true"
-                              onerror="this.src='https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SERVER-WITHOUT-SPLASH.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
+                              onerror="this.src='https://raw.githubusercontent.com/TheDARTProject/Website-Images/refs/heads/main/site-images/SERVER-WITHOUT-SPLASH.png'; this.classList.remove('blur-xl'); this.parentElement.querySelector('.nsfw-warning').classList.add('hidden')">
                         <div class="nsfw-warning">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 </div>` : `
                 <h4 class="text-xs font-medium text-gray-500 mb-1">Server Splash</h4>
                 <div class="server-image-container">
-                    <img src="https://raw.githubusercontent.com/ThatSINEWAVE/CDA-Project/refs/heads/main/docs/images/site-images/SERVER-WITHOUT-SPLASH.png"
+                    <img src="https://raw.githubusercontent.com/TheDARTProject/Website-Images/refs/heads/main/site-images/SERVER-WITHOUT-SPLASH.png"
                           alt="No splash"
                           class="server-image">
                 </div>`}
