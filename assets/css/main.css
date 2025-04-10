@@ -108,25 +108,116 @@ nav p:hover {
 	text-decoration: none;
 }
 
-/* Footer */
+/* ======================= */
+/* Footer Styles           */
+/* ======================= */
 footer {
-	position: relative;
-	z-index: 100;
-	margin-top: auto;
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 10;
 }
 
 footer a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	transition: var(--transition-normal);
+  transition: var(--transition-normal);
+  text-decoration: none;
 }
 
 footer a:hover {
-	background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+footer h3,
+footer h4 {
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--transition-normal);
+}
+
+footer .social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+footer .contact-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: var(--transition-normal);
+  margin-top: 1rem;
+}
+
+footer .contact-box:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* New grid layout for footer sections */
+footer .grid-cols-4 > div {
+  padding: 0 1rem;
+}
+
+footer .grid-cols-4 > div:first-child {
+  padding-left: 0;
+}
+
+footer .grid-cols-4 > div:last-child {
+  padding-right: 0;
+}
+
+@media (max-width: 1024px) {
+  footer .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .grid-cols-4 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  footer .social-links {
+    justify-content: center;
+  }
+
+  footer .flex {
+    justify-content: center;
+  }
+
+  footer .grid-cols-4 > div {
+    padding: 0;
+  }
+
+  footer .contact-box {
+    margin: 1rem auto 0;
+    max-width: 300px;
+  }
 }
 
 /* ======================= */
