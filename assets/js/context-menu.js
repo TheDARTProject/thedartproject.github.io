@@ -36,6 +36,7 @@ export function setupContextMenu() {
     // Function to get chart name from canvas ID
     function getChartName(canvasId) {
         const chartNames = {
+            // Dashboard charts
             'timelineChart': 'Attacks Over Time',
             'methodsChart': 'Attack Methods Distribution',
             'surfacesChart': 'Attack Surfaces',
@@ -50,6 +51,8 @@ export function setupContextMenu() {
             'serverCasesChart': 'Cases by Server',
             'averageTimeChart': 'Average Time Till Compromise',
             'temporalPatternChart': 'Temporal Attack Pattern Analysis',
+
+            // Domain Analytics charts
             'platformChart': 'Platform Distribution',
             'threatTypeChart': 'Threat Type Distribution',
             'tldChart': 'Top Level Domain (TLD) Distribution',
