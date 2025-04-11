@@ -7,61 +7,6 @@ export function setupContextMenu() {
     contextMenu.classList.add('hidden');
     document.body.appendChild(contextMenu);
 
-    // Site pages structure - flattened without categories
-    const sitePages = [{
-            label: 'Home Page',
-            url: '/CDA-Project/index.html'
-        },
-        {
-            label: 'Dashboard',
-            url: '/CDA-Project/pages/dashboard.html'
-        },
-        {
-            label: 'Database',
-            url: '/CDA-Project/pages/database.html'
-        },
-        {
-            label: 'Threat Map',
-            url: '/CDA-Project/pages/threat-map.html'
-        },
-        {
-            label: 'Intel Reports',
-            url: '/CDA-Project/pages/intelligence.html'
-        },
-        {
-            label: 'Discord App',
-            url: '/CDA-Project/pages/monitor-app.html'
-        },
-        {
-            label: 'Info Center',
-            url: '/CDA-Project/pages/info.html'
-        },
-        {
-            label: 'Resource Center',
-            url: '/CDA-Project/pages/resources.html'
-        },
-        {
-            label: 'Frequent Questions',
-            url: '/CDA-Project/pages/faq.html'
-        },
-        {
-            label: 'Latest News',
-            url: '/CDA-Project/pages/news.html'
-        },
-        {
-            label: 'Changelog',
-            url: '/CDA-Project/pages/changelog.html'
-        },
-        {
-            label: 'Status',
-            url: '/CDA-Project/pages/status.html'
-        },
-        {
-            label: 'Project Roadmap',
-            url: '/CDA-Project/pages/roadmap.html'
-        }
-    ];
-
     // Base menu items configuration
     const baseMenuItems = [{
             label: 'Back',
@@ -72,15 +17,6 @@ export function setupContextMenu() {
             label: 'Forward',
             icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>',
             action: () => window.history.forward()
-        },
-        {
-            type: 'separator'
-        },
-        {
-            label: 'Site Navigation',
-            icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" /></svg>',
-            hasSubmenu: true,
-            submenuItems: sitePages
         },
         {
             type: 'separator'
@@ -113,7 +49,12 @@ export function setupContextMenu() {
             'finalDomainsChart': 'Final Domains Distribution',
             'serverCasesChart': 'Cases by Server',
             'averageTimeChart': 'Average Time Till Compromise',
-            'temporalPatternChart': 'Temporal Attack Pattern Analysis'
+            'temporalPatternChart': 'Temporal Attack Pattern Analysis',
+            'platformChart': 'Platform Distribution',
+            'threatTypeChart': 'Threat Type Distribution',
+            'tldChart': 'Top Level Domain (TLD) Distribution',
+            'compositionChart': 'Domain Composition Analysis',
+            'lengthChart': 'Domain Length Analysis'
         };
         return chartNames[canvasId] || 'Chart';
     }
@@ -563,122 +504,29 @@ export function setupContextMenu() {
             } else {
                 const menuItem = document.createElement('div');
                 menuItem.classList.add('context-menu-item');
-
-                if (item.hasSubmenu) {
-                    menuItem.classList.add('has-submenu');
-                    menuItem.innerHTML = `
-                        <span class="context-menu-icon">${item.icon}</span>
-                        <span class="context-menu-label">${item.label}</span>
-                        <span class="context-menu-arrow">›</span>
-                    `;
-
-                    // Create container for submenu items
-                    const submenuItemsContainer = document.createElement('div');
-                    submenuItemsContainer.classList.add('context-submenu-items');
-
-                    // Build submenu items (simple list without categories)
-                    item.submenuItems.forEach(page => {
-                        const submenuItem = createSubmenuItem(page.label, page.url);
-                        submenuItemsContainer.appendChild(submenuItem);
-                    });
-
-                    // Only open submenu on click, not hover
-                    menuItem.addEventListener('click', (e) => {
-                        e.stopPropagation();
-
-                        // Close all other open submenus
-                        document.querySelectorAll('.context-menu-item.open').forEach(openItem => {
-                            if (openItem !== menuItem) {
-                                openItem.classList.remove('open');
-                            }
-                        });
-
-                        // Toggle current submenu
-                        menuItem.classList.toggle('open');
-
-                        // Position the submenu after it's opened
-                        if (menuItem.classList.contains('open')) {
-                            positionSubmenu(menuItem, submenuItemsContainer);
-                        }
-                    });
-
-                    // Insert the submenu items after the menu item
-                    contextMenu.appendChild(menuItem);
-                    contextMenu.appendChild(submenuItemsContainer);
-                } else {
-                    menuItem.innerHTML = `
-                        <span class="context-menu-icon">${item.icon}</span>
-                        <span class="context-menu-label">${item.label}</span>
-                    `;
-                    menuItem.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        if (target.tagName === 'CANVAS' && target.chart && item.action) {
-                            item.action(target.chart);
-                        } else if (target.tagName === 'IMG' && item.action) {
-                            item.action(target);
-                        } else if (item.action) {
-                            item.action();
-                        }
-                        hideContextMenu();
-                    });
-                    contextMenu.appendChild(menuItem);
-                }
+                menuItem.innerHTML = `
+                    <span class="context-menu-icon">${item.icon}</span>
+                    <span class="context-menu-label">${item.label}</span>
+                `;
+                menuItem.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (target.tagName === 'CANVAS' && target.chart && item.action) {
+                        item.action(target.chart);
+                    } else if (target.tagName === 'IMG' && item.action) {
+                        item.action(target);
+                    } else if (item.action) {
+                        item.action();
+                    }
+                    hideContextMenu();
+                });
+                contextMenu.appendChild(menuItem);
             }
         });
-    }
-
-    function positionSubmenu(menuItem, submenu) {
-        const menuItemRect = menuItem.getBoundingClientRect();
-        const contextMenuRect = contextMenu.getBoundingClientRect();
-        const windowWidth = window.innerWidth;
-        const windowHeight = window.innerHeight;
-
-        // Calculate available space
-        const spaceRight = windowWidth - menuItemRect.right;
-        const spaceLeft = menuItemRect.left;
-        const spaceBottom = windowHeight - menuItemRect.bottom;
-
-        // Default position (to the right)
-        let submenuLeft = menuItemRect.right - contextMenuRect.left;
-        let submenuTop = menuItemRect.top - contextMenuRect.top;
-
-        // Check if submenu would go off right edge
-        if (spaceRight < submenu.offsetWidth && spaceLeft >= submenu.offsetWidth) {
-            // Position to the left if there's more space there
-            submenuLeft = menuItemRect.left - contextMenuRect.left - submenu.offsetWidth;
-        }
-
-        // Check if submenu would go off bottom edge
-        if (spaceBottom < submenu.offsetHeight) {
-            // Position above if there's more space there
-            submenuTop = menuItemRect.bottom - contextMenuRect.top - submenu.offsetHeight;
-        }
-
-        // Apply the calculated position
-        submenu.style.left = `${submenuLeft}px`;
-        submenu.style.top = `${submenuTop}px`;
-    }
-
-    function createSubmenuItem(label, url) {
-        const submenuItem = document.createElement('div');
-        submenuItem.classList.add('context-submenu-item');
-        submenuItem.textContent = label;
-        submenuItem.addEventListener('click', (e) => {
-            e.stopPropagation();
-            window.location.href = url;
-            hideContextMenu();
-        });
-        return submenuItem;
     }
 
     function showContextMenu(e) {
         e.preventDefault();
         e.stopPropagation();
-
-        // Close any open submenus first
-        document.querySelectorAll('.context-menu-item.open').forEach(item => {
-            item.classList.remove('open');
-        });
 
         hideContextMenu();
 
