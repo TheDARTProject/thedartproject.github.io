@@ -55,7 +55,37 @@ async function countThreats() {
         return Object.keys(data).length;
     } catch (error) {
         console.error('Error fetching threats:', error);
-        return 0; // Return 0 if there's an error
+        return 0;
+    }
+}
+
+// Function to count malicious URLs
+async function countMaliciousUrls() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Filter-Database/Global-Domains.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch malicious URLs data');
+        }
+        const data = await response.json();
+        return data.length;
+    } catch (error) {
+        console.error('Error fetching malicious URLs:', error);
+        return 0;
+    }
+}
+
+// Function to count malicious servers
+async function countMaliciousServers() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/TheDARTProject/Database-Files/refs/heads/main/Filter-Database/Discord-Servers.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch malicious servers data');
+        }
+        const data = await response.json();
+        return Object.keys(data).length;
+    } catch (error) {
+        console.error('Error fetching malicious servers:', error);
+        return 0;
     }
 }
 
@@ -64,6 +94,8 @@ async function updateStats() {
     const threatsCount = await countThreats();
     const protectedServersCount = countProtectedServers();
     const totalMembers = await getTotalMembers();
+    const maliciousUrlsCount = await countMaliciousUrls();
+    const maliciousServersCount = await countMaliciousServers();
 
     // Format numbers
     const formattedThreats = threatsCount.toLocaleString();
@@ -71,11 +103,15 @@ async function updateStats() {
     const formattedMembers = totalMembers >= 1000 ?
         `${Math.round(totalMembers / 1000)}k` :
         totalMembers.toLocaleString();
+    const formattedUrls = maliciousUrlsCount.toLocaleString();
+    const formattedServersMalicious = maliciousServersCount.toLocaleString();
 
     // Update the DOM
     document.getElementById('threats-detected').textContent = formattedThreats;
     document.getElementById('protected-servers').textContent = formattedServers + '+';
     document.getElementById('total-members').textContent = formattedMembers;
+    document.getElementById('malicious-urls').textContent = formattedUrls;
+    document.getElementById('malicious-servers').textContent = formattedServersMalicious;
 }
 
 // Initialize when DOM is loaded
