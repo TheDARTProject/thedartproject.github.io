@@ -3,6 +3,7 @@
 const serverNames = {
     DIRECT_MESSAGES: "Direct Messages",
     PROJECT_CW: "Project CW",
+    BANANA: "Banana",
     BLITZHUB_EU: "BlitzHUB EU",
     SINEWAVE_DEVELOPMENT: "SINEWAVE Development",
     BIGTIME: "Big Time",
@@ -18,6 +19,7 @@ const serverNames = {
 const serverInvites = {
     DIRECT_MESSAGES: "",
     PROJECT_CW: "https://discord.com/invite/projectcw",
+    BANANA: "https://discord.com/invite/thebananas",
     BLITZHUB_EU: "https://discord.com/invite/WKz7RJvtUK",
     SINEWAVE_DEVELOPMENT: "https://discord.com/invite/2nHHHBWNDw",
     BIGTIME: "https://discord.com/invite/v7AAG6Kqch",
