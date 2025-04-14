@@ -209,6 +209,51 @@
               <li>Don't trust messages that create a sense of urgency or fear.</li>
             </ul>
           </div>
+          <!-- Automod Filters Section -->
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-indigo-600 mb-4">Discord Automod Filters for Scam Prevention</h3>
+            <p class="text-gray-600 mb-4">Server staff and owners can use these custom Automod filters to help protect their communities from common scam attempts. Copy and paste these directly into your server's Automod settings.</p>
+            <div class="space-y-6">
+              <!-- Word Filters -->
+              <div>
+                <h4 class="text-lg font-semibold text-indigo-600 mb-2">Word Filters</h4>
+                <p class="text-gray-600 mb-2">Add these to your keyword filter list:</p>
+                <div class="bg-gray-50 p-4 rounded-md overflow-x-auto">
+                  <code class="text-sm text-gray-800">*.su*, *funpay*, *funpay.com*, *https://funpay.com/*, only fans, onlyfans, *telegra.ph*, *tinyurl.com*, *50$ gift*, *gift 50$*, *20$ gift*, *gift 20$*, *help 10 people to earn*, *free nitro*, *nitro gift*, *discord.gift*, *steamgift*, *free steam*, *steam code*, *steam key*, *free robux*, *robux code*, *free vbucks*, *fortnite code*, *free minecraft*, *minecraft code*, *crypto giveaway*, *free crypto*, *bitcoin giveaway*, *eth giveaway*, *paypal.me*, *cashapp*, *venmo*, *send me money*, *donate me*, *steamcommunity.com/tradeoffer*, *trade offer*, *csgo trade*, *tf2 trade*, *dota trade*, *skin trade*</code>
+                </div>
+                <p class="text-gray-600 mb-2">These wordlists can be modified by removing or adding words to fit the use case of the server since in some cases it might block real user interactions.</p>
+              </div>
+              <!-- Regex Patterns -->
+              <div>
+                <h4 class="text-lg font-semibold text-indigo-600 mb-2">Regex Patterns</h4>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <h5 class="font-medium text-indigo-600 mb-2">Blocks disguised links (markdown links, angle brackets, etc.)</h5>
+                  <code class="text-sm text-gray-800 block mb-2">\[.+\]\(<?(https?://.+)>?\s*("([^"]+)")?\)</code>
+                  <p class="text-gray-600 text-sm">Blocks: [Click here](https://malicious.site), [Free Nitro](https://discord.gift/fake), &lt;https://dangerous.link&gt;</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-md mb-2">
+                  <h5 class="font-medium text-indigo-600 mb-2">Blocks fake headers and excessive punctuation</h5>
+                  <code class="text-sm text-gray-800 block mb-2">\n?#{1,3}\s+,+</code>
+                  <p class="text-gray-600 text-sm">Blocks: ### FREE NITRO,,,, #GIVEAWAY,,,,,, CLICK HERE ## LIMITED TIME OFFER,,,,</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-md">
+                  <h5 class="font-medium text-indigo-600 mb-2">Blocks common scam phrases with numbers</h5>
+                  <code class="text-sm text-gray-800 block mb-2">(free|gift|giveaway|win|claim|earn).{0,10}\d+\$?</code>
+                  <p class="text-gray-600 text-sm">Blocks: free 50$ nitro, gift 100 people, claim your 20$ reward, earn 500$ daily</p>
+                </div>
+              </div>
+              <!-- Setup Tips -->
+              <div class="bg-gray-50 p-4 rounded-md">
+                <h4 class="text-lg font-semibold text-indigo-600 mb-2">Automod Setup Tips</h4>
+                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                  <li>Set these filters to trigger at 1-2 mentions to catch early scam attempts</li>
+                  <li>Combine with "Block Message" and "Send Alert" actions</li>
+                  <li>Review your Automod logs regularly to adjust filters as needed</li>
+                  <li>Add your own server-specific scam patterns as you encounter them</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <!-- Tutorials Section -->
           <div class="bg-gray-50 p-6 rounded-lg">
             <h3 class="text-xl font-semibold text-indigo-600 mb-4">Tutorials</h3>
