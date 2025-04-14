@@ -65,6 +65,7 @@
 .stats-section {
 	background: rgba(249, 250, 251, 0.5);
 	backdrop-filter: blur(8px);
+	margin-bottom: 50px;
 }
 
 /* Dashboard Illustration Container - Improved */
@@ -88,7 +89,6 @@
 .partners-carousel-container {
 	max-width: 100%;
 	padding: 0;
-	margin-bottom: -50px;
 }
 
 .partners-carousel-container h2 {
