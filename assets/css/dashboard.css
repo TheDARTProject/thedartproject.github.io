@@ -40,7 +40,7 @@ body.bg-gray-900.texture::after {
 /* Charts */
 .chart-container {
 	position: relative;
-	height: 350px;
+	height: 375px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 1rem;
