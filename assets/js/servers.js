@@ -12,8 +12,11 @@ const serverNames = {
     ANONYMOUS_SERVER_1: "Anonymous Server #1",
     ANONYMOUS_SERVER_2: "Anonymous Server #2",
     ANONYMOUS_SERVER_3: "Anonymous Server #3",
+    ANONYMOUS_SERVER_4: "Anonymous Server #4",
+    THE_BLADE_OF_TEMPEST: "The Blade of Tempest",
     PROJECT_OWL: "Project Owl",
     CRYPTOCURRENCY: "r/CryptoCurrency",
+    RESONANCE_VERSE: "Resonance Verse",
     BLITZPOST: "Blitz Post"
 };
 
@@ -28,9 +31,12 @@ const serverInvites = {
     BLITZPOST: "https://discord.com/invite/q82WM4E",
     PROJECT_OWL: "https://discord.com/invite/projectowl",
     CRYPTOCURRENCY: "https://discord.com/invite/cryptocurrencyofficial",
+    RESONANCE_VERSE: "https://discord.gg/dreamworks",
+    THE_BLADE_OF_TEMPEST: "https://discord.com/invite/PBpWwJgCGg",
     SPYPET: "",
     ANONYMOUS_SERVER_1: "",
     ANONYMOUS_SERVER_2: "",
+    ANONYMOUS_SERVER_3: "",
     ANONYMOUS_SERVER_3: ""
 };
 
