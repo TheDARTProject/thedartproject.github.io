@@ -25,7 +25,7 @@ const serverInvites = {
     PROJECT_CW: "https://discord.com/invite/projectcw",
     BANANA: "https://discord.com/invite/thebananas",
     BLITZHUB_EU: "https://discord.com/invite/WKz7RJvtUK",
-    SINEWAVE_DEVELOPMENT: "https://discord.com/invite/2nHHHBWNDw",
+    SINEWAVE_DEVELOPMENT: "https://discord.com/invite/3nUBKvuBgC",
     VALHALLA: "https://discord.com/invite/s2KyDX8ER9",
     BIGTIME: "https://discord.com/invite/v7AAG6Kqch",
     BLITZPOST: "https://discord.com/invite/q82WM4E",
