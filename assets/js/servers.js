@@ -2,7 +2,7 @@
 
 const serverNames = {
     DIRECT_MESSAGES: "Direct Messages",
-    PROJECT_CW: "Project CW",
+    WOT_HEAT: "World of Tanks: HEAT",
     BANANA: "Banana",
     BLITZHUB_EU: "BlitzHUB EU",
     SINEWAVE_DEVELOPMENT: "SINEWAVE Development",
@@ -22,7 +22,7 @@ const serverNames = {
 
 const serverInvites = {
     DIRECT_MESSAGES: "",
-    PROJECT_CW: "https://discord.com/invite/projectcw",
+    WOT_HEAT: "https://discord.com/invite/wot-heat",
     BANANA: "https://discord.com/invite/thebananas",
     BLITZHUB_EU: "https://discord.com/invite/WKz7RJvtUK",
     SINEWAVE_DEVELOPMENT: "https://discord.com/invite/3nUBKvuBgC",
